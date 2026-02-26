@@ -26,6 +26,7 @@ export default function RootLayout({
           <div className="isolate">
             <Header />
             {children}
+            Hello
             <Footer />
           </div>
           <ScrollToTop />
