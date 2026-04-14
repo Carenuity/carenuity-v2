@@ -14,7 +14,7 @@ const productImages = [
   "/images/home/sq-panel-frontview.webp",
   "/images/home/C3-mini_selection-box_case.png",
 ];
-const productLinks = ["/sq-system", "/"];
+const productLinks = ["/sq-system", "/c3-mini"];
 
 export default function HomeSection() {
   const { t } = useLanguage();

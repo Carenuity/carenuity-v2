@@ -194,7 +194,7 @@ const col3 = {
   items: [
     {
       label: "C3-Mini™ Applications",
-      href: null,
+      href: "/c3-mini",
       icon: (
         <svg
           width="20"
@@ -213,7 +213,7 @@ const col3 = {
     },
     {
       label: "AI Assisted Solutions",
-      href: null,
+      href: "/ai-assisted",
       icon: (
         <svg
           width="20"
@@ -232,7 +232,7 @@ const col3 = {
     },
     {
       label: "All-for-One Sensor Boxes",
-      href: null,
+      href: "/sensor-boxes",
       icon: (
         <svg
           width="20"
@@ -252,7 +252,7 @@ const col3 = {
     },
     {
       label: "C3-Mini™ Sensor Selection Box",
-      href: null,
+      href: "/selection-box",
       icon: (
         <svg
           width="20"
@@ -611,17 +611,24 @@ export default function Navbar() {
                     {[...col1.items, ...col2.items, ...col3.items].map(
                       (item) => (
                         <li key={item.label}>
-                          <Link
-                            href={item.href}
-                            onClick={() => {
-                              setOpen(false);
-                              setMobileProductOpen(false);
-                            }}
-                            className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-                          >
-                            <span className="shrink-0">{item.icon}</span>
-                            {item.label}
-                          </Link>
+                          {item.href ? (
+                            <Link
+                              href={item.href}
+                              onClick={() => {
+                                setOpen(false);
+                                setMobileProductOpen(false);
+                              }}
+                              className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+                            >
+                              <span className="shrink-0">{item.icon}</span>
+                              {item.label}
+                            </Link>
+                          ) : (
+                            <span className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs text-gray-400 dark:text-gray-500 cursor-default">
+                              <span className="shrink-0">{item.icon}</span>
+                              {item.label}
+                            </span>
+                          )}
                         </li>
                       ),
                     )}
