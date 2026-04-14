@@ -76,9 +76,7 @@ export default function BudgetFriendlySection({ activeHref }) {
               >
                 <div
                   className={`w-12 h-12 rounded-xl mb-4 flex items-center justify-center transition-all duration-300 ${
-                    isActive
-                      ? "bg-white/20"
-                      : "group-hover:scale-110"
+                    isActive ? "bg-white/20" : "group-hover:scale-110"
                   }`}
                   style={isActive ? {} : { backgroundColor: "#174f2e" }}
                 >

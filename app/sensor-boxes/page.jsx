@@ -24,11 +24,16 @@ export default function SensorBoxesPage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home
             </Link>
             <span className="text-green-300/40">/</span>
-            <span className="font-medium text-white">All-for-One Sensor Boxes</span>
+            <span className="font-medium text-white">
+              All-for-One Sensor Boxes
+            </span>
           </nav>
           <div className="grid grid-cols-12 min-h-[440px] items-center">
             <div className="col-span-12 md:col-span-7 pb-16 pt-4">
@@ -44,8 +49,9 @@ export default function SensorBoxesPage() {
                 <span className="text-green-300">within 3 minutes.</span>
               </h1>
               <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                Single Sensor Boxes contain all you need to build your own device within 3 minutes.
-                Build devices like a Barometer, Hygrometer, Luxmeter or a Motion Detector.
+                Single Sensor Boxes contain all you need to build your own
+                device within 3 minutes. Build devices like a Barometer,
+                Hygrometer, Luxmeter or a Motion Detector.
               </p>
             </div>
           </div>
@@ -61,35 +67,42 @@ export default function SensorBoxesPage() {
             What is a Sensor Box?
           </h2>
           <p className="text-body-color dark:text-green mb-4 text-base leading-relaxed max-w-4xl">
-            Each Single Sensor Box comes in an Acrylic Box, which includes a Triple-Adapter,
-            three stackable boards (S-M-A), a 3D-printed enclosure and a USB Type-C cable to
-            power it.
+            Each Single Sensor Box comes in an Acrylic Box, which includes a
+            Triple-Adapter, three stackable boards (S-M-A), a 3D-printed
+            enclosure and a USB Type-C cable to power it.
           </p>
           <p className="text-body-color dark:text-green mb-4 text-base leading-relaxed max-w-4xl">
-            The three slots with letters <strong className="text-black dark:text-white">S-M-A</strong> stand
+            The three slots with letters{" "}
+            <strong className="text-black dark:text-white">S-M-A</strong> stand
             for <strong className="text-black dark:text-white">Sensor</strong>,{" "}
-            <strong className="text-black dark:text-white">Microcontroller</strong> and{" "}
-            <strong className="text-black dark:text-white">Actuator</strong>, typically a display.
-            Besides the sensor, the core part is the C3-Mini microcontroller.
+            <strong className="text-black dark:text-white">
+              Microcontroller
+            </strong>{" "}
+            and <strong className="text-black dark:text-white">Actuator</strong>
+            , typically a display. Besides the sensor, the core part is the
+            C3-Mini microcontroller.
           </p>
           <p className="text-body-color dark:text-green mb-4 text-base leading-relaxed max-w-4xl">
-            The plastic casing, a 3D-printed enclosure, houses all the electronics. You can also
-            print yourself enclosures in your preferred color and customized style. Find our free
-            3D-models on Thingiverse.
+            The plastic casing, a 3D-printed enclosure, houses all the
+            electronics. You can also print yourself enclosures in your
+            preferred color and customized style. Find our free 3D-models on
+            Thingiverse.
           </p>
           <p className="text-body-color dark:text-green mb-4 text-base leading-relaxed max-w-4xl">
-            The Triple-Adapter makes it a breeze connecting the three boards — sensor,
-            microcontroller and actuator — and you can even build new combinations of S-M-A by
-            this base board, using the IoT Triple Selector of the Solution Builder.
+            The Triple-Adapter makes it a breeze connecting the three boards —
+            sensor, microcontroller and actuator — and you can even build new
+            combinations of S-M-A by this base board, using the IoT Triple
+            Selector of the Solution Builder.
           </p>
           <p className="text-body-color dark:text-green mb-4 text-base leading-relaxed max-w-4xl">
-            All Sensor Boxes contain an actuator (display, buzzer or LED) to make the sensor
-            measurements readable or to trigger acoustic or optical alarms.
+            All Sensor Boxes contain an actuator (display, buzzer or LED) to
+            make the sensor measurements readable or to trigger acoustic or
+            optical alarms.
           </p>
           <p className="text-body-color dark:text-green text-base leading-relaxed max-w-4xl">
-            The USB Type-C data cable finally allows to inject a certain software
-            (install-for-free from a browser window) and later on powering your built device at
-            any location, e.g. by a phone charger.
+            The USB Type-C data cable finally allows to inject a certain
+            software (install-for-free from a browser window) and later on
+            powering your built device at any location, e.g. by a phone charger.
           </p>
         </div>
       </section>
@@ -111,7 +124,9 @@ export default function SensorBoxesPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-black dark:text-white mb-2">Air-Quality-Meter</h3>
+                <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+                  Air-Quality-Meter
+                </h3>
                 <p className="text-body-color dark:text-green text-sm leading-relaxed">
                   Air Quality (VOCs, CO2 &amp; Humidity)
                 </p>
@@ -127,9 +142,12 @@ export default function SensorBoxesPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-black dark:text-white mb-2">Bio-Pulse Meter</h3>
+                <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+                  Bio-Pulse Meter
+                </h3>
                 <p className="text-body-color dark:text-green text-sm leading-relaxed">
-                  Monitor heart rate and biometric data with the C3-Mini™ powered pulse sensor.
+                  Monitor heart rate and biometric data with the C3-Mini™
+                  powered pulse sensor.
                 </p>
               </div>
             </div>
@@ -154,9 +172,12 @@ export default function SensorBoxesPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-black dark:text-white mb-2">Fridge Openings Counter</h3>
+                <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+                  Fridge Openings Counter
+                </h3>
                 <p className="text-body-color dark:text-green text-sm leading-relaxed">
-                  Track how many times your fridge is opened using a PIR motion sensor and OLED display.
+                  Track how many times your fridge is opened using a PIR motion
+                  sensor and OLED display.
                 </p>
               </div>
             </div>
@@ -181,18 +202,30 @@ export default function SensorBoxesPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-black dark:text-white mb-2">EnviroSense 680</h3>
+                <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+                  EnviroSense 680
+                </h3>
                 <p className="text-body-color dark:text-green text-sm leading-relaxed mb-4">
-                  Advanced Environmental Monitoring Solution — temperature, humidity, pressure,
-                  and air quality in one device.
+                  Advanced Environmental Monitoring Solution — temperature,
+                  humidity, pressure, and air quality in one device.
                 </p>
                 <Link
                   href="/envirosense-680"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-primary dark:text-green-400 hover:underline"
                 >
                   Click here to learn more on EnviroSence 680
-                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -221,8 +254,18 @@ export default function SensorBoxesPage() {
               style={{ backgroundColor: "#174f2e" }}
             >
               Install For Free
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
             <a
@@ -233,14 +276,23 @@ export default function SensorBoxesPage() {
               style={{ borderColor: "#174f2e" }}
             >
               Buy C3-Mini Parts
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
           </div>
         </div>
       </section>
-
     </main>
   );
 }

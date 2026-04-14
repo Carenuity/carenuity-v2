@@ -52,7 +52,8 @@ const devices = [
     title: "Thermometer",
     desc: "Measures temperature. It can feature a display for real-time temperature readings or a buzzer to notify when temperatures exceed or drop below set thresholds.",
     assembleUrl: "https://www.instagram.com/p/DMxD5ILtbvc/",
-    installUrl: "https://www.instagram.com/solutions.carenuity/reel/DNAkYVetFUD/",
+    installUrl:
+      "https://www.instagram.com/solutions.carenuity/reel/DNAkYVetFUD/",
     widgets: ["T8iq4WKgvGuCrREcLNzC", "NCKgNpqMMPWE68tBoNGW"],
   },
   {
@@ -92,15 +93,23 @@ export default function C3MiniBoxDevicesPage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm flex-wrap">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/selection-box" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/selection-box"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               C3-Mini Sensor Selection Box
             </Link>
             <span className="text-green-300/40">/</span>
-            <span className="font-medium text-white">C3-Mini Sensor Box Devices</span>
+            <span className="font-medium text-white">
+              C3-Mini Sensor Box Devices
+            </span>
           </nav>
           <div className="grid grid-cols-12 min-h-[360px] items-center">
             <div className="col-span-12 md:col-span-8 pb-16 pt-4">
@@ -116,7 +125,8 @@ export default function C3MiniBoxDevicesPage() {
                 <span className="text-green-300">Devices</span>
               </h1>
               <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                Get the box so that you can build all these C3-Mini Devices within 3 minutes.
+                Get the box so that you can build all these C3-Mini Devices
+                within 3 minutes.
               </p>
             </div>
           </div>
@@ -127,8 +137,8 @@ export default function C3MiniBoxDevicesPage() {
       <section className="bg-white dark:bg-gray-950 py-16">
         <div className="container">
           <p className="text-body-color dark:text-green mb-10 text-base leading-relaxed max-w-3xl">
-            Select your S-M-A Triple, grab the available parts from your drawer or go shopping
-            for getting more suited sensor boxes.
+            Select your S-M-A Triple, grab the available parts from your drawer
+            or go shopping for getting more suited sensor boxes.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 — SMA video */}
@@ -176,8 +186,9 @@ export default function C3MiniBoxDevicesPage() {
             Applications
           </h2>
           <p className="text-body-color dark:text-green mb-12 text-base max-w-3xl">
-            Stack one of the seven sensor boards onto the Triple-Adapter, place the C3-Mini
-            in the middle and add the display or buzzer on the right.
+            Stack one of the seven sensor boards onto the Triple-Adapter, place
+            the C3-Mini in the middle and add the display or buzzer on the
+            right.
           </p>
 
           <div className="flex flex-col gap-12">
@@ -198,8 +209,18 @@ export default function C3MiniBoxDevicesPage() {
                       className="inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-green-400 hover:underline"
                     >
                       See how to assemble
-                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      <svg
+                        className="w-3 h-3"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                     </a>
                   )}
@@ -211,8 +232,18 @@ export default function C3MiniBoxDevicesPage() {
                       className="inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-green-400 hover:underline"
                     >
                       How to install
-                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      <svg
+                        className="w-3 h-3"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                     </a>
                   )}
@@ -247,7 +278,6 @@ export default function C3MiniBoxDevicesPage() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }
