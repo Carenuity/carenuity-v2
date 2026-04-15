@@ -11,8 +11,18 @@ const ecosystemImages = [
 ];
 
 const ExternalIcon = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  <svg
+    className="w-4 h-4"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+    />
   </svg>
 );
 
@@ -40,7 +50,10 @@ export default function InstallForFreePage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               {t.breadcrumb.home}
             </Link>
             <span className="text-green-300/40">/</span>
@@ -72,7 +85,9 @@ export default function InstallForFreePage() {
         <div className="container">
           <h2 className="mb-4 text-3xl font-bold text-black dark:text-white md:text-4xl">
             {c.heroTitle1}{" "}
-            <span className="text-primary dark:text-green-400">{c.heroTitle2}</span>
+            <span className="text-primary dark:text-green-400">
+              {c.heroTitle2}
+            </span>
           </h2>
           <p className="text-body-color dark:text-green mb-10 text-base leading-relaxed max-w-3xl">
             {c.heroCta}
@@ -80,7 +95,10 @@ export default function InstallForFreePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 0 — Micro-controller image */}
             <div className="rounded-2xl overflow-hidden shadow-two flex flex-col">
-              <div className="relative w-full flex-1" style={{ minHeight: "220px" }}>
+              <div
+                className="relative w-full flex-1"
+                style={{ minHeight: "220px" }}
+              >
                 <Image
                   src="/images/install-for-free/micro-controler.webp"
                   alt="Microcontroller"
@@ -217,8 +235,18 @@ export default function InstallForFreePage() {
                       style={{ backgroundColor: "#174f2e" }}
                     >
                       {c.sensorLink}
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
                       </svg>
                     </Link>
                   </div>
@@ -255,8 +283,18 @@ export default function InstallForFreePage() {
                       className="inline-flex items-center gap-2 text-sm font-semibold text-primary dark:text-green-400 hover:underline"
                     >
                       {c.housingLink}
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      <svg
+                        className="w-3.5 h-3.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                     </a>
                   </div>
@@ -293,7 +331,11 @@ export default function InstallForFreePage() {
                       {letter}
                     </span>
                     <span className="text-xs font-semibold text-body-color dark:text-gray-400 uppercase tracking-wide">
-                      {letter === "S" ? "Sensor" : letter === "M" ? "Microcontroller" : "Actuator"}
+                      {letter === "S"
+                        ? "Sensor"
+                        : letter === "M"
+                          ? "Microcontroller"
+                          : "Actuator"}
                     </span>
                   </div>
                 ))}
@@ -310,7 +352,9 @@ export default function InstallForFreePage() {
             <h2 className="mb-3 text-3xl font-bold text-black dark:text-white md:text-4xl">
               {c.ecosystemTitle}
             </h2>
-            <p className="text-body-color dark:text-green text-base">{c.ecosystemDesc}</p>
+            <p className="text-body-color dark:text-green text-base">
+              {c.ecosystemDesc}
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {c.ecosystems.map((eco, i) => (
@@ -319,11 +363,20 @@ export default function InstallForFreePage() {
                 className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-two overflow-hidden flex flex-col hover:shadow-one hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="relative h-[160px] w-full">
-                  <Image src={ecosystemImages[i]} alt={eco.title} fill className="object-cover" />
+                  <Image
+                    src={ecosystemImages[i]}
+                    alt={eco.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-5 flex-1 flex flex-col">
-                  <h3 className="text-base font-bold text-black dark:text-white mb-2">{eco.title}</h3>
-                  <p className="text-body-color dark:text-gray-400 text-sm leading-relaxed flex-1">{eco.desc}</p>
+                  <h3 className="text-base font-bold text-black dark:text-white mb-2">
+                    {eco.title}
+                  </h3>
+                  <p className="text-body-color dark:text-gray-400 text-sm leading-relaxed flex-1">
+                    {eco.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -334,7 +387,10 @@ export default function InstallForFreePage() {
       {/* ── Stats ── */}
       <section
         className="py-16"
-        style={{ background: "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)" }}
+        style={{
+          background:
+            "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
+        }}
       >
         <div className="container">
           <p className="text-center text-white/80 text-lg mb-10 max-w-2xl mx-auto">
@@ -346,8 +402,12 @@ export default function InstallForFreePage() {
                 key={i}
                 className="rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-center"
               >
-                <span className="block text-4xl font-black text-green-300 mb-1">{stat.value}</span>
-                <span className="text-sm font-semibold text-white/80 uppercase tracking-wide">{stat.label}</span>
+                <span className="block text-4xl font-black text-green-300 mb-1">
+                  {stat.value}
+                </span>
+                <span className="text-sm font-semibold text-white/80 uppercase tracking-wide">
+                  {stat.label}
+                </span>
               </div>
             ))}
           </div>
@@ -372,7 +432,9 @@ export default function InstallForFreePage() {
 
           {/* WEEE heading — 12-col */}
           <div className="col-span-12 mb-6">
-            <h3 className="text-2xl font-bold text-black dark:text-white">{c.weeeTitle}</h3>
+            <h3 className="text-2xl font-bold text-black dark:text-white">
+              {c.weeeTitle}
+            </h3>
           </div>
 
           {/* WEEE content 8-col + QR 4-col */}
@@ -384,11 +446,17 @@ export default function InstallForFreePage() {
                     className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
                     style={{ backgroundColor: "#174f2e" }}
                   >
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 16 13">
+                    <svg
+                      className="w-3 h-3 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 16 13"
+                    >
                       <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
                     </svg>
                   </span>
-                  <p className="text-body-color dark:text-green text-sm leading-relaxed">{desc}</p>
+                  <p className="text-body-color dark:text-green text-sm leading-relaxed">
+                    {desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -410,10 +478,16 @@ export default function InstallForFreePage() {
               <div className="rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 space-y-2 text-sm mb-6">
                 <p className="text-black dark:text-white font-semibold">
                   {c.weeeNumber}{" "}
-                  <span className="font-normal text-body-color dark:text-green">DE 53301452</span>
+                  <span className="font-normal text-body-color dark:text-green">
+                    DE 53301452
+                  </span>
                 </p>
-                <p className="text-body-color dark:text-green">{c.weeeCompany}</p>
-                <p className="text-body-color dark:text-green">{c.weeeContact}</p>
+                <p className="text-body-color dark:text-green">
+                  {c.weeeCompany}
+                </p>
+                <p className="text-body-color dark:text-green">
+                  {c.weeeContact}
+                </p>
               </div>
               <p className="text-body-color dark:text-green text-sm leading-relaxed italic max-w-4xl">
                 {c.greenClose}
@@ -450,8 +524,18 @@ export default function InstallForFreePage() {
               style={{ borderColor: "#174f2e" }}
             >
               {t.sensorBoxes?.badge ?? "Sensor Boxes"}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </div>

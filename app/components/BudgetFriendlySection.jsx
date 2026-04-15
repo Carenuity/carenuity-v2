@@ -80,7 +80,9 @@ export default function BudgetFriendlySection({ activeHref }) {
                 </h3>
                 <p
                   className={`text-sm leading-relaxed mb-3 ${
-                    isActive ? "text-white/80" : "text-body-color dark:text-green"
+                    isActive
+                      ? "text-white/80"
+                      : "text-body-color dark:text-green"
                   }`}
                 >
                   {item.desc}

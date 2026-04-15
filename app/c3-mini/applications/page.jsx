@@ -44,11 +44,17 @@ export default function C3MiniApplicationsPage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               {t.breadcrumb.home}
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/c3-mini" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/c3-mini"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               C3-Mini
             </Link>
             <span className="text-green-300/40">/</span>
@@ -76,7 +82,7 @@ export default function C3MiniApplicationsPage() {
                     </span>
                   ) : (
                     part
-                  )
+                  ),
                 )}
               </p>
             </div>
@@ -113,7 +119,10 @@ export default function C3MiniApplicationsPage() {
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget solutionId="mKjGP6fwSk1SotR7VjmK" title="GPIO Viewer" />
+          <SolutionWidget
+            solutionId="mKjGP6fwSk1SotR7VjmK"
+            title="GPIO Viewer"
+          />
           <SolutionWidget solutionId="pDNf45XWUJcTJcMBGM4z" title="WLED" />
         </div>
       </section>
@@ -151,8 +160,14 @@ export default function C3MiniApplicationsPage() {
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget solutionId="33ShEVCKo7u5L24bznXc" title="YouTube Meter" />
-          <SolutionWidget solutionId="9SlDg2KjWjK8UDr51Bpj" title="WiFi Signal Strength" />
+          <SolutionWidget
+            solutionId="33ShEVCKo7u5L24bznXc"
+            title="YouTube Meter"
+          />
+          <SolutionWidget
+            solutionId="9SlDg2KjWjK8UDr51Bpj"
+            title="WiFi Signal Strength"
+          />
         </div>
       </section>
 
@@ -167,14 +182,32 @@ export default function C3MiniApplicationsPage() {
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget solutionId="eieQlkAmwh1LUePfYXmW" title="Air Quality" />
-          <SolutionWidget solutionId="nzeAXNAV3LOeRA2avVDM" title="BMP180 Barometer" />
+          <SolutionWidget
+            solutionId="eieQlkAmwh1LUePfYXmW"
+            title="Air Quality"
+          />
+          <SolutionWidget
+            solutionId="nzeAXNAV3LOeRA2avVDM"
+            title="BMP180 Barometer"
+          />
           <SolutionWidget solutionId="QucQ05EfksGSmSeHVHZY" title="Bio-Pulse" />
-          <SolutionWidget solutionId="EVfcgU5gUOrAKLN3Ik0Y" title="EnviroSense" />
-          <SolutionWidget solutionId="hOKYr6kDq4FQmG3oamNe" title="Home Challenge" />
-          <SolutionWidget solutionId="wcs3mCGrCzP5BnAHjjIH" title="SHT30 Hygrometer" />
+          <SolutionWidget
+            solutionId="EVfcgU5gUOrAKLN3Ik0Y"
+            title="EnviroSense"
+          />
+          <SolutionWidget
+            solutionId="hOKYr6kDq4FQmG3oamNe"
+            title="Home Challenge"
+          />
+          <SolutionWidget
+            solutionId="wcs3mCGrCzP5BnAHjjIH"
+            title="SHT30 Hygrometer"
+          />
           <SolutionWidget solutionId="HgZnhYqfUiktMbMPin16" title="DHT22" />
-          <SolutionWidget solutionId="KiKMCrAtAioE0f3vcQ3Q" title="Hygrometer" />
+          <SolutionWidget
+            solutionId="KiKMCrAtAioE0f3vcQ3Q"
+            title="Hygrometer"
+          />
         </div>
       </section>
 
@@ -185,8 +218,18 @@ export default function C3MiniApplicationsPage() {
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white font-semibold text-sm shadow-btn transition-all duration-300 hover:opacity-90"
             style={{ backgroundColor: "#174f2e" }}
           >
-            <svg className="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-4 h-4 rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
             {c.backBtn}
           </Link>
