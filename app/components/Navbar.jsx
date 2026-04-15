@@ -437,6 +437,17 @@ export default function Navbar() {
             >
               {t.nav.resources}
             </Link>
+            <Link
+              href="/install-for-free"
+              className={`text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 ${
+                pathname === "/install-for-free"
+                  ? "text-white"
+                  : "text-white hover:opacity-90"
+              }`}
+              style={{ backgroundColor: "#174f2e" }}
+            >
+              {t.nav.install}
+            </Link>
           </nav>
 
           {/* Right side actions */}
@@ -659,6 +670,20 @@ export default function Navbar() {
                   }`}
                 >
                   {t.nav.resources}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/install-for-free"
+                  onClick={() => setOpen(false)}
+                  className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
+                    pathname === "/install-for-free"
+                      ? "text-white"
+                      : "text-white"
+                  }`}
+                  style={{ backgroundColor: "#174f2e" }}
+                >
+                  {t.nav.install}
                 </Link>
               </li>
             </ul>

@@ -1,73 +1,52 @@
 "use client";
 import Link from "next/link";
+import { useLanguage } from "../context/LanguageContext";
 
-const cards = [
-  {
-    href: "/c3-mini",
-    icon: (
-      <>
-        <polyline points="16 18 22 12 16 6" />
-        <polyline points="8 6 2 12 8 18" />
-      </>
-    ),
-    title: "C3-Mini™ Applications",
-    desc: "GPIO projects, WLED lighting, custom hardware builds and more.",
-  },
-  {
-    href: "/ai-assisted",
-    icon: (
-      <>
-        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04Z" />
-        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04Z" />
-      </>
-    ),
-    title: "AI Assisted Solutions",
-    desc: "Camera vision, radar sensing, and autonomous smart systems.",
-  },
-  {
-    href: "/sensor-boxes",
-    icon: (
-      <>
-        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-        <path d="m3.3 7 8.7 5 8.7-5" />
-        <path d="M12 22V12" />
-      </>
-    ),
-    title: "All-for-One Sensor Boxes",
-    desc: "Pre-assembled ready-to-use sensor boxes — plug in and measure.",
-  },
-  {
-    href: "/selection-box",
-    icon: (
-      <>
-        <rect x="3" y="3" width="7" height="7" />
-        <rect x="14" y="3" width="7" height="7" />
-        <rect x="3" y="14" width="7" height="7" />
-        <rect x="14" y="14" width="7" height="7" />
-      </>
-    ),
-    title: "C3-Mini™ Sensor Selection Box",
-    desc: "A curated starter kit with a variety of compatible sensors.",
-  },
+const icons = [
+  <>
+    <polyline points="16 18 22 12 16 6" />
+    <polyline points="8 6 2 12 8 18" />
+  </>,
+  <>
+    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04Z" />
+    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04Z" />
+  </>,
+  <>
+    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+    <path d="m3.3 7 8.7 5 8.7-5" />
+    <path d="M12 22V12" />
+  </>,
+  <>
+    <rect x="3" y="3" width="7" height="7" />
+    <rect x="14" y="3" width="7" height="7" />
+    <rect x="3" y="14" width="7" height="7" />
+    <rect x="14" y="14" width="7" height="7" />
+  </>,
 ];
 
+const hrefs = ["/c3-mini", "/ai-assisted", "/sensor-boxes", "/selection-box"];
+
 export default function BudgetFriendlySection({ activeHref }) {
+  const { t } = useLanguage();
+  const bf = t.budgetFriendly;
+
   return (
     <section className="bg-green-bg dark:bg-gray-900 py-16 lg:py-24">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-black dark:text-white leading-tight">
-            Budget Friendly Not Only For Students
+            {bf.title}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((item) => {
-            const isActive = item.href === activeHref;
+          {bf.cards.map((item, idx) => {
+            const href = hrefs[idx];
+            const isActive = href === activeHref;
             return (
               <Link
-                key={item.href}
-                href={item.href}
+                key={href}
+                href={href}
                 className={`group flex flex-col rounded-2xl p-6 shadow-two transition-all duration-300 ${
                   isActive
                     ? "bg-primary cursor-default"
@@ -87,7 +66,7 @@ export default function BudgetFriendlySection({ activeHref }) {
                     stroke="currentColor"
                     strokeWidth={1.5}
                   >
-                    {item.icon}
+                    {icons[idx]}
                   </svg>
                 </div>
                 <h3
@@ -99,14 +78,21 @@ export default function BudgetFriendlySection({ activeHref }) {
                 >
                   {item.title}
                 </h3>
+                <p
+                  className={`text-sm leading-relaxed mb-3 ${
+                    isActive ? "text-white/80" : "text-body-color dark:text-green"
+                  }`}
+                >
+                  {item.desc}
+                </p>
                 <div
-                  className={`mt-4 flex items-center gap-1 text-xs font-semibold ${
+                  className={`mt-auto flex items-center gap-1 text-xs font-semibold ${
                     isActive
                       ? "text-white/70"
                       : "text-primary dark:text-green-400"
                   }`}
                 >
-                  {isActive ? "Current page" : "Explore"}
+                  {isActive ? bf.currentPage : bf.explore}
                   {!isActive && (
                     <svg
                       className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"

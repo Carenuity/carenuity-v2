@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useLanguage } from "../../context/LanguageContext";
 
 const SolutionWidget = ({ solutionId, title }) => {
   const baseUrl = "https://solutions.carenuity.com/widgets/solutions/";
@@ -20,6 +21,9 @@ const SolutionWidget = ({ solutionId, title }) => {
 };
 
 export default function C3MiniApplicationsPage() {
+  const { t } = useLanguage();
+  const c = t.c3miniApps;
+
   return (
     <main>
       {/* Hero */}
@@ -40,83 +44,76 @@ export default function C3MiniApplicationsPage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link
-              href="/"
-              className="text-green-300/70 transition-colors hover:text-green-300"
-            >
-              Home
+            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+              {t.breadcrumb.home}
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link
-              href="/c3-mini"
-              className="text-green-300/70 transition-colors hover:text-green-300"
-            >
+            <Link href="/c3-mini" className="text-green-300/70 transition-colors hover:text-green-300">
               C3-Mini
             </Link>
             <span className="text-green-300/40">/</span>
-            <span className="font-medium text-white">Applications</span>
+            <span className="font-medium text-white">{c.badge}</span>
           </nav>
           <div className="grid grid-cols-12 min-h-[360px] items-center">
             <div className="col-span-12 md:col-span-8 pb-16 pt-4">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
                 <span className="w-2 h-2 rounded-full bg-green-300 animate-pulse" />
                 <span className="text-xs font-semibold text-white tracking-wide uppercase">
-                  C3-Mini™ Applications
+                  {c.badge}
                 </span>
               </div>
               <h1 className="mb-5 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-                Build your own device
+                {c.heroTitle1}
                 <br />
-                <span className="text-green-300">within seconds</span>
+                <span className="text-green-300">{c.heroTitle2}</span>
               </h1>
               <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                The C3-Mini™ supports install-for-free applications for{" "}
-                <strong className="text-white">CloudFree</strong>,{" "}
-                <strong className="text-white">Home Assistant</strong>,{" "}
-                <strong className="text-white">IoT AppStore</strong> and{" "}
-                <strong className="text-white">Matter/ESPZero</strong>.
+                {c.heroSub.split("CloudFree").map((part, i, arr) =>
+                  i < arr.length - 1 ? (
+                    <span key={i}>
+                      {part}
+                      <strong className="text-white">CloudFree</strong>
+                    </span>
+                  ) : (
+                    part
+                  )
+                )}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Standalone — no Display or Sensor ── */}
+      {/* ── Standalone ── */}
       <section className="bg-white dark:bg-gray-950 py-16">
         <div className="container mb-8">
           <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-3xl">
-            Applications for the plain C3-Mini™ &mdash; no Display or Sensor
-            required
+            {c.section1Title}
           </h2>
           <p className="text-body-color dark:text-green text-base leading-relaxed max-w-3xl">
-            Grab your plain C3-Mini and build your own device within 3 minutes,
-            by installing the popular{" "}
+            {c.section1Pre}
             <a
               href="https://chipglobe-dev.web.app/cloudfree/WLED/C3-Mini"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-primary dark:text-green-400 hover:underline"
             >
-              WLED-Application
+              {c.section1WledLink}
             </a>
-            , the helpful{" "}
+            {c.section1Mid}
             <a
               href="https://chipglobe-dev.web.app/cloudfree/GPIO/C3-Mini"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-primary dark:text-green-400 hover:underline"
             >
-              GPIO-Viewer
-            </a>{" "}
-            or a plain &ldquo;empty&rdquo; ESPHome device for Home Assistant
-            with no special features built-in. Ready to make it your own.
+              {c.section1GpioLink}
+            </a>
+            {c.section1Post}
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget
-            solutionId="mKjGP6fwSk1SotR7VjmK"
-            title="GPIO Viewer"
-          />
+          <SolutionWidget solutionId="mKjGP6fwSk1SotR7VjmK" title="GPIO Viewer" />
           <SolutionWidget solutionId="pDNf45XWUJcTJcMBGM4z" title="WLED" />
         </div>
       </section>
@@ -125,11 +122,10 @@ export default function C3MiniApplicationsPage() {
       <section className="bg-green-bg dark:bg-gray-900 py-16">
         <div className="container mb-8">
           <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-3xl">
-            Applications for the C3-Mini™ with Display
+            {c.section2Title}
           </h2>
           <p className="text-body-color dark:text-green text-base leading-relaxed max-w-3xl">
-            Grab your C3-Mini and build your own device within 3 minutes, by
-            attaching a display{" "}
+            {c.section2Pre}
             <strong>
               [
               <a
@@ -138,32 +134,25 @@ export default function C3MiniApplicationsPage() {
                 rel="noopener noreferrer"
                 className="text-primary dark:text-green-400 hover:underline"
               >
-                buy here
+                {c.section2BuyHere}
               </a>
               ]
-            </strong>{" "}
-            to enable applications like a WiFi Signal Strength Meter, a
-            Weather-Station or a{" "}
+            </strong>
+            {c.section2Mid}
             <a
               href="https://chipglobe-dev.web.app/cloudfree/YOUTUBE-METEER/C3-Mini"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-primary dark:text-green-400 hover:underline"
             >
-              YouTube-Counter
-            </a>{" "}
-            for Followers and Likes.
+              {c.section2YtLink}
+            </a>
+            {c.section2Post}
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget
-            solutionId="33ShEVCKo7u5L24bznXc"
-            title="YouTube Meter"
-          />
-          <SolutionWidget
-            solutionId="9SlDg2KjWjK8UDr51Bpj"
-            title="WiFi Signal Strength"
-          />
+          <SolutionWidget solutionId="33ShEVCKo7u5L24bznXc" title="YouTube Meter" />
+          <SolutionWidget solutionId="9SlDg2KjWjK8UDr51Bpj" title="WiFi Signal Strength" />
         </div>
       </section>
 
@@ -171,41 +160,21 @@ export default function C3MiniApplicationsPage() {
       <section className="bg-white dark:bg-gray-950 py-16">
         <div className="container mb-8">
           <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-3xl">
-            Applications for the C3-Mini™ with Sensor &amp; Display
+            {c.section3Title}
           </h2>
           <p className="text-body-color dark:text-green text-base leading-relaxed max-w-3xl">
-            Grab your C3-Mini and build your own device within 3 minutes, by
-            free-installing various sensor applications like a Barometer,
-            Hygrometer, Luxmeter or Motion Detector.
+            {c.section3Desc}
           </p>
         </div>
         <div className="container flex flex-col gap-6">
-          <SolutionWidget
-            solutionId="eieQlkAmwh1LUePfYXmW"
-            title="Air Quality"
-          />
-          <SolutionWidget
-            solutionId="nzeAXNAV3LOeRA2avVDM"
-            title="BMP180 Barometer"
-          />
+          <SolutionWidget solutionId="eieQlkAmwh1LUePfYXmW" title="Air Quality" />
+          <SolutionWidget solutionId="nzeAXNAV3LOeRA2avVDM" title="BMP180 Barometer" />
           <SolutionWidget solutionId="QucQ05EfksGSmSeHVHZY" title="Bio-Pulse" />
-          <SolutionWidget
-            solutionId="EVfcgU5gUOrAKLN3Ik0Y"
-            title="EnviroSense"
-          />
-          <SolutionWidget
-            solutionId="hOKYr6kDq4FQmG3oamNe"
-            title="Home Challenge"
-          />
-          <SolutionWidget
-            solutionId="wcs3mCGrCzP5BnAHjjIH"
-            title="SHT30 Hygrometer"
-          />
+          <SolutionWidget solutionId="EVfcgU5gUOrAKLN3Ik0Y" title="EnviroSense" />
+          <SolutionWidget solutionId="hOKYr6kDq4FQmG3oamNe" title="Home Challenge" />
+          <SolutionWidget solutionId="wcs3mCGrCzP5BnAHjjIH" title="SHT30 Hygrometer" />
           <SolutionWidget solutionId="HgZnhYqfUiktMbMPin16" title="DHT22" />
-          <SolutionWidget
-            solutionId="KiKMCrAtAioE0f3vcQ3Q"
-            title="Hygrometer"
-          />
+          <SolutionWidget solutionId="KiKMCrAtAioE0f3vcQ3Q" title="Hygrometer" />
         </div>
       </section>
 
@@ -216,20 +185,10 @@ export default function C3MiniApplicationsPage() {
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white font-semibold text-sm shadow-btn transition-all duration-300 hover:opacity-90"
             style={{ backgroundColor: "#174f2e" }}
           >
-            <svg
-              className="w-4 h-4 rotate-180"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+            <svg className="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-            Back to C3-Mini Overview
+            {c.backBtn}
           </Link>
         </div>
       </section>
