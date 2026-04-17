@@ -432,7 +432,7 @@ export default function Navbar() {
 
               {productOpen && (
                 <div
-                  className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50"
+                  className="absolute top-full left-0 w-[900px] bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50"
                   onMouseEnter={() => setProductOpen(true)}
                   onMouseLeave={() => setProductOpen(false)}
                 >
