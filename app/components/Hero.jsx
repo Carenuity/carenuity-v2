@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
@@ -38,8 +39,8 @@ export default function Hero() {
                 {t.hero.sub1} {t.hero.sub2}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="/sq-system"
+                <Link
+                  href="/install-for-free"
                   className="px-8 py-3 rounded-full font-bold text-white text-sm shadow-lg transition-all duration-300 hover:scale-105"
                   style={{
                     backgroundColor: "#174f2e",
@@ -47,13 +48,13 @@ export default function Hero() {
                   }}
                 >
                   {t.nav.install}
-                </a>
-                <a
-                  href="#features"
+                </Link>
+                <Link
+                  href="/sq-system"
                   className="px-8 py-3 rounded-full font-bold text-white text-sm border-2 border-white/40 backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
                 >
                   {t.home.exploreSystem}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

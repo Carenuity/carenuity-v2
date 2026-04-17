@@ -131,7 +131,7 @@ const col2 = {
     },
     {
       label: "Solution Builder",
-      href: null,
+      href: "https://solutions.carenuity.com/",
       icon: (
         <svg
           width="20"
@@ -150,7 +150,7 @@ const col2 = {
     },
     {
       label: "WebShop",
-      href: null,
+      href: "https://www.chipglobe.shop/en",
       icon: (
         <svg
           width="20"
@@ -284,6 +284,20 @@ function DropdownCol({ col, onClose }) {
         {col.items.map((item) => (
           <li key={item.label}>
             {item.href ? (
+              item.href.startsWith("http") ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={onClose}
+                  className="flex items-center gap-3 text-sm font-semibold text-[#0d2137] dark:text-gray-200 hover:text-primary dark:hover:text-green-400 transition-colors group"
+                >
+                  <span className="text-[#0d2137] dark:text-gray-300 group-hover:text-primary dark:group-hover:text-green-400 transition-colors shrink-0">
+                    {item.icon}
+                  </span>
+                  {item.label}
+                </a>
+              ) : (
               <Link
                 href={item.href}
                 onClick={onClose}
@@ -294,6 +308,7 @@ function DropdownCol({ col, onClose }) {
                 </span>
                 {item.label}
               </Link>
+              )
             ) : (
               <span className="flex items-center gap-3 text-sm font-semibold text-gray-400 dark:text-gray-500 cursor-default">
                 <span className="text-gray-400 dark:text-gray-500 shrink-0">
@@ -309,14 +324,25 @@ function DropdownCol({ col, onClose }) {
   );
 }
 
+const resourcesItems = [
+  { labelKey: "helpCenter", href: "/help-center" },
+  { labelKey: "programs", href: "/programs" },
+  { labelKey: "blogs", href: "/blog" },
+  { labelKey: "team", href: "/team" },
+  { labelKey: "contact", href: "/contact" },
+];
+
 export default function Navbar() {
   const { dark, setDark } = useTheme();
   const { lang, setLang, t } = useLanguage();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
+  const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const resourcesRef = useRef(null);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -329,6 +355,9 @@ export default function Navbar() {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setProductOpen(false);
       }
+      if (resourcesRef.current && !resourcesRef.current.contains(e.target)) {
+        setResourcesOpen(false);
+      }
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -336,7 +365,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm dark:bg-gray-dark dark:border-gray-800 transition-all duration-300">
-      <div className="container">
+      <div className="container" style={{ paddingInline: "3rem" }}>
         <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="shrink-0 flex items-center">
@@ -372,9 +401,13 @@ export default function Navbar() {
             </Link>
 
             {/* Product mega dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            <div
+              className="relative"
+              ref={dropdownRef}
+              onMouseEnter={() => setProductOpen(true)}
+              onMouseLeave={() => setProductOpen(false)}
+            >
               <button
-                onClick={() => setProductOpen(!productOpen)}
                 className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
                   pathname.startsWith("/sq-system")
                     ? "text-primary"
@@ -418,25 +451,59 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/about"
+              href="/benefits"
               className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                pathname === "/about"
+                pathname === "/benefits"
                   ? "text-primary"
                   : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
               }`}
             >
               {t.nav.benefits}
             </Link>
-            <Link
-              href="/blog"
-              className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                pathname === "/blog"
-                  ? "text-primary"
-                  : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-              }`}
+            {/* Resources dropdown */}
+            <div
+              className="relative"
+              ref={resourcesRef}
+              onMouseEnter={() => setResourcesOpen(true)}
+              onMouseLeave={() => setResourcesOpen(false)}
             >
-              {t.nav.resources}
-            </Link>
+              <button
+                className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                  ["/blog", "/about", "/contact", "/team", "/help-center", "/programs"].includes(pathname)
+                    ? "text-primary"
+                    : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                }`}
+              >
+                {t.nav.resources}
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {resourcesOpen && (
+                <div className="absolute top-full left-0 mt-3 w-56 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 py-2 z-50">
+                  {resourcesItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setResourcesOpen(false)}
+                      className={`flex items-center gap-3 px-5 py-2.5 text-sm font-semibold transition-colors ${
+                        pathname === item.href
+                          ? "text-primary dark:text-green-400"
+                          : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                      }`}
+                    >
+                      {t.nav[item.labelKey] ?? item.labelKey}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Link
               href="/install-for-free"
               className={`text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 ${
@@ -648,10 +715,10 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/benefits"
                   onClick={() => setOpen(false)}
                   className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
-                    pathname === "/about"
+                    pathname === "/benefits"
                       ? "bg-primary/10 text-primary"
                       : "text-gray-700 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800"
                   }`}
@@ -660,17 +727,35 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/blog"
-                  onClick={() => setOpen(false)}
-                  className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
-                    pathname === "/blog"
-                      ? "bg-primary/10 text-primary"
-                      : "text-gray-700 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800"
-                  }`}
+                <button
+                  onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800"
                 >
                   {t.nav.resources}
-                </Link>
+                  <svg
+                    className={`w-4 h-4 transition-transform ${mobileResourcesOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {mobileResourcesOpen && (
+                  <ul className="ml-4 mt-1 space-y-1">
+                    {resourcesItems.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => { setOpen(false); setMobileResourcesOpen(false); }}
+                          className="block px-4 py-2 rounded-xl text-xs font-semibold text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+                        >
+                          {t.nav[item.labelKey] ?? item.labelKey}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
               <li>
                 <Link

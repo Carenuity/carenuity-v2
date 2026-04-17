@@ -92,21 +92,7 @@ export default function InstallForFreePage() {
           <p className="text-body-color dark:text-green mb-10 text-base leading-relaxed max-w-3xl">
             {c.heroCta}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 0 — Micro-controller image */}
-            <div className="rounded-2xl overflow-hidden shadow-two flex flex-col">
-              <div
-                className="relative w-full flex-1"
-                style={{ minHeight: "220px" }}
-              >
-                <Image
-                  src="/images/install-for-free/micro-controler.webp"
-                  alt="Microcontroller"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 — SMA video */}
             <div className="rounded-2xl overflow-hidden shadow-two bg-black flex flex-col">
               <video
@@ -318,27 +304,39 @@ export default function InstallForFreePage() {
               </p>
             </div>
             <div className="col-span-12">
-              <div className="flex gap-4 max-w-sm">
-                {["S", "M", "A"].map((letter) => (
-                  <div
-                    key={letter}
-                    className="flex-1 rounded-xl p-5 text-center shadow-two bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800"
-                  >
-                    <span
-                      className="block text-4xl font-black mb-2"
-                      style={{ color: "#174f2e" }}
+              <div className="grid grid-cols-12 gap-6 items-center">
+                <div className="col-span-12 lg:col-span-6 flex gap-4">
+                  {["S", "M", "A"].map((letter) => (
+                    <div
+                      key={letter}
+                      className="flex-1 rounded-xl p-5 text-center shadow-two bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800"
                     >
-                      {letter}
-                    </span>
-                    <span className="text-xs font-semibold text-body-color dark:text-gray-400 uppercase tracking-wide">
-                      {letter === "S"
-                        ? "Sensor"
-                        : letter === "M"
-                          ? "Microcontroller"
-                          : "Actuator"}
-                    </span>
+                      <span
+                        className="block text-4xl font-black mb-2"
+                        style={{ color: "#174f2e" }}
+                      >
+                        {letter}
+                      </span>
+                      <span className="text-xs font-semibold text-body-color dark:text-gray-400 uppercase tracking-wide">
+                        {letter === "S"
+                          ? "Sensor"
+                          : letter === "M"
+                            ? "Microcontroller"
+                            : "Actuator"}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <div className="col-span-12 lg:col-span-6">
+                  <div className="relative h-[200px] w-full rounded-2xl overflow-hidden shadow-two">
+                    <Image
+                      src="/images/install-for-free/micro-controler.webp"
+                      alt="Microcontroller"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </div>
