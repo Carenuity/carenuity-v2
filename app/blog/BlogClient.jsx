@@ -4,16 +4,16 @@ import Breadcrumb from "../components/Breadcrumb";
 import { useLanguage } from "../context/LanguageContext";
 
 const blogImages = [
-  "/images/blog/blog1.webp",       // BGT60LTR11 Radar
-  "/images/blog/sq-panel.webp",    // SQ Panel
-  "/images/blog/yaml.webp",        // YAML File
-  "/images/blog/google.webp",      // Google Sheets
-  "/images/blog/sensor.webp",      // Sensor Data
+  "/images/blog/blog1.webp", // BGT60LTR11 Radar
+  "/images/blog/sq-panel.webp", // SQ Panel
+  "/images/blog/yaml.webp", // YAML File
+  "/images/blog/google.webp", // Google Sheets
+  "/images/blog/sensor.webp", // Sensor Data
   "/images/blog/revolutionizing.webp", // Revolutionizing Home Living
-  "/images/blog/automating1.jpg",  // Automating Lights
-  "/images/blog/detecting.webp",   // Object Detection
-  "/images/blog/cam.webp",         // ESP32-CAM
-  "/images/blog/welcome.webp",     // Welcome
+  "/images/blog/automating1.jpg", // Automating Lights
+  "/images/blog/detecting.webp", // Object Detection
+  "/images/blog/cam.webp", // ESP32-CAM
+  "/images/blog/welcome.webp", // Welcome
 ];
 
 export default function BlogClient() {
@@ -101,7 +101,13 @@ export default function BlogClient() {
                   </div>
 
                   <h3 className="text-lg font-bold text-black dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
-                    <a href={post.href} target="_blank" rel="noopener noreferrer">{post.title}</a>
+                    <a
+                      href={post.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {post.title}
+                    </a>
                   </h3>
                   <p className="text-body-color dark:text-green text-sm leading-relaxed flex-1 mb-5">
                     {post.excerpt}
@@ -136,7 +142,6 @@ export default function BlogClient() {
               </article>
             ))}
           </div>
-
         </div>
       </section>
     </main>

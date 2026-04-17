@@ -342,8 +342,10 @@ export const translations = {
       posts: [
         {
           id: 1,
-          title: "Using the BGT60LTR11 Radar Shield2Go with ESP32 for AI Applications",
-          excerpt: "This guide will walk you through its features, setup, and integration with an ESP32 microcontroller, providing a solid foundation for AI development.",
+          title:
+            "Using the BGT60LTR11 Radar Shield2Go with ESP32 for AI Applications",
+          excerpt:
+            "This guide will walk you through its features, setup, and integration with an ESP32 microcontroller, providing a solid foundation for AI development.",
           tag: "AI & IoT",
           date: "2024",
           readTime: "6 min read",
@@ -352,7 +354,8 @@ export const translations = {
         {
           id: 2,
           title: "Introducing the SQ Panel: Your Smart Home's New Best Friend",
-          excerpt: "Are you ready to take your home monitoring to the next level? Chipglobe is excited to announce our latest innovation: the SQ Panel.",
+          excerpt:
+            "Are you ready to take your home monitoring to the next level? Chipglobe is excited to announce our latest innovation: the SQ Panel.",
           tag: "Product",
           date: "2024",
           readTime: "4 min read",
@@ -361,7 +364,8 @@ export const translations = {
         {
           id: 3,
           title: "Creating Your First YAML File in Home Assistant",
-          excerpt: "A beginner-friendly guide to writing and managing YAML configuration files in Home Assistant for smarter home automation.",
+          excerpt:
+            "A beginner-friendly guide to writing and managing YAML configuration files in Home Assistant for smarter home automation.",
           tag: "Home Assistant",
           date: "2024",
           readTime: "5 min read",
@@ -369,8 +373,10 @@ export const translations = {
         },
         {
           id: 4,
-          title: "Utilizing Google Sheets in Home Assistant: A Comprehensive Guide",
-          excerpt: "Greetings, tech enthusiasts! Today, we're delving into the intricacies of incorporating Google Sheets into your Home Assistant setup.",
+          title:
+            "Utilizing Google Sheets in Home Assistant: A Comprehensive Guide",
+          excerpt:
+            "Greetings, tech enthusiasts! Today, we're delving into the intricacies of incorporating Google Sheets into your Home Assistant setup.",
           tag: "Integration",
           date: "2024",
           readTime: "7 min read",
@@ -379,7 +385,8 @@ export const translations = {
         {
           id: 5,
           title: "Sensor Data Optimization for Enhanced AI Performance",
-          excerpt: "Learn how to clean, normalize, and structure sensor data from Carenuity devices to maximize the accuracy of AI models and real-time inference.",
+          excerpt:
+            "Learn how to clean, normalize, and structure sensor data from Carenuity devices to maximize the accuracy of AI models and real-time inference.",
           tag: "AI",
           date: "2024",
           readTime: "5 min read",
@@ -387,8 +394,10 @@ export const translations = {
         },
         {
           id: 6,
-          title: "Revolutionizing Home Living: The Synergy of Home Automation and Embedded AI",
-          excerpt: "Explore how combining smart home automation with embedded AI creates smarter, more responsive living environments that adapt to your needs.",
+          title:
+            "Revolutionizing Home Living: The Synergy of Home Automation and Embedded AI",
+          excerpt:
+            "Explore how combining smart home automation with embedded AI creates smarter, more responsive living environments that adapt to your needs.",
           tag: "Innovation",
           date: "2024",
           readTime: "6 min read",
@@ -396,8 +405,10 @@ export const translations = {
         },
         {
           id: 7,
-          title: "Beginner's Guide: Automating Lights with HLK-LD2410 and Home Assistant",
-          excerpt: "Step-by-step instructions for setting up presence-based light automation using the HLK-LD2410 radar sensor with Home Assistant.",
+          title:
+            "Beginner's Guide: Automating Lights with HLK-LD2410 and Home Assistant",
+          excerpt:
+            "Step-by-step instructions for setting up presence-based light automation using the HLK-LD2410 radar sensor with Home Assistant.",
           tag: "Tutorial",
           date: "2024",
           readTime: "5 min read",
@@ -405,8 +416,10 @@ export const translations = {
         },
         {
           id: 8,
-          title: "Detecting the Future: Exploring the Exciting Applications of Object Detection",
-          excerpt: "From security cameras to smart retail, discover how object detection technology is transforming industries and everyday life.",
+          title:
+            "Detecting the Future: Exploring the Exciting Applications of Object Detection",
+          excerpt:
+            "From security cameras to smart retail, discover how object detection technology is transforming industries and everyday life.",
           tag: "Computer Vision",
           date: "2024",
           readTime: "6 min read",
@@ -414,8 +427,10 @@ export const translations = {
         },
         {
           id: 9,
-          title: "Turning Your ESP32-CAM into a Smart Object Detector with Edge Impulse",
-          excerpt: "A hands-on walkthrough for building an on-device object detection system using the ESP32-CAM and Edge Impulse machine learning platform.",
+          title:
+            "Turning Your ESP32-CAM into a Smart Object Detector with Edge Impulse",
+          excerpt:
+            "A hands-on walkthrough for building an on-device object detection system using the ESP32-CAM and Edge Impulse machine learning platform.",
           tag: "Edge AI",
           date: "2024",
           readTime: "8 min read",
@@ -424,7 +439,8 @@ export const translations = {
         {
           id: 10,
           title: "Welcome to ChipGlobe's Embedded AI Journal!",
-          excerpt: "An introduction to ChipGlobe's blog — a space for embedded AI enthusiasts, makers, and developers to learn, share, and build together.",
+          excerpt:
+            "An introduction to ChipGlobe's blog — a space for embedded AI enthusiasts, makers, and developers to learn, share, and build together.",
           tag: "Community",
           date: "2024",
           readTime: "3 min read",
