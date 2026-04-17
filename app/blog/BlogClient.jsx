@@ -1,21 +1,20 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import { useLanguage } from "../context/LanguageContext";
 
 const blogImages = [
-  "/images/blog/blog-01.jpg",
-  "/images/blog/blog-02.jpg",
-  "/images/blog/blog-03.jpg",
+  "/images/blog/blog1.webp",       // BGT60LTR11 Radar
+  "/images/blog/sq-panel.webp",    // SQ Panel
+  "/images/blog/yaml.webp",        // YAML File
+  "/images/blog/google.webp",      // Google Sheets
+  "/images/blog/sensor.webp",      // Sensor Data
+  "/images/blog/revolutionizing.webp", // Revolutionizing Home Living
+  "/images/blog/automating1.jpg",  // Automating Lights
+  "/images/blog/detecting.webp",   // Object Detection
+  "/images/blog/cam.webp",         // ESP32-CAM
+  "/images/blog/welcome.webp",     // Welcome
 ];
-const authorImages = [
-  "/images/blog/author-03.png",
-  "/images/blog/author-02.png",
-  "/images/blog/author-03.png",
-];
-const authorNames = ["Samuyl Joshi", "Musharof Chy", "Lethium Deo"];
-const authorRoles = ["Graphic Designer", "Content Writer", "Graphic Designer"];
 
 export default function BlogClient() {
   const { t } = useLanguage();
@@ -102,38 +101,22 @@ export default function BlogClient() {
                   </div>
 
                   <h3 className="text-lg font-bold text-black dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
-                    <Link href="/blog">{post.title}</Link>
+                    <a href={post.href} target="_blank" rel="noopener noreferrer">{post.title}</a>
                   </h3>
                   <p className="text-body-color dark:text-green text-sm leading-relaxed flex-1 mb-5">
                     {post.excerpt}
                   </p>
 
-                  {/* Author */}
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <div className="flex items-center gap-3">
-                      <div className="relative w-8 h-8 rounded-full overflow-hidden">
-                        <Image
-                          src={authorImages[i]}
-                          alt={authorNames[i]}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold text-black dark:text-white">
-                          {authorNames[i]}
-                        </p>
-                        <p className="text-xs text-body-color dark:text-green">
-                          {authorRoles[i]}
-                        </p>
-                      </div>
-                    </div>
-                    <Link
-                      href="/blog"
+                  {/* Footer */}
+                  <div className="flex items-center justify-end pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <a
+                      href={post.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-xs font-semibold flex items-center gap-1 transition-colors hover:text-primary"
                       style={{ color: "#174f2e" }}
                     >
-                      Read
+                      {b.readMore}
                       <svg
                         className="w-3.5 h-3.5"
                         fill="none"
@@ -147,29 +130,13 @@ export default function BlogClient() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </article>
             ))}
           </div>
 
-          {/* Pagination */}
-          <div className="flex items-center justify-center gap-2 mt-14">
-            {[1, 2, 3, "...", 12].map((p, i) => (
-              <button
-                key={i}
-                className={`w-10 h-10 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                  p === 1
-                    ? "text-white"
-                    : "text-body-color dark:text-green bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-700 hover:border-primary hover:text-primary"
-                }`}
-                style={p === 1 ? { backgroundColor: "#174f2e" } : {}}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
         </div>
       </section>
     </main>

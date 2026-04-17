@@ -431,7 +431,11 @@ export default function Navbar() {
               </button>
 
               {productOpen && (
-                <div className="fixed top-[80px] left-1/2 -translate-x-1/2 w-[900px] bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50">
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50"
+                  onMouseEnter={() => setProductOpen(true)}
+                  onMouseLeave={() => setProductOpen(false)}
+                >
                   <div className="grid grid-cols-3 gap-10">
                     <DropdownCol
                       col={col1}
@@ -498,7 +502,11 @@ export default function Navbar() {
               </button>
 
               {resourcesOpen && (
-                <div className="absolute top-full left-0 mt-3 w-56 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 py-2 z-50">
+                <div
+                  className="absolute top-full left-0 w-56 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 pt-1 pb-2 z-50"
+                  onMouseEnter={() => setResourcesOpen(true)}
+                  onMouseLeave={() => setResourcesOpen(false)}
+                >
                   {resourcesItems.map((item) => (
                     <Link
                       key={item.href}
