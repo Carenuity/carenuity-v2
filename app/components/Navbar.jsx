@@ -298,16 +298,16 @@ function DropdownCol({ col, onClose }) {
                   {item.label}
                 </a>
               ) : (
-              <Link
-                href={item.href}
-                onClick={onClose}
-                className="flex items-center gap-3 text-sm font-semibold text-[#0d2137] dark:text-gray-200 hover:text-primary dark:hover:text-green-400 transition-colors group"
-              >
-                <span className="text-[#0d2137] dark:text-gray-300 group-hover:text-primary dark:group-hover:text-green-400 transition-colors shrink-0">
-                  {item.icon}
-                </span>
-                {item.label}
-              </Link>
+                <Link
+                  href={item.href}
+                  onClick={onClose}
+                  className="flex items-center gap-3 text-sm font-semibold text-[#0d2137] dark:text-gray-200 hover:text-primary dark:hover:text-green-400 transition-colors group"
+                >
+                  <span className="text-[#0d2137] dark:text-gray-300 group-hover:text-primary dark:group-hover:text-green-400 transition-colors shrink-0">
+                    {item.icon}
+                  </span>
+                  {item.label}
+                </Link>
               )
             ) : (
               <span className="flex items-center gap-3 text-sm font-semibold text-gray-400 dark:text-gray-500 cursor-default">
@@ -469,7 +469,14 @@ export default function Navbar() {
             >
               <button
                 className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                  ["/blog", "/about", "/contact", "/team", "/help-center", "/programs"].includes(pathname)
+                  [
+                    "/blog",
+                    "/about",
+                    "/contact",
+                    "/team",
+                    "/help-center",
+                    "/programs",
+                  ].includes(pathname)
                     ? "text-primary"
                     : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
                 }`}
@@ -481,7 +488,12 @@ export default function Navbar() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
 
@@ -738,7 +750,12 @@ export default function Navbar() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
                 {mobileResourcesOpen && (
@@ -747,7 +764,10 @@ export default function Navbar() {
                       <li key={item.href}>
                         <Link
                           href={item.href}
-                          onClick={() => { setOpen(false); setMobileResourcesOpen(false); }}
+                          onClick={() => {
+                            setOpen(false);
+                            setMobileResourcesOpen(false);
+                          }}
                           className="block px-4 py-2 rounded-xl text-xs font-semibold text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                         >
                           {t.nav[item.labelKey] ?? item.labelKey}
