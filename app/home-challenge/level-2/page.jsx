@@ -283,50 +283,66 @@ export default function Level2Page() {
         </div>
       </section>
 
-      {/* ── Video Tutorial ── */}
+      {/* ── Video Tutorials ── */}
       <section className="bg-green-bg dark:bg-gray-900 py-16">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-200 bg-green-50 dark:bg-green-900/20 dark:border-green-700 mb-5">
               <span className="text-xs font-bold text-green-700 dark:text-green-400 uppercase tracking-wide">
-                Video Tutorial
+                Video Tutorials
               </span>
             </div>
             <h2 className="text-3xl font-bold text-black dark:text-white mb-4 md:text-4xl">
-              GPIO Viewer in Action
+              Step-by-Step Guidance
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Watch how to revolutionise your ESP32 projects with live GPIO pin
-              monitoring via the GPIO Viewer app.
+              Watch both tutorials to learn live GPIO pin monitoring and PCB
+              design modification with KiCAD.
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 shadow-two">
-            <div className="relative w-full aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/UxkOosaNohU"
-                title="Revolutionize Your ESP32 Projects with Live GPIO Pin Monitoring"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
-            </div>
-            <div className="p-6">
-              <span
-                className="text-xs font-bold text-white px-2 py-0.5 rounded-full mb-3 inline-block"
-                style={{ backgroundColor: "#174f2e" }}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                src: "https://www.youtube.com/embed/UxkOosaNohU",
+                title: "Revolutionise Your ESP32 Projects with Live GPIO Pin Monitoring",
+                desc: "Learn how to install and use the GPIO Viewer app to monitor all microcontroller GPIO pins in real time from your smartphone.",
+              },
+              {
+                src: "https://www.youtube.com/embed/bVDYgPTKcjw",
+                title: "PCB Silkscreen Modification with KiCAD",
+                desc: "Follow the steps to modify a PCB silkscreen layer in KiCAD, add a custom logo, and export Gerber data files ready for manufacturing.",
+              },
+            ].map((video, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl overflow-hidden bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 shadow-two flex flex-col"
               >
-                Video 1
-              </span>
-              <h3 className="text-base font-bold text-black dark:text-white mb-2">
-                Revolutionise Your ESP32 Projects with Live GPIO Pin Monitoring
-              </h3>
-              <p className="text-body-color dark:text-gray-400 text-sm leading-relaxed">
-                Learn how to install and use the GPIO Viewer app to monitor all
-                microcontroller GPIO pins in real time from your smartphone — a
-                key deliverable for Level 2.
-              </p>
-            </div>
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    src={video.src}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <span
+                    className="text-xs font-bold text-white px-2 py-0.5 rounded-full mb-3 inline-block w-fit"
+                    style={{ backgroundColor: "#174f2e" }}
+                  >
+                    Video {idx + 1}
+                  </span>
+                  <h3 className="text-base font-bold text-black dark:text-white mb-2">
+                    {video.title}
+                  </h3>
+                  <p className="text-body-color dark:text-gray-400 text-sm leading-relaxed flex-1">
+                    {video.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
