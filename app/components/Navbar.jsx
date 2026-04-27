@@ -170,7 +170,7 @@ const col2 = {
     },
     {
       label: "Home Challenge",
-      href: null,
+      href: "/home-challenge",
       icon: (
         <svg
           width="20"
