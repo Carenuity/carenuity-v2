@@ -11,8 +11,18 @@ const levels = [
     img: "/images/home-challenge/level1.png",
     reward: "D1 or C3-Mini Microcontroller",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+        />
       </svg>
     ),
   },
@@ -24,7 +34,13 @@ const levels = [
     img: "/images/home-challenge/level2.png",
     reward: "OLED Display",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <path d="M8 21h8M12 17v4" />
       </svg>
@@ -38,8 +54,18 @@ const levels = [
     img: "/images/home-challenge/level3.png",
     reward: "Sensor Module",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
       </svg>
     ),
   },
@@ -51,8 +77,18 @@ const levels = [
     img: "/images/home-challenge/level4.png",
     reward: "25% ChipGlobe.shop Voucher",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+        />
       </svg>
     ),
   },
@@ -64,9 +100,23 @@ const levels = [
     img: "/images/home-challenge/level05.png",
     reward: "ESP32-CAM + Optional Cloud Access",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
   },
@@ -78,8 +128,18 @@ const levels = [
     img: "/images/home-challenge/level06.png",
     reward: "Custom Website + 100% Sales Profit",
     rewardIcon: (
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
       </svg>
     ),
   },
@@ -134,7 +194,8 @@ export default function HomeChallengePage() {
             <p className="text-lg leading-relaxed text-white/80 md:text-xl">
               A structured program designed to guide students through
               progressively complex tasks in IoT and smart home development —
-              targeting beginners with basic electronics and programming knowledge.
+              targeting beginners with basic electronics and programming
+              knowledge.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
@@ -149,7 +210,11 @@ export default function HomeChallengePage() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Link>
               <a
@@ -177,10 +242,10 @@ export default function HomeChallengePage() {
                 Start Your Smart Home Journey at No Cost
               </h2>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed mb-6">
-                Carenuity welcomes participants from Munich, Mombasa, Thessaloniki,
-                Hamburg, Trieste, Nairobi, Wuerzburg, Belgrade, Patras, and Kisii
-                with a free triple adapter offer. Get started immediately — no
-                upfront investment required.
+                Carenuity welcomes participants from Munich, Mombasa,
+                Thessaloniki, Hamburg, Trieste, Nairobi, Wuerzburg, Belgrade,
+                Patras, and Kisii with a free triple adapter offer. Get started
+                immediately — no upfront investment required.
               </p>
               <ul className="space-y-3">
                 {[
@@ -204,7 +269,11 @@ export default function HomeChallengePage() {
                         stroke="currentColor"
                         strokeWidth={3}
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     {item}
@@ -233,9 +302,9 @@ export default function HomeChallengePage() {
               6 Levels of Smart Home Mastery
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Progress through six carefully designed challenge levels. Each level
-              builds on the previous — from electronic basics to AI-powered smart
-              home solutions.
+              Progress through six carefully designed challenge levels. Each
+              level builds on the previous — from electronic basics to
+              AI-powered smart home solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -290,7 +359,11 @@ export default function HomeChallengePage() {
                       stroke="currentColor"
                       strokeWidth={2}
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -314,15 +387,15 @@ export default function HomeChallengePage() {
                 You Earn a Certificate
               </h2>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed mb-4">
-                Complete all six levels of the Carenuity Home Challenge and receive
-                an official certificate of completion. Your certificate recognises
-                real, hands-on expertise in IoT sensor setup, data analysis,
-                machine learning, and smart home automation.
+                Complete all six levels of the Carenuity Home Challenge and
+                receive an official certificate of completion. Your certificate
+                recognises real, hands-on expertise in IoT sensor setup, data
+                analysis, machine learning, and smart home automation.
               </p>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-                The Carenuity certificate is a credible proof of practical skills,
-                valued across the maker and developer community, and a strong
-                addition to any student portfolio or CV.
+                The Carenuity certificate is a credible proof of practical
+                skills, valued across the maker and developer community, and a
+                strong addition to any student portfolio or CV.
               </p>
             </div>
           </div>
@@ -343,7 +416,8 @@ export default function HomeChallengePage() {
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             Join students and makers from Munich, Nairobi, Thessaloniki, and
-            beyond who have already started their Carenuity Home Challenge journey.
+            beyond who have already started their Carenuity Home Challenge
+            journey.
           </p>
           <RegisterForm />
         </div>

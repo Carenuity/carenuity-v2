@@ -33,9 +33,23 @@ const deliverables = [
 const competencies = [
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
     title: "Computer Vision",
@@ -43,8 +57,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
       </svg>
     ),
     title: "Edge AI Deployment",
@@ -52,8 +76,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+        />
       </svg>
     ),
     title: "Data Acquisition",
@@ -61,8 +95,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
       </svg>
     ),
     title: "Marketplace Publishing",
@@ -70,8 +114,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
     title: "Leadership & Communication",
@@ -79,8 +133,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: "100% Sales Profit",
@@ -109,11 +173,17 @@ export default function Level6Page() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm flex-wrap">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/home-challenge" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/home-challenge"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home Challenge
             </Link>
             <span className="text-green-300/40">/</span>
@@ -140,15 +210,26 @@ export default function Level6Page() {
               AI Model & Marketplace
             </h1>
             <p className="text-lg leading-relaxed text-white/80 md:text-xl mb-8">
-              Train an AI model using Edge Impulse to detect objects with the ESP32-CAM,
-              publish your solution to the marketplace, and keep 100% of your sales profit.
-              This is the final level of the Carenuity Home Challenge.
+              Train an AI model using Edge Impulse to detect objects with the
+              ESP32-CAM, publish your solution to the marketplace, and keep 100%
+              of your sales profit. This is the final level of the Carenuity
+              Home Challenge.
             </p>
 
             <div className="flex flex-wrap gap-3">
               <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
-                <svg className="w-5 h-5 text-yellow-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                <svg
+                  className="w-5 h-5 text-yellow-300 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  />
                 </svg>
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-wider text-green-300">
@@ -178,15 +259,19 @@ export default function Level6Page() {
                 Object Detection by an AI-Assisted Edge Device
               </h2>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed mb-6">
-                In Level 6 you will use the ESP32-CAM to acquire image data, train a machine
-                learning model via Edge Impulse, and deploy it directly onto your microcontroller.
-                Your AI-powered device will recognise real-world objects — then you will publish
-                it to the Carenuity marketplace and earn 100% of all sales, with Carenuity handling
-                stocking and fulfilment for free.
+                In Level 6 you will use the ESP32-CAM to acquire image data,
+                train a machine learning model via Edge Impulse, and deploy it
+                directly onto your microcontroller. Your AI-powered device will
+                recognise real-world objects — then you will publish it to the
+                Carenuity marketplace and earn 100% of all sales, with Carenuity
+                handling stocking and fulfilment for free.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { label: "Tools Required", value: "Edge Impulse, Solution Builder" },
+                  {
+                    label: "Tools Required",
+                    value: "Edge Impulse, Solution Builder",
+                  },
                   { label: "Instructor", value: "Melina" },
                   { label: "Difficulty", value: "Advanced / AI-related" },
                   { label: "Submission", value: "team@carenuity.com" },
@@ -231,8 +316,8 @@ export default function Level6Page() {
               Step-by-Step Guidance
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Watch both tutorials to learn how to train an AI object detection model
-              and deploy it on an ESP32-CAM edge device.
+              Watch both tutorials to learn how to train an AI object detection
+              model and deploy it on an ESP32-CAM edge device.
             </p>
           </div>
 
@@ -245,7 +330,8 @@ export default function Level6Page() {
               },
               {
                 src: "https://www.youtube.com/embed/bZIKVaD3dRk",
-                title: "Deploying AI to the ESP32-CAM & Publishing to Marketplace",
+                title:
+                  "Deploying AI to the ESP32-CAM & Publishing to Marketplace",
                 desc: "Deploy your trained model as firmware onto the ESP32-CAM and publish your AI-powered device to the Carenuity Solution Builder marketplace.",
               },
             ].map((video, idx) => (
@@ -295,8 +381,9 @@ export default function Level6Page() {
               What You Need to Complete
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Complete all four steps to finish the Carenuity Home Challenge and unlock
-              your final reward — plus full commercial rights to your product.
+              Complete all four steps to finish the Carenuity Home Challenge and
+              unlock your final reward — plus full commercial rights to your
+              product.
             </p>
           </div>
 
@@ -306,7 +393,10 @@ export default function Level6Page() {
                 key={item.number}
                 className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 flex flex-col shadow-two"
               >
-                <span className="text-3xl font-black mb-4" style={{ color: "#174f2e" }}>
+                <span
+                  className="text-3xl font-black mb-4"
+                  style={{ color: "#174f2e" }}
+                >
                   {item.number}
                 </span>
                 <h3 className="text-base font-bold text-black dark:text-white mb-2">
@@ -327,8 +417,18 @@ export default function Level6Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-bold text-sm text-white shadow-lg hover:scale-105 transition-all duration-300"
               style={{ backgroundColor: "#174f2e" }}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
               </svg>
               Open Solution Builder
             </a>
@@ -336,8 +436,18 @@ export default function Level6Page() {
               href="mailto:team@carenuity.com"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-bold text-sm border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:scale-105 transition-all duration-300"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
               </svg>
               Submit to team@carenuity.com
             </a>
@@ -358,8 +468,8 @@ export default function Level6Page() {
               Skills You Will Master
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Level 6 combines computer vision, edge AI, and entrepreneurship — the
-              complete skill set of a modern IoT product creator.
+              Level 6 combines computer vision, edge AI, and entrepreneurship —
+              the complete skill set of a modern IoT product creator.
             </p>
           </div>
 
@@ -393,7 +503,8 @@ export default function Level6Page() {
       <section
         className="py-16"
         style={{
-          background: "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
+          background:
+            "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
         }}
       >
         <div className="container text-center">
@@ -401,16 +512,27 @@ export default function Level6Page() {
             Complete the Final Level
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Train your AI model, deploy it to the ESP32-CAM, publish to the marketplace,
-            and earn 100% of your sales — with a Carenuity certificate to prove it all.
+            Train your AI model, deploy it to the ESP32-CAM, publish to the
+            marketplace, and earn 100% of your sales — with a Carenuity
+            certificate to prove it all.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/home-challenge/level-5"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-green-400/20 border border-green-300/40 text-white font-bold text-sm hover:bg-green-400/30 transition-all duration-300"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Previous Level
             </Link>
@@ -419,8 +541,18 @@ export default function Level6Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white text-black font-bold text-sm shadow-lg hover:scale-105 transition-all duration-300"
             >
               Submit Your Work
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
             <Link

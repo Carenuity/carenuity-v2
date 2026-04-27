@@ -42,8 +42,18 @@ const deliverables = [
 const competencies = [
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+        />
       </svg>
     ),
     title: "Database Management",
@@ -51,8 +61,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        />
       </svg>
     ),
     title: "Data Visualisation",
@@ -60,8 +80,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
       </svg>
     ),
     title: "Machine Learning",
@@ -69,8 +99,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
       </svg>
     ),
     title: "Critical Thinking",
@@ -78,8 +118,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: "Entrepreneurial Thinking",
@@ -87,8 +137,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+        />
       </svg>
     ),
     title: "Adaptability & Resilience",
@@ -117,11 +177,17 @@ export default function Level5Page() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm flex-wrap">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/home-challenge" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/home-challenge"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home Challenge
             </Link>
             <span className="text-green-300/40">/</span>
@@ -145,14 +211,24 @@ export default function Level5Page() {
               Data & Machine Learning
             </h1>
             <p className="text-lg leading-relaxed text-white/80 md:text-xl mb-8">
-              Record sensor data, build database visualisations, and develop machine
-              learning models to predict and analyse your environment — bridging IoT
-              infrastructure with AI-powered insights.
+              Record sensor data, build database visualisations, and develop
+              machine learning models to predict and analyse your environment —
+              bridging IoT infrastructure with AI-powered insights.
             </p>
 
             <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
-              <svg className="w-5 h-5 text-yellow-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              <svg
+                className="w-5 h-5 text-yellow-300 shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                />
               </svg>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-green-300">
@@ -181,11 +257,12 @@ export default function Level5Page() {
                 AI Algorithm Development
               </h2>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed mb-6">
-                In Level 5 you will commission your sensor device, log data to a cloud database,
-                and build visualisations to reveal patterns in your environment. You will then
-                use Edge Impulse to train a machine learning model on your data — and explore
-                the entrepreneurial potential of your solution, including possible startup
-                commercialisation.
+                In Level 5 you will commission your sensor device, log data to a
+                cloud database, and build visualisations to reveal patterns in
+                your environment. You will then use Edge Impulse to train a
+                machine learning model on your data — and explore the
+                entrepreneurial potential of your solution, including possible
+                startup commercialisation.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -234,8 +311,8 @@ export default function Level5Page() {
               Step-by-Step Guidance
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Watch both tutorials to learn how to log sensor data to a cloud database
-              and train a machine learning model with Edge Impulse.
+              Watch both tutorials to learn how to log sensor data to a cloud
+              database and train a machine learning model with Edge Impulse.
             </p>
           </div>
 
@@ -298,8 +375,8 @@ export default function Level5Page() {
               Choose Your Database
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Select from these industrial-grade database platforms to store and visualise
-              your sensor data for machine learning model training.
+              Select from these industrial-grade database platforms to store and
+              visualise your sensor data for machine learning model training.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
@@ -328,8 +405,8 @@ export default function Level5Page() {
               What You Need to Submit
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Complete all four steps to unlock your Level 5 reward —
-              an ESP32-CAM with optional free SQ-Cloud access.
+              Complete all four steps to unlock your Level 5 reward — an
+              ESP32-CAM with optional free SQ-Cloud access.
             </p>
           </div>
 
@@ -339,7 +416,10 @@ export default function Level5Page() {
                 key={item.number}
                 className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 flex flex-col"
               >
-                <span className="text-3xl font-black mb-4" style={{ color: "#174f2e" }}>
+                <span
+                  className="text-3xl font-black mb-4"
+                  style={{ color: "#174f2e" }}
+                >
                   {item.number}
                 </span>
                 <h3 className="text-base font-bold text-black dark:text-white mb-2">
@@ -358,8 +438,18 @@ export default function Level5Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-bold text-sm text-white shadow-lg hover:scale-105 transition-all duration-300"
               style={{ backgroundColor: "#174f2e" }}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
               </svg>
               Submit to team@carenuity.com
             </a>
@@ -380,8 +470,9 @@ export default function Level5Page() {
               Skills You Will Develop
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Level 5 combines data engineering, machine learning, and entrepreneurial thinking —
-              preparing you for the final level of the Carenuity Home Challenge.
+              Level 5 combines data engineering, machine learning, and
+              entrepreneurial thinking — preparing you for the final level of
+              the Carenuity Home Challenge.
             </p>
           </div>
 
@@ -415,7 +506,8 @@ export default function Level5Page() {
       <section
         className="py-16"
         style={{
-          background: "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
+          background:
+            "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
         }}
       >
         <div className="container text-center">
@@ -431,8 +523,18 @@ export default function Level5Page() {
               href="/home-challenge/level-4"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-green-400/20 border border-green-300/40 text-white font-bold text-sm hover:bg-green-400/30 transition-all duration-300"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Previous Level
             </Link>
@@ -441,8 +543,18 @@ export default function Level5Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white text-black font-bold text-sm shadow-lg hover:scale-105 transition-all duration-300"
             >
               Submit Your Work
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
             <Link
@@ -456,8 +568,18 @@ export default function Level5Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-green-400/20 border border-green-300/40 text-white font-bold text-sm hover:bg-green-400/30 transition-all duration-300"
             >
               Next Level
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </Link>
           </div>

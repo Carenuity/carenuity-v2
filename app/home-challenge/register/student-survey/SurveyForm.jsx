@@ -35,7 +35,7 @@ function CheckboxGroup({ options, selected, onChange }) {
     onChange(
       selected.includes(opt)
         ? selected.filter((o) => o !== opt)
-        : [...selected, opt]
+        : [...selected, opt],
     );
 
   return (
@@ -43,7 +43,10 @@ function CheckboxGroup({ options, selected, onChange }) {
       {options.map((opt) => {
         const active = selected.includes(opt);
         return (
-          <label key={opt} className="flex items-center gap-2 cursor-pointer group">
+          <label
+            key={opt}
+            className="flex items-center gap-2 cursor-pointer group"
+          >
             <span
               className={`w-5 h-5 rounded flex items-center justify-center border-2 shrink-0 transition-all duration-200 ${
                 active
@@ -53,12 +56,27 @@ function CheckboxGroup({ options, selected, onChange }) {
               style={active ? { backgroundColor: "#174f2e" } : {}}
             >
               {active && (
-                <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-3 h-3 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={3}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               )}
             </span>
-            <input type="checkbox" className="sr-only" checked={active} onChange={() => toggle(opt)} />
+            <input
+              type="checkbox"
+              className="sr-only"
+              checked={active}
+              onChange={() => toggle(opt)}
+            />
             <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors">
               {opt}
             </span>
@@ -75,7 +93,10 @@ function RadioGroup({ options, value, onChange }) {
       {options.map((opt) => {
         const active = value === opt;
         return (
-          <label key={opt} className="flex items-center gap-2 cursor-pointer group">
+          <label
+            key={opt}
+            className="flex items-center gap-2 cursor-pointer group"
+          >
             <span
               className={`w-5 h-5 rounded-full flex items-center justify-center border-2 shrink-0 transition-all duration-200 ${
                 active
@@ -86,7 +107,12 @@ function RadioGroup({ options, value, onChange }) {
             >
               {active && <span className="w-2 h-2 rounded-full bg-white" />}
             </span>
-            <input type="radio" className="sr-only" checked={active} onChange={() => onChange(opt)} />
+            <input
+              type="radio"
+              className="sr-only"
+              checked={active}
+              onChange={() => onChange(opt)}
+            />
             <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors">
               {opt}
             </span>
@@ -106,7 +132,9 @@ function SectionLabel({ number, children }) {
       >
         {number}
       </span>
-      <h2 className="text-base font-bold text-black dark:text-white">{children}</h2>
+      <h2 className="text-base font-bold text-black dark:text-white">
+        {children}
+      </h2>
     </div>
   );
 }
@@ -141,13 +169,26 @@ export default function SurveyForm({ school }) {
           className="w-16 h-16 rounded-full flex items-center justify-center"
           style={{ backgroundColor: "#174f2e" }}
         >
-          <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          <svg
+            className="w-8 h-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2.5}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </span>
-        <p className="text-2xl font-bold text-black dark:text-white">Thank you, {form.firstName}!</p>
+        <p className="text-2xl font-bold text-black dark:text-white">
+          Thank you, {form.firstName}!
+        </p>
         <p className="text-body-color dark:text-gray-300 text-base max-w-sm">
-          Your survey response has been submitted successfully. We&apos;ll be in touch with relevant opportunities.
+          Your survey response has been submitted successfully. We&apos;ll be in
+          touch with relevant opportunities.
         </p>
       </div>
     );
@@ -158,7 +199,6 @@ export default function SurveyForm({ school }) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
-
       {/* Section 1: Personal Information */}
       <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-two">
         <SectionLabel number="1">Personal Information</SectionLabel>
@@ -213,9 +253,21 @@ export default function SurveyForm({ school }) {
               onChange={(e) => set("yearOfStudy", e.target.value)}
               className={inputClass}
             >
-              <option value="" disabled>Select year</option>
-              {["1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "Masters", "PhD"].map((y) => (
-                <option key={y} value={y}>{y}</option>
+              <option value="" disabled>
+                Select year
+              </option>
+              {[
+                "1st Year",
+                "2nd Year",
+                "3rd Year",
+                "4th Year",
+                "5th Year",
+                "Masters",
+                "PhD",
+              ].map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
               ))}
             </select>
           </div>
@@ -293,7 +345,8 @@ export default function SurveyForm({ school }) {
       <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-two">
         <SectionLabel number="5">Skills &amp; Tools</SectionLabel>
         <p className="text-sm text-body-color dark:text-gray-300 mb-4">
-          What IoT-related tools, programming languages, or hardware platforms are you familiar with?
+          What IoT-related tools, programming languages, or hardware platforms
+          are you familiar with?
         </p>
         <CheckboxGroup
           options={tools}
@@ -306,7 +359,8 @@ export default function SurveyForm({ school }) {
       <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-two">
         <SectionLabel number="6">Future Participation</SectionLabel>
         <p className="text-sm text-body-color dark:text-gray-300 mb-4">
-          Would you be interested in participating in other IoT Challenges or Hackathons organised by ChipGlobe?
+          Would you be interested in participating in other IoT Challenges or
+          Hackathons organised by ChipGlobe?
         </p>
         <RadioGroup
           options={["Yes", "No"]}

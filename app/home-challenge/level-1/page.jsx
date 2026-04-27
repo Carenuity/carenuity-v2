@@ -28,8 +28,18 @@ const deliverables = [
 const competencies = [
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+        />
       </svg>
     ),
     title: "Soldering Pin Headers",
@@ -37,8 +47,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
       </svg>
     ),
     title: "Sensor Integration",
@@ -46,8 +66,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+        />
       </svg>
     ),
     title: "WOKWI Simulation",
@@ -55,8 +85,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: "Problem Solving",
@@ -64,8 +104,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: "Time Management",
@@ -73,8 +123,18 @@ const competencies = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
     title: "Community Contribution",
@@ -121,11 +181,17 @@ export default function Level1Page() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm flex-wrap">
-            <Link href="/" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/home-challenge" className="text-green-300/70 transition-colors hover:text-green-300">
+            <Link
+              href="/home-challenge"
+              className="text-green-300/70 transition-colors hover:text-green-300"
+            >
               Home Challenge
             </Link>
             <span className="text-green-300/40">/</span>
@@ -149,15 +215,26 @@ export default function Level1Page() {
               Electronic Connections
             </h1>
             <p className="text-lg leading-relaxed text-white/80 md:text-xl mb-8">
-              Attach 6 pin headers to the Triple Adapter and familiarise yourself
-              with WOKWI simulations — especially with sensor solutions. Master the
-              fundamentals of electronic connections for IoT devices.
+              Attach 6 pin headers to the Triple Adapter and familiarise
+              yourself with WOKWI simulations — especially with sensor
+              solutions. Master the fundamentals of electronic connections for
+              IoT devices.
             </p>
 
             {/* Reward badge */}
             <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
-              <svg className="w-5 h-5 text-yellow-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              <svg
+                className="w-5 h-5 text-yellow-300 shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                />
               </svg>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-green-300">
@@ -186,14 +263,18 @@ export default function Level1Page() {
                 Your First Hardware Challenge
               </h2>
               <p className="text-body-color dark:text-gray-300 text-base leading-relaxed mb-6">
-                In Level 1 you will get hands-on experience with real IoT hardware.
-                Using a soldering iron, attach 6 pin headers to the Carenuity Triple
-                Adapter. Then build and test a sensor circuit using the WOKWI online
-                simulator and contribute your project to the community GitHub repository.
+                In Level 1 you will get hands-on experience with real IoT
+                hardware. Using a soldering iron, attach 6 pin headers to the
+                Carenuity Triple Adapter. Then build and test a sensor circuit
+                using the WOKWI online simulator and contribute your project to
+                the community GitHub repository.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { label: "Tools Required", value: "Soldering iron, WOKWI simulator" },
+                  {
+                    label: "Tools Required",
+                    value: "Soldering iron, WOKWI simulator",
+                  },
                   { label: "Instructor", value: "Nilu" },
                   { label: "Difficulty", value: "Beginner" },
                   { label: "Submission", value: "team@carenuity.com" },
@@ -238,8 +319,9 @@ export default function Level1Page() {
               Step-by-Step Guidance
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Watch all three tutorials to complete the Level 1 tasks. Each video
-              covers a key part of the challenge from soldering to simulation to submission.
+              Watch all three tutorials to complete the Level 1 tasks. Each
+              video covers a key part of the challenge from soldering to
+              simulation to submission.
             </p>
           </div>
 
@@ -326,8 +408,18 @@ export default function Level1Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-bold text-sm text-white shadow-lg hover:scale-105 transition-all duration-300"
               style={{ backgroundColor: "#174f2e" }}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
               </svg>
               Submit to team@carenuity.com
             </a>
@@ -348,8 +440,8 @@ export default function Level1Page() {
               Skills You Will Develop
             </h2>
             <p className="text-body-color dark:text-gray-300 text-base leading-relaxed">
-              Level 1 builds the essential skills you need to progress through all six
-              stages of the Carenuity Home Challenge.
+              Level 1 builds the essential skills you need to progress through
+              all six stages of the Carenuity Home Challenge.
             </p>
           </div>
 
@@ -392,8 +484,9 @@ export default function Level1Page() {
             Ready to Start Level 1?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Watch the tutorials, complete your soldering, build your WOKWI simulation,
-            and submit to claim your D1 or C3-Mini Microcontroller reward.
+            Watch the tutorials, complete your soldering, build your WOKWI
+            simulation, and submit to claim your D1 or C3-Mini Microcontroller
+            reward.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -401,8 +494,18 @@ export default function Level1Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white text-black font-bold text-sm shadow-lg hover:scale-105 transition-all duration-300"
             >
               Submit Your Work
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
             <Link
@@ -416,8 +519,18 @@ export default function Level1Page() {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-green-400/20 border border-green-300/40 text-white font-bold text-sm hover:bg-green-400/30 transition-all duration-300"
             >
               Next Level
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </Link>
           </div>
