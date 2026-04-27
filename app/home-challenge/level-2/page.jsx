@@ -305,7 +305,8 @@ export default function Level2Page() {
             {[
               {
                 src: "https://www.youtube.com/embed/UxkOosaNohU",
-                title: "Revolutionise Your ESP32 Projects with Live GPIO Pin Monitoring",
+                title:
+                  "Revolutionise Your ESP32 Projects with Live GPIO Pin Monitoring",
                 desc: "Learn how to install and use the GPIO Viewer app to monitor all microcontroller GPIO pins in real time from your smartphone.",
               },
               {
