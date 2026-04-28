@@ -368,55 +368,160 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm dark:bg-gray-dark dark:border-gray-800 transition-all duration-300">
       <div className="container">
         <div className="relative" ref={dropdownRef}>
-        <div className="flex h-16 lg:h-20 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="shrink-0 flex items-center">
-            <Image
-              src="/images/logo/logo.png"
-              alt="Carenuity"
-              width={190}
-              height={52}
-              className="h-10 lg:h-12 w-auto object-contain dark:hidden"
-              priority
-            />
-            <Image
-              src="/images/logo/logo-2.png"
-              alt="Carenuity"
-              width={190}
-              height={52}
-              className="h-10 lg:h-12 w-auto object-contain hidden dark:block"
-              priority
-            />
-          </Link>
-
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-8">
-            <Link
-              href="/"
-              className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                pathname === "/"
-                  ? "text-primary"
-                  : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-              }`}
-            >
-              {t.nav.home}
+          <div className="flex h-16 lg:h-20 items-center justify-between">
+            {/* Logo */}
+            <Link href="/" className="shrink-0 flex items-center">
+              <Image
+                src="/images/logo/logo.png"
+                alt="Carenuity"
+                width={190}
+                height={52}
+                className="h-10 lg:h-12 w-auto object-contain dark:hidden"
+                priority
+              />
+              <Image
+                src="/images/logo/logo-2.png"
+                alt="Carenuity"
+                width={190}
+                height={52}
+                className="h-10 lg:h-12 w-auto object-contain hidden dark:block"
+                priority
+              />
             </Link>
 
-            {/* Product dropdown trigger */}
-            <div
-              onMouseEnter={() => setProductOpen(true)}
-              onMouseLeave={() => setProductOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                  pathname.startsWith("/sq-system")
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-8">
+              <Link
+                href="/"
+                className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                  pathname === "/"
                     ? "text-primary"
                     : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
                 }`}
               >
-                {t.nav.product}
+                {t.nav.home}
+              </Link>
+
+              {/* Product dropdown trigger */}
+              <div
+                onMouseEnter={() => setProductOpen(true)}
+                onMouseLeave={() => setProductOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                    pathname.startsWith("/sq-system")
+                      ? "text-primary"
+                      : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                  }`}
+                >
+                  {t.nav.product}
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-200 ${productOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <Link
+                href="/benefits"
+                className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                  pathname === "/benefits"
+                    ? "text-primary"
+                    : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                }`}
+              >
+                {t.nav.benefits}
+              </Link>
+              {/* Resources dropdown */}
+              <div
+                className="relative"
+                ref={resourcesRef}
+                onMouseEnter={() => setResourcesOpen(true)}
+                onMouseLeave={() => setResourcesOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                    [
+                      "/blog",
+                      "/about",
+                      "/contact",
+                      "/team",
+                      "/help-center",
+                      "/programs",
+                    ].includes(pathname)
+                      ? "text-primary"
+                      : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                  }`}
+                >
+                  {t.nav.resources}
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                {resourcesOpen && (
+                  <div
+                    className="absolute top-full left-0 w-56 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 pt-1 pb-2 z-50"
+                    onMouseEnter={() => setResourcesOpen(true)}
+                    onMouseLeave={() => setResourcesOpen(false)}
+                  >
+                    {resourcesItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setResourcesOpen(false)}
+                        className={`flex items-center gap-3 px-5 py-2.5 text-sm font-semibold transition-colors ${
+                          pathname === item.href
+                            ? "text-primary dark:text-green-400"
+                            : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                        }`}
+                      >
+                        {t.nav[item.labelKey] ?? item.labelKey}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <Link
+                href="/install-for-free"
+                className={`text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 ${
+                  pathname === "/install-for-free"
+                    ? "text-white"
+                    : "text-white hover:opacity-90"
+                }`}
+                style={{ backgroundColor: "#174f2e" }}
+              >
+                {t.nav.install}
+              </Link>
+            </nav>
+
+            {/* Right side actions */}
+            <div className="hidden lg:flex items-center gap-2">
+              <button
+                onClick={() => setLang(lang === "en" ? "de" : "en")}
+                className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all duration-200 dark:border-gray-600 dark:text-gray-200 dark:hover:border-green-400 dark:hover:text-green-400"
+              >
                 <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${productOpen ? "rotate-180" : ""}`}
+                  className="w-3.5 h-3.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -425,222 +530,117 @@ export default function Navbar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
+                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
                   />
                 </svg>
+                {lang === "en" ? "DE" : "EN"}
               </button>
-            </div>
 
-            <Link
-              href="/benefits"
-              className={`text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                pathname === "/benefits"
-                  ? "text-primary"
-                  : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-              }`}
-            >
-              {t.nav.benefits}
-            </Link>
-            {/* Resources dropdown */}
-            <div
-              className="relative"
-              ref={resourcesRef}
-              onMouseEnter={() => setResourcesOpen(true)}
-              onMouseLeave={() => setResourcesOpen(false)}
-            >
               <button
-                className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                  [
-                    "/blog",
-                    "/about",
-                    "/contact",
-                    "/team",
-                    "/help-center",
-                    "/programs",
-                  ].includes(pathname)
-                    ? "text-primary"
-                    : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-                }`}
+                onClick={() => setDark(!dark)}
+                aria-label="Toggle theme"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-all duration-200 dark:text-gray-200 dark:hover:bg-gray-800"
               >
-                {t.nav.resources}
-                <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                {dark ? (
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    />
+                  </svg>
+                )}
               </button>
 
-              {resourcesOpen && (
-                <div
-                  className="absolute top-full left-0 w-56 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 pt-1 pb-2 z-50"
-                  onMouseEnter={() => setResourcesOpen(true)}
-                  onMouseLeave={() => setResourcesOpen(false)}
-                >
-                  {resourcesItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setResourcesOpen(false)}
-                      className={`flex items-center gap-3 px-5 py-2.5 text-sm font-semibold transition-colors ${
-                        pathname === item.href
-                          ? "text-primary dark:text-green-400"
-                          : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-                      }`}
-                    >
-                      {t.nav[item.labelKey] ?? item.labelKey}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-            <Link
-              href="/install-for-free"
-              className={`text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 ${
-                pathname === "/install-for-free"
-                  ? "text-white"
-                  : "text-white hover:opacity-90"
-              }`}
-              style={{ backgroundColor: "#174f2e" }}
-            >
-              {t.nav.install}
-            </Link>
-          </nav>
-
-          {/* Right side actions */}
-          <div className="hidden lg:flex items-center gap-2">
-            <button
-              onClick={() => setLang(lang === "en" ? "de" : "en")}
-              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all duration-200 dark:border-gray-600 dark:text-gray-200 dark:hover:border-green-400 dark:hover:text-green-400"
-            >
-              <svg
-                className="w-3.5 h-3.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <Link
+                href="/signin"
+                className="text-sm font-semibold px-4 py-2 rounded-full text-gray-700 hover:text-primary transition-all duration-200 dark:text-gray-200 dark:hover:text-green-400"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+                {t.nav.signin}
+              </Link>
+              <Link
+                href="/signup"
+                className="text-sm font-semibold text-white px-6 py-2.5 rounded-full transition-all duration-200 hover:opacity-90 hover:scale-105"
+                style={{ backgroundColor: "#174f2e" }}
+              >
+                {t.nav.signup}
+              </Link>
+            </div>
+
+            {/* Mobile: theme + hamburger */}
+            <div className="flex lg:hidden items-center gap-1">
+              <button
+                onClick={() => setDark(!dark)}
+                aria-label="Toggle theme"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-200"
+              >
+                {dark ? (
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    />
+                  </svg>
+                )}
+              </button>
+              <button
+                onClick={() => setOpen(!open)}
+                aria-label="Toggle menu"
+                className="w-9 h-9 flex flex-col items-center justify-center gap-1.5 text-gray-700 dark:text-gray-200"
+              >
+                <span
+                  className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`}
                 />
-              </svg>
-              {lang === "en" ? "DE" : "EN"}
-            </button>
-
-            <button
-              onClick={() => setDark(!dark)}
-              aria-label="Toggle theme"
-              className="w-9 h-9 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-all duration-200 dark:text-gray-200 dark:hover:bg-gray-800"
-            >
-              {dark ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              )}
-            </button>
-
-            <Link
-              href="/signin"
-              className="text-sm font-semibold px-4 py-2 rounded-full text-gray-700 hover:text-primary transition-all duration-200 dark:text-gray-200 dark:hover:text-green-400"
-            >
-              {t.nav.signin}
-            </Link>
-            <Link
-              href="/signup"
-              className="text-sm font-semibold text-white px-6 py-2.5 rounded-full transition-all duration-200 hover:opacity-90 hover:scale-105"
-              style={{ backgroundColor: "#174f2e" }}
-            >
-              {t.nav.signup}
-            </Link>
+                <span
+                  className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "opacity-0" : ""}`}
+                />
+                <span
+                  className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`}
+                />
+              </button>
+            </div>
           </div>
-
-          {/* Mobile: theme + hamburger */}
-          <div className="flex lg:hidden items-center gap-1">
-            <button
-              onClick={() => setDark(!dark)}
-              aria-label="Toggle theme"
-              className="w-9 h-9 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-200"
-            >
-              {dark ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              )}
-            </button>
-            <button
-              onClick={() => setOpen(!open)}
-              aria-label="Toggle menu"
-              className="w-9 h-9 flex flex-col items-center justify-center gap-1.5 text-gray-700 dark:text-gray-200"
-            >
-              <span
-                className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`}
-              />
-              <span
-                className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "opacity-0" : ""}`}
-              />
-              <span
-                className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`}
-              />
-            </button>
-          </div>
-        </div>
 
           {/* Full-width mega dropdown */}
           {productOpen && (
@@ -650,18 +650,9 @@ export default function Navbar() {
               onMouseLeave={() => setProductOpen(false)}
             >
               <div className="grid grid-cols-3 gap-10">
-                <DropdownCol
-                  col={col1}
-                  onClose={() => setProductOpen(false)}
-                />
-                <DropdownCol
-                  col={col2}
-                  onClose={() => setProductOpen(false)}
-                />
-                <DropdownCol
-                  col={col3}
-                  onClose={() => setProductOpen(false)}
-                />
+                <DropdownCol col={col1} onClose={() => setProductOpen(false)} />
+                <DropdownCol col={col2} onClose={() => setProductOpen(false)} />
+                <DropdownCol col={col3} onClose={() => setProductOpen(false)} />
               </div>
             </div>
           )}
