@@ -186,15 +186,15 @@ export default function SqConnectorClient() {
               ? [
                   {
                     name: "Datasheet_SQ-Panel_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Panel_V1.1.3_de.pdf",
+                    href: "/docs/datasheet/datasheet-sq-panel-v1.1.3-de.pdf",
                   },
                   {
                     name: "Datasheet_SQ-Power_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Power_V1.1.3_de.pdf",
+                    href: "/docs/datasheet/datasheet-sq-power-v1.1.3-de.pdf",
                   },
                   {
                     name: "Datasheet_SQ-Connector_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Connector_V1.1.3_de.pdf",
+                    href: "/docs/datasheet/datasheet-sq-connector-v1.1.3-de.pdf",
                   },
                   {
                     name: "Konformitätserklärung V1.3.0 [PDF]",
@@ -206,7 +206,7 @@ export default function SqConnectorClient() {
                   },
                   {
                     name: "Inbetriebnahme-Handbuch V1.1.0 [PDF]",
-                    href: "/docs/Commissioning-de.pdf",
+                    href: "/docs/commissioning-de.pdf",
                   },
                   {
                     name: "SQ-Panel Benutzerhandbuch [PDF]",
@@ -216,15 +216,15 @@ export default function SqConnectorClient() {
               : [
                   {
                     name: "Datasheet_SQ-Panel_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Panel_V1.1.3.pdf",
+                    href: "/docs/datasheet/datasheet-sq-panel-v1.1.3.pdf",
                   },
                   {
                     name: "Datasheet_SQ-Power_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Power_V1.1.3.pdf",
+                    href: "/docs/datasheet/datasheet-sq-power-v1.1.3.pdf",
                   },
                   {
                     name: "Datasheet_SQ-Connector_V1.1.3 [PDF]",
-                    href: "/docs/datasheet/Datasheet_SQ-Connector_V1.1.3.pdf",
+                    href: "/docs/datasheet/datasheet-sq-connector-v1.1.3.pdf",
                   },
                   {
                     name: "Declaration-of-Conformity V1.3.0 [PDF]",
@@ -236,7 +236,7 @@ export default function SqConnectorClient() {
                   },
                   {
                     name: "Manual-for-Commissioning V1.1.0 [PDF]",
-                    href: "/docs/Commissioning-en.pdf",
+                    href: "/docs/commissioning-en.pdf",
                   },
                   {
                     name: "SQ-Panel User Guide [PDF]",

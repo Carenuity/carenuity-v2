@@ -12,7 +12,7 @@ const whyImages = [
 ];
 const productImages = [
   "/images/home/sq-panel-frontview.webp",
-  "/images/home/C3-mini_selection-box_case.png",
+  "/images/home/c3-mini-selection-box-case.png",
 ];
 const productLinks = ["/sq-system", "/c3-mini"];
 

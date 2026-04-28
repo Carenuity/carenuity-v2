@@ -642,26 +642,32 @@ export const translations = {
       docs: [
         {
           name: "C3-Mini Datasheet V2.2.1 [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/datasheet-v2.2.1.pdf
           href: "/docs/c3-mini/datasheet-v2.2.1.pdf",
         },
         {
           name: "Getting Started with MicroPython [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-micropython.pdf
           href: "/docs/c3-mini/getting-started-micropython.pdf",
         },
         {
           name: "Getting Started with Arduino [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-arduino.pdf
           href: "/docs/c3-mini/getting-started-arduino.pdf",
         },
         {
           name: "Getting Started with CircuitPython [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-circuitpython.pdf
           href: "/docs/c3-mini/getting-started-circuitpython.pdf",
         },
         {
           name: "C3-Mini Pinout Reference [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/pinout-reference.pdf
           href: "/docs/c3-mini/pinout-reference.pdf",
         },
         {
           name: "ESP-IDF Setup Guide [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/espidf-setup.pdf
           href: "/docs/c3-mini/espidf-setup.pdf",
         },
       ],
@@ -1552,26 +1558,32 @@ export const translations = {
       docs: [
         {
           name: "C3-Mini Datenblatt V2.2.1 [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/datasheet-v2.2.1.pdf
           href: "/docs/c3-mini/datasheet-v2.2.1.pdf",
         },
         {
           name: "Erste Schritte mit MicroPython [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-micropython.pdf
           href: "/docs/c3-mini/getting-started-micropython.pdf",
         },
         {
           name: "Erste Schritte mit Arduino [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-arduino.pdf
           href: "/docs/c3-mini/getting-started-arduino.pdf",
         },
         {
           name: "Erste Schritte mit CircuitPython [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-circuitpython.pdf
           href: "/docs/c3-mini/getting-started-circuitpython.pdf",
         },
         {
           name: "C3-Mini Pinout-Referenz [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/pinout-reference.pdf
           href: "/docs/c3-mini/pinout-reference.pdf",
         },
         {
           name: "ESP-IDF Setup-Anleitung [PDF]",
+          // TODO: missing file — source PDF and place at public/docs/c3-mini/espidf-setup.pdf
           href: "/docs/c3-mini/espidf-setup.pdf",
         },
       ],
