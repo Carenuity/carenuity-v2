@@ -348,6 +348,7 @@ export default function Navbar() {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setOpen(false);
     setProductOpen(false);
+    setResourcesOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -365,7 +366,8 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm dark:bg-gray-dark dark:border-gray-800 transition-all duration-300">
-      <div className="container" style={{ paddingInline: "3rem" }}>
+      <div className="container">
+        <div className="relative" ref={dropdownRef}>
         <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="shrink-0 flex items-center">
@@ -400,10 +402,8 @@ export default function Navbar() {
               {t.nav.home}
             </Link>
 
-            {/* Product mega dropdown */}
+            {/* Product dropdown trigger */}
             <div
-              className="relative"
-              ref={dropdownRef}
               onMouseEnter={() => setProductOpen(true)}
               onMouseLeave={() => setProductOpen(false)}
             >
@@ -429,29 +429,6 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-
-              {productOpen && (
-                <div
-                  className="absolute top-full left-0 w-[900px] bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50"
-                  onMouseEnter={() => setProductOpen(true)}
-                  onMouseLeave={() => setProductOpen(false)}
-                >
-                  <div className="grid grid-cols-3 gap-10">
-                    <DropdownCol
-                      col={col1}
-                      onClose={() => setProductOpen(false)}
-                    />
-                    <DropdownCol
-                      col={col2}
-                      onClose={() => setProductOpen(false)}
-                    />
-                    <DropdownCol
-                      col={col3}
-                      onClose={() => setProductOpen(false)}
-                    />
-                  </div>
-                </div>
-              )}
             </div>
 
             <Link
@@ -665,9 +642,34 @@ export default function Navbar() {
           </div>
         </div>
 
+          {/* Full-width mega dropdown */}
+          {productOpen && (
+            <div
+              className="absolute top-full left-0 right-0 bg-white dark:bg-gray-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-8 z-50"
+              onMouseEnter={() => setProductOpen(true)}
+              onMouseLeave={() => setProductOpen(false)}
+            >
+              <div className="grid grid-cols-3 gap-10">
+                <DropdownCol
+                  col={col1}
+                  onClose={() => setProductOpen(false)}
+                />
+                <DropdownCol
+                  col={col2}
+                  onClose={() => setProductOpen(false)}
+                />
+                <DropdownCol
+                  col={col3}
+                  onClose={() => setProductOpen(false)}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Mobile dropdown */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-[700px] pb-4" : "max-h-0"}`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-[85vh] overflow-y-auto pb-4" : "max-h-0"}`}
         >
           <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-3 mt-2">
             <ul className="space-y-1 mb-3">

@@ -641,34 +641,28 @@ export const translations = {
       docsTitle: "Documentation",
       docs: [
         {
-          name: "C3-Mini Datasheet V2.2.1 [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/datasheet-v2.2.1.pdf
-          href: "/docs/c3-mini/datasheet-v2.2.1.pdf",
+          name: "C3-Mini Datasheet [PDF]",
+          href: "/docs/datasheet.pdf",
         },
         {
           name: "Getting Started with MicroPython [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-micropython.pdf
-          href: "/docs/c3-mini/getting-started-micropython.pdf",
+          href: "https://www.wemos.cc/en/latest/tutorials/c3/get_started_with_micropython_c3.html",
         },
         {
           name: "Getting Started with Arduino [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-arduino.pdf
-          href: "/docs/c3-mini/getting-started-arduino.pdf",
+          href: "https://www.wemos.cc/en/latest/tutorials/c3/get_started_with_arduino_c3.html",
         },
         {
           name: "Getting Started with CircuitPython [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/getting-started-circuitpython.pdf
-          href: "/docs/c3-mini/getting-started-circuitpython.pdf",
+          href: "https://www.wemos.cc/en/latest/tutorials/c3/get_started_with_circuitpython_c3.html",
         },
-        {
-          name: "C3-Mini Pinout Reference [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/pinout-reference.pdf
-          href: "/docs/c3-mini/pinout-reference.pdf",
-        },
+        // {
+        //   name: "C3-Mini Pinout Reference [PDF]",
+        //   href: "/docs/c3-mini/pinout-reference.pdf",
+        // },
         {
           name: "ESP-IDF Setup Guide [PDF]",
-          // TODO: missing file — source PDF and place at public/docs/c3-mini/espidf-setup.pdf
-          href: "/docs/c3-mini/espidf-setup.pdf",
+          href: "https://documentation.espressif.com/esp32-c3_datasheet_en.pdf",
         },
       ],
       docsBtn: "Explore C3-Mini™ Applications →",
