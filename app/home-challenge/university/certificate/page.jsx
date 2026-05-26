@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import CertificateClient from "./CertificateClient";
 
 export const metadata = {
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function CertificatePage() {
-  return <CertificateClient />;
+  return (
+    <Suspense fallback={null}>
+      <CertificateClient />
+    </Suspense>
+  );
 }
