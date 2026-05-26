@@ -1,9 +1,9 @@
-import React from 'react';
-import Head from 'next/head';
-import PageTitle from '../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import PageTitle from "../../components/PageTitle";
 
 const Page = () => {
-  const pageTitle = 'DUTH Home Challenge';
+  const pageTitle = "DUTH Home Challenge";
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -41,7 +41,7 @@ const Page = () => {
             rel="noopener noreferrer"
           >
             <u>Duch Home Challenge</u>
-          </a>{' '}
+          </a>{" "}
           by carenuity
         </div>
       </section>

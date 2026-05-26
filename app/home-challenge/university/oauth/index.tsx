@@ -1,10 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import PageTitle from '../../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import PageTitle from "../../../components/PageTitle";
 
 const Page = () => {
-  const pageTitle = 'AUTH Home Challenge';
+  const pageTitle = "AUTH Home Challenge";
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -43,13 +43,13 @@ const Page = () => {
             rel="noopener noreferrer"
           >
             <u>Open AUTH Home Challenge</u>
-          </a>{' '}
+          </a>{" "}
           by carenuity
         </div>
-        <p style={{ textAlign: 'center' }}>
+        <p style={{ textAlign: "center" }}>
           <Link
-            href={'./oauth/press'}
-            className={'btn btn-lg btn-success rounded-pill'}
+            href={"./oauth/press"}
+            className={"btn btn-lg btn-success rounded-pill"}
           >
             <span className="small">Press Materials</span>
           </Link>

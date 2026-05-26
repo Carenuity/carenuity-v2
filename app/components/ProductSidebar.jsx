@@ -15,7 +15,10 @@ const products = [
   { label: "ESP32 Audio", slug: "esp32-audio" },
   { label: "FreshCheck", slug: "freshcheck" },
   { label: "FridgeBar", slug: "fridgebar" },
-  { label: "Leaf Temperature Measurement", slug: "leaf-temperature-measurement" },
+  {
+    label: "Leaf Temperature Measurement",
+    slug: "leaf-temperature-measurement",
+  },
   { label: "Magnetic Traffic Counting", slug: "magnetic-traffic-counting" },
   { label: "PlantBar", slug: "plantbar" },
   { label: "Sensor Array", slug: "sensor-array" },
@@ -26,7 +29,10 @@ const sqPanelPages = [
   { label: "CO2 Insights", slug: "co2-insights" },
   { label: "Commercial Operators", slug: "commercial-operators" },
   { label: "Documentation", slug: "documentation" },
-  { label: "Health-Conscious Longevity Enthusiasts", slug: "health-conscious-longevity-enthusiasts" },
+  {
+    label: "Health-Conscious Longevity Enthusiasts",
+    slug: "health-conscious-longevity-enthusiasts",
+  },
   { label: "Jung Designer Frame", slug: "jung-designer-frame" },
   { label: "Launch Page", slug: "launch-page" },
   { label: "Payment Models", slug: "payment-models" },
@@ -51,24 +57,35 @@ export default function ProductSidebar() {
 
   const headerKicker = isSqPanelMode ? "SQ-Panel" : "Catalog";
   const headerTitle = isSqPanelMode ? "More on SQ-Panel" : "Our Products";
-  const footerHref = isSqPanelMode ? "/products" : "/product/sq-panel/aqi-insights";
+  const footerHref = isSqPanelMode
+    ? "/products"
+    : "/product/sq-panel/aqi-insights";
   const footerLabel = isSqPanelMode ? "Back to Products" : "More on SQ-Panel";
 
   return (
     <aside className="w-full lg:w-64 shrink-0 self-start lg:sticky lg:top-24 flex flex-col gap-3">
-      <div className="rounded-2xl overflow-hidden shadow-lg" style={{ backgroundColor: "#174f2e" }}>
+      <div
+        className="rounded-2xl overflow-hidden shadow-lg"
+        style={{ backgroundColor: "#174f2e" }}
+      >
         {/* Header */}
         <div className="px-5 py-4 border-b border-white/10 flex items-center justify-between">
           <div>
-            <p className="text-xs font-extrabold uppercase tracking-widest text-green-300">{headerKicker}</p>
-            <p className="text-sm font-semibold text-white mt-0.5">{headerTitle}</p>
+            <p className="text-xs font-extrabold uppercase tracking-widest text-green-300">
+              {headerKicker}
+            </p>
+            <p className="text-sm font-semibold text-white mt-0.5">
+              {headerTitle}
+            </p>
           </div>
           <button
             className="lg:hidden flex items-center gap-1.5 text-white/70 hover:text-white transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle list"
           >
-            <span className="text-xs text-white/50">{isOpen ? "Close" : "All"}</span>
+            <span className="text-xs text-white/50">
+              {isOpen ? "Close" : "All"}
+            </span>
             <svg
               className={`w-4 h-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -76,7 +93,11 @@ export default function ProductSidebar() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </button>
         </div>
@@ -87,17 +108,33 @@ export default function ProductSidebar() {
             className="lg:hidden flex items-center justify-between px-5 py-3 bg-green-400/20 border-l-2 border-green-300 cursor-pointer"
             onClick={() => setIsOpen(true)}
           >
-            <span className="text-sm font-semibold text-white truncate">{activeProduct.label}</span>
-            <svg className="w-4 h-4 text-green-300 shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            <span className="text-sm font-semibold text-white truncate">
+              {activeProduct.label}
+            </span>
+            <svg
+              className="w-4 h-4 text-green-300 shrink-0 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </div>
         )}
 
         {/* Nav list (scrollable on desktop) */}
-        <nav className={`py-2 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto ${isOpen ? "block max-h-[60vh] overflow-y-auto" : "hidden"} lg:block`}>
+        <nav
+          className={`py-2 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto ${isOpen ? "block max-h-[60vh] overflow-y-auto" : "hidden"} lg:block`}
+        >
           {items.map((p) => {
-            const href = isSqPanelMode ? `/product/sq-panel/${p.slug}` : `/product/${p.slug}`;
+            const href = isSqPanelMode
+              ? `/product/sq-panel/${p.slug}`
+              : `/product/${p.slug}`;
             const active = pathname === href;
             return (
               <Link
@@ -119,7 +156,11 @@ export default function ProductSidebar() {
                     stroke="currentColor"
                     strokeWidth={2}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 )}
               </Link>
@@ -133,7 +174,13 @@ export default function ProductSidebar() {
             href={footerHref}
             className="flex items-center gap-2 text-xs font-semibold text-green-300 hover:text-white transition-colors"
           >
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg
+              className="w-3.5 h-3.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

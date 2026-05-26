@@ -1,10 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import PageTitle from '../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import PageTitle from "../../components/PageTitle";
 // import styles from './level1.module.css';
 
 const Page = () => {
-  const pageTitle = 'Night Sessions';
+  const pageTitle = "Night Sessions";
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -42,7 +42,7 @@ const Page = () => {
             rel="noopener noreferrer"
           >
             <u>Thursday Night Sessions, a kind of Home Challenge</u>
-          </a>{' '}
+          </a>{" "}
           by carenuity
         </div>
       </section>

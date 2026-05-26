@@ -1,10 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import PageTitle from '../../components/PageTitle';
-import Link from 'next/link';
+import React from "react";
+import Head from "next/head";
+import PageTitle from "../../components/PageTitle";
+import Link from "next/link";
 
 const Page = ({ isMobile }: { isMobile: boolean }) => {
-  const pageTitle = ' Girls Day';
+  const pageTitle = " Girls Day";
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -36,19 +36,19 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
             data-wow-delay="100ms"
             alt="..."
             style={{
-              visibility: 'visible',
+              visibility: "visible",
               // width: '420px',
-              animationDelay: '100ms',
-              animationName: 'fadeIn',
+              animationDelay: "100ms",
+              animationName: "fadeIn",
             }}
           />
           {/* <h4 className=''>Girls Day</h4> */}
           <div
             className="e-card mb-6"
             style={{
-              boxShadow: '3px 3px 15px 3px  hsla(0, 0%, 80%)',
-              maxHeight: '1000px',
-              padding: '20px',
+              boxShadow: "3px 3px 15px 3px  hsla(0, 0%, 80%)",
+              maxHeight: "1000px",
+              padding: "20px",
             }}
           >
             <div className="row">
@@ -60,10 +60,10 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
                   data-wow-delay="100ms"
                   alt="..."
                   style={{
-                    visibility: 'visible',
-                    width: '420px',
-                    animationDelay: '100ms',
-                    animationName: 'fadeIn',
+                    visibility: "visible",
+                    width: "420px",
+                    animationDelay: "100ms",
+                    animationName: "fadeIn",
                   }}
                 />
               </div>
@@ -95,9 +95,9 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
             <div
               className="e-card mb-6"
               style={{
-                boxShadow: '3px 3px 15px 3px  hsla(0, 0%, 80%)',
-                maxHeight: '1000px',
-                padding: '20px',
+                boxShadow: "3px 3px 15px 3px  hsla(0, 0%, 80%)",
+                maxHeight: "1000px",
+                padding: "20px",
               }}
             >
               <div className="row">
@@ -109,11 +109,11 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
                     data-wow-delay="100ms"
                     alt="..."
                     style={{
-                      visibility: 'visible',
-                      width: '420px',
-                      animationDelay: '100ms',
-                      animationName: 'fadeIn',
-                      paddingTop: '10px',
+                      visibility: "visible",
+                      width: "420px",
+                      animationDelay: "100ms",
+                      animationName: "fadeIn",
+                      paddingTop: "10px",
                     }}
                   />
                 </div>
@@ -215,9 +215,9 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
           <div
             className="e-card mb-6"
             style={{
-              boxShadow: '3px 3px 15px 3px  hsla(0, 0%, 80%)',
-              maxHeight: '2000px',
-              padding: '20px',
+              boxShadow: "3px 3px 15px 3px  hsla(0, 0%, 80%)",
+              maxHeight: "2000px",
+              padding: "20px",
             }}
           >
             <div className="row">
@@ -229,10 +229,10 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
                   data-wow-delay="100ms"
                   alt="..."
                   style={{
-                    visibility: 'visible',
+                    visibility: "visible",
                     // width: '420px',
-                    animationDelay: '100ms',
-                    animationName: 'fadeIn',
+                    animationDelay: "100ms",
+                    animationName: "fadeIn",
                   }}
                 />
               </div>
@@ -262,11 +262,11 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: 'center' }}>
+          <p style={{ textAlign: "center" }}>
             {!isMobile && (
               <Link
-                href={'/home-challenge'}
-                className={'btn btn-lg btn-success rounded-pill'}
+                href={"/home-challenge"}
+                className={"btn btn-lg btn-success rounded-pill"}
               >
                 <span className="small">Learn more on Home Challenge</span>
               </Link>
@@ -274,11 +274,11 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
 
             {isMobile && (
               <a
-                href={'/home-challenge'}
-                className={'btn btn-lg btn-success rounded-pill'}
+                href={"/home-challenge"}
+                className={"btn btn-lg btn-success rounded-pill"}
               >
                 <span className="small">
-                  Learn more on Home Challenge{' '}
+                  Learn more on Home Challenge{" "}
                   {/* <i className='fa-solid fa-arrow-right ps-1'></i>display-10 */}
                 </span>
               </a>

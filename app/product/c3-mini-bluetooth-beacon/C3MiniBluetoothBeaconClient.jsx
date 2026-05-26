@@ -29,38 +29,54 @@ export default function C3MiniBluetoothBeaconClient() {
       {/* Hero */}
       <section
         className="relative overflow-hidden pt-[120px] md:pt-[100px] xl:pt-[140px]"
-        style={{ background: "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)" }}
+        style={{
+          background:
+            "linear-gradient(135deg, #0f3520 0%, #174f2e 55%, #1e6b3e 100%)",
+        }}
       >
         <div
           className="absolute inset-0 opacity-[0.07]"
           style={{
-            backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)",
+            backgroundImage:
+              "radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)",
             backgroundSize: "32px 32px",
           }}
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {t.breadcrumb.home}
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/products" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/products"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {c.breadcrumbProducts}
             </Link>
             <span className="text-green-300/40">/</span>
-            <span className="font-medium text-white">C3-Mini: Bluetooth Beacon</span>
+            <span className="font-medium text-white">
+              C3-Mini: Bluetooth Beacon
+            </span>
           </nav>
           <div className="pb-12 pt-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
               <span className="w-2 h-2 rounded-full bg-green-300 animate-pulse" />
-              <span className="text-xs font-semibold text-white tracking-wide uppercase">{c.badge}</span>
+              <span className="text-xs font-semibold text-white tracking-wide uppercase">
+                {c.badge}
+              </span>
             </div>
             <h1 className="mb-4 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
               {c.heroTitle}
               <br />
               <span className="text-green-300">{c.heroHighlight}</span>
             </h1>
-            <p className="text-lg leading-relaxed text-white/80 max-w-2xl">{c.heroDesc}</p>
+            <p className="text-lg leading-relaxed text-white/80 max-w-2xl">
+              {c.heroDesc}
+            </p>
           </div>
         </div>
       </section>
@@ -72,7 +88,6 @@ export default function C3MiniBluetoothBeaconClient() {
             <ProductSidebar />
 
             <div className="flex-1 min-w-0">
-
               {/* Key Features */}
               <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-6">
                 {c.featuresTitle}
@@ -84,10 +99,16 @@ export default function C3MiniBluetoothBeaconClient() {
                     className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-5"
                   >
                     <div className="w-9 h-9 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-3 shrink-0">
-                      <span className="text-sm font-bold text-primary">{idx + 1}</span>
+                      <span className="text-sm font-bold text-primary">
+                        {idx + 1}
+                      </span>
                     </div>
-                    <h3 className="text-sm font-bold text-[#0d2137] dark:text-white mb-2">{feature.title}</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{feature.desc}</p>
+                    <h3 className="text-sm font-bold text-[#0d2137] dark:text-white mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                      {feature.desc}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -102,10 +123,23 @@ export default function C3MiniBluetoothBeaconClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-12">
                 <ul className="space-y-3">
                   {c.capabilities.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300"
+                    >
                       <span className="mt-0.5 w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
-                        <svg className="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="w-3 h-3 text-primary"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={3}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </span>
                       {item}
@@ -135,8 +169,12 @@ export default function C3MiniBluetoothBeaconClient() {
 
               {/* Wishlist */}
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 flex flex-col items-center text-center">
-                <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-4">{c.wishlistTitle}</h2>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 max-w-md">{c.wishlistDesc}</p>
+                <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-4">
+                  {c.wishlistTitle}
+                </h2>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 max-w-md">
+                  {c.wishlistDesc}
+                </p>
                 <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md mb-4">
                   <input
                     type="email"
@@ -147,9 +185,10 @@ export default function C3MiniBluetoothBeaconClient() {
                     {c.wishlistBtn}
                   </button>
                 </div>
-                <p className="text-sm text-gray-400 dark:text-gray-500 italic">{c.wishlistNote}</p>
+                <p className="text-sm text-gray-400 dark:text-gray-500 italic">
+                  {c.wishlistNote}
+                </p>
               </div>
-
             </div>
           </div>
         </div>

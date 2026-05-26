@@ -1,12 +1,12 @@
-import React from 'react';
-import Head from 'next/head';
-import { useContext } from 'react';
-import { LanguageSwitchContext } from '../../../components/context/LanguageSwitch';
-import Link from 'next/link';
-import PageTitle from '../../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import { useContext } from "react";
+import { LanguageSwitchContext } from "../../../components/context/LanguageSwitch";
+import Link from "next/link";
+import PageTitle from "../../../components/PageTitle";
 
 const Page = () => {
-  const pageTitle = 'Press Materials';
+  const pageTitle = "Press Materials";
   const { state } = useContext(LanguageSwitchContext);
   return (
     <>
@@ -25,7 +25,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -42,10 +42,10 @@ const Page = () => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
+                  visibility: "visible",
+                  animationDelay: "100ms",
 
-                  animationName: 'fadeIn',
+                  animationName: "fadeIn",
                 }}
               />
             </div>
@@ -58,10 +58,10 @@ const Page = () => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
+                  visibility: "visible",
+                  animationDelay: "100ms",
 
-                  animationName: 'fadeIn',
+                  animationName: "fadeIn",
                 }}
               />
             </div>
@@ -74,10 +74,10 @@ const Page = () => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
+                  visibility: "visible",
+                  animationDelay: "100ms",
 
-                  animationName: 'fadeIn',
+                  animationName: "fadeIn",
                 }}
               />
             </div>
@@ -503,16 +503,16 @@ const Page = () => {
               </div>
 
               <h4>
-                {state === 'en' && (
+                {state === "en" && (
                   <>The interaction between makers and users</>
                 )}
-                {state === 'de' && (
+                {state === "de" && (
                   <>Die Wechselwirkung zwischen Makern und Nutzern</>
                 )}
               </h4>
 
               <p>
-                {state === 'en' && (
+                {state === "en" && (
                   <>
                     The interaction between makers and users is of great
                     importance. Users provide valuable feedback and new ideas
@@ -524,7 +524,7 @@ const Page = () => {
                     devices.
                   </>
                 )}
-                {state === 'de' && (
+                {state === "de" && (
                   <>
                     Die Wechselwirkung zwischen Makern und Nutzern ist von
                     großer Bedeutung. Nutzer liefern wertvolles Feedback und
@@ -540,13 +540,13 @@ const Page = () => {
               </p>
 
               <h4>
-                {state === 'en' && (
+                {state === "en" && (
                   <>
                     The role of the <strong>Solution Builders</strong> in the
                     development of innovative devices
                   </>
                 )}
-                {state === 'de' && (
+                {state === "de" && (
                   <>
                     Die Rolle des <strong>Solution Builders</strong> bei der
                     Entwicklung innovativer Geräte
@@ -555,7 +555,7 @@ const Page = () => {
               </h4>
 
               <p>
-                {state === 'en' && (
+                {state === "en" && (
                   <>
                     The developers on the Solution Builder Platform share their
                     solutions and are an essential component in this process.
@@ -566,7 +566,7 @@ const Page = () => {
                     development of innovative products.
                   </>
                 )}
-                {state === 'de' && (
+                {state === "de" && (
                   <>
                     Die Entwickler auf der Solution Builder Platform teilen ihre
                     Lösungen und sind eine wesentliche Komponente in diesem
@@ -581,14 +581,14 @@ const Page = () => {
               </p>
 
               <h4>
-                {state === 'en' && (
+                {state === "en" && (
                   <>
                     This WhatsApp-Group &quot;THWS Solution Builder&quot; is
                     open for THWS staff & students to discuss and refine their
                     solutions:
                   </>
                 )}
-                {state === 'de' && (
+                {state === "de" && (
                   <>
                     Diese WhatsApp-Gruppe „THWS Solution Builder“ steht
                     THWS-Mitarbeitern und -Studenten offen, um ihre Lösungen zu
@@ -596,7 +596,7 @@ const Page = () => {
                   </>
                 )}
               </h4>
-              <div className="mb-4" style={{ textAlign: 'center' }}>
+              <div className="mb-4" style={{ textAlign: "center" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/home-challenge/universities/press-materials-for-thws/whatsapp.jpeg"
@@ -604,27 +604,27 @@ const Page = () => {
                   data-wow-delay="100ms"
                   alt="..."
                   style={{
-                    visibility: 'visible',
-                    animationDelay: '100ms',
-                    animationName: 'fadeIn',
+                    visibility: "visible",
+                    animationDelay: "100ms",
+                    animationName: "fadeIn",
                   }}
                 />
               </div>
 
-              <div style={{ textAlign: 'center' }} className="mb-4">
+              <div style={{ textAlign: "center" }} className="mb-4">
                 <a
                   href="https://www.thws.de/service/news-presse/pressemeldungen/thema/praxisnah-im-studium-bewegungsmelder-selbst-bauen/ "
                   target="blank"
                 >
-                  {' '}
+                  {" "}
                   <u>Würzburg-Schweinfurt University of Applied Sciences</u>
                 </a>
               </div>
 
-              <p style={{ textAlign: 'center' }}>
+              <p style={{ textAlign: "center" }}>
                 <Link
-                  href={'/home-challenge/thws'}
-                  className={'btn btn-lg btn-success rounded-pill'}
+                  href={"/home-challenge/thws"}
+                  className={"btn btn-lg btn-success rounded-pill"}
                 >
                   <span className="small">Back to startpage</span>
                 </Link>

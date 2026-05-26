@@ -5,7 +5,11 @@ import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
 const universityHrefs = [
-  { key: "c3Mini", href: "/home-challenge/university/assortment-box/c3-mini-kisii-boxes", featured: true },
+  {
+    key: "c3Mini",
+    href: "/home-challenge/university/assortment-box/c3-mini-kisii-boxes",
+    featured: true,
+  },
   { key: "auth", href: "/home-challenge/university/auth" },
   { key: "oauth", href: "/home-challenge/university/oauth" },
   { key: "duth", href: "/home-challenge/university/duth" },
@@ -20,7 +24,9 @@ const universityHrefs = [
 ];
 
 function isActive(pathname, href) {
-  if (href === "/home-challenge/university/assortment-box/c3-mini-kisii-boxes") {
+  if (
+    href === "/home-challenge/university/assortment-box/c3-mini-kisii-boxes"
+  ) {
     return pathname.startsWith("/home-challenge/university/assortment-box");
   }
   return pathname === href || pathname.startsWith(href + "/");
@@ -35,19 +41,28 @@ export default function UniversitySidebar() {
 
   return (
     <aside className="w-full lg:w-64 shrink-0 self-start lg:sticky lg:top-24 flex flex-col gap-3">
-      <div className="rounded-2xl overflow-hidden shadow-lg" style={{ backgroundColor: "#174f2e" }}>
+      <div
+        className="rounded-2xl overflow-hidden shadow-lg"
+        style={{ backgroundColor: "#174f2e" }}
+      >
         {/* Header */}
         <div className="px-5 py-4 border-b border-white/10 flex items-center justify-between">
           <div>
-            <p className="text-xs font-extrabold uppercase tracking-widest text-green-300">{s.header}</p>
-            <p className="text-sm font-semibold text-white mt-0.5">{s.subheader}</p>
+            <p className="text-xs font-extrabold uppercase tracking-widest text-green-300">
+              {s.header}
+            </p>
+            <p className="text-sm font-semibold text-white mt-0.5">
+              {s.subheader}
+            </p>
           </div>
           <button
             className="lg:hidden flex items-center gap-1.5 text-white/70 hover:text-white transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle list"
           >
-            <span className="text-xs text-white/50">{isOpen ? s.close : s.all}</span>
+            <span className="text-xs text-white/50">
+              {isOpen ? s.close : s.all}
+            </span>
             <svg
               className={`w-4 h-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -55,7 +70,11 @@ export default function UniversitySidebar() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </button>
         </div>
@@ -67,17 +86,33 @@ export default function UniversitySidebar() {
             onClick={() => setIsOpen(true)}
           >
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-white truncate">{s.items[active.key].label}</p>
-              <p className="text-[11px] text-white/60 truncate">{s.items[active.key].desc}</p>
+              <p className="text-sm font-semibold text-white truncate">
+                {s.items[active.key].label}
+              </p>
+              <p className="text-[11px] text-white/60 truncate">
+                {s.items[active.key].desc}
+              </p>
             </div>
-            <svg className="w-4 h-4 text-green-300 shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            <svg
+              className="w-4 h-4 text-green-300 shrink-0 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </div>
         )}
 
         {/* Nav list */}
-        <nav className={`py-2 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto ${isOpen ? "block max-h-[60vh] overflow-y-auto" : "hidden"} lg:block`}>
+        <nav
+          className={`py-2 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto ${isOpen ? "block max-h-[60vh] overflow-y-auto" : "hidden"} lg:block`}
+        >
           {universityHrefs.map((u) => {
             const a = isActive(pathname, u.href);
             const item = s.items[u.key];
@@ -92,11 +127,19 @@ export default function UniversitySidebar() {
                     : "text-white/80 hover:bg-white/10 hover:text-white border-transparent"
                 }`}
               >
-                <span className={`text-sm truncate ${a ? "font-semibold" : "font-medium"} ${u.featured ? "text-green-300" : ""}`}>
+                <span
+                  className={`text-sm truncate ${a ? "font-semibold" : "font-medium"} ${u.featured ? "text-green-300" : ""}`}
+                >
                   {item.label}
-                  {u.featured && !a && <span className="ml-1.5 text-[9px] uppercase tracking-wider text-green-300/70">{s.guideBadge}</span>}
+                  {u.featured && !a && (
+                    <span className="ml-1.5 text-[9px] uppercase tracking-wider text-green-300/70">
+                      {s.guideBadge}
+                    </span>
+                  )}
                 </span>
-                <span className="text-[11px] text-white/50 truncate">{item.desc}</span>
+                <span className="text-[11px] text-white/50 truncate">
+                  {item.desc}
+                </span>
               </Link>
             );
           })}
@@ -108,8 +151,18 @@ export default function UniversitySidebar() {
             href="/home-challenge"
             className="flex items-center gap-2 text-xs font-semibold text-green-300 hover:text-white transition-colors"
           >
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-3.5 h-3.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             {s.back}
           </Link>

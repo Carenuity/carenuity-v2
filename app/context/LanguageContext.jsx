@@ -991,52 +991,110 @@ export const translations = {
       badge: "C3-Mini Ecosystem",
       heroTitle: "C3-Mini™ Triple",
       heroHighlight: "Sensor · Microcontroller · Actuator",
-      heroDesc: "Build your own sensing device within 3 minutes by stacking a Sensor, the C3-Mini, and an Actuator onto the Triple-Adapter. No soldering, no wiring — just stack and flash.",
+      heroDesc:
+        "Build your own sensing device within 3 minutes by stacking a Sensor, the C3-Mini, and an Actuator onto the Triple-Adapter. No soldering, no wiring — just stack and flash.",
       breadcrumbProducts: "Products",
       whatTitle: "What is a C3-Mini™ Triple?",
-      whatP1: "The C3-Mini™ Triple is a modular hardware concept built around the Triple-Adapter — a base board with three labelled slots: S (Sensor), M (Microcontroller), and A (Actuator). Simply stack your chosen sensor on the left, the C3-Mini in the middle, and a display or buzzer on the right.",
-      whatP2: "Once assembled, use the Install-for-Free app directly from your browser to flash your chosen application — no PC software required. Within 3 minutes your device is live and reporting data to CloudFree, Home Assistant, IoT AppStore, or Matter.",
+      whatP1:
+        "The C3-Mini™ Triple is a modular hardware concept built around the Triple-Adapter — a base board with three labelled slots: S (Sensor), M (Microcontroller), and A (Actuator). Simply stack your chosen sensor on the left, the C3-Mini in the middle, and a display or buzzer on the right.",
+      whatP2:
+        "Once assembled, use the Install-for-Free app directly from your browser to flash your chosen application — no PC software required. Within 3 minutes your device is live and reporting data to CloudFree, Home Assistant, IoT AppStore, or Matter.",
       stepsTitle: "How It Works",
       steps: [
-        { step: "01", title: "Select your S-M-A Triple", desc: "Choose a Sensor, place the C3-Mini in the middle of the Triple-Adapter, and add a Display or Buzzer as your Actuator." },
-        { step: "02", title: "Install for Free", desc: "Use the Install-for-Free feature to flash your chosen application directly onto the C3-Mini — no coding required." },
-        { step: "03", title: "Your Device is Ready", desc: "Within 3 minutes your sensor device is up and running — reporting live data to CloudFree, Home Assistant, IoT AppStore or Matter." },
+        {
+          step: "01",
+          title: "Select your S-M-A Triple",
+          desc: "Choose a Sensor, place the C3-Mini in the middle of the Triple-Adapter, and add a Display or Buzzer as your Actuator.",
+        },
+        {
+          step: "02",
+          title: "Install for Free",
+          desc: "Use the Install-for-Free feature to flash your chosen application directly onto the C3-Mini — no coding required.",
+        },
+        {
+          step: "03",
+          title: "Your Device is Ready",
+          desc: "Within 3 minutes your sensor device is up and running — reporting live data to CloudFree, Home Assistant, IoT AppStore or Matter.",
+        },
       ],
       devicesTitle: "Devices You Can Build",
-      devicesDesc: "Stack one of the seven sensor boards onto the Triple-Adapter, place the C3-Mini in the middle, and add the display or buzzer on the right.",
+      devicesDesc:
+        "Stack one of the seven sensor boards onto the Triple-Adapter, place the C3-Mini in the middle, and add the display or buzzer on the right.",
       devices: [
-        { title: "Barometer", desc: "Measures atmospheric pressure. Equipped with a display to show pressure readings or a buzzer to signal significant changes, which may indicate weather shifts." },
-        { title: "Hygrometer", desc: "Monitors air humidity. Uses a display to show relative humidity or a buzzer to alert when humidity levels fall outside a desired range." },
-        { title: "IR Radiometer", desc: "Detects thermal radiation without contact. Can use a display to show surface temperatures or a buzzer to indicate abnormal thermal readings." },
-        { title: "Luxmeter", desc: "Measures light intensity. May have a display showing lux values or a buzzer that activates when light levels are too high or too low." },
-        { title: "Thermometer", desc: "Measures temperature. Features a display for real-time readings or a buzzer to notify when temperatures exceed or drop below set thresholds." },
-        { title: "Motion Detector", desc: "Senses movement. Shows motion status on a display or uses a buzzer to audibly alert when movement is detected." },
-        { title: "Presence Button", desc: "Detects user presence through interaction. Confirms activation via a display or provides feedback through a buzzer when pressed." },
+        {
+          title: "Barometer",
+          desc: "Measures atmospheric pressure. Equipped with a display to show pressure readings or a buzzer to signal significant changes, which may indicate weather shifts.",
+        },
+        {
+          title: "Hygrometer",
+          desc: "Monitors air humidity. Uses a display to show relative humidity or a buzzer to alert when humidity levels fall outside a desired range.",
+        },
+        {
+          title: "IR Radiometer",
+          desc: "Detects thermal radiation without contact. Can use a display to show surface temperatures or a buzzer to indicate abnormal thermal readings.",
+        },
+        {
+          title: "Luxmeter",
+          desc: "Measures light intensity. May have a display showing lux values or a buzzer that activates when light levels are too high or too low.",
+        },
+        {
+          title: "Thermometer",
+          desc: "Measures temperature. Features a display for real-time readings or a buzzer to notify when temperatures exceed or drop below set thresholds.",
+        },
+        {
+          title: "Motion Detector",
+          desc: "Senses movement. Shows motion status on a display or uses a buzzer to audibly alert when movement is detected.",
+        },
+        {
+          title: "Presence Button",
+          desc: "Detects user presence through interaction. Confirms activation via a display or provides feedback through a buzzer when pressed.",
+        },
       ],
       installBtn: "Install For Free",
       shopBtn: "Buy C3-Mini Parts",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join the C3-Mini Triples wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     c3MiniBluetoothBeacon: {
       badge: "C3-Mini Ecosystem",
       heroTitle: "C3-Mini™",
       heroHighlight: "Bluetooth Beacon",
-      heroDesc: "Transform the ESP32-C3 into a compact, low-power Bluetooth Low Energy beacon — ready for smart home, healthcare, retail, and industrial applications in minutes.",
+      heroDesc:
+        "Transform the ESP32-C3 into a compact, low-power Bluetooth Low Energy beacon — ready for smart home, healthcare, retail, and industrial applications in minutes.",
       breadcrumbProducts: "Products",
       featuresTitle: "Key Features",
       features: [
-        { title: "Compact Form Factor", desc: "Fits into tight enclosures and battery-powered setups with ease." },
-        { title: "BLE Advertising Support", desc: "Broadcasts iBeacon, Eddystone, and custom BLE frames out of the box." },
-        { title: "Low Power Operation", desc: "Optimised sleep cycles keep the beacon running for months on a single charge." },
-        { title: "Flexible Firmware", desc: "Supports Arduino, ESP-IDF, and MicroPython — choose the stack that suits you." },
-        { title: "OTA-Ready", desc: "Update firmware wirelessly without removing the device from its location." },
-        { title: "Integration Options", desc: "Connect peripherals via GPIO, I²C, SPI, and UART for extended sensing." },
+        {
+          title: "Compact Form Factor",
+          desc: "Fits into tight enclosures and battery-powered setups with ease.",
+        },
+        {
+          title: "BLE Advertising Support",
+          desc: "Broadcasts iBeacon, Eddystone, and custom BLE frames out of the box.",
+        },
+        {
+          title: "Low Power Operation",
+          desc: "Optimised sleep cycles keep the beacon running for months on a single charge.",
+        },
+        {
+          title: "Flexible Firmware",
+          desc: "Supports Arduino, ESP-IDF, and MicroPython — choose the stack that suits you.",
+        },
+        {
+          title: "OTA-Ready",
+          desc: "Update firmware wirelessly without removing the device from its location.",
+        },
+        {
+          title: "Integration Options",
+          desc: "Connect peripherals via GPIO, I²C, SPI, and UART for extended sensing.",
+        },
       ],
       capabilitiesTitle: "What It Can Do",
-      capabilitiesDesc: "The C3-Mini beacon covers a wide range of wireless use cases without pairing or complex setup.",
+      capabilitiesDesc:
+        "The C3-Mini beacon covers a wide range of wireless use cases without pairing or complex setup.",
       capabilities: [
         "Broadcast device ID and sensor data",
         "Enable indoor positioning and asset tracking",
@@ -1045,24 +1103,31 @@ export const translations = {
         "Transmit health and environmental data without pairing",
       ],
       solutionTitle: "Carenuity Standard Option",
-      solutionDesc: "Get started instantly with a pre-configured BLE firmware, optimised power settings, and quick setup through the Solution Builder.",
+      solutionDesc:
+        "Get started instantly with a pre-configured BLE firmware, optimised power settings, and quick setup through the Solution Builder.",
       solutionBtn: "Open Solution Builder",
       installBtn: "Install For Free",
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Stay up to date on new BLE firmware, enclosure options, and deployment guides for the C3-Mini Bluetooth Beacon.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Stay up to date on new BLE firmware, enclosure options, and deployment guides for the C3-Mini Bluetooth Beacon.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     dingDongBar: {
       badge: "Motion Alert Device",
       heroTitle: "DingDongBar –",
       heroHighlight: "Motion Detection Alert Device",
-      heroDesc: "A compact, smart alert device that automatically responds to human movement by producing a distinct sound. Uses a PIR sensor and buzzer for hands-free operation in doorways, offices, and security zones.",
+      heroDesc:
+        "A compact, smart alert device that automatically responds to human movement by producing a distinct sound. Uses a PIR sensor and buzzer for hands-free operation in doorways, offices, and security zones.",
       breadcrumbProducts: "Products",
       introTitle: "DingDongBar – Motion Detection Alert Device",
-      cardP1: "The DingDongBar is a compact, smart alert device that automatically responds to human movement by producing a distinct sound. It uses a PIR (Passive Infrared) motion sensor to detect infrared radiation changes caused by motion, and a buzzer to instantly generate an audible \"ding-dong\" tone whenever movement is detected.",
-      cardP2: "Designed for simplicity and reliability, the DingDongBar eliminates the need for physical interaction such as pressing a button. This makes it ideal for environments where hands-free operation is preferred — like doorways, reception areas, offices, or security-sensitive zones.",
-      extendedDesc: "Because it's based on low-power electronics, the DingDongBar can run continuously for long periods on a small power supply or battery. It can also be easily integrated into IoT systems, door alert setups, or automation projects, making it useful in both educational prototypes and real-world applications.",
+      cardP1:
+        'The DingDongBar is a compact, smart alert device that automatically responds to human movement by producing a distinct sound. It uses a PIR (Passive Infrared) motion sensor to detect infrared radiation changes caused by motion, and a buzzer to instantly generate an audible "ding-dong" tone whenever movement is detected.',
+      cardP2:
+        "Designed for simplicity and reliability, the DingDongBar eliminates the need for physical interaction such as pressing a button. This makes it ideal for environments where hands-free operation is preferred — like doorways, reception areas, offices, or security-sensitive zones.",
+      extendedDesc:
+        "Because it's based on low-power electronics, the DingDongBar can run continuously for long periods on a small power supply or battery. It can also be easily integrated into IoT systems, door alert setups, or automation projects, making it useful in both educational prototypes and real-world applications.",
       assembleLink: "See how it is assembled",
       typicalUsesTitle: "Typical uses include:",
       typicalUses: [
@@ -1072,14 +1137,30 @@ export const translations = {
         "Automatic reminders for motion-based events (e.g., light or sound triggers)",
         "As an educational demo for learning about sensors, microcontrollers, and basic automation logic",
       ],
-      pirDesc: "The PIR sensor continuously monitors its surroundings for changes in infrared radiation (heat). When a person or object moves within its detection range, the sensor's output pin goes HIGH. The microcontroller (e.g., Arduino, ESP32, etc.) receives this signal. The buzzer is then activated — producing a \"ding-dong\" or alert sound. After a few seconds, the buzzer stops automatically until new motion is detected.",
+      pirDesc:
+        'The PIR sensor continuously monitors its surroundings for changes in infrared radiation (heat). When a person or object moves within its detection range, the sensor\'s output pin goes HIGH. The microcontroller (e.g., Arduino, ESP32, etc.) receives this signal. The buzzer is then activated — producing a "ding-dong" or alert sound. After a few seconds, the buzzer stops automatically until new motion is detected.',
       featuresTitle: "Key Features",
       features: [
-        { title: "Fully Automatic Activation", desc: "Activates instantly on motion — no buttons or manual interaction required." },
-        { title: "Day & Night Operation", desc: "The PIR sensor works reliably in both daylight and complete darkness." },
-        { title: "Compact & Low-Power Design", desc: "Minimal power draw and a small footprint make it easy to place anywhere." },
-        { title: "Extensible", desc: "Expand with LEDs, displays, or Wi-Fi notifications to suit your use case." },
-        { title: "Motion Alerts & Education", desc: "Ideal for motion alert projects as well as sensor education demonstrations." },
+        {
+          title: "Fully Automatic Activation",
+          desc: "Activates instantly on motion — no buttons or manual interaction required.",
+        },
+        {
+          title: "Day & Night Operation",
+          desc: "The PIR sensor works reliably in both daylight and complete darkness.",
+        },
+        {
+          title: "Compact & Low-Power Design",
+          desc: "Minimal power draw and a small footprint make it easy to place anywhere.",
+        },
+        {
+          title: "Extensible",
+          desc: "Expand with LEDs, displays, or Wi-Fi notifications to suit your use case.",
+        },
+        {
+          title: "Motion Alerts & Education",
+          desc: "Ideal for motion alert projects as well as sensor education demonstrations.",
+        },
       ],
       applicationsTitle: "Typical Applications",
       applications: [
@@ -1092,10 +1173,22 @@ export const translations = {
       componentsTitle: "Core Components",
       componentsSubtitle: "Typical Components:",
       componentsList: [
-        { label: "PIR Sensor (e.g. HC-SR501)", desc: "Detects motion based on infrared heat changes" },
-        { label: "Buzzer (Active or Piezo)", desc: "Emits a sound when triggered" },
-        { label: "Microcontroller", desc: "Controls logic between PIR and buzzer" },
-        { label: "Power Supply", desc: "Provides 3.3 V or 5 V depending on components" },
+        {
+          label: "PIR Sensor (e.g. HC-SR501)",
+          desc: "Detects motion based on infrared heat changes",
+        },
+        {
+          label: "Buzzer (Active or Piezo)",
+          desc: "Emits a sound when triggered",
+        },
+        {
+          label: "Microcontroller",
+          desc: "Controls logic between PIR and buzzer",
+        },
+        {
+          label: "Power Supply",
+          desc: "Provides 3.3 V or 5 V depending on components",
+        },
         { label: "Optional LED", desc: "Visual cue when motion is detected" },
       ],
       circuitTitle: "Example Circuit Logic:",
@@ -1104,7 +1197,8 @@ export const translations = {
         "Microcontroller output (e.g., pin D7) → Buzzer input",
         "VCC & GND → Common power lines",
       ],
-      circuitDesc: "When motion is detected, the microcontroller briefly powers the buzzer, creating the \"DingDong\" sound.",
+      circuitDesc:
+        'When motion is detected, the microcontroller briefly powers the buzzer, creating the "DingDong" sound.',
       comparisonTitle: "Product Comparison",
       comparisonHeaders: ["Feature", "PIR + Buzzer", "Button + OLED"],
       comparisonRows: [
@@ -1113,42 +1207,86 @@ export const translations = {
         ["Complexity", "Simple, no interaction", "Requires user input"],
       ],
       solutionTitle: "Solution Builder",
-      solutionDesc: "Flash the DingDongBar firmware directly from your browser — no software installation needed.",
+      solutionDesc:
+        "Flash the DingDongBar firmware directly from your browser — no software installation needed.",
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Get notified about new enclosure options, firmware updates, and tutorials for the DingDongBar.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Get notified about new enclosure options, firmware updates, and tutorials for the DingDongBar.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     dinoShrek: {
       badge: "Motion-Hunting Party Gadget",
       heroTitle: "DinoShrek –",
       heroHighlight: "The Motion-Hunting Party Gadget",
-      heroDesc: "Inspired by the legendary T-Rex, DinoShrek reacts to even the tiniest human motion using advanced 24 GHz radar technology — flashing red LED eyes and roaring a primal Dino sound whenever movement is detected.",
+      heroDesc:
+        "Inspired by the legendary T-Rex, DinoShrek reacts to even the tiniest human motion using advanced 24 GHz radar technology — flashing red LED eyes and roaring a primal Dino sound whenever movement is detected.",
       breadcrumbProducts: "Products",
       introTitle: "Meet DinoShrek – The Motion-Hunting Party Gadget",
-      introP1: "Inspired by the legendary T-Rex, DinoShrek reacts to even the tiniest human motion. Using advanced 24 GHz radar technology, it detects movement with stunning precision – just like the dinosaur that could sense the faintest vibration in the air. When movement is detected, the C3-Mini onboard flashes its red LED eyes, and a primal Dino roar bursts from the built-in buzzer.",
-      introP2: "Unleash it at your next party, place it on your desk, or guard your snack bowl – no movement escapes DinoShrek.",
+      introP1:
+        "Inspired by the legendary T-Rex, DinoShrek reacts to even the tiniest human motion. Using advanced 24 GHz radar technology, it detects movement with stunning precision – just like the dinosaur that could sense the faintest vibration in the air. When movement is detected, the C3-Mini onboard flashes its red LED eyes, and a primal Dino roar bursts from the built-in buzzer.",
+      introP2:
+        "Unleash it at your next party, place it on your desk, or guard your snack bowl – no movement escapes DinoShrek.",
       howTitle: "How It Works",
       howSteps: [
-        { title: "Radar Detection (24 GHz)", desc: "The highly sensitive motion radar scans the environment for the smallest motion or body presence." },
-        { title: "Instant Reaction", desc: "When it senses movement, the Carenuity C3-Mini triggers an alert sequence." },
-        { title: "Visual & Audio Feedback", desc: "Red LEDs flash instantly while a powerful Dino roar echoes through the room." },
-        { title: "Plug, Play, Roar", desc: "Thanks to the Carenuity Triple-Adapter and Type-C USB power, DinoShrek works straight out of the box." },
+        {
+          title: "Radar Detection (24 GHz)",
+          desc: "The highly sensitive motion radar scans the environment for the smallest motion or body presence.",
+        },
+        {
+          title: "Instant Reaction",
+          desc: "When it senses movement, the Carenuity C3-Mini triggers an alert sequence.",
+        },
+        {
+          title: "Visual & Audio Feedback",
+          desc: "Red LEDs flash instantly while a powerful Dino roar echoes through the room.",
+        },
+        {
+          title: "Plug, Play, Roar",
+          desc: "Thanks to the Carenuity Triple-Adapter and Type-C USB power, DinoShrek works straight out of the box.",
+        },
       ],
       modularTitle: "Carenuity Modular Design",
-      modularP1: "DinoShrek is built on the Carenuity Modular Ecosystem, making it fully reconfigurable and expandable. Swap sensors, add sound effects, or integrate other Carenuity modules in seconds – no soldering, no programming, no tools required.",
-      modularP2: "The Carenuity Solution Builder concept means you can build, test, and modify your radar creatures in under three minutes.",
+      modularP1:
+        "DinoShrek is built on the Carenuity Modular Ecosystem, making it fully reconfigurable and expandable. Swap sensors, add sound effects, or integrate other Carenuity modules in seconds – no soldering, no programming, no tools required.",
+      modularP2:
+        "The Carenuity Solution Builder concept means you can build, test, and modify your radar creatures in under three minutes.",
       boxTitle: "Included in the Box",
       boxHeaders: ["Component", "Description"],
       boxItems: [
-        { component: "24 GHz Radar Sensor", desc: "High-precision motion and presence detection – ultra-sensitive, even through materials" },
-        { component: "Carenuity C3-Mini", desc: "Compact ESP32-C3 microcontroller with integrated red status LED" },
-        { component: "Dino Buzzer", desc: "Preloaded with the authentic Dino roar sound" },
-        { component: "Carenuity Triple-Adapter", desc: "Modular board system for fast, plug-in configuration" },
-        { component: "3D-Printed Housing", desc: "Tailored for compact assembly and heat management" },
-        { component: "Acrylic Display Box", desc: "Transparent case for instant setup and visual showcase" },
-        { component: "USB Type-C Cable", desc: "Plug & Play power connection for immediate operation" },
-        { component: "Quick-Start Guide", desc: "Simple setup and customization instructions" },
+        {
+          component: "24 GHz Radar Sensor",
+          desc: "High-precision motion and presence detection – ultra-sensitive, even through materials",
+        },
+        {
+          component: "Carenuity C3-Mini",
+          desc: "Compact ESP32-C3 microcontroller with integrated red status LED",
+        },
+        {
+          component: "Dino Buzzer",
+          desc: "Preloaded with the authentic Dino roar sound",
+        },
+        {
+          component: "Carenuity Triple-Adapter",
+          desc: "Modular board system for fast, plug-in configuration",
+        },
+        {
+          component: "3D-Printed Housing",
+          desc: "Tailored for compact assembly and heat management",
+        },
+        {
+          component: "Acrylic Display Box",
+          desc: "Transparent case for instant setup and visual showcase",
+        },
+        {
+          component: "USB Type-C Cable",
+          desc: "Plug & Play power connection for immediate operation",
+        },
+        {
+          component: "Quick-Start Guide",
+          desc: "Simple setup and customization instructions",
+        },
       ],
       useCasesTitle: "Use Cases",
       useCases: [
@@ -1158,61 +1296,104 @@ export const translations = {
         "Radar showcase for makers and AI-sensor enthusiasts",
       ],
       whyTitle: "Why DinoShrek?",
-      whyDesc: "Because sometimes, you don't detect movement – you feel it. DinoShrek combines fun, engineering, and radar technology in one modular, ready-to-use system. Built by Carenuity, optimized for innovation.",
+      whyDesc:
+        "Because sometimes, you don't detect movement – you feel it. DinoShrek combines fun, engineering, and radar technology in one modular, ready-to-use system. Built by Carenuity, optimized for innovation.",
       ctaTitle: "Get your DinoShrek now and let the hunt begin.",
       ctaDesc: "Available soon at chipglobe.com and carenuity.com",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join DinoShrek wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     enviroSence680: {
       badge: "Environmental Monitoring",
       heroTitle: "EnviroSence 680 –",
       heroHighlight: "Advanced Environmental Monitoring Solution",
-      heroDesc: "A versatile and compact device designed to monitor and display essential environmental data in real-time. Integrates the powerful BME680 sensor with the ESP-C3 mini microcontroller.",
+      heroDesc:
+        "A versatile and compact device designed to monitor and display essential environmental data in real-time. Integrates the powerful BME680 sensor with the ESP-C3 mini microcontroller.",
       breadcrumbProducts: "Products",
-      introTitle: "EnviroSence 680 – Advanced Environmental Monitoring Solution",
-      introDesc: "EnviroSence 680 is a versatile and compact device designed to monitor and display essential environmental data in real-time. It integrates the powerful BME680 sensor with the ESP-C3 mini microcontroller, providing accurate measurements of temperature, humidity, pressure, altitude, gas concentration, and air quality index (AQI). The device features a vibrant TFT display, making data visualization clear and user-friendly.",
-      lvglDesc: "To ensure a smooth user experience, the interface is developed using LVGL, a highly optimized graphical library tailored for embedded systems. EnviroSence 680's intuitive GUI presents all the environmental parameters at a glance, making it ideal for applications in smart homes, industrial monitoring, and precision agriculture.",
+      introTitle:
+        "EnviroSence 680 – Advanced Environmental Monitoring Solution",
+      introDesc:
+        "EnviroSence 680 is a versatile and compact device designed to monitor and display essential environmental data in real-time. It integrates the powerful BME680 sensor with the ESP-C3 mini microcontroller, providing accurate measurements of temperature, humidity, pressure, altitude, gas concentration, and air quality index (AQI). The device features a vibrant TFT display, making data visualization clear and user-friendly.",
+      lvglDesc:
+        "To ensure a smooth user experience, the interface is developed using LVGL, a highly optimized graphical library tailored for embedded systems. EnviroSence 680's intuitive GUI presents all the environmental parameters at a glance, making it ideal for applications in smart homes, industrial monitoring, and precision agriculture.",
       featuresTitle: "Key Features",
       features: [
-        { title: "Real-Time Monitoring", desc: "Continuously tracks and displays environmental data as it changes." },
-        { title: "Compact & Efficient Design", desc: "Small form factor with optimized power consumption for long-term deployment." },
-        { title: "Advanced Sensor Technology", desc: "Powered by the BME680 sensor for accurate air quality, temperature, humidity, and pressure readings." },
-        { title: "Interactive GUI", desc: "User-friendly graphical interface for clear data visualization." },
-        { title: "Portable and Flexible", desc: "Designed for use in a wide range of environments and applications." },
+        {
+          title: "Real-Time Monitoring",
+          desc: "Continuously tracks and displays environmental data as it changes.",
+        },
+        {
+          title: "Compact & Efficient Design",
+          desc: "Small form factor with optimized power consumption for long-term deployment.",
+        },
+        {
+          title: "Advanced Sensor Technology",
+          desc: "Powered by the BME680 sensor for accurate air quality, temperature, humidity, and pressure readings.",
+        },
+        {
+          title: "Interactive GUI",
+          desc: "User-friendly graphical interface for clear data visualization.",
+        },
+        {
+          title: "Portable and Flexible",
+          desc: "Designed for use in a wide range of environments and applications.",
+        },
       ],
       docsTitle: "Documentation",
       docsLinkLabel: "Schematic V2.0.1 (PDF)",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join Envirosence 680 wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     esp32Audio: {
       badge: "Modular Audio Project",
       heroTitle: "ESP32 Audio",
-      heroHighlight: "Modular Audio Project Based on the Carenuity Architecture",
-      heroDesc: "A modular audio recording and playback system built on the Carenuity S-M-A principle, combining a microphone sensor, ESP32 microcontroller, and audio actuator into one cohesive ecosystem.",
+      heroHighlight:
+        "Modular Audio Project Based on the Carenuity Architecture",
+      heroDesc:
+        "A modular audio recording and playback system built on the Carenuity S-M-A principle, combining a microphone sensor, ESP32 microcontroller, and audio actuator into one cohesive ecosystem.",
       breadcrumbProducts: "Products",
       architectureTitle: "Architecture",
-      introCardDesc: "This project provides a modular and user-friendly solution for building an ESP32-based audio recording and playback device. It integrates a high-quality microphone, wireless connectivity, SD-card storage, optional LED control, and a streamlined setup process without requiring programming skills.",
+      introCardDesc:
+        "This project provides a modular and user-friendly solution for building an ESP32-based audio recording and playback device. It integrates a high-quality microphone, wireless connectivity, SD-card storage, optional LED control, and a streamlined setup process without requiring programming skills.",
       refDesignTitle: "Reference Design",
-      refDesignDesc: "For comparison and inspiration, the following ESP32 audio recorder project demonstrates a related architecture:",
+      refDesignDesc:
+        "For comparison and inspiration, the following ESP32 audio recorder project demonstrates a related architecture:",
       refDesignLinks: [
-        { label: "Documentation", url: "https://docs.cirkitdesigner.com/project/published/e39a1639-a2e9-4fa3-92d3-89d96a50dac6/esp32-based-audio-recorder-and-playback-system" },
-        { label: "Project view", url: "https://app.cirkitdesigner.com/project/e39a1639-a2e9-4fa3-92d3-89d96a50dac6" },
+        {
+          label: "Documentation",
+          url: "https://docs.cirkitdesigner.com/project/published/e39a1639-a2e9-4fa3-92d3-89d96a50dac6/esp32-based-audio-recorder-and-playback-system",
+        },
+        {
+          label: "Project view",
+          url: "https://app.cirkitdesigner.com/project/e39a1639-a2e9-4fa3-92d3-89d96a50dac6",
+        },
       ],
       requirementsTitle: "Your Requirements",
-      requirementsDesc: "The system is designed to meet the following functional requirements: integrated microphone for audio capture, ESP32 microcontroller with Wi-Fi and Bluetooth, SD-card storage, physical control buttons, addressable LED support, and complete documentation.",
+      requirementsDesc:
+        "The system is designed to meet the following functional requirements: integrated microphone for audio capture, ESP32 microcontroller with Wi-Fi and Bluetooth, SD-card storage, physical control buttons, addressable LED support, and complete documentation.",
       conceptTitle: "Our Concept",
-      conceptDesc: "The recommended solution is based on the Carenuity S-M-A principle, consisting of Sensor, Microcontroller, and Actuator modules. All blocks are implemented on Triple-Adapters and designed for quick assembly without any technical background. The system can be set up through the Carenuity Solution Builder, which performs all configuration steps automatically.",
+      conceptDesc:
+        "The recommended solution is based on the Carenuity S-M-A principle, consisting of Sensor, Microcontroller, and Actuator modules. All blocks are implemented on Triple-Adapters and designed for quick assembly without any technical background. The system can be set up through the Carenuity Solution Builder, which performs all configuration steps automatically.",
       conceptSolutionBuilderLabel: "Solution Builder",
       modulesTitle: "Functional Modules",
-      sensorBlock: { title: "Sensor Block (S)", desc: "MAX9814 electret microphone with integrated amplifier for clean audio capture, including a WS2812B LED output for optional LED strips." },
-      mcuBlock: { title: "Microcontroller Block (M)", desc: "ESP32-WROOM-32 module with Wi-Fi and Bluetooth connectivity, fully compatible with the Arduino IDE." },
-      actuatorBlock: { title: "Actuator Block (A)", desc: "MAX98357A digital-to-audio converter enabling direct speaker output for audio playback." },
+      sensorBlock: {
+        title: "Sensor Block (S)",
+        desc: "MAX9814 electret microphone with integrated amplifier for clean audio capture, including a WS2812B LED output for optional LED strips.",
+      },
+      mcuBlock: {
+        title: "Microcontroller Block (M)",
+        desc: "ESP32-WROOM-32 module with Wi-Fi and Bluetooth connectivity, fully compatible with the Arduino IDE.",
+      },
+      actuatorBlock: {
+        title: "Actuator Block (A)",
+        desc: "MAX98357A digital-to-audio converter enabling direct speaker output for audio playback.",
+      },
       storageTitle: "Storage Module",
       storageDesc: "Micro-SD expansion board for SPI-based audio file storage.",
       storageProductLabel: "Product link",
@@ -1225,26 +1406,32 @@ export const translations = {
         "The modules can be prepared free of charge, with an expected lead time of three to four weeks.",
       ],
       designTitle: "Design Options",
-      designDesc: "A circular baseboard with a diameter of approximately six centimetres is available to host all building blocks. Square or rectangular layouts are also supported.",
+      designDesc:
+        "A circular baseboard with a diameter of approximately six centimetres is available to host all building blocks. Square or rectangular layouts are also supported.",
       getStartedTitle: "Get Started",
-      getStartedDesc: "If you are interested in this modular ESP32 audio solution, please let us know your preferred form factor. We will prepare the complete module set for you and provide all required setup instructions.",
+      getStartedDesc:
+        "If you are interested in this modular ESP32 audio solution, please let us know your preferred form factor. We will prepare the complete module set for you and provide all required setup instructions.",
       instagramLabel: "View on Instagram",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join ESP32 Audio wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     freshCheck: {
       badge: "Smart Air Quality Monitor",
       heroTitle: "FreshCheck –",
       heroHighlight: "Smart Bathroom Air Quality Monitor",
-      heroDesc: "Know immediately whether the bathroom air is fresh or still needs ventilation — a simple traffic-light signal powered by the C3-Mini and a high-precision VOC sensor.",
+      heroDesc:
+        "Know immediately whether the bathroom air is fresh or still needs ventilation — a simple traffic-light signal powered by the C3-Mini and a high-precision VOC sensor.",
       breadcrumbProducts: "Products",
       introTitle: "Carenuity FreshCheck – Smart Bathroom Air Quality Monitor",
       problemTitle: "The Problem",
-      problemDesc: "Nobody likes leaving a bathroom unsure if the air is still unpleasant for the next person. Traditional solutions rely on guesswork or waiting — not very efficient.",
+      problemDesc:
+        "Nobody likes leaving a bathroom unsure if the air is still unpleasant for the next person. Traditional solutions rely on guesswork or waiting — not very efficient.",
       solutionTitle: "The Solution",
-      solutionDesc: "Carenuity FreshCheck instantly measures the air quality in your bathroom and tells you if the air is fresh or if it still needs ventilation. Powered by our C3-Mini IoT controller and a high-precision VOC sensor, FreshCheck provides a simple traffic light signal:",
+      solutionDesc:
+        "Carenuity FreshCheck instantly measures the air quality in your bathroom and tells you if the air is fresh or if it still needs ventilation. Powered by our C3-Mini IoT controller and a high-precision VOC sensor, FreshCheck provides a simple traffic light signal:",
       signals: [
         { color: "Green", meaning: "Fresh air, all clear." },
         { color: "Orange", meaning: "Slight residual odor." },
@@ -1252,11 +1439,26 @@ export const translations = {
       ],
       benefitsTitle: "Key Benefits",
       benefits: [
-        { title: "Instant feedback", desc: "Know immediately if the bathroom is fresh." },
-        { title: "Easy setup", desc: "Ready in under 3 minutes using Carenuity's Solution Builder." },
-        { title: "Flexible form", desc: "Available as DIY Kit for tech enthusiasts or as a ready-to-use device for convenience." },
-        { title: "Smart Home integration", desc: "Connects via Wi-Fi, MQTT, or Matter to your existing ecosystem (Home Assistant, Google Home, Alexa, Apple Home)." },
-        { title: "Modular & sustainable", desc: "Based on the Carenuity C3-Mini and sensor modules — easy to upgrade or repurpose." },
+        {
+          title: "Instant feedback",
+          desc: "Know immediately if the bathroom is fresh.",
+        },
+        {
+          title: "Easy setup",
+          desc: "Ready in under 3 minutes using Carenuity's Solution Builder.",
+        },
+        {
+          title: "Flexible form",
+          desc: "Available as DIY Kit for tech enthusiasts or as a ready-to-use device for convenience.",
+        },
+        {
+          title: "Smart Home integration",
+          desc: "Connects via Wi-Fi, MQTT, or Matter to your existing ecosystem (Home Assistant, Google Home, Alexa, Apple Home).",
+        },
+        {
+          title: "Modular & sustainable",
+          desc: "Based on the Carenuity C3-Mini and sensor modules — easy to upgrade or repurpose.",
+        },
       ],
       howTitle: "How It Works",
       howSteps: [
@@ -1279,18 +1481,21 @@ export const translations = {
       ],
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join FreshCheck wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     fridgeBar: {
       badge: "Smart Fridge Monitor",
       heroTitle: "FridgeBar –",
       heroHighlight: "Protect Your Food, Assure Freshness",
-      heroDesc: "Continuously monitors your fridge temperature and shows you at a glance whether your food is stored safely — with smart alerts when something goes wrong.",
+      heroDesc:
+        "Continuously monitors your fridge temperature and shows you at a glance whether your food is stored safely — with smart alerts when something goes wrong.",
       breadcrumbProducts: "Products",
       introTitle: "Carenuity FridgeBar — Protect Your Food, Assure Freshness",
       problemTitle: "The Problem",
-      problemDesc: "Fridges are meant to keep food safe — but temperature fluctuations happen more often than expected.",
+      problemDesc:
+        "Fridges are meant to keep food safe — but temperature fluctuations happen more often than expected.",
       problemPoints: [
         "Frequent door openings, poor sealing, or overloading can cause the temperature to rise.",
         "Kids (or adults in a hurry) may forget to close the fridge door completely, letting cold air escape.",
@@ -1298,11 +1503,19 @@ export const translations = {
         "Without clear feedback, you only notice when it's already too late.",
       ],
       solutionTitle: "The Solution",
-      solutionDesc: "Carenuity FridgeBar continuously monitors the fridge's internal temperature and shows you, at a glance, whether your food is stored safely.",
+      solutionDesc:
+        "Carenuity FridgeBar continuously monitors the fridge's internal temperature and shows you, at a glance, whether your food is stored safely.",
       signals: [
         { color: "Green", meaning: "Safe zone, fridge is working fine." },
-        { color: "Orange", meaning: "Temperature slightly elevated — check door or load." },
-        { color: "Red", meaning: "Unsafe zone — food at risk, door might be left open or cooling system failing." },
+        {
+          color: "Orange",
+          meaning: "Temperature slightly elevated — check door or load.",
+        },
+        {
+          color: "Red",
+          meaning:
+            "Unsafe zone — food at risk, door might be left open or cooling system failing.",
+        },
       ],
       alertsTitle: "Smart Alerts",
       alertsDesc: "Optional smart alerts notify you if:",
@@ -1313,12 +1526,30 @@ export const translations = {
       ],
       benefitsTitle: "Key Benefits",
       benefits: [
-        { title: "Protect your family's food safety", desc: "Always know your fridge is keeping food fresh." },
-        { title: "Reduce waste", desc: "Prevent spoilage from unnoticed warm-ups or forgotten doors." },
-        { title: "Peace of mind", desc: "Get notified immediately when kids forget to close the fridge." },
-        { title: "Energy savings", desc: "Detect when cold air is escaping and act early." },
-        { title: "Simple setup", desc: "Ready in 3 minutes via Carenuity Solution Builder." },
-        { title: "Smart integration", desc: "Works with Matter, MQTT, Home Assistant, Google Home, Alexa, Apple Home." },
+        {
+          title: "Protect your family's food safety",
+          desc: "Always know your fridge is keeping food fresh.",
+        },
+        {
+          title: "Reduce waste",
+          desc: "Prevent spoilage from unnoticed warm-ups or forgotten doors.",
+        },
+        {
+          title: "Peace of mind",
+          desc: "Get notified immediately when kids forget to close the fridge.",
+        },
+        {
+          title: "Energy savings",
+          desc: "Detect when cold air is escaping and act early.",
+        },
+        {
+          title: "Simple setup",
+          desc: "Ready in 3 minutes via Carenuity Solution Builder.",
+        },
+        {
+          title: "Smart integration",
+          desc: "Works with Matter, MQTT, Home Assistant, Google Home, Alexa, Apple Home.",
+        },
       ],
       howTitle: "How It Works",
       howSteps: [
@@ -1338,22 +1569,32 @@ export const translations = {
       getTitle: "Get Yours Today",
       getDesc: "Available now in two options:",
       getOptions: [
-        { name: "DIY Kit", desc: "C3-Mini, sensor, LED ring, power cable, and quick-start guide." },
-        { name: "Ready-to-Use Device", desc: "Preassembled in sleek housing, plug & play." },
+        {
+          name: "DIY Kit",
+          desc: "C3-Mini, sensor, LED ring, power cable, and quick-start guide.",
+        },
+        {
+          name: "Ready-to-Use Device",
+          desc: "Preassembled in sleek housing, plug & play.",
+        },
       ],
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join FridgeBar wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     leafTemp: {
       badge: "Plant Physiology Sensing",
       heroTitle: "Leaf Temperature Measurement –",
       heroHighlight: "Precise Insights into Plant Physiology",
-      heroDesc: "Leaf temperature is a key indicator of a plant's physiological state — providing valuable information about water stress, photosynthetic activity, transpiration, and environmental responses.",
+      heroDesc:
+        "Leaf temperature is a key indicator of a plant's physiological state — providing valuable information about water stress, photosynthetic activity, transpiration, and environmental responses.",
       breadcrumbProducts: "Products",
-      introTitle: "Leaf Temperature Measurement – Precise Insights into Plant Physiology",
-      introDesc: "Leaf temperature is a key indicator of a plant's physiological state. It provides valuable information about water stress, photosynthetic activity, transpiration, and environmental responses. Accurate measurement helps to better understand plants, optimize irrigation, and detect diseases at an early stage.",
+      introTitle:
+        "Leaf Temperature Measurement – Precise Insights into Plant Physiology",
+      introDesc:
+        "Leaf temperature is a key indicator of a plant's physiological state. It provides valuable information about water stress, photosynthetic activity, transpiration, and environmental responses. Accurate measurement helps to better understand plants, optimize irrigation, and detect diseases at an early stage.",
       whyTitle: "Why is leaf temperature important?",
       whyPoints: [
         "Detecting water stress: If plants cannot absorb enough water, leaf temperature rises due to reduced transpiration.",
@@ -1389,28 +1630,39 @@ export const translations = {
         "Data integration: Can be combined with environmental parameters such as humidity, light, and soil moisture",
       ],
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Join Leaf Temperature Measurement wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Join Leaf Temperature Measurement wishlist for updates when ready.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     magneticTrafficCounting: {
       badge: "Smart Traffic Detection",
       heroTitle: "Magnetic Traffic Counting —",
       heroHighlight: "Powered by Carenuity Triple-Adapter Ecosystem",
-      heroDesc: "Magnetic sensing offers an efficient and unobtrusive way to detect vehicles in motion. Cars contain significant amounts of ferromagnetic material, which locally distorts the Earth's magnetic field.",
+      heroDesc:
+        "Magnetic sensing offers an efficient and unobtrusive way to detect vehicles in motion. Cars contain significant amounts of ferromagnetic material, which locally distorts the Earth's magnetic field.",
       breadcrumbProducts: "Products",
-      introTitle: "Magnetic Traffic Counting — Powered by Carenuity Triple-Adapter Ecosystem",
-      introP1: "Magnetic sensing offers an efficient and unobtrusive way to detect vehicles in motion. Cars contain significant amounts of ferromagnetic material, which locally distorts the Earth's magnetic field. A compact sensor module can measure these disturbances with microtesla sensitivity, enabling reliable traffic counting in real time. Fast response, long-term temperature stability and low power consumption make this approach ideal for outdoor deployments, even in remote locations.",
-      introP2: "Carenuity provides a complete, modular hardware foundation to deploy such sensing systems rapidly. The system integrates Infineon magnetic sensors with Carenuity's plug-and-play Triple-Adapter architecture, enabling fast prototyping, fast field deployment and seamless integration into existing IoT platforms.",
+      introTitle:
+        "Magnetic Traffic Counting — Powered by Carenuity Triple-Adapter Ecosystem",
+      introP1:
+        "Magnetic sensing offers an efficient and unobtrusive way to detect vehicles in motion. Cars contain significant amounts of ferromagnetic material, which locally distorts the Earth's magnetic field. A compact sensor module can measure these disturbances with microtesla sensitivity, enabling reliable traffic counting in real time. Fast response, long-term temperature stability and low power consumption make this approach ideal for outdoor deployments, even in remote locations.",
+      introP2:
+        "Carenuity provides a complete, modular hardware foundation to deploy such sensing systems rapidly. The system integrates Infineon magnetic sensors with Carenuity's plug-and-play Triple-Adapter architecture, enabling fast prototyping, fast field deployment and seamless integration into existing IoT platforms.",
       infineonTitle: "Infineon Sensors Integrated into Carenuity Modules",
-      infineonP1: "Carenuity supports high-precision sensors from leading manufacturers, including magnetic sensors suitable for traffic detection. The Infineon TLV493D-A1B6 3D Hall sensor is particularly well suited. It measures changes in all three magnetic axes with ample dynamic range and is easy to integrate into low-power microcontroller systems.",
-      infineonP2: "Carenuity's C3-Mini ecosystem is specifically designed for such integrations. Sensors can be plugged directly into the platform, swapped within minutes and combined with any C3-Mini microcontroller or actuator module. This modularity is a core feature of the Triple-Adapter system: Slot S for the sensor, Slot M for the microcontroller and Slot A for the actuator. Together, these S+M+A components build a complete IoT device.",
+      infineonP1:
+        "Carenuity supports high-precision sensors from leading manufacturers, including magnetic sensors suitable for traffic detection. The Infineon TLV493D-A1B6 3D Hall sensor is particularly well suited. It measures changes in all three magnetic axes with ample dynamic range and is easy to integrate into low-power microcontroller systems.",
+      infineonP2:
+        "Carenuity's C3-Mini ecosystem is specifically designed for such integrations. Sensors can be plugged directly into the platform, swapped within minutes and combined with any C3-Mini microcontroller or actuator module. This modularity is a core feature of the Triple-Adapter system: Slot S for the sensor, Slot M for the microcontroller and Slot A for the actuator. Together, these S+M+A components build a complete IoT device.",
       tripleAdapterTitle: "The Carenuity Triple-Adapter Advantage",
-      tripleAdapterDesc: "The Triple-Adapter is designed to make sensor systems fast to assemble, deploy and iterate. It provides universal interfaces for sensors, controllers, and actuators. Compatibility with ESP32 and ESP8266-based Carenuity microcontrollers enables efficient data processing and wireless communication with Home Assistant and Matter ecosystem integration.",
+      tripleAdapterDesc:
+        "The Triple-Adapter is designed to make sensor systems fast to assemble, deploy and iterate. It provides universal interfaces for sensors, controllers, and actuators. Compatibility with ESP32 and ESP8266-based Carenuity microcontrollers enables efficient data processing and wireless communication with Home Assistant and Matter ecosystem integration.",
       buildTitle: "Build Your Traffic Counter in Under 3 Minutes",
-      buildDesc: "The Solution Builder provides automated installation without programming. Devices configure via USB with an Install-for-Free button. Sensors can later be swapped in the field within minutes thanks to standardized module formatting and Quick Change features.",
+      buildDesc:
+        "The Solution Builder provides automated installation without programming. Devices configure via USB with an Install-for-Free button. Sensors can later be swapped in the field within minutes thanks to standardized module formatting and Quick Change features.",
       howTitle: "How Magnetic Traffic Counting Works",
-      howDesc: "The module continuously measures ambient magnetic fields. Vehicle passages create sharp magnetic signature changes detectable at microtesla sensitivity levels. By combining the Infineon magnetic sensor with a C3-Mini controller and the Triple-Adapter architecture, Carenuity enables:",
+      howDesc:
+        "The module continuously measures ambient magnetic fields. Vehicle passages create sharp magnetic signature changes detectable at microtesla sensitivity levels. By combining the Infineon magnetic sensor with a C3-Mini controller and the Triple-Adapter architecture, Carenuity enables:",
       howPoints: [
         "Real-time detection",
         "Autonomous operation",
@@ -1426,59 +1678,91 @@ export const translations = {
         "Ecosystem integration — works with municipalities, research institutions, and startups",
       ],
       startTitle: "Start Measuring Smarter",
-      startDesc: "Carenuity supplies complete hardware stacks, installation services, and sensor modules for rapid deployment across pilot installations or full monitoring networks.",
+      startDesc:
+        "Carenuity supplies complete hardware stacks, installation services, and sensor modules for rapid deployment across pilot installations or full monitoring networks.",
       shopTitle: "Shop with us",
       shopProduct: "Sensor box Shield2Go Dual Adapter - Infineon Line",
-      shopDesc: "The kit is intended solely for your evaluation purposes. By operating this kit, you agree to use this kit only for such an evaluation.",
+      shopDesc:
+        "The kit is intended solely for your evaluation purposes. By operating this kit, you agree to use this kit only for such an evaluation.",
       shopBtn: "Buy Now",
       installBtn: "Install for free",
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Join the Magnetic Traffic Counting wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Join the Magnetic Traffic Counting wishlist for updates when ready.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     plantBar: {
       badge: "Smart Plant Care",
       heroTitle: "PlantBar —",
       heroHighlight: "Never Thirsty Plants Again",
-      heroDesc: "Imagine a world where your plants never suffer from thirst or neglect. The Carenuity Plant Bar is here to make that dream a reality.",
+      heroDesc:
+        "Imagine a world where your plants never suffer from thirst or neglect. The Carenuity Plant Bar is here to make that dream a reality.",
       breadcrumbProducts: "Products",
       sensorTitle: "Capacitive Soil Moisture Meter",
-      sensorDesc: "The Capacitive Soil Moisture Meter is a reliable and durable sensor designed to measure soil moisture levels using capacitive sensing technology. Unlike traditional resistive sensors that rely on exposed metal probes, this meter detects changes in the soil's dielectric constant, making it more resistant to corrosion and ideal for long-term use in both indoor and outdoor environments. It provides accurate, consistent readings and is easily integrated with microcontrollers like Arduino or ESP32, making it a popular choice for smart gardening, irrigation systems, and agricultural monitoring. Its low power consumption and stable performance make it an efficient tool for maintaining optimal soil conditions in various applications.",
+      sensorDesc:
+        "The Capacitive Soil Moisture Meter is a reliable and durable sensor designed to measure soil moisture levels using capacitive sensing technology. Unlike traditional resistive sensors that rely on exposed metal probes, this meter detects changes in the soil's dielectric constant, making it more resistant to corrosion and ideal for long-term use in both indoor and outdoor environments. It provides accurate, consistent readings and is easily integrated with microcontrollers like Arduino or ESP32, making it a popular choice for smart gardening, irrigation systems, and agricultural monitoring. Its low power consumption and stable performance make it an efficient tool for maintaining optimal soil conditions in various applications.",
       featuresTitle: "Key Features",
       features: [
-        { title: "Corrosion Resistant", desc: "Unlike traditional resistive sensors that rely on exposed metal probes, this meter detects changes in the soil's dielectric constant, making it more resistant to corrosion." },
-        { title: "Microcontroller Compatible", desc: "Integrates with microcontrollers like Arduino or ESP32 for seamless IoT connectivity." },
-        { title: "Low Power Consumption", desc: "Designed for energy-efficient operation, ideal for long-term outdoor and indoor deployments." },
-        { title: "Versatile Applications", desc: "Suitable for smart gardening, irrigation systems, and agricultural monitoring." },
+        {
+          title: "Corrosion Resistant",
+          desc: "Unlike traditional resistive sensors that rely on exposed metal probes, this meter detects changes in the soil's dielectric constant, making it more resistant to corrosion.",
+        },
+        {
+          title: "Microcontroller Compatible",
+          desc: "Integrates with microcontrollers like Arduino or ESP32 for seamless IoT connectivity.",
+        },
+        {
+          title: "Low Power Consumption",
+          desc: "Designed for energy-efficient operation, ideal for long-term outdoor and indoor deployments.",
+        },
+        {
+          title: "Versatile Applications",
+          desc: "Suitable for smart gardening, irrigation systems, and agricultural monitoring.",
+        },
       ],
-      plantBarTitle: "Never Thirsty Plants Again: Carenuity Plant Bar Revolutionizes Plant Care",
-      plantBarP1: "Imagine a world where your plants never suffer from thirst or neglect. The Carenuity Plant Bar is here to make that dream a reality. This compact device, built on the advanced C3-Mini architecture, features a vibrant 0.96-inch OLED display that brings plant care into the digital age.",
-      plantBarP2: "With the Carenuity Solution Builder, you can effortlessly install and update the latest applications, ensuring your device is always equipped with the newest features. But the magic doesn't stop there. This smart tool helps you monitor essential parameters like soil moisture, temperature, and humidity, making plant care easier and more efficient than ever before.",
-      plantBarP3: "Gone are the days of guessing when to water your plants. The Carenuity Plant Bar provides real-time data, alerting you when your plants need attention. Whether you're a seasoned gardener or a novice plant enthusiast, this device is designed to simplify your life and ensure your plants thrive.",
-      plantBarP4: "Plus, you can personalize your device with your own logo on the display, adding a unique touch to your plant care routine. Available in a variety of colors, the Carenuity Plant Bar not only performs exceptionally but also complements your style.",
+      plantBarTitle:
+        "Never Thirsty Plants Again: Carenuity Plant Bar Revolutionizes Plant Care",
+      plantBarP1:
+        "Imagine a world where your plants never suffer from thirst or neglect. The Carenuity Plant Bar is here to make that dream a reality. This compact device, built on the advanced C3-Mini architecture, features a vibrant 0.96-inch OLED display that brings plant care into the digital age.",
+      plantBarP2:
+        "With the Carenuity Solution Builder, you can effortlessly install and update the latest applications, ensuring your device is always equipped with the newest features. But the magic doesn't stop there. This smart tool helps you monitor essential parameters like soil moisture, temperature, and humidity, making plant care easier and more efficient than ever before.",
+      plantBarP3:
+        "Gone are the days of guessing when to water your plants. The Carenuity Plant Bar provides real-time data, alerting you when your plants need attention. Whether you're a seasoned gardener or a novice plant enthusiast, this device is designed to simplify your life and ensure your plants thrive.",
+      plantBarP4:
+        "Plus, you can personalize your device with your own logo on the display, adding a unique touch to your plant care routine. Available in a variety of colors, the Carenuity Plant Bar not only performs exceptionally but also complements your style.",
       structureTitle: "Structure",
       shopTitle: "Shop with Us",
       shopProduct: "Capacitive Soil Moisture Sensor, V2.0",
-      shopProductDesc: "The capacitive soil moisture sensor is a reliable and durable tool for measuring soil moisture. It operates at a voltage of 3.3 to 5.5V.",
+      shopProductDesc:
+        "The capacitive soil moisture sensor is a reliable and durable tool for measuring soil moisture. It operates at a voltage of 3.3 to 5.5V.",
       shopBtn: "Buy Now",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join the PlantBar wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     aqiInsights: {
       badge: "Air Quality Index",
       heroTitle: "The Air You Breathe Shapes Your Health —",
       heroHighlight: "Stay Ahead of Pollution Risks",
-      heroDesc: "Air may look clean, but harmful pollutants often linger undetected — especially indoors. The Air Quality Index (AQI) is a critical measure of what you're really breathing in.",
+      heroDesc:
+        "Air may look clean, but harmful pollutants often linger undetected — especially indoors. The Air Quality Index (AQI) is a critical measure of what you're really breathing in.",
       breadcrumbProducts: "Products",
-      introP1: "Air may look clean, but harmful pollutants often linger undetected—especially indoors. The Air Quality Index (AQI) is a critical measure of what you're really breathing in, tracking pollutants like particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, and more.",
-      introP2: "When AQI levels rise, so do health risks. Short-term exposure to poor air quality can cause irritation of the eyes, nose, and throat, trigger asthma attacks, and reduce lung function.",
-      introP3: "Long-term exposure has been linked to heart disease, respiratory illnesses, and even shortened life expectancy.",
-      introP4: "Without active monitoring, poor air quality can silently affect your concentration, energy levels, and overall wellbeing.",
-      introP5: "Vulnerable groups—such as children, seniors, and individuals with chronic conditions—face an even higher risk.",
-      introP6: "That's why real-time AQI monitoring isn't just a feature—it's a frontline defense for your health.",
+      introP1:
+        "Air may look clean, but harmful pollutants often linger undetected—especially indoors. The Air Quality Index (AQI) is a critical measure of what you're really breathing in, tracking pollutants like particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, and more.",
+      introP2:
+        "When AQI levels rise, so do health risks. Short-term exposure to poor air quality can cause irritation of the eyes, nose, and throat, trigger asthma attacks, and reduce lung function.",
+      introP3:
+        "Long-term exposure has been linked to heart disease, respiratory illnesses, and even shortened life expectancy.",
+      introP4:
+        "Without active monitoring, poor air quality can silently affect your concentration, energy levels, and overall wellbeing.",
+      introP5:
+        "Vulnerable groups—such as children, seniors, and individuals with chronic conditions—face an even higher risk.",
+      introP6:
+        "That's why real-time AQI monitoring isn't just a feature—it's a frontline defense for your health.",
       applicationsTitle: "Available Applications",
       applications: [
         "Barometer",
@@ -1490,48 +1774,75 @@ export const translations = {
         "Presence Button",
       ],
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Stay informed about AQI Insights updates and new features.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Stay informed about AQI Insights updates and new features.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     sensorArray: {
       badge: "IoT & Sensing Bundle",
       heroTitle: "Sensor Array Kit —",
       heroHighlight: "Perfect Bundle for IoT and Sensing Projects",
-      heroDesc: "A comprehensive bundle of 10 complete units based on the Shield2Go Single Adapter and the DPS310 pressure sensor — ideal for developers integrating precise pressure sensing into IoT systems.",
+      heroDesc:
+        "A comprehensive bundle of 10 complete units based on the Shield2Go Single Adapter and the DPS310 pressure sensor — ideal for developers integrating precise pressure sensing into IoT systems.",
       breadcrumbProducts: "Products",
-      introTitle: "Sensor Array Kit — Perfect Bundle for IoT and Sensing Projects",
-      introDesc: "The Sensor Array Kit is a comprehensive bundle containing 10 complete units based on our Shield2Go Single Adapter and the DPS310 pressure sensor from the Chipglobe Comfort Line. This set is ideal for developers and engineers looking to integrate reliable and precise pressure sensors into their IoT systems.",
+      introTitle:
+        "Sensor Array Kit — Perfect Bundle for IoT and Sensing Projects",
+      introDesc:
+        "The Sensor Array Kit is a comprehensive bundle containing 10 complete units based on our Shield2Go Single Adapter and the DPS310 pressure sensor from the Chipglobe Comfort Line. This set is ideal for developers and engineers looking to integrate reliable and precise pressure sensors into their IoT systems.",
       contentsTitle: "Kit Contents",
       contents: [
-        { label: "10x 3D-Printed Enclosure", desc: "Durable and eco-friendly enclosures for the single adapters." },
-        { label: "10x Shield2Go Single Adapter Trust-X V2.0", desc: "Enables easy sensor integration." },
-        { label: "10x ESP32-WROOM-32D Modules", desc: "WiFi- and Bluetooth-enabled, perfect for IoT applications." },
-        { label: "10x DPS310 Pressure Sensor", desc: "High-precision barometric sensor from our Chipglobe Comfort Line." },
-        { label: "10x USB Cable", desc: "High-quality Chipglobe USB cables for power supply." },
+        {
+          label: "10x 3D-Printed Enclosure",
+          desc: "Durable and eco-friendly enclosures for the single adapters.",
+        },
+        {
+          label: "10x Shield2Go Single Adapter Trust-X V2.0",
+          desc: "Enables easy sensor integration.",
+        },
+        {
+          label: "10x ESP32-WROOM-32D Modules",
+          desc: "WiFi- and Bluetooth-enabled, perfect for IoT applications.",
+        },
+        {
+          label: "10x DPS310 Pressure Sensor",
+          desc: "High-precision barometric sensor from our Chipglobe Comfort Line.",
+        },
+        {
+          label: "10x USB Cable",
+          desc: "High-quality Chipglobe USB cables for power supply.",
+        },
       ],
-      devDesc: "This kit enables fast development and evaluation of IoT systems with a focus on precise pressure measurements.",
-      shopProduct: "Sensor Array Kit - Complete Bundle with 10x Single Adapter and DPS310",
-      shopProductDesc: "This kit enables fast development and evaluation of IoT systems with a focus on precise pressure measurements.",
+      devDesc:
+        "This kit enables fast development and evaluation of IoT systems with a focus on precise pressure measurements.",
+      shopProduct:
+        "Sensor Array Kit - Complete Bundle with 10x Single Adapter and DPS310",
+      shopProductDesc:
+        "This kit enables fast development and evaluation of IoT systems with a focus on precise pressure measurements.",
       shopBtn: "Buy Now",
       installBtn: "Install for free",
       wishlistTitle: "Join the Wishlist",
       wishlistDesc: "Join the Sensor Array wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     c3MiniPiggyback: {
       badge: "C3-Mini Ecosystem",
       heroTitle: "Accelerating Prototyping with",
       heroHighlight: "Piggyback Sensors & the C3-Mini Ecosystem",
-      heroDesc: "Mount any sensor directly onto the standardized C3-Mini pinout — no wiring needed. Integrate in under three minutes via Solution Builder.",
+      heroDesc:
+        "Mount any sensor directly onto the standardized C3-Mini pinout — no wiring needed. Integrate in under three minutes via Solution Builder.",
       breadcrumbProducts: "Products",
       sensorsTitle: "Piggyback Sensor Modules",
       applicationsLabel: "Applications",
       shopBtn: "Shop Now",
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Join the C3-Mini Piggybacks wishlist for updates when ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Join the C3-Mini Piggybacks wishlist for updates when ready.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     aquabar: {
@@ -1539,7 +1850,8 @@ export const translations = {
       heroTitle: "Carenuity AquaBar",
       heroHighlight: "Protect Your Aquarium with Smart Temperature Monitoring",
       heroTagline: "Keep your aquarium life safe — even when you are away.",
-      heroDesc: "AquaBar monitors water temperature continuously and alerts you instantly if conditions become unsafe.",
+      heroDesc:
+        "AquaBar monitors water temperature continuously and alerts you instantly if conditions become unsafe.",
       breadcrumbProducts: "Products",
       problemTitle: "The Problem",
       problemItems: [
@@ -1549,18 +1861,35 @@ export const translations = {
         "Detection delays often mean irreversible damage",
       ],
       solutionTitle: "The Solution",
-      solutionDesc: "Carenuity AquaBar is a compact smart sensor that continuously tracks aquarium water temperature and alerts you immediately when something goes wrong.",
+      solutionDesc:
+        "Carenuity AquaBar is a compact smart sensor that continuously tracks aquarium water temperature and alerts you immediately when something goes wrong.",
       statusGreen: "Temperature stable and safe",
       statusOrange: "Warning — outside ideal range",
       statusRed: "Danger — immediate action required",
-      alertDesc: "Instant notifications on your phone if water temperature drifts or heater fails",
+      alertDesc:
+        "Instant notifications on your phone if water temperature drifts or heater fails",
       benefitsTitle: "Key Benefits",
       benefits: [
-        { title: "Protect aquatic life", desc: "Safeguard fish, corals, and plants from critical temperature swings" },
-        { title: "Peace of mind on vacation", desc: "Always know your aquarium is safe, wherever you are" },
-        { title: "Early failure detection", desc: "Recognize heater or chiller malfunctions before it's too late" },
-        { title: "Simple setup", desc: "Works in 3 minutes with Carenuity Solution Builder" },
-        { title: "Smart integration", desc: "Compatible with Matter, Home Assistant, Google Home, Alexa, Apple Home" },
+        {
+          title: "Protect aquatic life",
+          desc: "Safeguard fish, corals, and plants from critical temperature swings",
+        },
+        {
+          title: "Peace of mind on vacation",
+          desc: "Always know your aquarium is safe, wherever you are",
+        },
+        {
+          title: "Early failure detection",
+          desc: "Recognize heater or chiller malfunctions before it's too late",
+        },
+        {
+          title: "Simple setup",
+          desc: "Works in 3 minutes with Carenuity Solution Builder",
+        },
+        {
+          title: "Smart integration",
+          desc: "Compatible with Matter, Home Assistant, Google Home, Alexa, Apple Home",
+        },
       ],
       howTitle: "How It Works",
       howSteps: [
@@ -1579,12 +1908,20 @@ export const translations = {
       ],
       optionsTitle: "Product Options",
       diyTitle: "DIY Kit",
-      diyItems: ["C3-Mini", "Waterproof sensor probe", "LED ring", "Power cable", "Quick-start guide"],
+      diyItems: [
+        "C3-Mini",
+        "Waterproof sensor probe",
+        "LED ring",
+        "Power cable",
+        "Quick-start guide",
+      ],
       readyTitle: "Ready-to-Use Device",
       readyItems: ["Preassembled", "Sealed housing", "Plug & play"],
       wishlistTitle: "Join the Wishlist",
-      wishlistDesc: "Join the AquaBar wishlist and be the first to know when it's ready.",
-      wishlistNote: "Please check your spam folder for the subscription email should it be flagged as spam.",
+      wishlistDesc:
+        "Join the AquaBar wishlist and be the first to know when it's ready.",
+      wishlistNote:
+        "Please check your spam folder for the subscription email should it be flagged as spam.",
       wishlistBtn: "Join Wishlist",
     },
     autonomousCar: {
@@ -1654,7 +1991,7 @@ export const translations = {
         "Primary obstacles included integrating the various hardware and software & AI systems and ensuring that the vehicle worked reliably and safely. Issues included outdated projects and libraries requiring extensive debugging. Real-time decision-making and precise navigation presented particular difficulties.",
       devAchievementTitle: "Key Achievement",
       devAchievementP:
-        "\"Other students around the world can now use my documentation to build their own vehicle quickly and easily so that they can test and improve their own AI algorithms.\"",
+        '"Other students around the world can now use my documentation to build their own vehicle quickly and easily so that they can test and improve their own AI algorithms."',
       devSkillsTitle: "Skills Acquired",
       skills: [
         "Embedded systems development",
@@ -1672,7 +2009,7 @@ export const translations = {
       ],
       devConclusionTitle: "Conclusion",
       devConclusionP:
-        "Eren discovered Carenuity through the Home Challenge competition organized by Prof. Dr. Heinz Endres. \"Such additional activities as part of the lectures are extremely valuable — they not only offer learning experiences, but also real opportunities for personal and professional development.\"",
+        'Eren discovered Carenuity through the Home Challenge competition organized by Prof. Dr. Heinz Endres. "Such additional activities as part of the lectures are extremely valuable — they not only offer learning experiences, but also real opportunities for personal and professional development."',
       pubTitle: "Publications & Links",
       thwsLabel: "THWS press article on the Home Challenge",
       thwsSource: "thws.de · Press Archive",
@@ -1694,7 +2031,10 @@ export const translations = {
         back: "Back to Home Challenge",
         guideBadge: "Guide",
         items: {
-          c3Mini: { label: "C3 Mini Kisii Boxes", desc: "IoT & AI Sensor Kits Guide" },
+          c3Mini: {
+            label: "C3 Mini Kisii Boxes",
+            desc: "IoT & AI Sensor Kits Guide",
+          },
           auth: { label: "AUTH", desc: "Aristotle Univ. of Thessaloniki" },
           oauth: { label: "Open AUTH", desc: "Open Edition" },
           duth: { label: "DUTH", desc: "Democritus Univ. of Thrace" },
@@ -1779,14 +2119,19 @@ export const translations = {
         badge: "Press & Projects",
         sectionPress: "Press Materials",
         sectionScan: "Scan",
-        sectionRetrospective: "Retrospective: Student Home Challenge Projects 2024",
+        sectionRetrospective:
+          "Retrospective: Student Home Challenge Projects 2024",
         sectionInteraction: "The Interaction Between Makers and Users",
-        interactionBody: "The interaction between makers and users is of great importance. Users provide valuable feedback and new ideas and use cases that enable makers to improve their products and adapt them to new needs. As Carenuity, we support this interaction by providing platforms and resources to facilitate exchange between makers and users. The goal is to work together to create innovative and user-friendly devices.",
+        interactionBody:
+          "The interaction between makers and users is of great importance. Users provide valuable feedback and new ideas and use cases that enable makers to improve their products and adapt them to new needs. As Carenuity, we support this interaction by providing platforms and resources to facilitate exchange between makers and users. The goal is to work together to create innovative and user-friendly devices.",
         sectionSolutionBuilders: "The Role of the Solution Builders",
-        solutionBuildersBody: "The developers on the Solution Builder Platform share their solutions and are an essential component in this process. They bring specialized expertise and experience to develop tailored solutions that meet users' specific needs. Through their expertise, they help to further optimize the interaction between makers and users and advance the development of innovative products.",
+        solutionBuildersBody:
+          "The developers on the Solution Builder Platform share their solutions and are an essential component in this process. They bring specialized expertise and experience to develop tailored solutions that meet users' specific needs. Through their expertise, they help to further optimize the interaction between makers and users and advance the development of innovative products.",
         sectionWhatsapp: "THWS Solution Builder WhatsApp Group",
-        whatsappBody: "This WhatsApp group \"THWS Solution Builder\" is open for THWS staff & students to discuss and refine their solutions:",
-        thwsPressLink: "Würzburg-Schweinfurt University of Applied Sciences press release",
+        whatsappBody:
+          'This WhatsApp group "THWS Solution Builder" is open for THWS staff & students to discuss and refine their solutions:',
+        thwsPressLink:
+          "Würzburg-Schweinfurt University of Applied Sciences press release",
       },
       oauth: {
         crumb: "Open AUTH",
@@ -1812,34 +2157,62 @@ export const translations = {
         subtitle: "Empowering Young Women in STEM",
         intro: "In partnership with THWS Hochschule — April 23, 2026.",
         badge: "STEM Empowerment",
-        excitedHtml: 'We are excited to share that <strong>Carenuity</strong>, in proud partnership with the <strong>THWS Hochschule</strong>, will be actively participating in Girls’ Day 2026! This inspiring and nationally recognized event, scheduled for <strong>April 23, 2026,</strong> is dedicated to empowering young women by opening doors to careers in <strong>Science, Technology, Engineering, and Mathematics (STEM)</strong>. Through a variety of hands-on activities, workshops, and engaging presentations, participants will have the unique chance to gain valuable insights into innovative professions that shape the future.',
+        excitedHtml:
+          "We are excited to share that <strong>Carenuity</strong>, in proud partnership with the <strong>THWS Hochschule</strong>, will be actively participating in Girls’ Day 2026! This inspiring and nationally recognized event, scheduled for <strong>April 23, 2026,</strong> is dedicated to empowering young women by opening doors to careers in <strong>Science, Technology, Engineering, and Mathematics (STEM)</strong>. Through a variety of hands-on activities, workshops, and engaging presentations, participants will have the unique chance to gain valuable insights into innovative professions that shape the future.",
         whatIsTitle: "What is Girls’ Day?",
-        whatIsBody: "Girls’ Day is an annual initiative designed to give girls the opportunity to explore technical, scientific, IT, and engineering professions. It allows them to participate in hands-on workshops and real-world experiments, interact with role models and professionals in STEM careers, and gain confidence in their technical abilities. Most importantly, it helps them discover academic and career paths they might not have previously considered, opening doors to a future in fields where women are often underrepresented.",
+        whatIsBody:
+          "Girls’ Day is an annual initiative designed to give girls the opportunity to explore technical, scientific, IT, and engineering professions. It allows them to participate in hands-on workshops and real-world experiments, interact with role models and professionals in STEM careers, and gain confidence in their technical abilities. Most importantly, it helps them discover academic and career paths they might not have previously considered, opening doors to a future in fields where women are often underrepresented.",
         importanceTitle: "Importance of Girls’ Day",
-        importanceIntro: "In the context of Carenuity’s collaboration with THWS Hochschule for Girls’ Day 2026, the event serves a key educational and empowerment purpose:",
+        importanceIntro:
+          "In the context of Carenuity’s collaboration with THWS Hochschule for Girls’ Day 2026, the event serves a key educational and empowerment purpose:",
         importancePoints: [
-          { title: "Demystifying technology:", body: "By building something tangible like a Bluetooth speaker, girls see that technology is not intimidating but accessible and fun." },
-          { title: "Promoting gender equity:", body: "It directly addresses the gender gap in STEM by inspiring and equipping girls with the confidence and skills to explore these fields." },
-          { title: "Creating early engagement:", body: "Activities like stacking components using the Carenuity Triple-Adapter give a playful, intuitive entry into engineering principles." },
-          { title: "Encouraging future STEM careers:", body: "Girls’ Day plants the seed that they, too, can thrive as engineers, scientists, developers, or innovators." },
+          {
+            title: "Demystifying technology:",
+            body: "By building something tangible like a Bluetooth speaker, girls see that technology is not intimidating but accessible and fun.",
+          },
+          {
+            title: "Promoting gender equity:",
+            body: "It directly addresses the gender gap in STEM by inspiring and equipping girls with the confidence and skills to explore these fields.",
+          },
+          {
+            title: "Creating early engagement:",
+            body: "Activities like stacking components using the Carenuity Triple-Adapter give a playful, intuitive entry into engineering principles.",
+          },
+          {
+            title: "Encouraging future STEM careers:",
+            body: "Girls’ Day plants the seed that they, too, can thrive as engineers, scientists, developers, or innovators.",
+          },
         ],
-        importanceOutro: "Girls’ Day is more than an event — it’s a movement to reshape perceptions, build confidence, and empower the next generation of women in technology and science.",
+        importanceOutro:
+          "Girls’ Day is more than an event — it’s a movement to reshape perceptions, build confidence, and empower the next generation of women in technology and science.",
         joinTitle: "Join us",
-        joinP1: "Join us remotely for an exciting and educational day packed with inspiring activities and interactive, hands-on workshops. During this special Girls’ Day 2026 event, you’ll have the unique opportunity to build your very own Bluetooth speaker in just a few minutes — no prior experience needed!",
-        joinP2: "Using the innovative Carenuity Triple-Adapter, participants will explore how technology works by stacking electronic components into the S (Sensor), M (Microcontroller), and A (Actuator) slots. This fun and engaging activity is designed to spark curiosity, boost confidence, and show how easy and exciting it can be to get started with STEM.",
+        joinP1:
+          "Join us remotely for an exciting and educational day packed with inspiring activities and interactive, hands-on workshops. During this special Girls’ Day 2026 event, you’ll have the unique opportunity to build your very own Bluetooth speaker in just a few minutes — no prior experience needed!",
+        joinP2:
+          "Using the innovative Carenuity Triple-Adapter, participants will explore how technology works by stacking electronic components into the S (Sensor), M (Microcontroller), and A (Actuator) slots. This fun and engaging activity is designed to spark curiosity, boost confidence, and show how easy and exciting it can be to get started with STEM.",
         slotsTitle: "Components in the S, M, and A slots:",
         slots: [
           { name: "Slot S:", desc: "Integrate high-precision sensors." },
-          { name: "Slot M:", desc: "Add the microcontroller to process sensor data." },
-          { name: "Slot A:", desc: "Connect the actuator to perform actions based on the data." },
+          {
+            name: "Slot M:",
+            desc: "Add the microcontroller to process sensor data.",
+          },
+          {
+            name: "Slot A:",
+            desc: "Connect the actuator to perform actions based on the data.",
+          },
         ],
-        joinOutro: "This interactive experience is designed to empower and inspire the next generation of female leaders in technology and innovation. Don’t miss out on this fantastic opportunity to learn, create, and connect with like-minded individuals. Let’s shape the future together, one device at a time!",
+        joinOutro:
+          "This interactive experience is designed to empower and inspire the next generation of female leaders in technology and innovation. Don’t miss out on this fantastic opportunity to learn, create, and connect with like-minded individuals. Let’s shape the future together, one device at a time!",
         kitTitle: "Home-Challenge Kit for Girls’ Day 2026",
-        kitBody: "This is the Bluetooth speaker that the participants will proudly build themselves during Girls’ Day 2026. It’s more than just a gadget — it’s a symbol of creativity, hands-on learning, and the power of young women stepping confidently into the world of technology.",
+        kitBody:
+          "This is the Bluetooth speaker that the participants will proudly build themselves during Girls’ Day 2026. It’s more than just a gadget — it’s a symbol of creativity, hands-on learning, and the power of young women stepping confidently into the world of technology.",
         kitReadyTitle: "Get ready for an unforgettable Girls’ Day 2026!",
-        kitOrder: "To make the most of this incredible experience, be sure to order your Home-Challenge Kit in advance. This specially prepared kit includes everything you’ll need to fully participate in all planned activities — right from the comfort of your home.",
+        kitOrder:
+          "To make the most of this incredible experience, be sure to order your Home-Challenge Kit in advance. This specially prepared kit includes everything you’ll need to fully participate in all planned activities — right from the comfort of your home.",
         kitImportantLabel: "Important:",
-        kitImportantBody: "Make sure you have access to a soldering iron, as it will be essential for some of the tasks. We look forward to seeing you participate and enjoy the hands-on experience!",
+        kitImportantBody:
+          "Make sure you have access to a soldering iron, as it will be essential for some of the tasks. We look forward to seeing you participate and enjoy the hands-on experience!",
         learnMoreCta: "Learn more on Home Challenge",
       },
       certificate: {
@@ -1850,7 +2223,8 @@ export const translations = {
         loading: "Loading…",
         certHeading: "Certificate of Achievement",
         certifies: "This certifies that:",
-        achievedIntro: "has successfully completed the Carenuity Home Challenge, showcasing exceptional skills and knowledge in the fields of",
+        achievedIntro:
+          "has successfully completed the Carenuity Home Challenge, showcasing exceptional skills and knowledge in the fields of",
         iot: "Internet of Things (IoT)",
         and: "and",
         ai: "Artificial Intelligence (AI)",
@@ -1863,20 +2237,25 @@ export const translations = {
           "Application of AI techniques in IoT systems",
           "Integration of AI algorithms for data processing and decision-making",
         ],
-        informalNote: "This certificate is an informal recognition of the competencies gained through the Carenuity Home Challenge.",
-        chipglobeNote: "ChipGlobe, with over 15 years of experience as a trusted provider of talent, proudly acknowledges the dedication and expertise demonstrated by the participants in this challenge.",
+        informalNote:
+          "This certificate is an informal recognition of the competencies gained through the Carenuity Home Challenge.",
+        chipglobeNote:
+          "ChipGlobe, with over 15 years of experience as a trusted provider of talent, proudly acknowledges the dedication and expertise demonstrated by the participants in this challenge.",
         notCompleted: "has not yet completed the challenge!",
       },
       c3Mini: {
         crumb: "IoT & AI Sensor Kits",
         title: "IoT & AI Sensor Kits",
         subtitle: "Bring Real Engineering to Your Campus",
-        intro: "C3-Mini powered hardware for IoT, AI, and engineering programs.",
+        intro:
+          "C3-Mini powered hardware for IoT, AI, and engineering programs.",
         badge: "For Universities",
         overviewTitle: "Overview",
-        overviewBody: "These IoT & AI Sensor Kits enable students to build fully functional IoT systems within minutes. Designed for universities, innovation hubs, and engineering programs, they combine modular hardware with a browser-based software platform, eliminating traditional setup barriers.",
+        overviewBody:
+          "These IoT & AI Sensor Kits enable students to build fully functional IoT systems within minutes. Designed for universities, innovation hubs, and engineering programs, they combine modular hardware with a browser-based software platform, eliminating traditional setup barriers.",
         solutionBuilderTitle: "Solution Builder",
-        solutionBuilderBody: "The Solution Builder is a fully browser-based development environment that allows students to create, configure, and deploy IoT applications in under three minutes.",
+        solutionBuilderBody:
+          "The Solution Builder is a fully browser-based development environment that allows students to create, configure, and deploy IoT applications in under three minutes.",
         howItWorks: "How it works:",
         howItWorksList: [
           "Select a ready-to-use application (e.g. temperature monitor, motion detector)",
@@ -1884,22 +2263,37 @@ export const translations = {
           "Flash directly from the browser — no installation required",
           "Run instantly on real hardware",
         ],
-        githubNote: "All projects are backed by transparent GitHub-hosted source code, enabling full customization and advanced development workflows.",
+        githubNote:
+          "All projects are backed by transparent GitHub-hosted source code, enabling full customization and advanced development workflows.",
         exploreLink: "Explore Solution Builder →",
         threeMinutesTitle: "3 Minutes to Your First Device",
         steps: [
-          { step: "1. Connect", desc: "Plug the C3-Mini into your computer via USB-C. No drivers or software installation required." },
-          { step: "2. Select", desc: "Open the Solution Builder in your browser and choose a ready-to-run application (e.g. temperature monitor)." },
-          { step: "3. Flash", desc: "Flash the firmware directly from the browser to the device with one click." },
-          { step: "4. Run", desc: "Your IoT device is live instantly. Sensor data appears on the display or via serial/web output." },
+          {
+            step: "1. Connect",
+            desc: "Plug the C3-Mini into your computer via USB-C. No drivers or software installation required.",
+          },
+          {
+            step: "2. Select",
+            desc: "Open the Solution Builder in your browser and choose a ready-to-run application (e.g. temperature monitor).",
+          },
+          {
+            step: "3. Flash",
+            desc: "Flash the firmware directly from the browser to the device with one click.",
+          },
+          {
+            step: "4. Run",
+            desc: "Your IoT device is live instantly. Sensor data appears on the display or via serial/web output.",
+          },
         ],
         boxesTitle: "The Boxes",
         box1Title: "Box 1 – Engineering Kit (15 Components)",
         box2Title: "Box 2 – Starter Kit (14 Components)",
         impactTitle: "Impact for Students",
-        impactBody: "Students gain hands-on experience in IoT, electronics, and AI. They learn real-world engineering skills, build working prototypes, and develop solutions relevant to industry challenges.",
+        impactBody:
+          "Students gain hands-on experience in IoT, electronics, and AI. They learn real-world engineering skills, build working prototypes, and develop solutions relevant to industry challenges.",
         bringTitle: "Bring This to Your University",
-        bringBody: "Deploy a complete IoT & AI education ecosystem within weeks. Enable students to build real systems, reduce setup complexity, and accelerate innovation.",
+        bringBody:
+          "Deploy a complete IoT & AI education ecosystem within weeks. Enable students to build real systems, reduce setup complexity, and accelerate innovation.",
         contactUs: "Contact Us",
         pressMaterial: "Press Material",
         kisiiOnepager: "Kisii OnePager",
@@ -2826,52 +3220,111 @@ export const translations = {
       badge: "C3-Mini Ökosystem",
       heroTitle: "C3-Mini™ Triple",
       heroHighlight: "Sensor · Mikrocontroller · Aktor",
-      heroDesc: "Bauen Sie Ihr eigenes Sensorgerät in 3 Minuten, indem Sie einen Sensor, den C3-Mini und einen Aktor auf den Triple-Adapter stecken. Kein Löten, keine Verkabelung — einfach stapeln und flashen.",
+      heroDesc:
+        "Bauen Sie Ihr eigenes Sensorgerät in 3 Minuten, indem Sie einen Sensor, den C3-Mini und einen Aktor auf den Triple-Adapter stecken. Kein Löten, keine Verkabelung — einfach stapeln und flashen.",
       breadcrumbProducts: "Produkte",
       whatTitle: "Was ist ein C3-Mini™ Triple?",
-      whatP1: "Das C3-Mini™ Triple ist ein modulares Hardware-Konzept, das auf dem Triple-Adapter basiert — einer Basisplatine mit drei beschrifteten Steckplätzen: S (Sensor), M (Mikrocontroller) und A (Aktor). Stecken Sie Ihren gewählten Sensor links, den C3-Mini in der Mitte und ein Display oder Summer rechts auf.",
-      whatP2: "Nach der Montage verwenden Sie die Install-for-Free-App direkt aus Ihrem Browser, um Ihre gewählte Anwendung zu flashen — keine PC-Software erforderlich. In 3 Minuten ist Ihr Gerät live und meldet Daten an CloudFree, Home Assistant, IoT AppStore oder Matter.",
+      whatP1:
+        "Das C3-Mini™ Triple ist ein modulares Hardware-Konzept, das auf dem Triple-Adapter basiert — einer Basisplatine mit drei beschrifteten Steckplätzen: S (Sensor), M (Mikrocontroller) und A (Aktor). Stecken Sie Ihren gewählten Sensor links, den C3-Mini in der Mitte und ein Display oder Summer rechts auf.",
+      whatP2:
+        "Nach der Montage verwenden Sie die Install-for-Free-App direkt aus Ihrem Browser, um Ihre gewählte Anwendung zu flashen — keine PC-Software erforderlich. In 3 Minuten ist Ihr Gerät live und meldet Daten an CloudFree, Home Assistant, IoT AppStore oder Matter.",
       stepsTitle: "So funktioniert es",
       steps: [
-        { step: "01", title: "S-M-A Triple auswählen", desc: "Wählen Sie einen Sensor, platzieren Sie den C3-Mini in der Mitte des Triple-Adapters und fügen Sie ein Display oder Summer als Aktor hinzu." },
-        { step: "02", title: "Kostenlos installieren", desc: "Verwenden Sie die Install-for-Free-Funktion, um Ihre gewählte Anwendung direkt auf den C3-Mini zu flashen — kein Programmieren erforderlich." },
-        { step: "03", title: "Ihr Gerät ist bereit", desc: "In 3 Minuten ist Ihr Sensorgerät in Betrieb und meldet Live-Daten an CloudFree, Home Assistant, IoT AppStore oder Matter." },
+        {
+          step: "01",
+          title: "S-M-A Triple auswählen",
+          desc: "Wählen Sie einen Sensor, platzieren Sie den C3-Mini in der Mitte des Triple-Adapters und fügen Sie ein Display oder Summer als Aktor hinzu.",
+        },
+        {
+          step: "02",
+          title: "Kostenlos installieren",
+          desc: "Verwenden Sie die Install-for-Free-Funktion, um Ihre gewählte Anwendung direkt auf den C3-Mini zu flashen — kein Programmieren erforderlich.",
+        },
+        {
+          step: "03",
+          title: "Ihr Gerät ist bereit",
+          desc: "In 3 Minuten ist Ihr Sensorgerät in Betrieb und meldet Live-Daten an CloudFree, Home Assistant, IoT AppStore oder Matter.",
+        },
       ],
       devicesTitle: "Geräte, die Sie bauen können",
-      devicesDesc: "Stapeln Sie eine der sieben Sensorplatinen auf den Triple-Adapter, den C3-Mini in die Mitte und das Display oder den Summer rechts.",
+      devicesDesc:
+        "Stapeln Sie eine der sieben Sensorplatinen auf den Triple-Adapter, den C3-Mini in die Mitte und das Display oder den Summer rechts.",
       devices: [
-        { title: "Barometer", desc: "Misst den Luftdruck. Kann mit einem Display zur Anzeige der Druckwerte oder einem Summer zur Signalisierung erheblicher Änderungen ausgestattet werden." },
-        { title: "Hygrometer", desc: "Überwacht die Luftfeuchtigkeit. Kann ein Display zur Anzeige der relativen Feuchtigkeit oder einen Summer zur Warnung bei unerwünschten Werten verwenden." },
-        { title: "IR-Radiometer", desc: "Erkennt Wärmestrahlung berührungslos. Kann ein Display für Oberflächentemperaturen oder einen Summer für abnorme Wärmewerte verwenden." },
-        { title: "Luxmeter", desc: "Misst die Lichtintensität. Kann ein Display mit Lux-Werten oder einen Summer bei zu hohen oder niedrigen Lichtwerten haben." },
-        { title: "Thermometer", desc: "Misst die Temperatur. Kann ein Display für Echtzeit-Messwerte oder einen Summer bei Über- oder Unterschreitung von Schwellenwerten haben." },
-        { title: "Bewegungsmelder", desc: "Erkennt Bewegungen. Kann den Bewegungsstatus auf einem Display anzeigen oder einen Summer als akustischen Alarm verwenden." },
-        { title: "Anwesenheits-Taster", desc: "Erkennt die Benutzeranwesenheit durch Interaktion. Kann die Aktivierung über ein Display bestätigen oder durch einen Summer Feedback geben." },
+        {
+          title: "Barometer",
+          desc: "Misst den Luftdruck. Kann mit einem Display zur Anzeige der Druckwerte oder einem Summer zur Signalisierung erheblicher Änderungen ausgestattet werden.",
+        },
+        {
+          title: "Hygrometer",
+          desc: "Überwacht die Luftfeuchtigkeit. Kann ein Display zur Anzeige der relativen Feuchtigkeit oder einen Summer zur Warnung bei unerwünschten Werten verwenden.",
+        },
+        {
+          title: "IR-Radiometer",
+          desc: "Erkennt Wärmestrahlung berührungslos. Kann ein Display für Oberflächentemperaturen oder einen Summer für abnorme Wärmewerte verwenden.",
+        },
+        {
+          title: "Luxmeter",
+          desc: "Misst die Lichtintensität. Kann ein Display mit Lux-Werten oder einen Summer bei zu hohen oder niedrigen Lichtwerten haben.",
+        },
+        {
+          title: "Thermometer",
+          desc: "Misst die Temperatur. Kann ein Display für Echtzeit-Messwerte oder einen Summer bei Über- oder Unterschreitung von Schwellenwerten haben.",
+        },
+        {
+          title: "Bewegungsmelder",
+          desc: "Erkennt Bewegungen. Kann den Bewegungsstatus auf einem Display anzeigen oder einen Summer als akustischen Alarm verwenden.",
+        },
+        {
+          title: "Anwesenheits-Taster",
+          desc: "Erkennt die Benutzeranwesenheit durch Interaktion. Kann die Aktivierung über ein Display bestätigen oder durch einen Summer Feedback geben.",
+        },
       ],
       installBtn: "Kostenlos installieren",
       shopBtn: "C3-Mini-Teile kaufen",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Tragen Sie sich in die C3-Mini-Triples-Warteliste ein und erfahren Sie als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Tragen Sie sich in die C3-Mini-Triples-Warteliste ein und erfahren Sie als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     c3MiniBluetoothBeacon: {
       badge: "C3-Mini Ökosystem",
       heroTitle: "C3-Mini™",
       heroHighlight: "Bluetooth Beacon",
-      heroDesc: "Verwandeln Sie den ESP32-C3 in einen kompakten, energieeffizienten Bluetooth-Low-Energy-Beacon — bereit für Smart-Home-, Gesundheits-, Einzelhandels- und Industrieanwendungen in wenigen Minuten.",
+      heroDesc:
+        "Verwandeln Sie den ESP32-C3 in einen kompakten, energieeffizienten Bluetooth-Low-Energy-Beacon — bereit für Smart-Home-, Gesundheits-, Einzelhandels- und Industrieanwendungen in wenigen Minuten.",
       breadcrumbProducts: "Produkte",
       featuresTitle: "Wichtigste Merkmale",
       features: [
-        { title: "Kompakte Bauform", desc: "Passt problemlos in enge Gehäuse und akkubetriebene Setups." },
-        { title: "BLE-Werbemodus", desc: "Sendet iBeacon-, Eddystone- und benutzerdefinierte BLE-Frames direkt ab Werk." },
-        { title: "Niedriger Stromverbrauch", desc: "Optimierte Schlafzyklen lassen den Beacon monatelang mit einer Ladung laufen." },
-        { title: "Flexible Firmware", desc: "Unterstützt Arduino, ESP-IDF und MicroPython — wählen Sie Ihren bevorzugten Stack." },
-        { title: "OTA-fähig", desc: "Firmware drahtlos aktualisieren, ohne das Gerät aus seiner Position zu entfernen." },
-        { title: "Integrationsmöglichkeiten", desc: "Periphere Geräte über GPIO, I²C, SPI und UART für erweiterte Sensorik anschließen." },
+        {
+          title: "Kompakte Bauform",
+          desc: "Passt problemlos in enge Gehäuse und akkubetriebene Setups.",
+        },
+        {
+          title: "BLE-Werbemodus",
+          desc: "Sendet iBeacon-, Eddystone- und benutzerdefinierte BLE-Frames direkt ab Werk.",
+        },
+        {
+          title: "Niedriger Stromverbrauch",
+          desc: "Optimierte Schlafzyklen lassen den Beacon monatelang mit einer Ladung laufen.",
+        },
+        {
+          title: "Flexible Firmware",
+          desc: "Unterstützt Arduino, ESP-IDF und MicroPython — wählen Sie Ihren bevorzugten Stack.",
+        },
+        {
+          title: "OTA-fähig",
+          desc: "Firmware drahtlos aktualisieren, ohne das Gerät aus seiner Position zu entfernen.",
+        },
+        {
+          title: "Integrationsmöglichkeiten",
+          desc: "Periphere Geräte über GPIO, I²C, SPI und UART für erweiterte Sensorik anschließen.",
+        },
       ],
       capabilitiesTitle: "Was er kann",
-      capabilitiesDesc: "Der C3-Mini-Beacon deckt ein breites Spektrum an drahtlosen Anwendungsfällen ab — ohne Kopplung oder komplexe Einrichtung.",
+      capabilitiesDesc:
+        "Der C3-Mini-Beacon deckt ein breites Spektrum an drahtlosen Anwendungsfällen ab — ohne Kopplung oder komplexe Einrichtung.",
       capabilities: [
         "Geräte-ID und Sensordaten übertragen",
         "Indoor-Positionierung und Asset-Tracking ermöglichen",
@@ -2880,24 +3333,31 @@ export const translations = {
         "Gesundheits- und Umweltdaten ohne Kopplung übermitteln",
       ],
       solutionTitle: "Carenuity Standardoption",
-      solutionDesc: "Starten Sie sofort mit vorkonfigurierter BLE-Firmware, optimierten Energieeinstellungen und schneller Einrichtung über den Solution Builder.",
+      solutionDesc:
+        "Starten Sie sofort mit vorkonfigurierter BLE-Firmware, optimierten Energieeinstellungen und schneller Einrichtung über den Solution Builder.",
       solutionBtn: "Solution Builder öffnen",
       installBtn: "Kostenlos installieren",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Bleiben Sie über neue BLE-Firmware, Gehäuseoptionen und Installationsanleitungen für den C3-Mini Bluetooth Beacon auf dem Laufenden.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Bleiben Sie über neue BLE-Firmware, Gehäuseoptionen und Installationsanleitungen für den C3-Mini Bluetooth Beacon auf dem Laufenden.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     dingDongBar: {
       badge: "Bewegungsmelder",
       heroTitle: "DingDongBar –",
       heroHighlight: "Bewegungserkennung & Alarm",
-      heroDesc: "Ein kompaktes, intelligentes Alarmgerät, das automatisch auf menschliche Bewegungen reagiert und einen deutlichen Ton erzeugt. Nutzt einen PIR-Sensor und Summer für den handfreien Betrieb an Türen, in Büros und Sicherheitsbereichen.",
+      heroDesc:
+        "Ein kompaktes, intelligentes Alarmgerät, das automatisch auf menschliche Bewegungen reagiert und einen deutlichen Ton erzeugt. Nutzt einen PIR-Sensor und Summer für den handfreien Betrieb an Türen, in Büros und Sicherheitsbereichen.",
       breadcrumbProducts: "Produkte",
       introTitle: "DingDongBar – Bewegungserkennungs-Alarmgerät",
-      cardP1: "Die DingDongBar ist ein kompaktes, intelligentes Alarmgerät, das automatisch auf menschliche Bewegungen reagiert und einen deutlichen Ton erzeugt. Es verwendet einen PIR-Sensor (Passiv-Infrarot), um Infrarotstrahlung-Änderungen durch Bewegung zu erkennen, und einen Summer, um sofort einen hörbaren 'Ding-Dong'-Ton zu erzeugen, wenn eine Bewegung erkannt wird.",
-      cardP2: "Ausgelegt für Einfachheit und Zuverlässigkeit, entfällt bei der DingDongBar die Notwendigkeit physischer Interaktion wie das Drücken eines Knopfes. Dies macht sie ideal für Umgebungen, in denen handfreier Betrieb bevorzugt wird — wie Türeingänge, Empfangsbereiche, Büros oder sicherheitssensible Zonen.",
-      extendedDesc: "Da sie auf energiesparender Elektronik basiert, kann die DingDongBar über lange Zeiträume kontinuierlich mit einer kleinen Stromversorgung oder Batterie betrieben werden. Sie lässt sich auch einfach in IoT-Systeme, Türalarmanlagen oder Automatisierungsprojekte integrieren und ist sowohl für Bildungsprototypen als auch für reale Anwendungen nützlich.",
+      cardP1:
+        "Die DingDongBar ist ein kompaktes, intelligentes Alarmgerät, das automatisch auf menschliche Bewegungen reagiert und einen deutlichen Ton erzeugt. Es verwendet einen PIR-Sensor (Passiv-Infrarot), um Infrarotstrahlung-Änderungen durch Bewegung zu erkennen, und einen Summer, um sofort einen hörbaren 'Ding-Dong'-Ton zu erzeugen, wenn eine Bewegung erkannt wird.",
+      cardP2:
+        "Ausgelegt für Einfachheit und Zuverlässigkeit, entfällt bei der DingDongBar die Notwendigkeit physischer Interaktion wie das Drücken eines Knopfes. Dies macht sie ideal für Umgebungen, in denen handfreier Betrieb bevorzugt wird — wie Türeingänge, Empfangsbereiche, Büros oder sicherheitssensible Zonen.",
+      extendedDesc:
+        "Da sie auf energiesparender Elektronik basiert, kann die DingDongBar über lange Zeiträume kontinuierlich mit einer kleinen Stromversorgung oder Batterie betrieben werden. Sie lässt sich auch einfach in IoT-Systeme, Türalarmanlagen oder Automatisierungsprojekte integrieren und ist sowohl für Bildungsprototypen als auch für reale Anwendungen nützlich.",
       assembleLink: "So wird es zusammengebaut",
       typicalUsesTitle: "Typische Einsatzbereiche:",
       typicalUses: [
@@ -2907,14 +3367,30 @@ export const translations = {
         "Automatische Erinnerungen für bewegungsbasierte Ereignisse (z. B. Licht- oder Tonauslöser)",
         "Als Bildungsdemo zum Lernen über Sensoren, Mikrocontroller und grundlegende Automatisierungslogik",
       ],
-      pirDesc: "Der PIR-Sensor überwacht kontinuierlich seine Umgebung auf Änderungen der Infrarotstrahlung (Wärme). Wenn sich eine Person oder ein Objekt in seinem Erkennungsbereich bewegt, geht der Ausgangspin des Sensors auf HIGH. Der Mikrocontroller (z. B. Arduino, ESP32 usw.) empfängt dieses Signal. Der Summer wird dann aktiviert — erzeugt einen 'Ding-Dong'- oder Alarmton. Nach einigen Sekunden stoppt der Summer automatisch, bis eine neue Bewegung erkannt wird.",
+      pirDesc:
+        "Der PIR-Sensor überwacht kontinuierlich seine Umgebung auf Änderungen der Infrarotstrahlung (Wärme). Wenn sich eine Person oder ein Objekt in seinem Erkennungsbereich bewegt, geht der Ausgangspin des Sensors auf HIGH. Der Mikrocontroller (z. B. Arduino, ESP32 usw.) empfängt dieses Signal. Der Summer wird dann aktiviert — erzeugt einen 'Ding-Dong'- oder Alarmton. Nach einigen Sekunden stoppt der Summer automatisch, bis eine neue Bewegung erkannt wird.",
       featuresTitle: "Wichtigste Merkmale",
       features: [
-        { title: "Vollautomatische Aktivierung", desc: "Aktiviert sich sofort bei Bewegung — kein Knopf, keine manuelle Bedienung nötig." },
-        { title: "Tag & Nacht", desc: "Der PIR-Sensor arbeitet zuverlässig bei Tageslicht und in vollständiger Dunkelheit." },
-        { title: "Kompakt & energiesparend", desc: "Minimaler Stromverbrauch und kleines Formfaktor ermöglichen die Platzierung überall." },
-        { title: "Erweiterbar", desc: "LEDs, Displays oder WLAN-Benachrichtigungen lassen sich einfach ergänzen." },
-        { title: "Bewegungsalarme & Bildung", desc: "Ideal für Bewegungsalarmprojekte und Sensor-Ausbildungsdemonstrationszwecke." },
+        {
+          title: "Vollautomatische Aktivierung",
+          desc: "Aktiviert sich sofort bei Bewegung — kein Knopf, keine manuelle Bedienung nötig.",
+        },
+        {
+          title: "Tag & Nacht",
+          desc: "Der PIR-Sensor arbeitet zuverlässig bei Tageslicht und in vollständiger Dunkelheit.",
+        },
+        {
+          title: "Kompakt & energiesparend",
+          desc: "Minimaler Stromverbrauch und kleines Formfaktor ermöglichen die Platzierung überall.",
+        },
+        {
+          title: "Erweiterbar",
+          desc: "LEDs, Displays oder WLAN-Benachrichtigungen lassen sich einfach ergänzen.",
+        },
+        {
+          title: "Bewegungsalarme & Bildung",
+          desc: "Ideal für Bewegungsalarmprojekte und Sensor-Ausbildungsdemonstrationszwecke.",
+        },
       ],
       applicationsTitle: "Typische Anwendungen",
       applications: [
@@ -2927,11 +3403,26 @@ export const translations = {
       componentsTitle: "Kernkomponenten",
       componentsSubtitle: "Typische Komponenten:",
       componentsList: [
-        { label: "PIR-Sensor (z. B. HC-SR501)", desc: "Erkennt Bewegung anhand von Infrarotwärmeänderungen" },
-        { label: "Summer (Aktiv oder Piezo)", desc: "Erzeugt einen Ton bei Auslösung" },
-        { label: "Mikrocontroller", desc: "Steuert die Logik zwischen PIR und Summer" },
-        { label: "Stromversorgung", desc: "Liefert 3,3 V oder 5 V je nach Komponenten" },
-        { label: "Optionale LED", desc: "Visuelle Anzeige bei erkannter Bewegung" },
+        {
+          label: "PIR-Sensor (z. B. HC-SR501)",
+          desc: "Erkennt Bewegung anhand von Infrarotwärmeänderungen",
+        },
+        {
+          label: "Summer (Aktiv oder Piezo)",
+          desc: "Erzeugt einen Ton bei Auslösung",
+        },
+        {
+          label: "Mikrocontroller",
+          desc: "Steuert die Logik zwischen PIR und Summer",
+        },
+        {
+          label: "Stromversorgung",
+          desc: "Liefert 3,3 V oder 5 V je nach Komponenten",
+        },
+        {
+          label: "Optionale LED",
+          desc: "Visuelle Anzeige bei erkannter Bewegung",
+        },
       ],
       circuitTitle: "Beispiel-Schaltungslogik:",
       circuitLines: [
@@ -2939,51 +3430,104 @@ export const translations = {
         "Mikrocontroller-Ausgang (z. B. Pin D7) → Summer-Eingang",
         "VCC & GND → Gemeinsame Stromleitungen",
       ],
-      circuitDesc: "Wenn eine Bewegung erkannt wird, versorgt der Mikrocontroller kurzzeitig den Summer mit Strom und erzeugt so den 'DingDong'-Ton.",
+      circuitDesc:
+        "Wenn eine Bewegung erkannt wird, versorgt der Mikrocontroller kurzzeitig den Summer mit Strom und erzeugt so den 'DingDong'-Ton.",
       comparisonTitle: "Produktvergleich",
       comparisonHeaders: ["Merkmal", "PIR + Summer", "Taste + OLED"],
       comparisonRows: [
         ["Aktivierung", "Vollautomatisch", "Manueller Tastendruck"],
-        ["Rückmeldung", "Akustischer Alarm (Summer)", "Visuelle Anzeige (OLED)"],
-        ["Komplexität", "Einfach, keine Interaktion", "Benutzereingabe erforderlich"],
+        [
+          "Rückmeldung",
+          "Akustischer Alarm (Summer)",
+          "Visuelle Anzeige (OLED)",
+        ],
+        [
+          "Komplexität",
+          "Einfach, keine Interaktion",
+          "Benutzereingabe erforderlich",
+        ],
       ],
       solutionTitle: "Solution Builder",
-      solutionDesc: "Flashen Sie die DingDongBar-Firmware direkt aus Ihrem Browser — keine Software-Installation erforderlich.",
+      solutionDesc:
+        "Flashen Sie die DingDongBar-Firmware direkt aus Ihrem Browser — keine Software-Installation erforderlich.",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Erhalten Sie Benachrichtigungen über neue Gehäuseoptionen, Firmware-Updates und Anleitungen für die DingDongBar.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Erhalten Sie Benachrichtigungen über neue Gehäuseoptionen, Firmware-Updates und Anleitungen für die DingDongBar.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     dinoShrek: {
       badge: "Bewegungsjagd-Party-Gadget",
       heroTitle: "DinoShrek –",
       heroHighlight: "Das Bewegungsjagd-Party-Gadget",
-      heroDesc: "Inspiriert vom legendären T-Rex reagiert DinoShrek auf die kleinste menschliche Bewegung mit modernster 24-GHz-Radartechnologie — rote LED-Augen blitzen auf und ein urweltliches Dino-Brüllen ertönt.",
+      heroDesc:
+        "Inspiriert vom legendären T-Rex reagiert DinoShrek auf die kleinste menschliche Bewegung mit modernster 24-GHz-Radartechnologie — rote LED-Augen blitzen auf und ein urweltliches Dino-Brüllen ertönt.",
       breadcrumbProducts: "Produkte",
       introTitle: "Begegne DinoShrek – Das Bewegungsjagd-Party-Gadget",
-      introP1: "Inspiriert vom legendären T-Rex reagiert DinoShrek auf die kleinste menschliche Bewegung. Mit modernster 24-GHz-Radartechnologie erkennt er Bewegungen mit verblüffender Präzision – genau wie der Dinosaurier, der die schwächste Vibration in der Luft spüren konnte. Bei Bewegungserkennung blinken die roten LED-Augen des C3-Mini, und ein urweltliches Dino-Brüllen dringt aus dem eingebauten Summer.",
-      introP2: "Lass ihn auf deiner nächsten Party los, stell ihn auf deinen Schreibtisch oder bewache damit deine Snack-Schüssel – keine Bewegung entgeht DinoShrek.",
+      introP1:
+        "Inspiriert vom legendären T-Rex reagiert DinoShrek auf die kleinste menschliche Bewegung. Mit modernster 24-GHz-Radartechnologie erkennt er Bewegungen mit verblüffender Präzision – genau wie der Dinosaurier, der die schwächste Vibration in der Luft spüren konnte. Bei Bewegungserkennung blinken die roten LED-Augen des C3-Mini, und ein urweltliches Dino-Brüllen dringt aus dem eingebauten Summer.",
+      introP2:
+        "Lass ihn auf deiner nächsten Party los, stell ihn auf deinen Schreibtisch oder bewache damit deine Snack-Schüssel – keine Bewegung entgeht DinoShrek.",
       howTitle: "So funktioniert es",
       howSteps: [
-        { title: "Radardetektion (24 GHz)", desc: "Das hochempfindliche Bewegungsradar scannt die Umgebung nach kleinsten Bewegungen oder Körperanwesenheit." },
-        { title: "Sofortige Reaktion", desc: "Sobald eine Bewegung erkannt wird, löst der Carenuity C3-Mini eine Alarmsequenz aus." },
-        { title: "Visuelles & akustisches Feedback", desc: "Rote LEDs blinken sofort auf, während ein kraftvolles Dino-Brüllen durch den Raum hallt." },
-        { title: "Einstecken, spielen, brüllen", desc: "Dank des Carenuity Triple-Adapters und USB-Typ-C-Stromversorgung funktioniert DinoShrek sofort nach dem Auspacken." },
+        {
+          title: "Radardetektion (24 GHz)",
+          desc: "Das hochempfindliche Bewegungsradar scannt die Umgebung nach kleinsten Bewegungen oder Körperanwesenheit.",
+        },
+        {
+          title: "Sofortige Reaktion",
+          desc: "Sobald eine Bewegung erkannt wird, löst der Carenuity C3-Mini eine Alarmsequenz aus.",
+        },
+        {
+          title: "Visuelles & akustisches Feedback",
+          desc: "Rote LEDs blinken sofort auf, während ein kraftvolles Dino-Brüllen durch den Raum hallt.",
+        },
+        {
+          title: "Einstecken, spielen, brüllen",
+          desc: "Dank des Carenuity Triple-Adapters und USB-Typ-C-Stromversorgung funktioniert DinoShrek sofort nach dem Auspacken.",
+        },
       ],
       modularTitle: "Carenuity Modulares Design",
-      modularP1: "DinoShrek basiert auf dem Carenuity Modularen Ökosystem und ist vollständig rekonfigurierbar und erweiterbar. Tausche Sensoren aus, füge Soundeffekte hinzu oder integriere andere Carenuity-Module in Sekunden – kein Löten, kein Programmieren, keine Werkzeuge erforderlich.",
-      modularP2: "Das Carenuity Solution Builder-Konzept bedeutet, dass du deine Radarkreaturen in unter drei Minuten bauen, testen und modifizieren kannst.",
+      modularP1:
+        "DinoShrek basiert auf dem Carenuity Modularen Ökosystem und ist vollständig rekonfigurierbar und erweiterbar. Tausche Sensoren aus, füge Soundeffekte hinzu oder integriere andere Carenuity-Module in Sekunden – kein Löten, kein Programmieren, keine Werkzeuge erforderlich.",
+      modularP2:
+        "Das Carenuity Solution Builder-Konzept bedeutet, dass du deine Radarkreaturen in unter drei Minuten bauen, testen und modifizieren kannst.",
       boxTitle: "Lieferumfang",
       boxHeaders: ["Komponente", "Beschreibung"],
       boxItems: [
-        { component: "24-GHz-Radarsensor", desc: "Hochpräzise Bewegungs- und Anwesenheitserkennung – ultraempfindlich, sogar durch Materialien" },
-        { component: "Carenuity C3-Mini", desc: "Kompakter ESP32-C3-Mikrocontroller mit integrierter roter Status-LED" },
-        { component: "Dino-Summer", desc: "Vorgeladen mit dem authentischen Dino-Brüllton" },
-        { component: "Carenuity Triple-Adapter", desc: "Modulares Platinensystem für schnelle Plug-in-Konfiguration" },
-        { component: "3D-gedrucktes Gehäuse", desc: "Angepasst für kompakte Montage und Wärmemanagement" },
-        { component: "Acryl-Displaybox", desc: "Transparentes Gehäuse für sofortige Einrichtung und visuelle Präsentation" },
-        { component: "USB-Typ-C-Kabel", desc: "Plug-&-Play-Stromverbindung für sofortigen Betrieb" },
-        { component: "Schnellstartanleitung", desc: "Einfache Einrichtungs- und Anpassungsanweisungen" },
+        {
+          component: "24-GHz-Radarsensor",
+          desc: "Hochpräzise Bewegungs- und Anwesenheitserkennung – ultraempfindlich, sogar durch Materialien",
+        },
+        {
+          component: "Carenuity C3-Mini",
+          desc: "Kompakter ESP32-C3-Mikrocontroller mit integrierter roter Status-LED",
+        },
+        {
+          component: "Dino-Summer",
+          desc: "Vorgeladen mit dem authentischen Dino-Brüllton",
+        },
+        {
+          component: "Carenuity Triple-Adapter",
+          desc: "Modulares Platinensystem für schnelle Plug-in-Konfiguration",
+        },
+        {
+          component: "3D-gedrucktes Gehäuse",
+          desc: "Angepasst für kompakte Montage und Wärmemanagement",
+        },
+        {
+          component: "Acryl-Displaybox",
+          desc: "Transparentes Gehäuse für sofortige Einrichtung und visuelle Präsentation",
+        },
+        {
+          component: "USB-Typ-C-Kabel",
+          desc: "Plug-&-Play-Stromverbindung für sofortigen Betrieb",
+        },
+        {
+          component: "Schnellstartanleitung",
+          desc: "Einfache Einrichtungs- und Anpassungsanweisungen",
+        },
       ],
       useCasesTitle: "Anwendungsfälle",
       useCases: [
@@ -2993,63 +3537,108 @@ export const translations = {
         "Radar-Showcase für Maker und KI-Sensor-Enthusiasten",
       ],
       whyTitle: "Warum DinoShrek?",
-      whyDesc: "Denn manchmal erkennt man keine Bewegung – man spürt sie. DinoShrek kombiniert Spaß, Technik und Radartechnologie in einem modularen, einsatzbereiten System. Entwickelt von Carenuity, optimiert für Innovation.",
+      whyDesc:
+        "Denn manchmal erkennt man keine Bewegung – man spürt sie. DinoShrek kombiniert Spaß, Technik und Radartechnologie in einem modularen, einsatzbereiten System. Entwickelt von Carenuity, optimiert für Innovation.",
       ctaTitle: "Hol dir jetzt deinen DinoShrek und lass die Jagd beginnen.",
       ctaDesc: "Demnächst erhältlich bei chipglobe.com und carenuity.com",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die DinoShrek-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die DinoShrek-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     enviroSence680: {
       badge: "Umweltüberwachung",
       heroTitle: "EnviroSence 680 –",
       heroHighlight: "Erweiterte Umweltüberwachungslösung",
-      heroDesc: "Ein vielseitiges und kompaktes Gerät zur Echtzeit-Überwachung und Anzeige wesentlicher Umweltdaten. Integriert den leistungsstarken BME680-Sensor mit dem ESP-C3-Mini-Mikrocontroller.",
+      heroDesc:
+        "Ein vielseitiges und kompaktes Gerät zur Echtzeit-Überwachung und Anzeige wesentlicher Umweltdaten. Integriert den leistungsstarken BME680-Sensor mit dem ESP-C3-Mini-Mikrocontroller.",
       breadcrumbProducts: "Produkte",
       introTitle: "EnviroSence 680 – Erweiterte Umweltüberwachungslösung",
-      introDesc: "EnviroSence 680 ist ein vielseitiges und kompaktes Gerät, das zur Echtzeit-Überwachung und Anzeige wesentlicher Umweltdaten entwickelt wurde. Es integriert den leistungsstarken BME680-Sensor mit dem ESP-C3-Mini-Mikrocontroller und liefert genaue Messungen von Temperatur, Luftfeuchtigkeit, Druck, Höhe, Gaskonzentration und Luftqualitätsindex (AQI). Das Gerät verfügt über ein lebhaftes TFT-Display, das die Datenvisualisierung klar und benutzerfreundlich gestaltet.",
-      lvglDesc: "Um eine reibungslose Benutzererfahrung zu gewährleisten, wurde die Benutzeroberfläche mit LVGL entwickelt — einer hochoptimierten Grafikbibliothek für eingebettete Systeme. Die intuitive GUI des EnviroSence 680 präsentiert alle Umweltparameter auf einen Blick und macht es ideal für Anwendungen in Smart Homes, der industriellen Überwachung und der Präzisionslandwirtschaft.",
+      introDesc:
+        "EnviroSence 680 ist ein vielseitiges und kompaktes Gerät, das zur Echtzeit-Überwachung und Anzeige wesentlicher Umweltdaten entwickelt wurde. Es integriert den leistungsstarken BME680-Sensor mit dem ESP-C3-Mini-Mikrocontroller und liefert genaue Messungen von Temperatur, Luftfeuchtigkeit, Druck, Höhe, Gaskonzentration und Luftqualitätsindex (AQI). Das Gerät verfügt über ein lebhaftes TFT-Display, das die Datenvisualisierung klar und benutzerfreundlich gestaltet.",
+      lvglDesc:
+        "Um eine reibungslose Benutzererfahrung zu gewährleisten, wurde die Benutzeroberfläche mit LVGL entwickelt — einer hochoptimierten Grafikbibliothek für eingebettete Systeme. Die intuitive GUI des EnviroSence 680 präsentiert alle Umweltparameter auf einen Blick und macht es ideal für Anwendungen in Smart Homes, der industriellen Überwachung und der Präzisionslandwirtschaft.",
       featuresTitle: "Wichtigste Merkmale",
       features: [
-        { title: "Echtzeit-Überwachung", desc: "Verfolgt und zeigt Umweltdaten kontinuierlich an, sobald sie sich ändern." },
-        { title: "Kompaktes & effizientes Design", desc: "Kleiner Formfaktor mit optimiertem Stromverbrauch für den Dauerbetrieb." },
-        { title: "Fortschrittliche Sensortechnologie", desc: "Angetrieben vom BME680-Sensor für genaue Luftqualitäts-, Temperatur-, Feuchtigkeits- und Druckwerte." },
-        { title: "Interaktive GUI", desc: "Benutzerfreundliche grafische Oberfläche für klare Datenvisualisierung." },
-        { title: "Tragbar und flexibel", desc: "Konzipiert für den Einsatz in einer Vielzahl von Umgebungen und Anwendungen." },
+        {
+          title: "Echtzeit-Überwachung",
+          desc: "Verfolgt und zeigt Umweltdaten kontinuierlich an, sobald sie sich ändern.",
+        },
+        {
+          title: "Kompaktes & effizientes Design",
+          desc: "Kleiner Formfaktor mit optimiertem Stromverbrauch für den Dauerbetrieb.",
+        },
+        {
+          title: "Fortschrittliche Sensortechnologie",
+          desc: "Angetrieben vom BME680-Sensor für genaue Luftqualitäts-, Temperatur-, Feuchtigkeits- und Druckwerte.",
+        },
+        {
+          title: "Interaktive GUI",
+          desc: "Benutzerfreundliche grafische Oberfläche für klare Datenvisualisierung.",
+        },
+        {
+          title: "Tragbar und flexibel",
+          desc: "Konzipiert für den Einsatz in einer Vielzahl von Umgebungen und Anwendungen.",
+        },
       ],
       docsTitle: "Dokumentation",
       docsLinkLabel: "Schaltplan V2.0.1 (PDF)",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die EnviroSence-680-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die EnviroSence-680-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     esp32Audio: {
       badge: "Modulares Audioprojekt",
       heroTitle: "ESP32 Audio",
-      heroHighlight: "Modulares Audioprojekt auf Basis der Carenuity-Architektur",
-      heroDesc: "Ein modulares Audio-Aufnahme- und Wiedergabesystem auf Basis des Carenuity S-M-A-Prinzips, das Mikrofon-Sensor, ESP32-Mikrocontroller und Audio-Aktor in einem kohärenten Ökosystem vereint.",
+      heroHighlight:
+        "Modulares Audioprojekt auf Basis der Carenuity-Architektur",
+      heroDesc:
+        "Ein modulares Audio-Aufnahme- und Wiedergabesystem auf Basis des Carenuity S-M-A-Prinzips, das Mikrofon-Sensor, ESP32-Mikrocontroller und Audio-Aktor in einem kohärenten Ökosystem vereint.",
       breadcrumbProducts: "Produkte",
       architectureTitle: "Architektur",
-      introCardDesc: "Dieses Projekt bietet eine modulare und benutzerfreundliche Lösung zum Aufbau eines ESP32-basierten Audio-Aufnahme- und Wiedergabegeräts. Es integriert ein hochwertiges Mikrofon, drahtlose Konnektivität, SD-Karten-Speicher, optionale LED-Steuerung und einen vereinfachten Einrichtungsprozess ohne Programmierkenntnisse.",
+      introCardDesc:
+        "Dieses Projekt bietet eine modulare und benutzerfreundliche Lösung zum Aufbau eines ESP32-basierten Audio-Aufnahme- und Wiedergabegeräts. Es integriert ein hochwertiges Mikrofon, drahtlose Konnektivität, SD-Karten-Speicher, optionale LED-Steuerung und einen vereinfachten Einrichtungsprozess ohne Programmierkenntnisse.",
       refDesignTitle: "Referenzdesign",
-      refDesignDesc: "Zum Vergleich und zur Inspiration zeigt das folgende ESP32-Audio-Recorder-Projekt eine verwandte Architektur:",
+      refDesignDesc:
+        "Zum Vergleich und zur Inspiration zeigt das folgende ESP32-Audio-Recorder-Projekt eine verwandte Architektur:",
       refDesignLinks: [
-        { label: "Dokumentation", url: "https://docs.cirkitdesigner.com/project/published/e39a1639-a2e9-4fa3-92d3-89d96a50dac6/esp32-based-audio-recorder-and-playback-system" },
-        { label: "Projektansicht", url: "https://app.cirkitdesigner.com/project/e39a1639-a2e9-4fa3-92d3-89d96a50dac6" },
+        {
+          label: "Dokumentation",
+          url: "https://docs.cirkitdesigner.com/project/published/e39a1639-a2e9-4fa3-92d3-89d96a50dac6/esp32-based-audio-recorder-and-playback-system",
+        },
+        {
+          label: "Projektansicht",
+          url: "https://app.cirkitdesigner.com/project/e39a1639-a2e9-4fa3-92d3-89d96a50dac6",
+        },
       ],
       requirementsTitle: "Ihre Anforderungen",
-      requirementsDesc: "Das System ist darauf ausgelegt, folgende funktionale Anforderungen zu erfüllen: integriertes Mikrofon zur Audioaufnahme, ESP32-Mikrocontroller mit WLAN und Bluetooth, SD-Karten-Speicher, physische Steuertasten, adressierbare LED-Unterstützung und vollständige Dokumentation.",
+      requirementsDesc:
+        "Das System ist darauf ausgelegt, folgende funktionale Anforderungen zu erfüllen: integriertes Mikrofon zur Audioaufnahme, ESP32-Mikrocontroller mit WLAN und Bluetooth, SD-Karten-Speicher, physische Steuertasten, adressierbare LED-Unterstützung und vollständige Dokumentation.",
       conceptTitle: "Unser Konzept",
-      conceptDesc: "Die empfohlene Lösung basiert auf dem Carenuity S-M-A-Prinzip, bestehend aus Sensor-, Mikrocontroller- und Aktor-Modulen. Alle Blöcke sind auf Triple-Adaptern implementiert und für die schnelle Montage ohne technischen Hintergrund konzipiert. Das System kann über den Carenuity Solution Builder eingerichtet werden, der alle Konfigurationsschritte automatisch durchführt.",
+      conceptDesc:
+        "Die empfohlene Lösung basiert auf dem Carenuity S-M-A-Prinzip, bestehend aus Sensor-, Mikrocontroller- und Aktor-Modulen. Alle Blöcke sind auf Triple-Adaptern implementiert und für die schnelle Montage ohne technischen Hintergrund konzipiert. Das System kann über den Carenuity Solution Builder eingerichtet werden, der alle Konfigurationsschritte automatisch durchführt.",
       conceptSolutionBuilderLabel: "Solution Builder",
       modulesTitle: "Funktionsmodule",
-      sensorBlock: { title: "Sensorblock (S)", desc: "MAX9814-Elektret-Mikrofon mit integriertem Verstärker für saubere Audioaufnahme, einschließlich WS2812B-LED-Ausgang für optionale LED-Streifen." },
-      mcuBlock: { title: "Mikrocontrollerblock (M)", desc: "ESP32-WROOM-32-Modul mit WLAN- und Bluetooth-Konnektivität, vollständig kompatibel mit der Arduino-IDE." },
-      actuatorBlock: { title: "Aktorblock (A)", desc: "MAX98357A Digital-Audio-Wandler mit direktem Lautsprecherausgang für die Audiowiedergabe." },
+      sensorBlock: {
+        title: "Sensorblock (S)",
+        desc: "MAX9814-Elektret-Mikrofon mit integriertem Verstärker für saubere Audioaufnahme, einschließlich WS2812B-LED-Ausgang für optionale LED-Streifen.",
+      },
+      mcuBlock: {
+        title: "Mikrocontrollerblock (M)",
+        desc: "ESP32-WROOM-32-Modul mit WLAN- und Bluetooth-Konnektivität, vollständig kompatibel mit der Arduino-IDE.",
+      },
+      actuatorBlock: {
+        title: "Aktorblock (A)",
+        desc: "MAX98357A Digital-Audio-Wandler mit direktem Lautsprecherausgang für die Audiowiedergabe.",
+      },
       storageTitle: "Speichermodul",
-      storageDesc: "Micro-SD-Erweiterungsplatine für SPI-basierte Audiodatenspeicherung.",
+      storageDesc:
+        "Micro-SD-Erweiterungsplatine für SPI-basierte Audiodatenspeicherung.",
       storageProductLabel: "Produktlink",
       advantagesTitle: "Vorteile des Carenuity-Systems",
       advantages: [
@@ -3060,26 +3649,34 @@ export const translations = {
         "Die Module können kostenlos vorbereitet werden, mit einer erwarteten Lieferzeit von drei bis vier Wochen.",
       ],
       designTitle: "Designoptionen",
-      designDesc: "Eine kreisförmige Basisplatine mit einem Durchmesser von etwa sechs Zentimetern steht zur Verfügung, um alle Bausteine aufzunehmen. Quadratische oder rechteckige Layouts werden ebenfalls unterstützt.",
+      designDesc:
+        "Eine kreisförmige Basisplatine mit einem Durchmesser von etwa sechs Zentimetern steht zur Verfügung, um alle Bausteine aufzunehmen. Quadratische oder rechteckige Layouts werden ebenfalls unterstützt.",
       getStartedTitle: "Jetzt loslegen",
-      getStartedDesc: "Wenn Sie an dieser modularen ESP32-Audiolösung interessiert sind, teilen Sie uns bitte Ihren bevorzugten Formfaktor mit. Wir bereiten das vollständige Modulset für Sie vor und stellen alle erforderlichen Einrichtungsanweisungen bereit.",
+      getStartedDesc:
+        "Wenn Sie an dieser modularen ESP32-Audiolösung interessiert sind, teilen Sie uns bitte Ihren bevorzugten Formfaktor mit. Wir bereiten das vollständige Modulset für Sie vor und stellen alle erforderlichen Einrichtungsanweisungen bereit.",
       instagramLabel: "Auf Instagram ansehen",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die ESP32-Audio-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die ESP32-Audio-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     freshCheck: {
       badge: "Smarter Luftqualitätsmonitor",
       heroTitle: "FreshCheck –",
       heroHighlight: "Smarter Badezimmer-Luftqualitätsmonitor",
-      heroDesc: "Wissen Sie sofort, ob die Badezimmerluft frisch oder noch belüftungsbedürftig ist — ein einfaches Ampelsignal, betrieben vom C3-Mini und einem hochpräzisen VOC-Sensor.",
+      heroDesc:
+        "Wissen Sie sofort, ob die Badezimmerluft frisch oder noch belüftungsbedürftig ist — ein einfaches Ampelsignal, betrieben vom C3-Mini und einem hochpräzisen VOC-Sensor.",
       breadcrumbProducts: "Produkte",
-      introTitle: "Carenuity FreshCheck – Smarter Badezimmer-Luftqualitätsmonitor",
+      introTitle:
+        "Carenuity FreshCheck – Smarter Badezimmer-Luftqualitätsmonitor",
       problemTitle: "Das Problem",
-      problemDesc: "Niemand verlässt gerne ein Badezimmer, ohne zu wissen, ob die Luft für die nächste Person noch unangenehm ist. Herkömmliche Lösungen setzen auf Raten oder Warten — nicht sehr effizient.",
+      problemDesc:
+        "Niemand verlässt gerne ein Badezimmer, ohne zu wissen, ob die Luft für die nächste Person noch unangenehm ist. Herkömmliche Lösungen setzen auf Raten oder Warten — nicht sehr effizient.",
       solutionTitle: "Die Lösung",
-      solutionDesc: "Carenuity FreshCheck misst sofort die Luftqualität in Ihrem Badezimmer und zeigt Ihnen, ob die Luft frisch ist oder noch belüftet werden muss. Betrieben von unserem C3-Mini IoT-Controller und einem hochpräzisen VOC-Sensor bietet FreshCheck ein einfaches Ampelsignal:",
+      solutionDesc:
+        "Carenuity FreshCheck misst sofort die Luftqualität in Ihrem Badezimmer und zeigt Ihnen, ob die Luft frisch ist oder noch belüftet werden muss. Betrieben von unserem C3-Mini IoT-Controller und einem hochpräzisen VOC-Sensor bietet FreshCheck ein einfaches Ampelsignal:",
       signals: [
         { color: "Grün", meaning: "Frische Luft, alles in Ordnung." },
         { color: "Orange", meaning: "Leichter Restgeruch." },
@@ -3087,11 +3684,26 @@ export const translations = {
       ],
       benefitsTitle: "Wichtigste Vorteile",
       benefits: [
-        { title: "Sofortiges Feedback", desc: "Wissen Sie sofort, ob das Badezimmer frisch ist." },
-        { title: "Einfache Einrichtung", desc: "Bereit in unter 3 Minuten mit dem Carenuity Solution Builder." },
-        { title: "Flexible Form", desc: "Erhältlich als DIY-Kit für Technikbegeisterte oder als gebrauchsfertiges Gerät." },
-        { title: "Smart-Home-Integration", desc: "Verbindet sich über WLAN, MQTT oder Matter mit Ihrem Ökosystem (Home Assistant, Google Home, Alexa, Apple Home)." },
-        { title: "Modular & nachhaltig", desc: "Basierend auf dem Carenuity C3-Mini und Sensormodulen — einfach zu erweitern oder umzurüsten." },
+        {
+          title: "Sofortiges Feedback",
+          desc: "Wissen Sie sofort, ob das Badezimmer frisch ist.",
+        },
+        {
+          title: "Einfache Einrichtung",
+          desc: "Bereit in unter 3 Minuten mit dem Carenuity Solution Builder.",
+        },
+        {
+          title: "Flexible Form",
+          desc: "Erhältlich als DIY-Kit für Technikbegeisterte oder als gebrauchsfertiges Gerät.",
+        },
+        {
+          title: "Smart-Home-Integration",
+          desc: "Verbindet sich über WLAN, MQTT oder Matter mit Ihrem Ökosystem (Home Assistant, Google Home, Alexa, Apple Home).",
+        },
+        {
+          title: "Modular & nachhaltig",
+          desc: "Basierend auf dem Carenuity C3-Mini und Sensormodulen — einfach zu erweitern oder umzurüsten.",
+        },
       ],
       howTitle: "So funktioniert es",
       howSteps: [
@@ -3110,22 +3722,30 @@ export const translations = {
       getDesc: "Jetzt in zwei Optionen erhältlich:",
       getOptions: [
         { name: "DIY-Kit", desc: "Selbst in Minuten zusammenbauen." },
-        { name: "Gebrauchsfertiges Gerät", desc: "Einstecken und mit der Überwachung beginnen." },
+        {
+          name: "Gebrauchsfertiges Gerät",
+          desc: "Einstecken und mit der Überwachung beginnen.",
+        },
       ],
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die FreshCheck-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die FreshCheck-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     fridgeBar: {
       badge: "Smarter Kühlschrankmonitor",
       heroTitle: "FridgeBar –",
       heroHighlight: "Schützen Sie Ihre Lebensmittel, sichern Sie Frische",
-      heroDesc: "Überwacht kontinuierlich die Kühlschranktemperatur und zeigt Ihnen auf einen Blick, ob Ihre Lebensmittel sicher gelagert sind — mit smarten Benachrichtigungen bei Problemen.",
+      heroDesc:
+        "Überwacht kontinuierlich die Kühlschranktemperatur und zeigt Ihnen auf einen Blick, ob Ihre Lebensmittel sicher gelagert sind — mit smarten Benachrichtigungen bei Problemen.",
       breadcrumbProducts: "Produkte",
-      introTitle: "Carenuity FridgeBar — Schützen Sie Ihre Lebensmittel, sichern Sie Frische",
+      introTitle:
+        "Carenuity FridgeBar — Schützen Sie Ihre Lebensmittel, sichern Sie Frische",
       problemTitle: "Das Problem",
-      problemDesc: "Kühlschränke sollen Lebensmittel sicher aufbewahren — aber Temperaturschwankungen treten häufiger auf als erwartet.",
+      problemDesc:
+        "Kühlschränke sollen Lebensmittel sicher aufbewahren — aber Temperaturschwankungen treten häufiger auf als erwartet.",
       problemPoints: [
         "Häufiges Öffnen der Tür, schlechte Abdichtung oder Überfüllung können die Temperatur steigen lassen.",
         "Kinder (oder eilige Erwachsene) vergessen vielleicht, die Kühlschranktür vollständig zu schließen, sodass Kaltluft entweicht.",
@@ -3133,11 +3753,22 @@ export const translations = {
         "Ohne klares Feedback bemerkt man es erst, wenn es bereits zu spät ist.",
       ],
       solutionTitle: "Die Lösung",
-      solutionDesc: "Carenuity FridgeBar überwacht kontinuierlich die Innentemperatur des Kühlschranks und zeigt Ihnen auf einen Blick, ob Ihre Lebensmittel sicher gelagert sind.",
+      solutionDesc:
+        "Carenuity FridgeBar überwacht kontinuierlich die Innentemperatur des Kühlschranks und zeigt Ihnen auf einen Blick, ob Ihre Lebensmittel sicher gelagert sind.",
       signals: [
-        { color: "Grün", meaning: "Sicherheitszone, Kühlschrank funktioniert einwandfrei." },
-        { color: "Orange", meaning: "Temperatur leicht erhöht — Tür oder Beladung prüfen." },
-        { color: "Rot", meaning: "Unsichere Zone — Lebensmittel gefährdet, Tür möglicherweise offen oder Kühlsystem defekt." },
+        {
+          color: "Grün",
+          meaning: "Sicherheitszone, Kühlschrank funktioniert einwandfrei.",
+        },
+        {
+          color: "Orange",
+          meaning: "Temperatur leicht erhöht — Tür oder Beladung prüfen.",
+        },
+        {
+          color: "Rot",
+          meaning:
+            "Unsichere Zone — Lebensmittel gefährdet, Tür möglicherweise offen oder Kühlsystem defekt.",
+        },
       ],
       alertsTitle: "Smarte Benachrichtigungen",
       alertsDesc: "Optionale smarte Benachrichtigungen informieren Sie, wenn:",
@@ -3148,12 +3779,30 @@ export const translations = {
       ],
       benefitsTitle: "Wichtigste Vorteile",
       benefits: [
-        { title: "Lebensmittelsicherheit der Familie schützen", desc: "Wissen Sie jederzeit, dass Ihr Kühlschrank Lebensmittel frisch hält." },
-        { title: "Abfall reduzieren", desc: "Verderb durch unbemerkte Erwärmung oder vergessene Türen verhindern." },
-        { title: "Seelenfrieden", desc: "Sofort benachrichtigt werden, wenn Kinder vergessen, den Kühlschrank zu schließen." },
-        { title: "Energie sparen", desc: "Erkennen, wann Kaltluft entweicht, und frühzeitig handeln." },
-        { title: "Einfache Einrichtung", desc: "Bereit in 3 Minuten über den Carenuity Solution Builder." },
-        { title: "Smart-Integration", desc: "Funktioniert mit Matter, MQTT, Home Assistant, Google Home, Alexa, Apple Home." },
+        {
+          title: "Lebensmittelsicherheit der Familie schützen",
+          desc: "Wissen Sie jederzeit, dass Ihr Kühlschrank Lebensmittel frisch hält.",
+        },
+        {
+          title: "Abfall reduzieren",
+          desc: "Verderb durch unbemerkte Erwärmung oder vergessene Türen verhindern.",
+        },
+        {
+          title: "Seelenfrieden",
+          desc: "Sofort benachrichtigt werden, wenn Kinder vergessen, den Kühlschrank zu schließen.",
+        },
+        {
+          title: "Energie sparen",
+          desc: "Erkennen, wann Kaltluft entweicht, und frühzeitig handeln.",
+        },
+        {
+          title: "Einfache Einrichtung",
+          desc: "Bereit in 3 Minuten über den Carenuity Solution Builder.",
+        },
+        {
+          title: "Smart-Integration",
+          desc: "Funktioniert mit Matter, MQTT, Home Assistant, Google Home, Alexa, Apple Home.",
+        },
       ],
       howTitle: "So funktioniert es",
       howSteps: [
@@ -3173,22 +3822,33 @@ export const translations = {
       getTitle: "Jetzt bestellen",
       getDesc: "Jetzt in zwei Optionen erhältlich:",
       getOptions: [
-        { name: "DIY-Kit", desc: "C3-Mini, Sensor, LED-Ring, Stromkabel und Schnellstartanleitung." },
-        { name: "Gebrauchsfertiges Gerät", desc: "Vormoniert in schlankem Gehäuse, Plug & Play." },
+        {
+          name: "DIY-Kit",
+          desc: "C3-Mini, Sensor, LED-Ring, Stromkabel und Schnellstartanleitung.",
+        },
+        {
+          name: "Gebrauchsfertiges Gerät",
+          desc: "Vormoniert in schlankem Gehäuse, Plug & Play.",
+        },
       ],
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die FridgeBar-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die FridgeBar-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     leafTemp: {
       badge: "Pflanzenphysiologie-Sensing",
       heroTitle: "Blatttemperaturmessung –",
       heroHighlight: "Präzise Einblicke in die Pflanzenphysiologie",
-      heroDesc: "Die Blatttemperatur ist ein wichtiger Indikator für den physiologischen Zustand einer Pflanze — sie liefert wertvolle Informationen über Wasserstress, Photosyntheseaktivität, Transpiration und Umweltreaktionen.",
+      heroDesc:
+        "Die Blatttemperatur ist ein wichtiger Indikator für den physiologischen Zustand einer Pflanze — sie liefert wertvolle Informationen über Wasserstress, Photosyntheseaktivität, Transpiration und Umweltreaktionen.",
       breadcrumbProducts: "Produkte",
-      introTitle: "Blatttemperaturmessung – Präzise Einblicke in die Pflanzenphysiologie",
-      introDesc: "Die Blatttemperatur ist ein wichtiger Indikator für den physiologischen Zustand einer Pflanze. Sie liefert wertvolle Informationen über Wasserstress, Photosyntheseaktivität, Transpiration und Umweltreaktionen. Präzise Messungen helfen dabei, Pflanzen besser zu verstehen, die Bewässerung zu optimieren und Krankheiten frühzeitig zu erkennen.",
+      introTitle:
+        "Blatttemperaturmessung – Präzise Einblicke in die Pflanzenphysiologie",
+      introDesc:
+        "Die Blatttemperatur ist ein wichtiger Indikator für den physiologischen Zustand einer Pflanze. Sie liefert wertvolle Informationen über Wasserstress, Photosyntheseaktivität, Transpiration und Umweltreaktionen. Präzise Messungen helfen dabei, Pflanzen besser zu verstehen, die Bewässerung zu optimieren und Krankheiten frühzeitig zu erkennen.",
       whyTitle: "Warum ist die Blatttemperatur wichtig?",
       whyPoints: [
         "Erkennung von Wasserstress: Wenn Pflanzen nicht genug Wasser aufnehmen können, steigt die Blatttemperatur aufgrund reduzierter Transpiration.",
@@ -3224,28 +3884,39 @@ export const translations = {
         "Datenintegration: Kann mit Umweltparametern wie Luftfeuchtigkeit, Licht und Bodenfeuchtigkeit kombiniert werden",
       ],
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die Blatttemperatur-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die Blatttemperatur-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     magneticTrafficCounting: {
       badge: "Smarte Verkehrsdetektion",
       heroTitle: "Magnetische Verkehrszählung —",
       heroHighlight: "Unterstützt vom Carenuity Triple-Adapter Ökosystem",
-      heroDesc: "Magnetische Sensorik bietet eine effiziente und unauffällige Möglichkeit, Fahrzeuge in Bewegung zu erkennen. Autos enthalten erhebliche Mengen ferromagnetischen Materials, das das Erdmagnetfeld lokal verzerrt.",
+      heroDesc:
+        "Magnetische Sensorik bietet eine effiziente und unauffällige Möglichkeit, Fahrzeuge in Bewegung zu erkennen. Autos enthalten erhebliche Mengen ferromagnetischen Materials, das das Erdmagnetfeld lokal verzerrt.",
       breadcrumbProducts: "Produkte",
-      introTitle: "Magnetische Verkehrszählung — Unterstützt vom Carenuity Triple-Adapter Ökosystem",
-      introP1: "Magnetische Sensorik bietet eine effiziente und unauffällige Möglichkeit, Fahrzeuge in Bewegung zu erkennen. Autos enthalten erhebliche Mengen ferromagnetischen Materials, das das Erdmagnetfeld lokal verzerrt. Ein kompaktes Sensormodul kann diese Störungen mit Mikrotesla-Empfindlichkeit messen und eine zuverlässige Verkehrszählung in Echtzeit ermöglichen. Schnelle Reaktionszeit, langfristige Temperaturstabilität und niedriger Stromverbrauch machen diesen Ansatz ideal für den Außeneinsatz, auch an abgelegenen Standorten.",
-      introP2: "Carenuity bietet eine vollständige, modulare Hardware-Grundlage für den schnellen Einsatz solcher Sensorsysteme. Das System integriert Infineon-Magnetsensoren mit der Plug-and-Play Triple-Adapter-Architektur von Carenuity und ermöglicht schnelles Prototyping, schnellen Feldeinsatz und nahtlose Integration in bestehende IoT-Plattformen.",
+      introTitle:
+        "Magnetische Verkehrszählung — Unterstützt vom Carenuity Triple-Adapter Ökosystem",
+      introP1:
+        "Magnetische Sensorik bietet eine effiziente und unauffällige Möglichkeit, Fahrzeuge in Bewegung zu erkennen. Autos enthalten erhebliche Mengen ferromagnetischen Materials, das das Erdmagnetfeld lokal verzerrt. Ein kompaktes Sensormodul kann diese Störungen mit Mikrotesla-Empfindlichkeit messen und eine zuverlässige Verkehrszählung in Echtzeit ermöglichen. Schnelle Reaktionszeit, langfristige Temperaturstabilität und niedriger Stromverbrauch machen diesen Ansatz ideal für den Außeneinsatz, auch an abgelegenen Standorten.",
+      introP2:
+        "Carenuity bietet eine vollständige, modulare Hardware-Grundlage für den schnellen Einsatz solcher Sensorsysteme. Das System integriert Infineon-Magnetsensoren mit der Plug-and-Play Triple-Adapter-Architektur von Carenuity und ermöglicht schnelles Prototyping, schnellen Feldeinsatz und nahtlose Integration in bestehende IoT-Plattformen.",
       infineonTitle: "Infineon-Sensoren in Carenuity-Module integriert",
-      infineonP1: "Carenuity unterstützt hochpräzise Sensoren von führenden Herstellern, darunter Magnetsensoren für die Verkehrsdetektion. Der Infineon TLV493D-A1B6 3D-Hall-Sensor ist besonders gut geeignet. Er misst Veränderungen auf allen drei magnetischen Achsen mit ausreichendem Dynamikbereich und lässt sich einfach in energiesparende Mikrocontroller-Systeme integrieren.",
-      infineonP2: "Das C3-Mini-Ökosystem von Carenuity ist speziell für solche Integrationen konzipiert. Sensoren können direkt in die Plattform eingesteckt, innerhalb von Minuten getauscht und mit jedem C3-Mini-Mikrocontroller oder Aktormodul kombiniert werden. Diese Modularität ist ein Kernmerkmal des Triple-Adapter-Systems: Slot S für den Sensor, Slot M für den Mikrocontroller und Slot A für den Aktor. Gemeinsam bauen diese S+M+A-Komponenten ein vollständiges IoT-Gerät.",
+      infineonP1:
+        "Carenuity unterstützt hochpräzise Sensoren von führenden Herstellern, darunter Magnetsensoren für die Verkehrsdetektion. Der Infineon TLV493D-A1B6 3D-Hall-Sensor ist besonders gut geeignet. Er misst Veränderungen auf allen drei magnetischen Achsen mit ausreichendem Dynamikbereich und lässt sich einfach in energiesparende Mikrocontroller-Systeme integrieren.",
+      infineonP2:
+        "Das C3-Mini-Ökosystem von Carenuity ist speziell für solche Integrationen konzipiert. Sensoren können direkt in die Plattform eingesteckt, innerhalb von Minuten getauscht und mit jedem C3-Mini-Mikrocontroller oder Aktormodul kombiniert werden. Diese Modularität ist ein Kernmerkmal des Triple-Adapter-Systems: Slot S für den Sensor, Slot M für den Mikrocontroller und Slot A für den Aktor. Gemeinsam bauen diese S+M+A-Komponenten ein vollständiges IoT-Gerät.",
       tripleAdapterTitle: "Der Carenuity Triple-Adapter Vorteil",
-      tripleAdapterDesc: "Der Triple-Adapter ist darauf ausgelegt, Sensorsysteme schnell zu montieren, einzusetzen und zu iterieren. Er bietet universelle Schnittstellen für Sensoren, Controller und Aktoren. Die Kompatibilität mit ESP32- und ESP8266-basierten Carenuity-Mikrocontrollern ermöglicht eine effiziente Datenverarbeitung und drahtlose Kommunikation mit Home Assistant und Matter-Ökosystem-Integration.",
+      tripleAdapterDesc:
+        "Der Triple-Adapter ist darauf ausgelegt, Sensorsysteme schnell zu montieren, einzusetzen und zu iterieren. Er bietet universelle Schnittstellen für Sensoren, Controller und Aktoren. Die Kompatibilität mit ESP32- und ESP8266-basierten Carenuity-Mikrocontrollern ermöglicht eine effiziente Datenverarbeitung und drahtlose Kommunikation mit Home Assistant und Matter-Ökosystem-Integration.",
       buildTitle: "Bauen Sie Ihren Verkehrszähler in unter 3 Minuten",
-      buildDesc: "Der Solution Builder bietet automatisierte Installation ohne Programmierung. Geräte werden per USB mit einem Install-for-Free-Button konfiguriert. Sensoren können später dank standardisierter Modulformatierung und Quick-Change-Funktionen innerhalb von Minuten im Feld getauscht werden.",
+      buildDesc:
+        "Der Solution Builder bietet automatisierte Installation ohne Programmierung. Geräte werden per USB mit einem Install-for-Free-Button konfiguriert. Sensoren können später dank standardisierter Modulformatierung und Quick-Change-Funktionen innerhalb von Minuten im Feld getauscht werden.",
       howTitle: "So funktioniert die magnetische Verkehrszählung",
-      howDesc: "Das Modul misst kontinuierlich Umgebungsmagnetfelder. Fahrzeugdurchfahrten erzeugen scharfe magnetische Signaturveränderungen, die auf Mikrotesla-Empfindlichkeitsniveau erkennbar sind. Durch die Kombination des Infineon-Magnetsensors mit einem C3-Mini-Controller und der Triple-Adapter-Architektur ermöglicht Carenuity:",
+      howDesc:
+        "Das Modul misst kontinuierlich Umgebungsmagnetfelder. Fahrzeugdurchfahrten erzeugen scharfe magnetische Signaturveränderungen, die auf Mikrotesla-Empfindlichkeitsniveau erkennbar sind. Durch die Kombination des Infineon-Magnetsensors mit einem C3-Mini-Controller und der Triple-Adapter-Architektur ermöglicht Carenuity:",
       howPoints: [
         "Echtzeiterkennung",
         "Autonomer Betrieb",
@@ -3261,59 +3932,92 @@ export const translations = {
         "Ökosystem-Integration — geeignet für Kommunen, Forschungseinrichtungen und Startups",
       ],
       startTitle: "Smarter messen",
-      startDesc: "Carenuity liefert komplette Hardware-Stacks, Installationsservices und Sensormodule für den schnellen Einsatz in Pilotinstallationen oder vollständigen Überwachungsnetzwerken.",
+      startDesc:
+        "Carenuity liefert komplette Hardware-Stacks, Installationsservices und Sensormodule für den schnellen Einsatz in Pilotinstallationen oder vollständigen Überwachungsnetzwerken.",
       shopTitle: "Jetzt kaufen",
       shopProduct: "Sensor Box Shield2Go Dual Adapter - Infineon Line",
-      shopDesc: "Das Kit ist ausschließlich für Ihre Evaluierungszwecke vorgesehen. Durch den Betrieb dieses Kits erklären Sie sich damit einverstanden, dieses Kit nur für Evaluierungszwecke zu verwenden.",
+      shopDesc:
+        "Das Kit ist ausschließlich für Ihre Evaluierungszwecke vorgesehen. Durch den Betrieb dieses Kits erklären Sie sich damit einverstanden, dieses Kit nur für Evaluierungszwecke zu verwenden.",
       shopBtn: "Jetzt kaufen",
       installBtn: "Kostenlos installieren",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die Magnetische-Verkehrszählung-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die Magnetische-Verkehrszählung-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     plantBar: {
       badge: "Smarte Pflanzenpflege",
       heroTitle: "PlantBar —",
       heroHighlight: "Nie wieder durstige Pflanzen",
-      heroDesc: "Stellen Sie sich eine Welt vor, in der Ihre Pflanzen nie unter Durst oder Vernachlässigung leiden. Die Carenuity Plant Bar macht diesen Traum wahr.",
+      heroDesc:
+        "Stellen Sie sich eine Welt vor, in der Ihre Pflanzen nie unter Durst oder Vernachlässigung leiden. Die Carenuity Plant Bar macht diesen Traum wahr.",
       breadcrumbProducts: "Produkte",
       sensorTitle: "Kapazitiver Bodenfeuchtigkeitsmesser",
-      sensorDesc: "Der kapazitive Bodenfeuchtigkeitsmesser ist ein zuverlässiger und langlebiger Sensor zur Messung des Bodenfeuchtigkeitsgehalts mit kapazitiver Sensortechnologie. Anders als herkömmliche resistive Sensoren mit freiliegenden Metallsonden erkennt dieser Messer Veränderungen in der Dielektrizitätskonstante des Bodens, was ihn korrosionsbeständiger und ideal für den Langzeiteinsatz in Innen- und Außenbereichen macht. Er liefert genaue, konsistente Messwerte und lässt sich einfach in Mikrocontroller wie Arduino oder ESP32 integrieren — ideal für Smart Gardening, Bewässerungssysteme und landwirtschaftliches Monitoring. Niedriger Stromverbrauch und stabile Leistung machen ihn zu einem effizienten Werkzeug für optimale Bodenbedingungen in verschiedenen Anwendungen.",
+      sensorDesc:
+        "Der kapazitive Bodenfeuchtigkeitsmesser ist ein zuverlässiger und langlebiger Sensor zur Messung des Bodenfeuchtigkeitsgehalts mit kapazitiver Sensortechnologie. Anders als herkömmliche resistive Sensoren mit freiliegenden Metallsonden erkennt dieser Messer Veränderungen in der Dielektrizitätskonstante des Bodens, was ihn korrosionsbeständiger und ideal für den Langzeiteinsatz in Innen- und Außenbereichen macht. Er liefert genaue, konsistente Messwerte und lässt sich einfach in Mikrocontroller wie Arduino oder ESP32 integrieren — ideal für Smart Gardening, Bewässerungssysteme und landwirtschaftliches Monitoring. Niedriger Stromverbrauch und stabile Leistung machen ihn zu einem effizienten Werkzeug für optimale Bodenbedingungen in verschiedenen Anwendungen.",
       featuresTitle: "Wichtigste Merkmale",
       features: [
-        { title: "Korrosionsbeständig", desc: "Anders als herkömmliche resistive Sensoren mit freiliegenden Metallsonden erkennt dieser Messer Veränderungen in der Dielektrizitätskonstante des Bodens und ist dadurch korrosionsbeständiger." },
-        { title: "Mikrocontroller-kompatibel", desc: "Integration mit Mikrocontrollern wie Arduino oder ESP32 für nahtlose IoT-Konnektivität." },
-        { title: "Niedriger Stromverbrauch", desc: "Konzipiert für energieeffizienten Betrieb, ideal für Langzeiteinsätze im Innen- und Außenbereich." },
-        { title: "Vielseitige Anwendungen", desc: "Geeignet für Smart Gardening, Bewässerungssysteme und landwirtschaftliches Monitoring." },
+        {
+          title: "Korrosionsbeständig",
+          desc: "Anders als herkömmliche resistive Sensoren mit freiliegenden Metallsonden erkennt dieser Messer Veränderungen in der Dielektrizitätskonstante des Bodens und ist dadurch korrosionsbeständiger.",
+        },
+        {
+          title: "Mikrocontroller-kompatibel",
+          desc: "Integration mit Mikrocontrollern wie Arduino oder ESP32 für nahtlose IoT-Konnektivität.",
+        },
+        {
+          title: "Niedriger Stromverbrauch",
+          desc: "Konzipiert für energieeffizienten Betrieb, ideal für Langzeiteinsätze im Innen- und Außenbereich.",
+        },
+        {
+          title: "Vielseitige Anwendungen",
+          desc: "Geeignet für Smart Gardening, Bewässerungssysteme und landwirtschaftliches Monitoring.",
+        },
       ],
-      plantBarTitle: "Nie wieder durstige Pflanzen: Carenuity Plant Bar revolutioniert die Pflanzenpflege",
-      plantBarP1: "Stellen Sie sich eine Welt vor, in der Ihre Pflanzen nie unter Durst oder Vernachlässigung leiden. Die Carenuity Plant Bar macht diesen Traum wahr. Dieses kompakte Gerät, aufgebaut auf der fortschrittlichen C3-Mini-Architektur, verfügt über ein lebhaftes 0,96-Zoll-OLED-Display, das die Pflanzenpflege ins digitale Zeitalter bringt.",
-      plantBarP2: "Mit dem Carenuity Solution Builder können Sie mühelos die neuesten Anwendungen installieren und aktualisieren und sicherstellen, dass Ihr Gerät immer mit den neuesten Funktionen ausgestattet ist. Doch die Magie hört nicht dort auf. Dieses smarte Tool hilft Ihnen, wichtige Parameter wie Bodenfeuchtigkeit, Temperatur und Luftfeuchtigkeit zu überwachen, wodurch die Pflanzenpflege einfacher und effizienter wird.",
-      plantBarP3: "Vorbei sind die Zeiten des Ratens, wann Sie Ihre Pflanzen gießen sollen. Die Carenuity Plant Bar liefert Echtzeit-Daten und warnt Sie, wenn Ihre Pflanzen Aufmerksamkeit benötigen. Ob erfahrener Gärtner oder Pflanzenliebhaber — dieses Gerät vereinfacht Ihren Alltag und sorgt dafür, dass Ihre Pflanzen gedeihen.",
-      plantBarP4: "Außerdem können Sie Ihr Gerät mit Ihrem eigenen Logo auf dem Display personalisieren und Ihrer Pflanzenpflege eine persönliche Note verleihen. In verschiedenen Farben erhältlich, überzeugt die Carenuity Plant Bar nicht nur durch Leistung, sondern ergänzt auch Ihren persönlichen Stil.",
+      plantBarTitle:
+        "Nie wieder durstige Pflanzen: Carenuity Plant Bar revolutioniert die Pflanzenpflege",
+      plantBarP1:
+        "Stellen Sie sich eine Welt vor, in der Ihre Pflanzen nie unter Durst oder Vernachlässigung leiden. Die Carenuity Plant Bar macht diesen Traum wahr. Dieses kompakte Gerät, aufgebaut auf der fortschrittlichen C3-Mini-Architektur, verfügt über ein lebhaftes 0,96-Zoll-OLED-Display, das die Pflanzenpflege ins digitale Zeitalter bringt.",
+      plantBarP2:
+        "Mit dem Carenuity Solution Builder können Sie mühelos die neuesten Anwendungen installieren und aktualisieren und sicherstellen, dass Ihr Gerät immer mit den neuesten Funktionen ausgestattet ist. Doch die Magie hört nicht dort auf. Dieses smarte Tool hilft Ihnen, wichtige Parameter wie Bodenfeuchtigkeit, Temperatur und Luftfeuchtigkeit zu überwachen, wodurch die Pflanzenpflege einfacher und effizienter wird.",
+      plantBarP3:
+        "Vorbei sind die Zeiten des Ratens, wann Sie Ihre Pflanzen gießen sollen. Die Carenuity Plant Bar liefert Echtzeit-Daten und warnt Sie, wenn Ihre Pflanzen Aufmerksamkeit benötigen. Ob erfahrener Gärtner oder Pflanzenliebhaber — dieses Gerät vereinfacht Ihren Alltag und sorgt dafür, dass Ihre Pflanzen gedeihen.",
+      plantBarP4:
+        "Außerdem können Sie Ihr Gerät mit Ihrem eigenen Logo auf dem Display personalisieren und Ihrer Pflanzenpflege eine persönliche Note verleihen. In verschiedenen Farben erhältlich, überzeugt die Carenuity Plant Bar nicht nur durch Leistung, sondern ergänzt auch Ihren persönlichen Stil.",
       structureTitle: "Struktur",
       shopTitle: "Jetzt kaufen",
       shopProduct: "Kapazitiver Bodenfeuchtigkeitssensor, V2.0",
-      shopProductDesc: "Der kapazitive Bodenfeuchtigkeitssensor ist ein zuverlässiges und langlebiges Werkzeug zur Messung der Bodenfeuchtigkeit. Er arbeitet mit einer Spannung von 3,3 bis 5,5 V.",
+      shopProductDesc:
+        "Der kapazitive Bodenfeuchtigkeitssensor ist ein zuverlässiges und langlebiges Werkzeug zur Messung der Bodenfeuchtigkeit. Er arbeitet mit einer Spannung von 3,3 bis 5,5 V.",
       shopBtn: "Jetzt kaufen",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die PlantBar-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die PlantBar-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     aqiInsights: {
       badge: "Luftqualitätsindex",
       heroTitle: "Die Luft, die Sie atmen, beeinflusst Ihre Gesundheit —",
       heroHighlight: "Bleiben Sie Verschmutzungsrisiken einen Schritt voraus",
-      heroDesc: "Luft kann sauber aussehen, doch schädliche Schadstoffe lauern oft unbemerkt — besonders in Innenräumen. Der Luftqualitätsindex (AQI) ist ein entscheidendes Maß für das, was Sie wirklich einatmen.",
+      heroDesc:
+        "Luft kann sauber aussehen, doch schädliche Schadstoffe lauern oft unbemerkt — besonders in Innenräumen. Der Luftqualitätsindex (AQI) ist ein entscheidendes Maß für das, was Sie wirklich einatmen.",
       breadcrumbProducts: "Produkte",
-      introP1: "Luft kann sauber aussehen, doch schädliche Schadstoffe lauern oft unbemerkt — besonders in Innenräumen. Der Luftqualitätsindex (AQI) ist ein entscheidendes Maß für das, was Sie tatsächlich einatmen, und verfolgt Schadstoffe wie Feinstaub (PM2,5 und PM10), Ozon, Stickstoffdioxid und mehr.",
-      introP2: "Wenn der AQI-Wert steigt, steigen auch die Gesundheitsrisiken. Kurzfristige Exposition gegenüber schlechter Luftqualität kann Reizungen der Augen, Nase und Kehle verursachen, Asthmaanfälle auslösen und die Lungenfunktion einschränken.",
-      introP3: "Langfristige Exposition wurde mit Herzerkrankungen, Atemwegserkrankungen und sogar einer verkürzten Lebenserwartung in Verbindung gebracht.",
-      introP4: "Ohne aktive Überwachung kann schlechte Luftqualität Ihre Konzentration, Ihr Energieniveau und Ihr allgemeines Wohlbefinden unbemerkt beeinträchtigen.",
-      introP5: "Besonders gefährdete Gruppen — wie Kinder, Senioren und Menschen mit chronischen Erkrankungen — sind einem noch höheren Risiko ausgesetzt.",
-      introP6: "Deshalb ist die AQI-Überwachung in Echtzeit nicht nur ein Feature — sie ist eine erste Verteidigungslinie für Ihre Gesundheit.",
+      introP1:
+        "Luft kann sauber aussehen, doch schädliche Schadstoffe lauern oft unbemerkt — besonders in Innenräumen. Der Luftqualitätsindex (AQI) ist ein entscheidendes Maß für das, was Sie tatsächlich einatmen, und verfolgt Schadstoffe wie Feinstaub (PM2,5 und PM10), Ozon, Stickstoffdioxid und mehr.",
+      introP2:
+        "Wenn der AQI-Wert steigt, steigen auch die Gesundheitsrisiken. Kurzfristige Exposition gegenüber schlechter Luftqualität kann Reizungen der Augen, Nase und Kehle verursachen, Asthmaanfälle auslösen und die Lungenfunktion einschränken.",
+      introP3:
+        "Langfristige Exposition wurde mit Herzerkrankungen, Atemwegserkrankungen und sogar einer verkürzten Lebenserwartung in Verbindung gebracht.",
+      introP4:
+        "Ohne aktive Überwachung kann schlechte Luftqualität Ihre Konzentration, Ihr Energieniveau und Ihr allgemeines Wohlbefinden unbemerkt beeinträchtigen.",
+      introP5:
+        "Besonders gefährdete Gruppen — wie Kinder, Senioren und Menschen mit chronischen Erkrankungen — sind einem noch höheren Risiko ausgesetzt.",
+      introP6:
+        "Deshalb ist die AQI-Überwachung in Echtzeit nicht nur ein Feature — sie ist eine erste Verteidigungslinie für Ihre Gesundheit.",
       applicationsTitle: "Verfügbare Anwendungen",
       applications: [
         "Barometer",
@@ -3325,56 +4029,87 @@ export const translations = {
         "Präsenztaste",
       ],
       wishlistTitle: "Warteliste beitreten",
-      wishlistDesc: "Bleiben Sie über AQI-Insights-Updates und neue Funktionen informiert.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Bleiben Sie über AQI-Insights-Updates und neue Funktionen informiert.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     sensorArray: {
       badge: "IoT & Sensing Bundle",
       heroTitle: "Sensor Array Kit —",
       heroHighlight: "Perfektes Bundle für IoT- und Sensing-Projekte",
-      heroDesc: "Ein umfassendes Bundle mit 10 vollständigen Einheiten basierend auf dem Shield2Go Single Adapter und dem DPS310-Drucksensor — ideal für Entwickler, die präzise Drucksensorik in IoT-Systeme integrieren.",
+      heroDesc:
+        "Ein umfassendes Bundle mit 10 vollständigen Einheiten basierend auf dem Shield2Go Single Adapter und dem DPS310-Drucksensor — ideal für Entwickler, die präzise Drucksensorik in IoT-Systeme integrieren.",
       breadcrumbProducts: "Produkte",
-      introTitle: "Sensor Array Kit — Perfektes Bundle für IoT- und Sensing-Projekte",
-      introDesc: "Das Sensor Array Kit ist ein umfassendes Bundle mit 10 vollständigen Einheiten basierend auf unserem Shield2Go Single Adapter und dem DPS310-Drucksensor aus der Chipglobe Comfort Line. Dieses Set ist ideal für Entwickler und Ingenieure, die zuverlässige und präzise Drucksensoren in ihre IoT-Systeme integrieren möchten.",
+      introTitle:
+        "Sensor Array Kit — Perfektes Bundle für IoT- und Sensing-Projekte",
+      introDesc:
+        "Das Sensor Array Kit ist ein umfassendes Bundle mit 10 vollständigen Einheiten basierend auf unserem Shield2Go Single Adapter und dem DPS310-Drucksensor aus der Chipglobe Comfort Line. Dieses Set ist ideal für Entwickler und Ingenieure, die zuverlässige und präzise Drucksensoren in ihre IoT-Systeme integrieren möchten.",
       contentsTitle: "Kit-Inhalt",
       contents: [
-        { label: "10x 3D-gedrucktes Gehäuse", desc: "Langlebige und umweltfreundliche Gehäuse für die Single Adapter." },
-        { label: "10x Shield2Go Single Adapter Trust-X V2.0", desc: "Ermöglicht einfache Sensorintegration." },
-        { label: "10x ESP32-WROOM-32D Module", desc: "WLAN- und Bluetooth-fähig, ideal für IoT-Anwendungen." },
-        { label: "10x DPS310 Drucksensor", desc: "Hochpräziser barometrischer Sensor aus unserer Chipglobe Comfort Line." },
-        { label: "10x USB-Kabel", desc: "Hochwertige Chipglobe USB-Kabel für die Stromversorgung." },
+        {
+          label: "10x 3D-gedrucktes Gehäuse",
+          desc: "Langlebige und umweltfreundliche Gehäuse für die Single Adapter.",
+        },
+        {
+          label: "10x Shield2Go Single Adapter Trust-X V2.0",
+          desc: "Ermöglicht einfache Sensorintegration.",
+        },
+        {
+          label: "10x ESP32-WROOM-32D Module",
+          desc: "WLAN- und Bluetooth-fähig, ideal für IoT-Anwendungen.",
+        },
+        {
+          label: "10x DPS310 Drucksensor",
+          desc: "Hochpräziser barometrischer Sensor aus unserer Chipglobe Comfort Line.",
+        },
+        {
+          label: "10x USB-Kabel",
+          desc: "Hochwertige Chipglobe USB-Kabel für die Stromversorgung.",
+        },
       ],
-      devDesc: "Dieses Kit ermöglicht schnelle Entwicklung und Evaluierung von IoT-Systemen mit Fokus auf präzise Druckmessungen.",
-      shopProduct: "Sensor Array Kit - Komplettbundle mit 10x Single Adapter und DPS310",
-      shopProductDesc: "Dieses Kit ermöglicht schnelle Entwicklung und Evaluierung von IoT-Systemen mit Fokus auf präzise Druckmessungen.",
+      devDesc:
+        "Dieses Kit ermöglicht schnelle Entwicklung und Evaluierung von IoT-Systemen mit Fokus auf präzise Druckmessungen.",
+      shopProduct:
+        "Sensor Array Kit - Komplettbundle mit 10x Single Adapter und DPS310",
+      shopProductDesc:
+        "Dieses Kit ermöglicht schnelle Entwicklung und Evaluierung von IoT-Systemen mit Fokus auf präzise Druckmessungen.",
       shopBtn: "Jetzt kaufen",
       installBtn: "Kostenlos installieren",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Trag dich in die Sensor-Array-Warteliste ein und erfahre als Erster von Updates.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Trag dich in die Sensor-Array-Warteliste ein und erfahre als Erster von Updates.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     c3MiniPiggyback: {
       badge: "C3-Mini Ökosystem",
       heroTitle: "Schnellere Prototypenentwicklung mit",
       heroHighlight: "Piggyback-Sensoren & dem C3-Mini Ökosystem",
-      heroDesc: "Montieren Sie jeden Sensor direkt auf den standardisierten C3-Mini-Pinout — ohne Verkabelung. In unter drei Minuten über den Solution Builder integriert.",
+      heroDesc:
+        "Montieren Sie jeden Sensor direkt auf den standardisierten C3-Mini-Pinout — ohne Verkabelung. In unter drei Minuten über den Solution Builder integriert.",
       breadcrumbProducts: "Produkte",
       sensorsTitle: "Piggyback-Sensormodule",
       applicationsLabel: "Anwendungen",
       shopBtn: "Jetzt kaufen",
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Tragen Sie sich in die C3-Mini-Piggybacks-Warteliste ein und erfahren Sie als Erster, wenn das Produkt verfügbar ist.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Tragen Sie sich in die C3-Mini-Piggybacks-Warteliste ein und erfahren Sie als Erster, wenn das Produkt verfügbar ist.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     aquabar: {
       badge: "Smartes Aquarium-Monitoring",
       heroTitle: "Carenuity AquaBar",
-      heroHighlight: "Schützen Sie Ihr Aquarium mit intelligentem Temperatur-Monitoring",
-      heroTagline: "Halten Sie Ihr Aquarium-Leben sicher — auch wenn Sie nicht zu Hause sind.",
-      heroDesc: "AquaBar überwacht die Wassertemperatur kontinuierlich und warnt Sie sofort, wenn die Bedingungen unsicher werden.",
+      heroHighlight:
+        "Schützen Sie Ihr Aquarium mit intelligentem Temperatur-Monitoring",
+      heroTagline:
+        "Halten Sie Ihr Aquarium-Leben sicher — auch wenn Sie nicht zu Hause sind.",
+      heroDesc:
+        "AquaBar überwacht die Wassertemperatur kontinuierlich und warnt Sie sofort, wenn die Bedingungen unsicher werden.",
       breadcrumbProducts: "Produkte",
       problemTitle: "Das Problem",
       problemItems: [
@@ -3384,18 +4119,35 @@ export const translations = {
         "Verzögerte Erkennung bedeutet oft irreversible Schäden",
       ],
       solutionTitle: "Die Lösung",
-      solutionDesc: "Carenuity AquaBar ist ein kompakter Smart-Sensor, der die Aquariumwassertemperatur kontinuierlich überwacht und Sie sofort warnt, wenn etwas nicht stimmt.",
+      solutionDesc:
+        "Carenuity AquaBar ist ein kompakter Smart-Sensor, der die Aquariumwassertemperatur kontinuierlich überwacht und Sie sofort warnt, wenn etwas nicht stimmt.",
       statusGreen: "Temperatur stabil und sicher",
       statusOrange: "Warnung — außerhalb des idealen Bereichs",
       statusRed: "Gefahr — sofortiges Handeln erforderlich",
-      alertDesc: "Sofortige Benachrichtigungen auf Ihrem Smartphone, wenn die Wassertemperatur abweicht oder die Heizung ausfällt",
+      alertDesc:
+        "Sofortige Benachrichtigungen auf Ihrem Smartphone, wenn die Wassertemperatur abweicht oder die Heizung ausfällt",
       benefitsTitle: "Wichtigste Vorteile",
       benefits: [
-        { title: "Wasserleben schützen", desc: "Schützen Sie Fische, Korallen und Pflanzen vor kritischen Temperaturschwankungen" },
-        { title: "Sorglos im Urlaub", desc: "Wissen Sie immer, dass Ihr Aquarium sicher ist — egal wo Sie sind" },
-        { title: "Frühzeitige Fehlererkennung", desc: "Erkennen Sie Heizungs- oder Kühlerausfälle bevor es zu spät ist" },
-        { title: "Einfache Einrichtung", desc: "Einsatzbereit in 3 Minuten mit dem Carenuity Solution Builder" },
-        { title: "Smart-Integration", desc: "Kompatibel mit Matter, Home Assistant, Google Home, Alexa, Apple Home" },
+        {
+          title: "Wasserleben schützen",
+          desc: "Schützen Sie Fische, Korallen und Pflanzen vor kritischen Temperaturschwankungen",
+        },
+        {
+          title: "Sorglos im Urlaub",
+          desc: "Wissen Sie immer, dass Ihr Aquarium sicher ist — egal wo Sie sind",
+        },
+        {
+          title: "Frühzeitige Fehlererkennung",
+          desc: "Erkennen Sie Heizungs- oder Kühlerausfälle bevor es zu spät ist",
+        },
+        {
+          title: "Einfache Einrichtung",
+          desc: "Einsatzbereit in 3 Minuten mit dem Carenuity Solution Builder",
+        },
+        {
+          title: "Smart-Integration",
+          desc: "Kompatibel mit Matter, Home Assistant, Google Home, Alexa, Apple Home",
+        },
       ],
       howTitle: "So funktioniert es",
       howSteps: [
@@ -3414,12 +4166,20 @@ export const translations = {
       ],
       optionsTitle: "Produktoptionen",
       diyTitle: "DIY-Kit",
-      diyItems: ["C3-Mini", "Wasserdichte Sensorsonde", "LED-Ring", "Netzkabel", "Schnellstartanleitung"],
+      diyItems: [
+        "C3-Mini",
+        "Wasserdichte Sensorsonde",
+        "LED-Ring",
+        "Netzkabel",
+        "Schnellstartanleitung",
+      ],
       readyTitle: "Gebrauchsfertiges Gerät",
       readyItems: ["Vorinstalliert", "Versiegeltes Gehäuse", "Plug & Play"],
       wishlistTitle: "Zur Warteliste anmelden",
-      wishlistDesc: "Tragen Sie sich in die AquaBar-Warteliste ein und erfahren Sie als Erster, wenn das Produkt verfügbar ist.",
-      wishlistNote: "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
+      wishlistDesc:
+        "Tragen Sie sich in die AquaBar-Warteliste ein und erfahren Sie als Erster, wenn das Produkt verfügbar ist.",
+      wishlistNote:
+        "Bitte prüfen Sie Ihren Spam-Ordner, falls die Bestätigungs-E-Mail dort landen sollte.",
       wishlistBtn: "Zur Warteliste",
     },
     autonomousCar: {
@@ -3437,7 +4197,8 @@ export const translations = {
         "Arbeite praktisch mit 3D-gedruckten Designs, die du anpassen kannst",
         "Tritt einer Gemeinschaft von Innovatoren bei, die die Zukunft gestalten",
       ],
-      storyLabel: "Die Geschichte hinter dem Blueprint für dein erstes eigenes Auto",
+      storyLabel:
+        "Die Geschichte hinter dem Blueprint für dein erstes eigenes Auto",
       storyTitle: "Jetzt autonom fahrend: Die Wiedergeburt eines Gewinners",
       storyP1:
         "Das haifischähnliche Design des MF3, ein Symbol für Geschwindigkeit und Präzision, wurde 2025 in einem 1:10-Modell neu erschaffen. Das Schaeffler FAG Modell MF3 aus dem Jahr 2009 — präsentiert auf einer Foyer-Veranstaltung von Schaeffler in Anwesenheit von Dr. Grunau und Dipl.-Ing. Seubert — ist heute an der THWS Universität in Schweinfurt ausgestellt.",
@@ -3488,8 +4249,7 @@ export const translations = {
       devChallengesP:
         "Die größten Hürden lagen in der Integration der verschiedenen Hardware-, Software- und KI-Systeme sowie darin, dass das Fahrzeug zuverlässig und sicher funktioniert. Veraltete Projekte und Bibliotheken erforderten aufwändiges Debugging. Besondere Schwierigkeiten bereiteten Echtzeit-Entscheidungen und präzise Navigation.",
       devAchievementTitle: "Wichtigste Errungenschaft",
-      devAchievementP:
-        `„Andere Studierende auf der ganzen Welt können meine Dokumentation jetzt nutzen, um ihr eigenes Fahrzeug schnell und einfach zu bauen, damit sie ihre eigenen KI-Algorithmen testen und verbessern können.“`,
+      devAchievementP: `„Andere Studierende auf der ganzen Welt können meine Dokumentation jetzt nutzen, um ihr eigenes Fahrzeug schnell und einfach zu bauen, damit sie ihre eigenen KI-Algorithmen testen und verbessern können.“`,
       devSkillsTitle: "Erworbene Fähigkeiten",
       skills: [
         "Embedded-Systems-Entwicklung",
@@ -3506,8 +4266,7 @@ export const translations = {
         "Weiterbildungsmöglichkeiten wahrnehmen",
       ],
       devConclusionTitle: "Fazit",
-      devConclusionP:
-        `Eren entdeckte Carenuity durch den Home Challenge-Wettbewerb, organisiert von Prof. Dr. Heinz Endres. „Solche zusätzlichen Aktivitäten im Rahmen von Lehrveranstaltungen sind äußerst wertvoll – sie bieten nicht nur Lernerfahrungen, sondern auch echte Möglichkeiten zur persönlichen und beruflichen Entwicklung."`,
+      devConclusionP: `Eren entdeckte Carenuity durch den Home Challenge-Wettbewerb, organisiert von Prof. Dr. Heinz Endres. „Solche zusätzlichen Aktivitäten im Rahmen von Lehrveranstaltungen sind äußerst wertvoll – sie bieten nicht nur Lernerfahrungen, sondern auch echte Möglichkeiten zur persönlichen und beruflichen Entwicklung."`,
       pubTitle: "Veröffentlichungen & Links",
       thwsLabel: "THWS-Presseartikel zum Home Challenge",
       thwsSource: "thws.de · Pressearchiv",
@@ -3529,7 +4288,10 @@ export const translations = {
         back: "Zurück zur Home Challenge",
         guideBadge: "Anleitung",
         items: {
-          c3Mini: { label: "C3 Mini Kisii Boxen", desc: "IoT- & KI-Sensor-Kits-Anleitung" },
+          c3Mini: {
+            label: "C3 Mini Kisii Boxen",
+            desc: "IoT- & KI-Sensor-Kits-Anleitung",
+          },
           auth: { label: "AUTH", desc: "Aristoteles-Univ. Thessaloniki" },
           oauth: { label: "Open AUTH", desc: "Offene Ausgabe" },
           duth: { label: "DUTH", desc: "Demokrit-Univ. Thrakien" },
@@ -3539,7 +4301,10 @@ export const translations = {
           tuk: { label: "TUK", desc: "Techn. Univ. Kenia" },
           nairobi: { label: "Nairobi", desc: "Home Challenge Kenia" },
           girlsDay: { label: "Girls' Day", desc: "MINT-Förderung" },
-          nightSessions: { label: "Night Sessions", desc: "Donnerstags-Sessions" },
+          nightSessions: {
+            label: "Night Sessions",
+            desc: "Donnerstags-Sessions",
+          },
           certificate: { label: "Zertifikat", desc: "Erfolg überprüfen" },
         },
       },
@@ -3614,11 +4379,14 @@ export const translations = {
         badge: "Presse & Projekte",
         sectionPress: "Pressematerialien",
         sectionScan: "Scannen",
-        sectionRetrospective: "Rückblick: Studentische Home-Challenge-Projekte 2024",
+        sectionRetrospective:
+          "Rückblick: Studentische Home-Challenge-Projekte 2024",
         sectionInteraction: "Die Wechselwirkung zwischen Makern und Nutzern",
-        interactionBody: "Die Wechselwirkung zwischen Makern und Nutzern ist von großer Bedeutung. Nutzer liefern wertvolles Feedback und neue Ideen und Anwendungsfälle, die es Makern ermöglichen, ihre Produkte zu verbessern und an neue Bedürfnisse anzupassen. Als Carenuity unterstützen wir diese Interaktion, indem wir Plattformen und Ressourcen bereitstellen, um den Austausch zwischen Makern und Nutzern zu erleichtern. Das Ziel ist es, gemeinsam innovative und benutzerfreundliche Geräte zu schaffen.",
+        interactionBody:
+          "Die Wechselwirkung zwischen Makern und Nutzern ist von großer Bedeutung. Nutzer liefern wertvolles Feedback und neue Ideen und Anwendungsfälle, die es Makern ermöglichen, ihre Produkte zu verbessern und an neue Bedürfnisse anzupassen. Als Carenuity unterstützen wir diese Interaktion, indem wir Plattformen und Ressourcen bereitstellen, um den Austausch zwischen Makern und Nutzern zu erleichtern. Das Ziel ist es, gemeinsam innovative und benutzerfreundliche Geräte zu schaffen.",
         sectionSolutionBuilders: "Die Rolle der Solution Builder",
-        solutionBuildersBody: "Die Entwickler auf der Solution Builder Platform teilen ihre Lösungen und sind eine wesentliche Komponente in diesem Prozess. Sie bringen spezialisierte Fachkenntnisse und Erfahrung ein, um maßgeschneiderte Lösungen zu entwickeln, die den spezifischen Anforderungen der Nutzer gerecht werden. Durch ihre Expertise tragen sie dazu bei, die Interaktion zwischen Makern und Nutzern weiter zu optimieren und die Entwicklung innovativer Produkte voranzutreiben.",
+        solutionBuildersBody:
+          "Die Entwickler auf der Solution Builder Platform teilen ihre Lösungen und sind eine wesentliche Komponente in diesem Prozess. Sie bringen spezialisierte Fachkenntnisse und Erfahrung ein, um maßgeschneiderte Lösungen zu entwickeln, die den spezifischen Anforderungen der Nutzer gerecht werden. Durch ihre Expertise tragen sie dazu bei, die Interaktion zwischen Makern und Nutzern weiter zu optimieren und die Entwicklung innovativer Produkte voranzutreiben.",
         sectionWhatsapp: "THWS Solution Builder WhatsApp-Gruppe",
         whatsappBody: `Diese WhatsApp-Gruppe „THWS Solution Builder" steht THWS-Mitarbeitern und -Studenten offen, um ihre Lösungen zu diskutieren und zu verfeinern:`,
         thwsPressLink: "Pressemitteilung der Hochschule Würzburg-Schweinfurt",
@@ -3647,34 +4415,63 @@ export const translations = {
         subtitle: "Junge Frauen in MINT stärken",
         intro: "In Partnerschaft mit der THWS Hochschule — 23. April 2026.",
         badge: "MINT-Förderung",
-        excitedHtml: 'Wir freuen uns sehr, mitteilen zu können, dass <strong>Carenuity</strong> in stolzer Partnerschaft mit der <strong>THWS Hochschule</strong> aktiv am Girls’ Day 2026 teilnehmen wird! Diese inspirierende, bundesweit anerkannte Veranstaltung am <strong>23. April 2026</strong> hat das Ziel, junge Frauen zu stärken und ihnen Türen zu Berufen in <strong>Naturwissenschaften, Technik, Ingenieurwesen und Mathematik (MINT)</strong> zu öffnen. Mit zahlreichen praktischen Aktivitäten, Workshops und Vorträgen erhalten Teilnehmerinnen wertvolle Einblicke in zukunftsweisende Berufe.',
+        excitedHtml:
+          "Wir freuen uns sehr, mitteilen zu können, dass <strong>Carenuity</strong> in stolzer Partnerschaft mit der <strong>THWS Hochschule</strong> aktiv am Girls’ Day 2026 teilnehmen wird! Diese inspirierende, bundesweit anerkannte Veranstaltung am <strong>23. April 2026</strong> hat das Ziel, junge Frauen zu stärken und ihnen Türen zu Berufen in <strong>Naturwissenschaften, Technik, Ingenieurwesen und Mathematik (MINT)</strong> zu öffnen. Mit zahlreichen praktischen Aktivitäten, Workshops und Vorträgen erhalten Teilnehmerinnen wertvolle Einblicke in zukunftsweisende Berufe.",
         whatIsTitle: "Was ist der Girls’ Day?",
-        whatIsBody: "Der Girls’ Day ist eine jährliche Initiative, die Mädchen die Möglichkeit gibt, technische, naturwissenschaftliche, IT- und ingenieurwissenschaftliche Berufe zu entdecken. Sie können an praktischen Workshops und realen Experimenten teilnehmen, Vorbilder und Fachleute in MINT-Karrieren kennenlernen und Vertrauen in ihre technischen Fähigkeiten gewinnen. Vor allem hilft er ihnen, akademische und berufliche Wege zu entdecken, die sie vorher vielleicht nicht in Betracht gezogen haben.",
+        whatIsBody:
+          "Der Girls’ Day ist eine jährliche Initiative, die Mädchen die Möglichkeit gibt, technische, naturwissenschaftliche, IT- und ingenieurwissenschaftliche Berufe zu entdecken. Sie können an praktischen Workshops und realen Experimenten teilnehmen, Vorbilder und Fachleute in MINT-Karrieren kennenlernen und Vertrauen in ihre technischen Fähigkeiten gewinnen. Vor allem hilft er ihnen, akademische und berufliche Wege zu entdecken, die sie vorher vielleicht nicht in Betracht gezogen haben.",
         importanceTitle: "Bedeutung des Girls’ Day",
-        importanceIntro: "Im Rahmen der Zusammenarbeit von Carenuity mit der THWS Hochschule zum Girls’ Day 2026 erfüllt die Veranstaltung zentrale Bildungs- und Empowerment-Ziele:",
+        importanceIntro:
+          "Im Rahmen der Zusammenarbeit von Carenuity mit der THWS Hochschule zum Girls’ Day 2026 erfüllt die Veranstaltung zentrale Bildungs- und Empowerment-Ziele:",
         importancePoints: [
-          { title: "Technik entmystifizieren:", body: "Indem etwas Greifbares wie ein Bluetooth-Lautsprecher gebaut wird, erleben Mädchen, dass Technik nicht einschüchternd, sondern zugänglich und spaßig ist." },
-          { title: "Geschlechtergerechtigkeit fördern:", body: "Es adressiert direkt die Geschlechterlücke in MINT und stattet Mädchen mit Selbstvertrauen und Fähigkeiten aus, diese Felder zu erkunden." },
-          { title: "Früh einbinden:", body: "Aktivitäten wie das Stecken von Komponenten mit dem Carenuity Triple-Adapter bieten einen verspielten, intuitiven Einstieg in Ingenieurprinzipien." },
-          { title: "MINT-Karrieren fördern:", body: "Der Girls’ Day pflanzt das Saatkorn, dass auch sie als Ingenieurinnen, Wissenschaftlerinnen, Entwicklerinnen oder Innovatorinnen erfolgreich sein können." },
+          {
+            title: "Technik entmystifizieren:",
+            body: "Indem etwas Greifbares wie ein Bluetooth-Lautsprecher gebaut wird, erleben Mädchen, dass Technik nicht einschüchternd, sondern zugänglich und spaßig ist.",
+          },
+          {
+            title: "Geschlechtergerechtigkeit fördern:",
+            body: "Es adressiert direkt die Geschlechterlücke in MINT und stattet Mädchen mit Selbstvertrauen und Fähigkeiten aus, diese Felder zu erkunden.",
+          },
+          {
+            title: "Früh einbinden:",
+            body: "Aktivitäten wie das Stecken von Komponenten mit dem Carenuity Triple-Adapter bieten einen verspielten, intuitiven Einstieg in Ingenieurprinzipien.",
+          },
+          {
+            title: "MINT-Karrieren fördern:",
+            body: "Der Girls’ Day pflanzt das Saatkorn, dass auch sie als Ingenieurinnen, Wissenschaftlerinnen, Entwicklerinnen oder Innovatorinnen erfolgreich sein können.",
+          },
         ],
-        importanceOutro: "Der Girls’ Day ist mehr als eine Veranstaltung – er ist eine Bewegung, um Wahrnehmungen zu verändern, Selbstvertrauen zu stärken und die nächste Generation von Frauen in Technik und Wissenschaft zu fördern.",
+        importanceOutro:
+          "Der Girls’ Day ist mehr als eine Veranstaltung – er ist eine Bewegung, um Wahrnehmungen zu verändern, Selbstvertrauen zu stärken und die nächste Generation von Frauen in Technik und Wissenschaft zu fördern.",
         joinTitle: "Mach mit",
-        joinP1: "Sei remote dabei – an einem spannenden und lehrreichen Tag voller inspirierender Aktivitäten und interaktiver, praktischer Workshops. Beim Girls’ Day 2026 hast du die einzigartige Möglichkeit, deinen eigenen Bluetooth-Lautsprecher in wenigen Minuten zu bauen – ganz ohne Vorkenntnisse!",
-        joinP2: "Mit dem innovativen Carenuity Triple-Adapter entdecken die Teilnehmerinnen, wie Technik funktioniert, indem sie elektronische Komponenten in die Slots S (Sensor), M (Microcontroller) und A (Aktor) stecken. Diese spaßige Aktivität soll Neugier wecken, Selbstvertrauen stärken und zeigen, wie einfach und spannend der Einstieg in MINT sein kann.",
+        joinP1:
+          "Sei remote dabei – an einem spannenden und lehrreichen Tag voller inspirierender Aktivitäten und interaktiver, praktischer Workshops. Beim Girls’ Day 2026 hast du die einzigartige Möglichkeit, deinen eigenen Bluetooth-Lautsprecher in wenigen Minuten zu bauen – ganz ohne Vorkenntnisse!",
+        joinP2:
+          "Mit dem innovativen Carenuity Triple-Adapter entdecken die Teilnehmerinnen, wie Technik funktioniert, indem sie elektronische Komponenten in die Slots S (Sensor), M (Microcontroller) und A (Aktor) stecken. Diese spaßige Aktivität soll Neugier wecken, Selbstvertrauen stärken und zeigen, wie einfach und spannend der Einstieg in MINT sein kann.",
         slotsTitle: "Komponenten in den Slots S, M und A:",
         slots: [
           { name: "Slot S:", desc: "Hochpräzise Sensoren integrieren." },
-          { name: "Slot M:", desc: "Microcontroller zur Verarbeitung der Sensordaten ergänzen." },
-          { name: "Slot A:", desc: "Aktor anschließen, um Aktionen basierend auf den Daten auszuführen." },
+          {
+            name: "Slot M:",
+            desc: "Microcontroller zur Verarbeitung der Sensordaten ergänzen.",
+          },
+          {
+            name: "Slot A:",
+            desc: "Aktor anschließen, um Aktionen basierend auf den Daten auszuführen.",
+          },
         ],
-        joinOutro: "Diese interaktive Erfahrung soll die nächste Generation weiblicher Führungskräfte in Technik und Innovation stärken und inspirieren. Verpasse nicht diese fantastische Gelegenheit, zu lernen, zu kreieren und dich mit Gleichgesinnten zu vernetzen. Lass uns die Zukunft gemeinsam gestalten – ein Gerät nach dem anderen!",
+        joinOutro:
+          "Diese interaktive Erfahrung soll die nächste Generation weiblicher Führungskräfte in Technik und Innovation stärken und inspirieren. Verpasse nicht diese fantastische Gelegenheit, zu lernen, zu kreieren und dich mit Gleichgesinnten zu vernetzen. Lass uns die Zukunft gemeinsam gestalten – ein Gerät nach dem anderen!",
         kitTitle: "Home-Challenge-Kit für den Girls’ Day 2026",
-        kitBody: "Das ist der Bluetooth-Lautsprecher, den die Teilnehmerinnen während des Girls’ Day 2026 stolz selbst bauen werden. Es ist mehr als ein Gadget – ein Symbol für Kreativität, praktisches Lernen und die Kraft junger Frauen, die selbstbewusst in die Welt der Technik treten.",
-        kitReadyTitle: "Mach dich bereit für einen unvergesslichen Girls’ Day 2026!",
-        kitOrder: "Um das Beste aus dieser Erfahrung herauszuholen, bestelle dein Home-Challenge-Kit rechtzeitig. Dieses Kit enthält alles, was du brauchst, um an allen Aktivitäten teilzunehmen – bequem von zuhause aus.",
+        kitBody:
+          "Das ist der Bluetooth-Lautsprecher, den die Teilnehmerinnen während des Girls’ Day 2026 stolz selbst bauen werden. Es ist mehr als ein Gadget – ein Symbol für Kreativität, praktisches Lernen und die Kraft junger Frauen, die selbstbewusst in die Welt der Technik treten.",
+        kitReadyTitle:
+          "Mach dich bereit für einen unvergesslichen Girls’ Day 2026!",
+        kitOrder:
+          "Um das Beste aus dieser Erfahrung herauszuholen, bestelle dein Home-Challenge-Kit rechtzeitig. Dieses Kit enthält alles, was du brauchst, um an allen Aktivitäten teilzunehmen – bequem von zuhause aus.",
         kitImportantLabel: "Wichtig:",
-        kitImportantBody: "Stelle sicher, dass du Zugang zu einem Lötkolben hast – er ist für einige Aufgaben unverzichtbar. Wir freuen uns auf deine Teilnahme und einen spannenden Praxisteil!",
+        kitImportantBody:
+          "Stelle sicher, dass du Zugang zu einem Lötkolben hast – er ist für einige Aufgaben unverzichtbar. Wir freuen uns auf deine Teilnahme und einen spannenden Praxisteil!",
         learnMoreCta: "Mehr zur Home Challenge erfahren",
       },
       certificate: {
@@ -3685,7 +4482,8 @@ export const translations = {
         loading: "Wird geladen…",
         certHeading: "Leistungszertifikat",
         certifies: "Hiermit wird bestätigt, dass:",
-        achievedIntro: "die Carenuity Home Challenge erfolgreich abgeschlossen hat und herausragende Fähigkeiten und Kenntnisse in den Bereichen",
+        achievedIntro:
+          "die Carenuity Home Challenge erfolgreich abgeschlossen hat und herausragende Fähigkeiten und Kenntnisse in den Bereichen",
         iot: "Internet der Dinge (IoT)",
         and: "und",
         ai: "Künstliche Intelligenz (KI)",
@@ -3698,8 +4496,10 @@ export const translations = {
           "Anwendung von KI-Techniken in IoT-Systemen",
           "Integration von KI-Algorithmen zur Datenverarbeitung und Entscheidungsfindung",
         ],
-        informalNote: "Dieses Zertifikat ist eine informelle Anerkennung der durch die Carenuity Home Challenge erworbenen Kompetenzen.",
-        chipglobeNote: "ChipGlobe würdigt mit über 15 Jahren Erfahrung als vertrauenswürdiger Talente-Anbieter das Engagement und die Expertise der Teilnehmenden dieser Challenge.",
+        informalNote:
+          "Dieses Zertifikat ist eine informelle Anerkennung der durch die Carenuity Home Challenge erworbenen Kompetenzen.",
+        chipglobeNote:
+          "ChipGlobe würdigt mit über 15 Jahren Erfahrung als vertrauenswürdiger Talente-Anbieter das Engagement und die Expertise der Teilnehmenden dieser Challenge.",
         notCompleted: "hat die Challenge noch nicht abgeschlossen!",
       },
       c3Mini: {
@@ -3709,9 +4509,11 @@ export const translations = {
         intro: "C3-Mini-Hardware für IoT-, KI- und Engineering-Programme.",
         badge: "Für Hochschulen",
         overviewTitle: "Überblick",
-        overviewBody: "Diese IoT- & KI-Sensor-Kits ermöglichen es Studierenden, in Minuten voll funktionsfähige IoT-Systeme zu bauen. Sie sind für Hochschulen, Innovation Hubs und Engineering-Programme konzipiert und verbinden modulare Hardware mit einer browserbasierten Software-Plattform – ohne klassische Einrichtungshürden.",
+        overviewBody:
+          "Diese IoT- & KI-Sensor-Kits ermöglichen es Studierenden, in Minuten voll funktionsfähige IoT-Systeme zu bauen. Sie sind für Hochschulen, Innovation Hubs und Engineering-Programme konzipiert und verbinden modulare Hardware mit einer browserbasierten Software-Plattform – ohne klassische Einrichtungshürden.",
         solutionBuilderTitle: "Solution Builder",
-        solutionBuilderBody: "Der Solution Builder ist eine vollständig browserbasierte Entwicklungsumgebung, mit der Studierende in unter drei Minuten IoT-Anwendungen erstellen, konfigurieren und ausrollen können.",
+        solutionBuilderBody:
+          "Der Solution Builder ist eine vollständig browserbasierte Entwicklungsumgebung, mit der Studierende in unter drei Minuten IoT-Anwendungen erstellen, konfigurieren und ausrollen können.",
         howItWorks: "So funktioniert's:",
         howItWorksList: [
           "Wähle eine einsatzbereite Anwendung (z. B. Temperaturmonitor, Bewegungsmelder)",
@@ -3719,22 +4521,37 @@ export const translations = {
           "Flashe direkt aus dem Browser – keine Installation nötig",
           "Sofort lauffähig auf echter Hardware",
         ],
-        githubNote: "Alle Projekte sind durch transparenten, auf GitHub gehosteten Quellcode abgesichert – das ermöglicht volle Anpassung und fortgeschrittene Workflows.",
+        githubNote:
+          "Alle Projekte sind durch transparenten, auf GitHub gehosteten Quellcode abgesichert – das ermöglicht volle Anpassung und fortgeschrittene Workflows.",
         exploreLink: "Solution Builder erkunden →",
         threeMinutesTitle: "In 3 Minuten zum ersten Gerät",
         steps: [
-          { step: "1. Verbinden", desc: "Verbinde den C3-Mini per USB-C mit deinem Rechner. Keine Treiber oder Software-Installation nötig." },
-          { step: "2. Auswählen", desc: "Öffne den Solution Builder im Browser und wähle eine sofort einsatzbereite Anwendung (z. B. Temperaturmonitor)." },
-          { step: "3. Flashen", desc: "Flashe die Firmware mit einem Klick direkt aus dem Browser auf das Gerät." },
-          { step: "4. Ausführen", desc: "Dein IoT-Gerät ist sofort live. Sensordaten erscheinen auf dem Display oder per Serial/Web-Ausgabe." },
+          {
+            step: "1. Verbinden",
+            desc: "Verbinde den C3-Mini per USB-C mit deinem Rechner. Keine Treiber oder Software-Installation nötig.",
+          },
+          {
+            step: "2. Auswählen",
+            desc: "Öffne den Solution Builder im Browser und wähle eine sofort einsatzbereite Anwendung (z. B. Temperaturmonitor).",
+          },
+          {
+            step: "3. Flashen",
+            desc: "Flashe die Firmware mit einem Klick direkt aus dem Browser auf das Gerät.",
+          },
+          {
+            step: "4. Ausführen",
+            desc: "Dein IoT-Gerät ist sofort live. Sensordaten erscheinen auf dem Display oder per Serial/Web-Ausgabe.",
+          },
         ],
         boxesTitle: "Die Boxen",
         box1Title: "Box 1 – Engineering-Kit (15 Komponenten)",
         box2Title: "Box 2 – Starter-Kit (14 Komponenten)",
         impactTitle: "Wirkung für Studierende",
-        impactBody: "Studierende sammeln praktische Erfahrung in IoT, Elektronik und KI. Sie lernen echte Engineering-Fähigkeiten, bauen funktionsfähige Prototypen und entwickeln Lösungen für reale Industrie-Herausforderungen.",
+        impactBody:
+          "Studierende sammeln praktische Erfahrung in IoT, Elektronik und KI. Sie lernen echte Engineering-Fähigkeiten, bauen funktionsfähige Prototypen und entwickeln Lösungen für reale Industrie-Herausforderungen.",
         bringTitle: "Bring das an deine Hochschule",
-        bringBody: "Setze in wenigen Wochen ein komplettes IoT- & KI-Bildungs-Ökosystem auf. Lass Studierende reale Systeme bauen, reduziere Einrichtungskomplexität und beschleunige Innovation.",
+        bringBody:
+          "Setze in wenigen Wochen ein komplettes IoT- & KI-Bildungs-Ökosystem auf. Lass Studierende reale Systeme bauen, reduziere Einrichtungskomplexität und beschleunige Innovation.",
         contactUs: "Kontakt aufnehmen",
         pressMaterial: "Pressematerial",
         kisiiOnepager: "Kisii OnePager",

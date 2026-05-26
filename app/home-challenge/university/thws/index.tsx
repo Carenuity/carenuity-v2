@@ -1,11 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import PageTitle from '../../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import PageTitle from "../../../components/PageTitle";
 // import styles from './level1.module.css';
 
 const Page = () => {
-  const pageTitle = 'THWS Home Challenge';
+  const pageTitle = "THWS Home Challenge";
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -37,7 +37,7 @@ const Page = () => {
             width="100%"
             height="600px"
           ></iframe>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: "center" }}>
             <a
               href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGTv8E29BE&#x2F;vw2sd2l1Wp4OwFOmFTSw1A&#x2F;view?utm_content=DAGTv8E29BE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
               target="_blank"
@@ -45,7 +45,7 @@ const Page = () => {
               className="mb-6"
             >
               <u>THWS Home Challenge</u>
-            </a>{' '}
+            </a>{" "}
             by carenuity
           </div>
           <div className="row">
@@ -58,15 +58,15 @@ const Page = () => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
-                  animationName: 'fadeIn',
+                  visibility: "visible",
+                  animationDelay: "100ms",
+                  animationName: "fadeIn",
                 }}
               />
-              <p style={{ textAlign: 'center' }}>
+              <p style={{ textAlign: "center" }}>
                 <Link
-                  href={'/home-challenge/register/thws'}
-                  className={'btn btn-sm btn-success rounded-pill'}
+                  href={"/home-challenge/register/thws"}
+                  className={"btn btn-sm btn-success rounded-pill"}
                 >
                   <span className="small">Register </span>
                 </Link>
@@ -81,22 +81,22 @@ const Page = () => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
-                  animationName: 'fadeIn',
+                  visibility: "visible",
+                  animationDelay: "100ms",
+                  animationName: "fadeIn",
                 }}
               />
-              <p style={{ textAlign: 'center' }}>
+              <p style={{ textAlign: "center" }}>
                 <strong>Scan</strong> to join whatsapp group
               </p>
             </div>
           </div>
 
-          <p style={{ textAlign: 'center' }}>
+          <p style={{ textAlign: "center" }}>
             {/* {!isMobile && ( */}
             <Link
-              href={'./thws/press'}
-              className={'btn btn-lg btn-success rounded-pill'}
+              href={"./thws/press"}
+              className={"btn btn-lg btn-success rounded-pill"}
             >
               <span className="small">Press Materials</span>
             </Link>

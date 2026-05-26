@@ -1,4 +1,7 @@
-export const metadata = { title: "Kisii Onepager — Carenuity", description: "Kisii Onepager PDF viewer." };
+export const metadata = {
+  title: "Kisii Onepager — Carenuity",
+  description: "Kisii Onepager PDF viewer.",
+};
 
 export default function KisiiOnepagerPage() {
   return (

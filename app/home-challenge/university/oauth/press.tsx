@@ -1,10 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import PageTitle from '../../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import PageTitle from "../../../components/PageTitle";
 
 const Page = ({ isMobile }: { isMobile: boolean }) => {
-  const pageTitle = 'Press Materials';
+  const pageTitle = "Press Materials";
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -39,10 +39,10 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
+                  visibility: "visible",
+                  animationDelay: "100ms",
 
-                  animationName: 'fadeIn',
+                  animationName: "fadeIn",
                 }}
               />
             </div>
@@ -55,10 +55,10 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
                 data-wow-delay="100ms"
                 alt="..."
                 style={{
-                  visibility: 'visible',
-                  animationDelay: '100ms',
+                  visibility: "visible",
+                  animationDelay: "100ms",
 
-                  animationName: 'fadeIn',
+                  animationName: "fadeIn",
                 }}
               />
             </div>
@@ -66,14 +66,14 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
             <div
               className="col-lg-3 "
               style={{
-                paddingTop: '300px',
+                paddingTop: "300px",
               }}
             >
               <p>
                 {!isMobile && (
                   <Link
-                    href={'/home-challenge/oauth'}
-                    className={'btn btn-lg btn-success rounded-pill'}
+                    href={"/home-challenge/oauth"}
+                    className={"btn btn-lg btn-success rounded-pill"}
                   >
                     <span className="small">Back to startpage</span>
                   </Link>
@@ -81,11 +81,11 @@ const Page = ({ isMobile }: { isMobile: boolean }) => {
 
                 {isMobile && (
                   <a
-                    href={'/home-challenge/oauth'}
-                    className={'btn btn-lg btn-success rounded-pill'}
+                    href={"/home-challenge/oauth"}
+                    className={"btn btn-lg btn-success rounded-pill"}
                   >
                     <span className="small">
-                      Back to startpage{' '}
+                      Back to startpage{" "}
                       {/* <i className='fa-solid fa-arrow-right ps-1'></i>display-10 */}
                     </span>
                   </a>

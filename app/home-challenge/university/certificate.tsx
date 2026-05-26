@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
-import PageTitle from '../../components/PageTitle';
-import { NewsletterHostname } from '../../utils/constants';
-import { useRouter } from 'next/router';
+import React, { useEffect, useState } from "react";
+import Head from "next/head";
+import PageTitle from "../../components/PageTitle";
+import { NewsletterHostname } from "../../utils/constants";
+import { useRouter } from "next/router";
 
 export type CertificateResult = {
   id: number;
@@ -14,7 +14,7 @@ const Page = () => {
   const [loading, setLoading] = useState(false);
   const [certificate, setCertificate] = useState<CertificateResult>();
   const router = useRouter();
-  const pageTitle = 'Home Challenge Certificate';
+  const pageTitle = "Home Challenge Certificate";
 
   useEffect(() => {
     if (!window.document) {
@@ -22,12 +22,12 @@ const Page = () => {
     }
 
     const query = new URLSearchParams(document.location.search);
-    const email = query.get('email');
+    const email = query.get("email");
 
     const controller = new AbortController();
     const timeId = setTimeout(async () => {
       if (!email) {
-        return await router.replace('/home-challenge');
+        return await router.replace("/home-challenge");
       }
 
       const url = `${NewsletterHostname}/v1/certificates/check`;
@@ -35,9 +35,9 @@ const Page = () => {
 
       try {
         const response = await fetch(url, {
-          method: 'POST',
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify({
             email,
@@ -54,7 +54,7 @@ const Page = () => {
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        return await router.replace('/home-challenge');
+        return await router.replace("/home-challenge");
       }
     }, 0);
 
@@ -82,7 +82,7 @@ const Page = () => {
       {/* <!-- PAGE TITLE
         ================================================== --> */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -95,15 +95,15 @@ const Page = () => {
             <div
               className="col-md-8"
               style={{
-                border: '3px solid #198754',
-                padding: '10px',
-                textAlign: 'center',
+                border: "3px solid #198754",
+                padding: "10px",
+                textAlign: "center",
               }}
             >
               <div
                 style={{
-                  border: '6px solid #198754',
-                  padding: '50px',
+                  border: "6px solid #198754",
+                  padding: "50px",
                 }}
               >
                 <div className="mb-4">
@@ -114,10 +114,10 @@ const Page = () => {
                     data-wow-delay="100ms"
                     alt="..."
                     style={{
-                      visibility: 'visible',
-                      animationDelay: '100ms',
-                      height: '80px',
-                      animationName: 'fadeIn',
+                      visibility: "visible",
+                      animationDelay: "100ms",
+                      height: "80px",
+                      animationName: "fadeIn",
                     }}
                   />
                 </div>
@@ -131,13 +131,13 @@ const Page = () => {
                 </h2>
                 <p>
                   has successfully completed the Carenuity Home Challenge,
-                  showcasing exceptional skills and knowledge in the fields of{' '}
-                  <strong>Internet of Things (IoT)</strong> and{' '}
+                  showcasing exceptional skills and knowledge in the fields of{" "}
+                  <strong>Internet of Things (IoT)</strong> and{" "}
                   <strong>Artificial Intelligence (AI) </strong>.
                 </p>
 
                 <h4>Competencies Demonstrated:</h4>
-                <ul style={{ listStyleType: 'square', textAlign: 'left' }}>
+                <ul style={{ listStyleType: "square", textAlign: "left" }}>
                   <li>
                     Comprehensive understanding of IoT communication protocols
                   </li>
@@ -156,7 +156,7 @@ const Page = () => {
                   This certificate is an informal recognition of the
                   competencies gained through the Carenuity Home Challenge.
                 </p>
-                <hr style={{ border: '1px solid #198754' }} />
+                <hr style={{ border: "1px solid #198754" }} />
                 <i>
                   ChipGlobe, with over 15 years of experience as a trusted
                   provider of talent, proudly acknowledges the dedication and
@@ -170,9 +170,9 @@ const Page = () => {
             <div
               className="col-md-8"
               style={{
-                border: '3px solid #198754',
-                padding: '10px',
-                textAlign: 'center',
+                border: "3px solid #198754",
+                padding: "10px",
+                textAlign: "center",
               }}
             >
               <p>{certificate?.name}</p> has not yet completed the challenge!

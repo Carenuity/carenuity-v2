@@ -38,8 +38,18 @@ export default function ImageSlider() {
         style={{ backgroundColor: "rgba(23,79,46,0.85)" }}
         aria-label="Previous image"
       >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </button>
       <button
@@ -48,8 +58,18 @@ export default function ImageSlider() {
         style={{ backgroundColor: "rgba(23,79,46,0.85)" }}
         aria-label="Next image"
       >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </button>
 
@@ -68,7 +88,10 @@ export default function ImageSlider() {
       </div>
 
       {/* Counter */}
-      <div className="absolute top-3 right-3 text-xs font-semibold text-white px-2.5 py-1 rounded-full" style={{ backgroundColor: "rgba(23,79,46,0.85)" }}>
+      <div
+        className="absolute top-3 right-3 text-xs font-semibold text-white px-2.5 py-1 rounded-full"
+        style={{ backgroundColor: "rgba(23,79,46,0.85)" }}
+      >
         {current + 1} / {images.length}
       </div>
     </div>

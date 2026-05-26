@@ -43,15 +43,23 @@ export default function AutonomousCarClient() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {t.breadcrumb.home}
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/products" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/products"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {c.breadcrumbProducts}
             </Link>
             <span className="text-green-300/40">/</span>
-            <span className="font-medium text-white">Autonomous Driving Car</span>
+            <span className="font-medium text-white">
+              Autonomous Driving Car
+            </span>
           </nav>
 
           <div className="grid grid-cols-12 min-h-[380px] items-center pb-12 pt-4">
@@ -81,8 +89,18 @@ export default function AutonomousCarClient() {
                 }}
               >
                 {c.getHardware}
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </a>
             </div>
@@ -98,7 +116,6 @@ export default function AutonomousCarClient() {
             <ProductSidebar />
 
             <div className="flex-1 min-w-0 space-y-14">
-
               {/* Why Participate */}
               <div>
                 <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-5">
@@ -111,11 +128,23 @@ export default function AutonomousCarClient() {
                         className="mt-1 w-5 h-5 rounded-full flex items-center justify-center shrink-0"
                         style={{ backgroundColor: "#174f2e" }}
                       >
-                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={3}
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </span>
-                      <span className="text-gray-700 dark:text-gray-300 leading-relaxed">{item}</span>
+                      <span className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {item}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -172,11 +201,20 @@ export default function AutonomousCarClient() {
                       className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col"
                     >
                       <div className="relative aspect-[4/3] w-full">
-                        <Image src={projectImages[i]} alt={p.title} fill className="object-cover" />
+                        <Image
+                          src={projectImages[i]}
+                          alt={p.title}
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                       <div className="p-4 flex flex-col flex-1">
-                        <h3 className="font-bold text-[#0d2137] dark:text-white text-sm mb-2">{p.title}</h3>
-                        <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed flex-1">{p.description}</p>
+                        <h3 className="font-bold text-[#0d2137] dark:text-white text-sm mb-2">
+                          {p.title}
+                        </h3>
+                        <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed flex-1">
+                          {p.description}
+                        </p>
                         <a
                           href={projectHrefs[i]}
                           target="_blank"
@@ -185,8 +223,18 @@ export default function AutonomousCarClient() {
                           style={{ color: "#174f2e" }}
                         >
                           {c.learnMore}
-                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          <svg
+                            className="w-3.5 h-3.5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
                           </svg>
                         </a>
                       </div>
@@ -205,8 +253,12 @@ export default function AutonomousCarClient() {
                     E
                   </div>
                   <div>
-                    <p className="font-bold text-[#0d2137] dark:text-white">Eren Arslan Ramazan</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{c.devRole}</p>
+                    <p className="font-bold text-[#0d2137] dark:text-white">
+                      Eren Arslan Ramazan
+                    </p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {c.devRole}
+                    </p>
                   </div>
                 </div>
 
@@ -220,13 +272,17 @@ export default function AutonomousCarClient() {
                     { title: c.devAchievementTitle, body: c.devAchievementP },
                   ].map(({ title, body }) => (
                     <div key={title}>
-                      <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">{title}</h3>
+                      <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">
+                        {title}
+                      </h3>
                       <p>{body}</p>
                     </div>
                   ))}
 
                   <div>
-                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">{c.devSkillsTitle}</h3>
+                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">
+                      {c.devSkillsTitle}
+                    </h3>
                     <ul className="space-y-1.5">
                       {c.skills.map((s) => (
                         <li key={s} className="flex items-center gap-2">
@@ -234,8 +290,18 @@ export default function AutonomousCarClient() {
                             className="w-4 h-4 rounded-full flex items-center justify-center shrink-0"
                             style={{ backgroundColor: "#174f2e" }}
                           >
-                            <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            <svg
+                              className="w-2.5 h-2.5 text-white"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={3}
+                                d="M5 13l4 4L19 7"
+                              />
                             </svg>
                           </span>
                           {s}
@@ -245,7 +311,9 @@ export default function AutonomousCarClient() {
                   </div>
 
                   <div>
-                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">{c.devRecommTitle}</h3>
+                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">
+                      {c.devRecommTitle}
+                    </h3>
                     <ul className="space-y-1.5">
                       {c.recommendations.map((r) => (
                         <li key={r} className="flex items-center gap-2">
@@ -253,8 +321,18 @@ export default function AutonomousCarClient() {
                             className="w-4 h-4 rounded-full flex items-center justify-center shrink-0"
                             style={{ backgroundColor: "#174f2e" }}
                           >
-                            <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            <svg
+                              className="w-2.5 h-2.5 text-white"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={3}
+                                d="M5 13l4 4L19 7"
+                              />
                             </svg>
                           </span>
                           {r}
@@ -264,13 +342,17 @@ export default function AutonomousCarClient() {
                   </div>
 
                   <div>
-                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">{c.devConclusionTitle}</h3>
+                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-2">
+                      {c.devConclusionTitle}
+                    </h3>
                     <p>{c.devConclusionP}</p>
                   </div>
 
                   {/* Publications */}
                   <div>
-                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-3">{c.pubTitle}</h3>
+                    <h3 className="font-bold text-[#0d2137] dark:text-white mb-3">
+                      {c.pubTitle}
+                    </h3>
                     <div className="flex flex-col gap-3">
                       <a
                         href="https://www.thws.de/service/news-presse/pressearchiv/thema/praxisnah-im-studium-bewegungsmelder-selbst-bauen/"
@@ -282,19 +364,46 @@ export default function AutonomousCarClient() {
                           className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-white"
                           style={{ backgroundColor: "#174f2e" }}
                         >
-                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2v6h6" />
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M13 2v6h6"
+                            />
                           </svg>
                         </span>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-semibold text-[#0d2137] dark:text-white group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors">
                             {c.thwsLabel}
                           </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400 truncate">{c.thwsSource}</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {c.thwsSource}
+                          </p>
                         </div>
-                        <svg className="w-4 h-4 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        <svg
+                          className="w-4 h-4 text-gray-400 shrink-0"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
                         </svg>
                       </a>
 
@@ -308,18 +417,40 @@ export default function AutonomousCarClient() {
                           className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-white"
                           style={{ backgroundColor: "#174f2e" }}
                         >
-                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                            />
                           </svg>
                         </span>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-semibold text-[#0d2137] dark:text-white group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors">
                             {c.hacksterLabel}
                           </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400 truncate">{c.hacksterSource}</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {c.hacksterSource}
+                          </p>
                         </div>
-                        <svg className="w-4 h-4 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        <svg
+                          className="w-4 h-4 text-gray-400 shrink-0"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
                         </svg>
                       </a>
                     </div>
@@ -383,7 +514,6 @@ export default function AutonomousCarClient() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import React from 'react';
-import Head from 'next/head';
-import PageTitle from '../../../components/PageTitle';
+import React from "react";
+import Head from "next/head";
+import PageTitle from "../../../components/PageTitle";
 
 const Page = () => {
-  const pageTitle = 'IoT & AI Sensor Kits';
+  const pageTitle = "IoT & AI Sensor Kits";
 
   return (
     <>
@@ -21,7 +21,7 @@ const Page = () => {
 
       {/* PAGE TITLE / BANNER */}
       <PageTitle
-        links={[{ path: '/', title: '' }]}
+        links={[{ path: "/", title: "" }]}
         pageTitle={pageTitle}
         pageUrl=""
       />
@@ -66,7 +66,7 @@ const Page = () => {
           </p>
           <div
             className="e-card h-100 p-4 mb-6"
-            style={{ boxShadow: '3px 3px 15px 3px hsla(0,0%,80%)' }}
+            style={{ boxShadow: "3px 3px 15px 3px hsla(0,0%,80%)" }}
           >
             <div className="row">
               <div className="col-lg-8">
@@ -120,26 +120,26 @@ const Page = () => {
           <div className="row g-4">
             {[
               {
-                step: '1. Connect',
-                desc: 'Plug the C3-Mini into your computer via USB-C. No drivers or software installation required.',
+                step: "1. Connect",
+                desc: "Plug the C3-Mini into your computer via USB-C. No drivers or software installation required.",
               },
               {
-                step: '2. Select',
-                desc: 'Open the Solution Builder in your browser and choose a ready-to-run application (e.g. temperature monitor).',
+                step: "2. Select",
+                desc: "Open the Solution Builder in your browser and choose a ready-to-run application (e.g. temperature monitor).",
               },
               {
-                step: '3. Flash',
-                desc: 'Flash the firmware directly from the browser to the device with one click.',
+                step: "3. Flash",
+                desc: "Flash the firmware directly from the browser to the device with one click.",
               },
               {
-                step: '4. Run',
-                desc: 'Your IoT device is live instantly. Sensor data appears on the display or via serial/web output.',
+                step: "4. Run",
+                desc: "Your IoT device is live instantly. Sensor data appears on the display or via serial/web output.",
               },
             ].map(({ step, desc }) => (
               <div key={step} className="col-sm-6 col-lg-3">
                 <div
                   className="e-card h-100 p-4"
-                  style={{ boxShadow: '3px 3px 15px 3px hsla(0,0%,80%)' }}
+                  style={{ boxShadow: "3px 3px 15px 3px hsla(0,0%,80%)" }}
                 >
                   <h5 className=" mb-2">{step}</h5>
                   <p className="mb-0">{desc}</p>
@@ -159,7 +159,7 @@ const Page = () => {
 
             <div
               className="e-card h-100 p-4 mb-6"
-              style={{ boxShadow: '3px 3px 15px 3px hsla(0,0%,80%)' }}
+              style={{ boxShadow: "3px 3px 15px 3px hsla(0,0%,80%)" }}
             >
               <h5 className=" mb-3">Box 1 – Engineering Kit (15 Components)</h5>
               <div className="row g-4">
@@ -350,7 +350,7 @@ const Page = () => {
 
             <div
               className="e-card h-100 mb-6 p-4"
-              style={{ boxShadow: '3px 3px 15px 3px hsla(0,0%,80%)' }}
+              style={{ boxShadow: "3px 3px 15px 3px hsla(0,0%,80%)" }}
             >
               <h5 className=" mb-3">Box 2 – Starter Kit (14 Components)</h5>
 
