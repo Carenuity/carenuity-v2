@@ -193,7 +193,7 @@ export default function SensorBoxesPage() {
                   {c.weatherCard.desc}
                 </p>
                 <Link
-                  href="/envirosense-680"
+                  href="/product/envirosence-680"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-primary dark:text-green-400 hover:underline"
                 >
                   {c.weatherCard.link}

@@ -217,12 +217,12 @@ export default function HomeChallengePage() {
                   />
                 </svg>
               </Link>
-              <a
-                href="#levels"
+              <Link
+                href="/home-challenge/university/assortment-box/c3-mini-kisii-boxes"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-all duration-300"
               >
-                View All Levels
-              </a>
+                University Home-Challenge Guide
+              </Link>
             </div>
           </div>
         </div>
@@ -369,6 +369,29 @@ export default function HomeChallengePage() {
                 </div>
               </Link>
             ))}
+          </div>
+
+          {/* ── Sponsor / Professor CTAs ── */}
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <Link
+              href="/home-challenge/why-should-i-become-a-sponsor"
+              className="group flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white dark:bg-gray-950 border-2 border-green-600 dark:border-green-500 text-green-700 dark:text-green-400 font-bold text-sm shadow-two hover:bg-green-600 hover:text-white dark:hover:bg-green-500 transition-all duration-300"
+            >
+              Become a Sponsor
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <Link
+              href="/home-challenge/why-should-i-involve-myself-as-a-professor"
+              className="group flex items-center justify-center gap-2 px-7 py-4 rounded-full text-white font-bold text-sm shadow-two hover:scale-105 transition-all duration-300"
+              style={{ backgroundColor: "#174f2e" }}
+            >
+              Become a Professor
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
