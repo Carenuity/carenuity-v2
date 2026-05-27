@@ -202,7 +202,7 @@ export default function SqConnectorClient() {
                   },
                   {
                     name: "Flugblatt V1.0.0 [PDF]",
-                    href: "/docs/leaflet/leaflet_de.pdf",
+                    href: "/docs/leaflet/leaflet-de.pdf",
                   },
                   {
                     name: "Inbetriebnahme-Handbuch V1.1.0 [PDF]",

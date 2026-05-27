@@ -56,7 +56,7 @@ export default function DocumentationClient() {
       label: "Konformitätserklärung V.1.3.0 [PDF]",
     },
     {
-      href: "/docs/leaflet/leaflet_de.pdf",
+      href: "/docs/leaflet/leaflet-de.pdf",
       label: "Beipackzettel V1.0.1 [PDF]",
     },
     {
@@ -84,7 +84,7 @@ export default function DocumentationClient() {
       label: "Dichiarazione di conformità V.1.3.0 [PDF]",
     },
     {
-      href: "/docs/leaflet/leaflet_it.pdf",
+      href: "/docs/leaflet/leaflet-it.pdf",
       label: "Foglio illustrativo V1.0.0 [PDF]",
     },
     {

@@ -279,7 +279,7 @@ const de = {
         name: "Konformitätserklärung V1.3.0 [PDF]",
         href: "/docs/declaration-de.pdf",
       },
-      { name: "Flugblatt V1.0.0 [PDF]", href: "/docs/leaflet/leaflet_de.pdf" },
+      { name: "Flugblatt V1.0.0 [PDF]", href: "/docs/leaflet/leaflet-de.pdf" },
       {
         name: "Inbetriebnahme-Handbuch V1.1.0 [PDF]",
         href: "/docs/commissioning-de.pdf",
