@@ -245,10 +245,10 @@ export default function JungDesignerFrameClient() {
                         href={doc.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2 text-sm text-primary hover:underline"
+                        className="flex items-center gap-2 text-sm text-primary dark:text-green-400 hover:underline"
                       >
                         <svg
-                          className="w-4 h-4 text-primary shrink-0"
+                          className="w-4 h-4 text-primary dark:text-green-400 shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"

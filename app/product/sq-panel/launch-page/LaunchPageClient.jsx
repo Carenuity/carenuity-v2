@@ -172,7 +172,7 @@ export default function LaunchPageClient() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-primary hover:underline"
+                        className="text-sm text-primary dark:text-green-400 hover:underline"
                       >
                         {en ? item.en : item.de}
                       </Link>

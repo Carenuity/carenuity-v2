@@ -39,6 +39,7 @@ const sqPanelPages = [
   { label: "Product Launch", slug: "product-launch" },
   { label: "Property Managers", slug: "property-managers" },
   { label: "Schools and Kindergarden", slug: "schools-and-kindergarden" },
+  { label: "Serial Number", slug: "serial-number" },
   { label: "Smart Care Providers", slug: "smart-care-providers" },
   { label: "Smart Home Enthusiasts", slug: "smart-home-enthusiasts" },
   { label: "SQ-Panel User Guide", slug: "sq-panel-user-guide" },

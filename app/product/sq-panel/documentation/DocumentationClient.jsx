@@ -31,7 +31,7 @@ export default function DocumentationClient() {
       href: "/docs/commissioning-en.pdf",
       label: "Manual-for-Commissioning 1.1.0 [PDF]",
     },
-    { href: "/product/serial-number", label: "Serial-Number V2.0.1 [PDF]" },
+    { href: "/product/sq-panel/serial-number", label: "Serial Number V2.0.1" },
     {
       href: "/docs/sq-panel-user-guide.pdf",
       label: "SQ-Panel user guide [PDF]",
@@ -63,7 +63,7 @@ export default function DocumentationClient() {
       href: "/docs/commissioning-de.pdf",
       label: "Handbuch zur Inbetriebnahme 1.1.0 [PDF]",
     },
-    { href: "/product/serial-number", label: "Serien-Nummer V2.0.1 [PDF]" },
+    { href: "/product/sq-panel/serial-number", label: "Serien-Nummer V2.0.1" },
   ];
 
   const itDocs = [
@@ -91,7 +91,7 @@ export default function DocumentationClient() {
       href: "/docs/commissioning-it.pdf",
       label: "Manuale di messa in servizio 1.0.3 [PDF]",
     },
-    { href: "/product/serial-number", label: "Numero di serie V2.0.1 [PDF]" },
+    { href: "/product/sq-panel/serial-number", label: "Numero di serie V2.0.1" },
   ];
 
   const docs = italy ? itDocs : en ? enDocs : deDocs;
@@ -160,17 +160,13 @@ export default function DocumentationClient() {
             <ProductSidebar />
             <div className="flex-1 min-w-0">
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-8">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
                   <h2 className="text-xl font-bold text-[#0d2137] dark:text-white">
                     SQ-Panel Documentation
                   </h2>
-                  <label className="cursor-pointer">
-                    <span className="shadow-btn bg-primary hover:bg-primary-light rounded-full px-4 py-2 text-xs font-semibold text-white transition duration-300">
-                      {!italy
-                        ? en
-                          ? "Read In Italian"
-                          : "Auf Italienisch lesen"
-                        : "Spegni l'italiano"}
+                  <label className="cursor-pointer self-start sm:self-auto">
+                    <span className="shadow-btn bg-primary hover:bg-primary-light rounded-full px-4 py-2 text-xs font-semibold text-white transition duration-300 inline-block whitespace-nowrap">
+                      {!italy ? "Read in Italian" : "Turn off Italian"}
                     </span>
                     <input
                       type="checkbox"
@@ -186,10 +182,10 @@ export default function DocumentationClient() {
                         href={doc.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2 text-sm text-primary hover:underline"
+                        className="flex items-center gap-2 text-sm text-primary dark:text-green-400 hover:underline"
                       >
                         <svg
-                          className="w-4 h-4 text-primary shrink-0"
+                          className="w-4 h-4 text-primary dark:text-green-400 shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
