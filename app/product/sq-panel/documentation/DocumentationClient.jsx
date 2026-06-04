@@ -91,7 +91,10 @@ export default function DocumentationClient() {
       href: "/docs/commissioning-it.pdf",
       label: "Manuale di messa in servizio 1.0.3 [PDF]",
     },
-    { href: "/product/sq-panel/serial-number", label: "Numero di serie V2.0.1" },
+    {
+      href: "/product/sq-panel/serial-number",
+      label: "Numero di serie V2.0.1",
+    },
   ];
 
   const docs = italy ? itDocs : en ? enDocs : deDocs;

@@ -124,7 +124,9 @@ export default function SerialNumberClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
                 <img
                   src="/images/products/sq-panel/serial-number/serial-number.jpeg"
-                  alt={en ? "Serial number example" : "Beispiel einer Seriennummer"}
+                  alt={
+                    en ? "Serial number example" : "Beispiel einer Seriennummer"
+                  }
                   className="w-full object-contain"
                 />
               </div>
