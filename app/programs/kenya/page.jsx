@@ -116,7 +116,10 @@ export default function KenyaProgramPage() {
                   </p>
                 </UniCard>
 
-                <UniCard logo={TUM} name="Technical University of Mombasa (TUM)">
+                <UniCard
+                  logo={TUM}
+                  name="Technical University of Mombasa (TUM)"
+                >
                   {c.tumNews}
                 </UniCard>
 

@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import PageTitle from '../components/PageTitle';
-import { LanguageSwitchContext } from '../components/context/LanguageSwitch';
-import Translatable from '../components/Translatable';
-import { useContext } from 'react';
+import Head from "next/head";
+import PageTitle from "../components/PageTitle";
+import { LanguageSwitchContext } from "../components/context/LanguageSwitch";
+import Translatable from "../components/Translatable";
+import { useContext } from "react";
 
 // const PrivacyPolicy = dynamic(() => import('../components/dynamic/Privacy'), {
 //   ssr: false,
@@ -10,7 +10,7 @@ import { useContext } from 'react';
 // });
 
 const Privacy = () => {
-  const pageTitle = 'Privacy ';
+  const pageTitle = "Privacy ";
   const { state } = useContext(LanguageSwitchContext);
   return (
     <>
@@ -24,7 +24,7 @@ const Privacy = () => {
       </Head>
       <title>{pageTitle}</title>
       <PageTitle
-        links={[{ path: '/', title: 'Home' }]}
+        links={[{ path: "/", title: "Home" }]}
         pageTitle="Privacy Policy"
         pageUrl="/privacy"
       />
@@ -34,7 +34,7 @@ const Privacy = () => {
       <section className="pt-4">
         <div className="container">
           <div className="row">
-            {state === 'en' && (
+            {state === "en" && (
               <>
                 <div className="col-lg-8">
                   <h4>1. General Information</h4>
@@ -179,7 +179,7 @@ const Privacy = () => {
                 </div>
               </>
             )}
-            {state === 'de' && (
+            {state === "de" && (
               <>
                 <div className="col-lg-8">
                   <h4>1. Allgemeine Hinweise</h4>
@@ -338,13 +338,13 @@ const Privacy = () => {
             <div
               className="col-lg-4"
               style={{
-                height: '135vh',
-                backgroundColor: '#036437ff',
-                color: '#ffffff',
-                paddingTop: '20px',
+                height: "135vh",
+                backgroundColor: "#036437ff",
+                color: "#ffffff",
+                paddingTop: "20px",
               }}
             >
-              {state === 'en' && (
+              {state === "en" && (
                 <>
                   <h3 className="h5 text-white">
                     <strong>
@@ -359,7 +359,7 @@ const Privacy = () => {
                       81549 Munich, Germany <br />
                     </p>
                     <div>
-                      Tel.:{' '}
+                      Tel.:{" "}
                       <a
                         href="tel:+4989122246900"
                         className="text-white text-primary-hover"
@@ -368,7 +368,7 @@ const Privacy = () => {
                       </a>
                     </div>
                     <div>
-                      Fax:{' '}
+                      Fax:{" "}
                       <a
                         href="tel:+4989122246969"
                         className="text-white text-primary-hover"
@@ -377,7 +377,7 @@ const Privacy = () => {
                       </a>
                     </div>
                     <div>
-                      Email:{' '}
+                      Email:{" "}
                       <a
                         href="mailto:info@chipglobe.com"
                         className="text-white text-primary-hover"
@@ -416,7 +416,7 @@ const Privacy = () => {
                     </span>
                     <br />
                     <span>
-                      Phone:{' '}
+                      Phone:{" "}
                       <a
                         href="tel:+4989122246901"
                         className="text-white text-primary-hover"
@@ -426,7 +426,7 @@ const Privacy = () => {
                     </span>
                     <br />
                     <span>
-                      Email:{' '}
+                      Email:{" "}
                       <a
                         href="mailto:volker.frisch@chipglobe.com"
                         className="text-white text-primary-hover"
@@ -439,14 +439,14 @@ const Privacy = () => {
                     <strong>
                       Responsible for content pursuant to Section 55 para. 2 of
                       the German Interstate Broadcasting Treaty (RStV):
-                    </strong>{' '}
+                    </strong>{" "}
                     <br />
                     Volker Frisch
                   </p>
                 </>
               )}
 
-              {state === 'de' && (
+              {state === "de" && (
                 <>
                   <h3 className="h5 text-white">
                     <strong>Angaben gemäß § 5 TMG:</strong>
@@ -459,7 +459,7 @@ const Privacy = () => {
                     </p>
                     <div>
                       <div>
-                        Tel.:{' '}
+                        Tel.:{" "}
                         <a
                           href="tel:+4989122246900"
                           className="text-white text-primary-hover"
@@ -468,7 +468,7 @@ const Privacy = () => {
                         </a>
                       </div>
                       <div>
-                        Fax:{' '}
+                        Fax:{" "}
                         <a
                           href="tel:+4989122246969"
                           className="text-white text-primary-hover"
@@ -477,7 +477,7 @@ const Privacy = () => {
                         </a>
                       </div>
                       <div>
-                        Email:{' '}
+                        Email:{" "}
                         <a
                           href="mailto:info@chipglobe.com"
                           className="text-white text-primary-hover"
@@ -514,7 +514,7 @@ const Privacy = () => {
                     </span>
                     <br />
                     <span>
-                      Telefon:{' '}
+                      Telefon:{" "}
                       <a
                         href="tel:+4989122246901"
                         className="text-white text-primary-hover"
@@ -524,7 +524,7 @@ const Privacy = () => {
                     </span>
                     <br />
                     <span>
-                      Email:{' '}
+                      Email:{" "}
                       <a
                         href="mailto:volker.frisch@chipglobe.com"
                         className="text-white text-primary-hover"
@@ -536,7 +536,7 @@ const Privacy = () => {
                   <p>
                     <strong>
                       Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-                    </strong>{' '}
+                    </strong>{" "}
                     <br />
                     Volker Frisch
                   </p>

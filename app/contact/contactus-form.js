@@ -6,7 +6,7 @@ const SHAREPOINT_BASE =
 export async function submitContactForm(form) {
   const response = await fetch(
     `${SHAREPOINT_BASE}/api/v1/sharepoint/lists/${encodeURIComponent(
-      "Carenuity Inbox"
+      "Carenuity Inbox",
     )}/items`,
     {
       method: "POST",
@@ -23,7 +23,7 @@ export async function submitContactForm(form) {
           Message: form.message.value,
         },
       }),
-    }
+    },
   );
 
   if (!response.ok) {

@@ -58,7 +58,9 @@ export default function EvaluateAtHomePage() {
   const kits = [
     {
       img: `${IMG}/kit-s.png`,
-      title: de ? "Evaluation-Kit M für Standard-Displays" : "Evaluation Kit M for Standard Displays",
+      title: de
+        ? "Evaluation-Kit M für Standard-Displays"
+        : "Evaluation Kit M for Standard Displays",
       desc: de
         ? "Geeignet für Raspberry Pi Pico W mit Infineon-WLAN-Modul. Kompatibel mit 0,66- und 0,96-Zoll-Displays."
         : "Suited for Raspberry Pi Pico W that comes with Infineon Wifi module. Compatible with 0.66 inch & 0.96 inch displays.",
@@ -66,7 +68,9 @@ export default function EvaluateAtHomePage() {
     },
     {
       img: `${IMG}/kit.png`,
-      title: de ? "Sensor-Auswahlbox für Multi-Sensor-Evaluation" : "Sensor Selection Box for Multi Sensor Evaluation",
+      title: de
+        ? "Sensor-Auswahlbox für Multi-Sensor-Evaluation"
+        : "Sensor Selection Box for Multi Sensor Evaluation",
       desc: de
         ? "Geeignet für D1- und C3-Mini-Boards, inklusive sieben Sensoren, einem Display und einem Summer. Kompatibel mit 0,66- und 0,96-Zoll-Displays."
         : "Suited for D1- and C3-Mini boards, including seven sensors, a display and a buzzer. Compatible with 0.66 inch & 0.96 inch displays.",
@@ -75,40 +79,51 @@ export default function EvaluateAtHomePage() {
     },
     {
       img: `${IMG}/kit-l.png`,
-      title: de ? "Evaluation-Kit L „Der Triple-Adapter“" : 'Evaluation Kit L "The Triple-Adapter"',
+      title: de
+        ? "Evaluation-Kit L „Der Triple-Adapter“"
+        : 'Evaluation Kit L "The Triple-Adapter"',
       desc: de
         ? "Geeignet für D1- und C3-Mini-Boards und alle Sensoren. Kompatibel mit 0,66- und 0,96-Zoll-Displays."
         : "Suited for D1- and C3-Mini boards and all sensors. Compatible with 0.66 inch and 0.96 inch displays.",
     },
     {
       img: `${IMG}/kit-xl.png`,
-      title: de ? "Evaluation-Kit XL für große Displays" : "Evaluation Kit XL for Large Displays",
+      title: de
+        ? "Evaluation-Kit XL für große Displays"
+        : "Evaluation Kit XL for Large Displays",
       desc: de
         ? "Geeignet für D1- und C3-Mini-Boards und alle Sensoren. Kompatibel mit großen 2,6- und 2,8-Zoll-Displays."
         : "Suited for D1- and C3-Mini boards and all sensors. Compatible with large 2.6 inch and 2.8 inch displays.",
       buy: "https://solutions.carenuity.com/solutions/3EUP0e9QDFbzixeSbbUE",
-      install: "https://solutions.carenuity.com/microcontrollers/4OQQy4edGswvbN6boCKw",
+      install:
+        "https://solutions.carenuity.com/microcontrollers/4OQQy4edGswvbN6boCKw",
     },
   ];
 
   const enclosures = [
     {
       img: `${IMG}/sq-panel-s-m.png`,
-      title: de ? "SQ-Panel-ähnliches Gehäuse – Größe „S/M“" : 'SQ-Panel-like Enclosure — Size "S/M"',
+      title: de
+        ? "SQ-Panel-ähnliches Gehäuse – Größe „S/M“"
+        : 'SQ-Panel-like Enclosure — Size "S/M"',
       desc: de
         ? "Ein kleines SQ-Panel-ähnliches Gehäuse in Größe S/M auf dem SQ-TableStand für das 79,1 × 79,1 mm Evaluation-Kit, optimiert für eine Vielzahl von Sensoren mit dem Raspberry Pi Pico W (Infineon WLAN) und dem 0,66- oder 0,96-Zoll-OLED-Display."
         : "A small SQ-Panel-like S/M-sized housing on top of the SQ-TableStand to accommodate the 79.1 × 79.1 mm Evaluation-Kit, optimized to house a variety of sensors with the Raspberry Pi Pico W (Infineon Wifi) and the 0.66 or 0.96 inch OLED display.",
     },
     {
       img: `${IMG}/sq-panel-l.png`,
-      title: de ? "SQ-Panel-ähnliches Gehäuse – Größe „L“" : 'SQ-Panel-like Enclosure — Size "L"',
+      title: de
+        ? "SQ-Panel-ähnliches Gehäuse – Größe „L“"
+        : 'SQ-Panel-like Enclosure — Size "L"',
       desc: de
         ? "Ein SQ-Panel-ähnliches Gehäuse in Größe L mit dem SQ-TableStand für das 66,4 × 66,4 mm Evaluation-Kit, optimiert für den Triple-Adapter mit Sensor, C3-Mini und einem 0,66- oder 0,96-Zoll-OLED-Display. Eine S-Variante (64,0 × 64,0 mm) ist in Vorbereitung."
         : "A SQ-Panel-like L-sized housing with the SQ-TableStand to accommodate the 66.4 × 66.4 mm Evaluation-Kit, optimized to house the Triple-Adapter with Sensor, C3-Mini and a 0.66 or 0.96 inch OLED display. An S-sized variant (64.0 × 64.0 mm) is in preparation.",
     },
     {
       img: `${IMG}/sq-panel-xl.png`,
-      title: de ? "SQ-Panel-ähnliches Gehäuse – Größe „XL“" : 'SQ-Panel-like Enclosure — Size "XL"',
+      title: de
+        ? "SQ-Panel-ähnliches Gehäuse – Größe „XL“"
+        : 'SQ-Panel-like Enclosure — Size "XL"',
       desc: de
         ? "Das besonders große SQ-Panel-ähnliche XL-Gehäuse mit dem SQ-TableStand für die großen 2,4- oder 2,8-Zoll-Displays nimmt das 87,0 × 87,0 mm Evaluation-Kit auf. Vorzugsweise wird es mit einer Spionspiegelfolie überzogen, um die Elektronik zu verbergen und ihm das Aussehen eines Smart Mirrors zu verleihen."
         : "The extra large SQ-Panel-like XL-sized housing with the SQ-TableStand for the large 2.4- or 2.8-inch displays can accommodate the 87.0 × 87.0 mm Evaluation-Kit. It preferably gets covered with a spy mirror foil to conceal the electronics and give it the appearance of a smart mirror.",
@@ -118,21 +133,27 @@ export default function EvaluateAtHomePage() {
   const altEnclosures = [
     {
       img: `${IMG}/sq-panel03.png`,
-      title: de ? "Alternatives Gehäuse – Größe „M“" : 'Alternative Enclosure — Size "M"',
+      title: de
+        ? "Alternatives Gehäuse – Größe „M“"
+        : 'Alternative Enclosure — Size "M"',
       desc: de
         ? "Dieses mittelgroße Gehäuse hat eine quadratische Form und ist optimiert, um flach auf dem Schreibtisch oder Ständer zu liegen. Es ist in Varianten passend zu den Sensoren erhältlich und nimmt das 0,66- oder 0,96-Zoll-OLED-Display auf. Ein TableStand ist auf Anfrage erhältlich."
         : "This medium-sized housing has a square shape and is optimized to lie flat on the desk or stand. It comes in variants to match the sensors and accommodates the 0.66 or 0.96 inch OLED display. A TableStand is available on request.",
     },
     {
       img: `${IMG}/sma.png`,
-      title: de ? "Alternatives Gehäuse – Größe „L“" : 'Alternative Enclosure — Size "L"',
+      title: de
+        ? "Alternatives Gehäuse – Größe „L“"
+        : 'Alternative Enclosure — Size "L"',
       desc: de
         ? "Dieses Gehäuse ist platzsparend für Ihren Schreibtisch optimiert und die erste Wahl für Einsteiger. Es ist in Varianten passend zu verschiedenen Sensoren erhältlich und nimmt das 0,66- oder 0,96-Zoll-OLED-Display auf. Sie können es auf 3D-druckbaren TableStands stapeln."
         : "This enclosure is optimized to save space on your desk and is first choice for beginners. It comes in variants to match various sensors and accommodate the 0.66 or 0.96 inch OLED display. You can stack it on 3D-printable TableStands.",
     },
     {
       img: `${IMG}/sq-panel02.png`,
-      title: de ? "Alternatives Gehäuse – Größe „XL“" : 'Alternative Enclosure — Size "XL"',
+      title: de
+        ? "Alternatives Gehäuse – Größe „XL“"
+        : 'Alternative Enclosure — Size "XL"',
       desc: de
         ? "Dieses quadratische Gehäuse wird mit einem TableStand geliefert, genau wie das SQ-Panel. Die Elektronik befindet sich neben dem großen 2,4- oder 2,8-Zoll-Display, das vorzugsweise mit einer Spionspiegelfolie überzogen wird, um die Elektronik zu verbergen und ihm das Aussehen eines Smart Mirrors zu verleihen."
         : "This square-shaped housing comes with a TableStand, just like the SQ-Panel. The electronics are located next to the large 2.4- or 2.8-inch display, which preferably is covered with a spy mirror foil to conceal the electronics and give it the appearance of a smart mirror.",
@@ -159,7 +180,10 @@ export default function EvaluateAtHomePage() {
         />
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {de ? "Startseite" : "Home"}
             </Link>
             <span className="text-green-300/40">/</span>
@@ -231,15 +255,23 @@ export default function EvaluateAtHomePage() {
                   className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden flex flex-col"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={m.img} alt={m.title} className="w-full h-auto object-contain bg-white" />
+                  <img
+                    src={m.img}
+                    alt={m.title}
+                    className="w-full h-auto object-contain bg-white"
+                  />
                   <div className="p-6 flex-1 flex flex-col">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="flex items-center justify-center w-8 h-8 rounded-full bg-green-bg dark:bg-gray-800 text-sm font-bold text-primary dark:text-green-400">
                         {i + 1}
                       </span>
-                      <h3 className="text-lg font-bold text-black dark:text-white">{m.title}</h3>
+                      <h3 className="text-lg font-bold text-black dark:text-white">
+                        {m.title}
+                      </h3>
                     </div>
-                    <p className="text-body-color dark:text-green text-sm leading-relaxed">{m.body}</p>
+                    <p className="text-body-color dark:text-green text-sm leading-relaxed">
+                      {m.body}
+                    </p>
                     {m.extra && (
                       <p className="text-body-color dark:text-green text-sm leading-relaxed mt-3">
                         {m.extra}
@@ -253,7 +285,9 @@ export default function EvaluateAtHomePage() {
                         >
                           {de ? "Kontaktieren Sie uns" : "Contact us"}
                         </a>{" "}
-                        {de ? "für ganz besondere Orte." : "for very special places."}
+                        {de
+                          ? "für ganz besondere Orte."
+                          : "for very special places."}
                       </p>
                     )}
                   </div>
@@ -272,7 +306,11 @@ export default function EvaluateAtHomePage() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               <div className="md:col-span-2 flex justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${IMG}/check1.png`} alt="check" className="h-24 w-auto object-contain" />
+                <img
+                  src={`${IMG}/check1.png`}
+                  alt="check"
+                  className="h-24 w-auto object-contain"
+                />
               </div>
               <div className="md:col-span-6">
                 <ul className="space-y-3">
@@ -291,7 +329,9 @@ export default function EvaluateAtHomePage() {
                     ],
                   ].map((row, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="mt-0.5 text-primary dark:text-green-400">✓</span>
+                      <span className="mt-0.5 text-primary dark:text-green-400">
+                        ✓
+                      </span>
                       <span className="text-black dark:text-white font-semibold text-sm">
                         {de ? row[1] : row[0]}
                       </span>
@@ -301,14 +341,24 @@ export default function EvaluateAtHomePage() {
               </div>
               <div className="md:col-span-1 flex justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${IMG}/arrow.png`} alt="arrow" className="h-24 w-auto object-contain rotate-90 md:rotate-0" />
+                <img
+                  src={`${IMG}/arrow.png`}
+                  alt="arrow"
+                  className="h-24 w-auto object-contain rotate-90 md:rotate-0"
+                />
               </div>
               <div className="md:col-span-3 text-center">
                 <p className="text-sm font-semibold text-primary dark:text-green-400 mb-2">
-                  {de ? "Implementierung der Funktion" : "Implementation of the feature"}
+                  {de
+                    ? "Implementierung der Funktion"
+                    : "Implementation of the feature"}
                 </p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${IMG}/sq-panel.png`} alt="SQ-Panel" className="h-24 w-auto object-contain mx-auto" />
+                <img
+                  src={`${IMG}/sq-panel.png`}
+                  alt="SQ-Panel"
+                  className="h-24 w-auto object-contain mx-auto"
+                />
               </div>
             </div>
           </div>
@@ -349,10 +399,18 @@ export default function EvaluateAtHomePage() {
                   className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-sm p-6 flex gap-5"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={k.img} alt={k.title} className="w-28 h-28 object-contain shrink-0" />
+                  <img
+                    src={k.img}
+                    alt={k.title}
+                    className="w-28 h-28 object-contain shrink-0"
+                  />
                   <div>
-                    <h3 className="text-base font-bold text-primary dark:text-green-400 mb-2">{k.title}</h3>
-                    <p className="text-body-color dark:text-green text-sm leading-relaxed mb-3">{k.desc}</p>
+                    <h3 className="text-base font-bold text-primary dark:text-green-400 mb-2">
+                      {k.title}
+                    </h3>
+                    <p className="text-body-color dark:text-green text-sm leading-relaxed mb-3">
+                      {k.desc}
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       <Btn href={k.buy} small>
                         {de ? "Jetzt kaufen" : "Buy Now"}
@@ -370,7 +428,9 @@ export default function EvaluateAtHomePage() {
           {/* Select sensor */}
           <div className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-sm p-6 md:p-8">
             <h2 className="text-2xl font-bold text-black dark:text-white mb-2">
-              {de ? "Den richtigen Sensor auswählen" : "Select the right Sensor"}
+              {de
+                ? "Den richtigen Sensor auswählen"
+                : "Select the right Sensor"}
             </h2>
             <p className="text-body-color dark:text-green mb-5 max-w-3xl">
               {de
@@ -379,9 +439,13 @@ export default function EvaluateAtHomePage() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Btn href="/sensor-boxes">
-                {de ? "Single-Sensor-Boxen wählen" : "Choose Single Sensor Boxes"}
+                {de
+                  ? "Single-Sensor-Boxen wählen"
+                  : "Choose Single Sensor Boxes"}
               </Btn>
-              <span className="text-body-color dark:text-green font-semibold">{de ? "oder" : "or"}</span>
+              <span className="text-body-color dark:text-green font-semibold">
+                {de ? "oder" : "or"}
+              </span>
               <Btn href="/selection-box">
                 {de ? "Anderen Sensor auswählen" : "Select other Sensor"}
               </Btn>
@@ -391,7 +455,9 @@ export default function EvaluateAtHomePage() {
           {/* Housings */}
           <div>
             <h2 className="text-2xl font-bold text-black dark:text-white mb-2">
-              {de ? "Gehäuse für Ihre Evaluation" : "Housings for your Evaluation"}
+              {de
+                ? "Gehäuse für Ihre Evaluation"
+                : "Housings for your Evaluation"}
             </h2>
             <p className="text-body-color dark:text-green mb-6 max-w-3xl">
               {de
@@ -399,7 +465,14 @@ export default function EvaluateAtHomePage() {
                 : "Single Sensor Boxes come with enclosure. If you want to customize your device, we offer 3D-printables on Thingiverse."}
             </p>
             <div className="rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm mb-8">
-              <video src="/video/sq-panel.mp4" loop autoPlay muted playsInline className="w-full" />
+              <video
+                src="/video/sq-panel.mp4"
+                loop
+                autoPlay
+                muted
+                playsInline
+                className="w-full"
+              />
             </div>
 
             <h3 className="text-lg font-bold text-black dark:text-white mb-4">
@@ -424,7 +497,9 @@ export default function EvaluateAtHomePage() {
           {/* STL */}
           <div className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-sm p-6 md:p-8">
             <h3 className="text-lg font-bold text-black dark:text-white mb-3">
-              {de ? "Sie können die STL-Dateien hier herunterladen:" : "You can download the STL from here:"}
+              {de
+                ? "Sie können die STL-Dateien hier herunterladen:"
+                : "You can download the STL from here:"}
             </h3>
             <ul className="list-disc pl-6 space-y-2 text-body-color dark:text-green text-sm leading-relaxed">
               <li>
@@ -467,10 +542,18 @@ function EnclosureCard({ img, title, desc }) {
   return (
     <div className="rounded-2xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden flex flex-col">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={img} alt={title} className="w-full h-auto object-contain bg-white" />
+      <img
+        src={img}
+        alt={title}
+        className="w-full h-auto object-contain bg-white"
+      />
       <div className="p-5">
-        <h4 className="text-sm font-bold text-primary dark:text-green-400 mb-2">{title}</h4>
-        <p className="text-body-color dark:text-green text-sm leading-relaxed">{desc}</p>
+        <h4 className="text-sm font-bold text-primary dark:text-green-400 mb-2">
+          {title}
+        </h4>
+        <p className="text-body-color dark:text-green text-sm leading-relaxed">
+          {desc}
+        </p>
       </div>
     </div>
   );

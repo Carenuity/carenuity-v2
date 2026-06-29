@@ -2,7 +2,8 @@
 import { useLanguage } from "../context/LanguageContext";
 
 const APPLE = "https://apps.apple.com/ie/app/carenuity/id6472718918";
-const GOOGLE = "https://play.google.com/store/apps/details?id=com.carenuity.home";
+const GOOGLE =
+  "https://play.google.com/store/apps/details?id=com.carenuity.home";
 const SHOP =
   "https://www.chipglobe.shop/en/p/carenuity-sq-system-customizable-bundle-with-air-quality-display-and-accessories";
 
@@ -76,7 +77,9 @@ function PhoneMockup({ de }) {
                   <span>{m.icon}</span>
                   {m.label}
                 </span>
-                <span className="text-[11px] font-semibold text-emerald-300">{m.value}</span>
+                <span className="text-[11px] font-semibold text-emerald-300">
+                  {m.value}
+                </span>
               </div>
             ))}
           </div>
@@ -88,7 +91,11 @@ function PhoneMockup({ de }) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/user-guide/apple.jpeg"
-          alt={de ? "Zum Installieren der Carenuity App scannen" : "Scan to install the Carenuity app"}
+          alt={
+            de
+              ? "Zum Installieren der Carenuity App scannen"
+              : "Scan to install the Carenuity app"
+          }
           className="h-20 w-full object-contain"
         />
         <p className="mt-1 text-center text-[9px] font-semibold uppercase tracking-wide text-gray-500">
@@ -106,7 +113,9 @@ export default function CarenuityAppGuideClient() {
   const walkthrough = [
     {
       src: "/images/user-guide/intro.png",
-      alt: de ? "Einführung in die Carenuity Mobile App" : "Carenuity mobile app introduction",
+      alt: de
+        ? "Einführung in die Carenuity Mobile App"
+        : "Carenuity mobile app introduction",
     },
     {
       src: "/images/user-guide/goal.png",
@@ -135,7 +144,13 @@ export default function CarenuityAppGuideClient() {
   ];
 
   const chips = de
-    ? ["🌡️ Temperatur", "💧 Luftfeuchtigkeit", "🫁 CO₂", "🧪 VOC", "👤 Anwesenheit"]
+    ? [
+        "🌡️ Temperatur",
+        "💧 Luftfeuchtigkeit",
+        "🫁 CO₂",
+        "🧪 VOC",
+        "👤 Anwesenheit",
+      ]
     : ["🌡️ Temperature", "💧 Humidity", "🫁 CO₂", "🧪 VOC", "👤 Presence"];
 
   return (
@@ -202,13 +217,31 @@ export default function CarenuityAppGuideClient() {
 
               {/* Store badges */}
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a href={GOOGLE} target="_blank" rel="noreferrer" className="transition-transform duration-300 hover:scale-105">
+                <a
+                  href={GOOGLE}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-transform duration-300 hover:scale-105"
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/user-guide/google.png" alt="Get it on Google Play" className="h-12 w-auto object-contain" />
+                  <img
+                    src="/images/user-guide/google.png"
+                    alt="Get it on Google Play"
+                    className="h-12 w-auto object-contain"
+                  />
                 </a>
-                <a href={APPLE} target="_blank" rel="noreferrer" className="transition-transform duration-300 hover:scale-105">
+                <a
+                  href={APPLE}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-transform duration-300 hover:scale-105"
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/user-guide/app-store.png" alt="Download on the App Store" className="h-12 w-auto object-contain" />
+                  <img
+                    src="/images/user-guide/app-store.png"
+                    alt="Download on the App Store"
+                    className="h-12 w-auto object-contain"
+                  />
                 </a>
               </div>
 
@@ -233,8 +266,16 @@ export default function CarenuityAppGuideClient() {
         </div>
 
         {/* wave divider */}
-        <svg className="block w-full" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-          <path className="fill-gray-50 dark:fill-gray-900" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" />
+        <svg
+          className="block w-full"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            className="fill-gray-50 dark:fill-gray-900"
+            d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"
+          />
         </svg>
       </section>
 
@@ -285,7 +326,11 @@ export default function CarenuityAppGuideClient() {
             {walkthrough.map((img) => (
               <div key={img.src}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} className="w-full h-auto object-contain" />
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-auto object-contain"
+                />
               </div>
             ))}
           </div>
@@ -303,7 +348,9 @@ export default function CarenuityAppGuideClient() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary hover:bg-primary-light text-white font-bold text-sm transition-all duration-300 hover:scale-105"
             >
-              {de ? "Kaufen Sie jetzt Ihr erstes SQ-Panel" : "Buy your first SQ-Panel now"}
+              {de
+                ? "Kaufen Sie jetzt Ihr erstes SQ-Panel"
+                : "Buy your first SQ-Panel now"}
             </a>
           </p>
         </div>

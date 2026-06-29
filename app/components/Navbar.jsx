@@ -513,12 +513,9 @@ export default function Navbar() {
             >
               <button
                 className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                  [
-                    "/blog",
-                    "/about",
-                    "/contact",
-                    "/help-center",
-                  ].includes(pathname) ||
+                  ["/blog", "/about", "/contact", "/help-center"].includes(
+                    pathname,
+                  ) ||
                   pathname.startsWith("/programs") ||
                   pathname.startsWith("/guides")
                     ? "text-primary"

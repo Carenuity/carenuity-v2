@@ -34,7 +34,9 @@ export default function TroubleshootingPage() {
         <HcH2>{de ? "1. Verbindungsprobleme" : "1. Connectivity Issues"}</HcH2>
         <HcOL>
           <li>
-            {de ? "Ist Ihr SQ-Panel eingeschaltet?" : "Is your SQ-Panel powered on?"}
+            {de
+              ? "Ist Ihr SQ-Panel eingeschaltet?"
+              : "Is your SQ-Panel powered on?"}
             <HcUL nested>
               <li>
                 {de
@@ -73,7 +75,11 @@ export default function TroubleshootingPage() {
           <li>
             {de ? "Immer noch keine Verbindung?" : "Still not connecting?"}
             <HcUL nested>
-              <li>{de ? "Erneut über QR-Code koppeln." : "Try pairing via QR code again."}</li>
+              <li>
+                {de
+                  ? "Erneut über QR-Code koppeln."
+                  : "Try pairing via QR code again."}
+              </li>
               <li>
                 {de
                   ? "Gerät näher an den Border Router bringen (<5 m für Einrichtung)."
@@ -89,7 +95,9 @@ export default function TroubleshootingPage() {
         </Unresolved>
 
         <HcH2>
-          {de ? "2. Probleme mit der App-Synchronisierung" : "2. App Sync Problems"}
+          {de
+            ? "2. Probleme mit der App-Synchronisierung"
+            : "2. App Sync Problems"}
         </HcH2>
         <HcOL>
           <li>
@@ -106,7 +114,9 @@ export default function TroubleshootingPage() {
             </HcUL>
           </li>
           <li>
-            {de ? "Ist Ihre App auf dem neuesten Stand?" : "Is your app up to date?"}
+            {de
+              ? "Ist Ihre App auf dem neuesten Stand?"
+              : "Is your app up to date?"}
             <HcUL nested>
               <li>
                 {de
@@ -117,7 +127,9 @@ export default function TroubleshootingPage() {
             </HcUL>
           </li>
           <li>
-            {de ? "Ausloggen und erneut einloggen." : "Log out of the app and log in again."}
+            {de
+              ? "Ausloggen und erneut einloggen."
+              : "Log out of the app and log in again."}
           </li>
           <li>
             {de
@@ -132,7 +144,9 @@ export default function TroubleshootingPage() {
         </Unresolved>
 
         <HcH2>
-          {de ? "3. Sensorwerte scheinen falsch" : "3. Sensor Values Look Wrong"}
+          {de
+            ? "3. Sensorwerte scheinen falsch"
+            : "3. Sensor Values Look Wrong"}
         </HcH2>
         <HcOL>
           <li>
@@ -148,7 +162,9 @@ export default function TroubleshootingPage() {
             </HcUL>
           </li>
           <li>
-            {de ? "CO₂-Werte in Innenräumen zu hoch?" : "CO₂ readings too high indoors?"}
+            {de
+              ? "CO₂-Werte in Innenräumen zu hoch?"
+              : "CO₂ readings too high indoors?"}
             <HcUL nested>
               <li>
                 {de
@@ -163,7 +179,9 @@ export default function TroubleshootingPage() {
             </HcUL>
           </li>
           <li>
-            {de ? "VOC-Werte hoch nach Reinigung/Streichen?" : "VOC values high after cleaning/painting?"}
+            {de
+              ? "VOC-Werte hoch nach Reinigung/Streichen?"
+              : "VOC values high after cleaning/painting?"}
             <HcUL nested>
               <li>
                 {de
@@ -179,7 +197,9 @@ export default function TroubleshootingPage() {
             : "Provide sample values, room type, and conditions."}
         </Unresolved>
 
-        <HcH2>{de ? "4. Alarme werden nicht ausgelöst" : "4. Alarms Not Triggering"}</HcH2>
+        <HcH2>
+          {de ? "4. Alarme werden nicht ausgelöst" : "4. Alarms Not Triggering"}
+        </HcH2>
         <HcOL>
           <li>
             {de
@@ -187,10 +207,14 @@ export default function TroubleshootingPage() {
               : "Check if alerts are enabled in the app."}
           </li>
           <li>
-            {de ? "Wurde der Schwellenwert erreicht?" : "Has the threshold been reached?"}
+            {de
+              ? "Wurde der Schwellenwert erreicht?"
+              : "Has the threshold been reached?"}
             <HcUL nested>
               <li>
-                {de ? "Beispiel: CO₂-Alarm löst >1000 ppm aus." : "Example: CO₂ alarm triggers >1000 ppm."}
+                {de
+                  ? "Beispiel: CO₂-Alarm löst >1000 ppm aus."
+                  : "Example: CO₂ alarm triggers >1000 ppm."}
               </li>
             </HcUL>
           </li>
@@ -200,7 +224,9 @@ export default function TroubleshootingPage() {
               : "Is “Do Not Disturb” mode active on your phone?"}
           </li>
           <li>
-            {de ? "App neu starten und Alarm erneut testen." : "Restart the app and re-test the alarm."}
+            {de
+              ? "App neu starten und Alarm erneut testen."
+              : "Restart the app and re-test the alarm."}
           </li>
         </HcOL>
         <Unresolved>
@@ -217,7 +243,9 @@ export default function TroubleshootingPage() {
               : "Does the app show an available firmware update?"}
             <HcUL nested>
               <li>
-                {de ? "Nein → Gerät ist auf dem neuesten Stand." : "No → Your device is up to date."}
+                {de
+                  ? "Nein → Gerät ist auf dem neuesten Stand."
+                  : "No → Your device is up to date."}
               </li>
               <li>{de ? "Ja → Weiter." : "Yes → Continue."}</li>
             </HcUL>
@@ -252,11 +280,17 @@ export default function TroubleshootingPage() {
         </HcP>
         <HcUL>
           <li>
-            {de ? "Seriennummer des Geräts (Rückseite des Panels)" : "Device serial number (back of panel)"}
+            {de
+              ? "Seriennummer des Geräts (Rückseite des Panels)"
+              : "Device serial number (back of panel)"}
           </li>
           <li>{de ? "App-Version" : "App version"}</li>
           <li>{de ? "Firmware-Version" : "Firmware version"}</li>
-          <li>{de ? "Modell/Firmware des Border Routers" : "Border Router model/firmware"}</li>
+          <li>
+            {de
+              ? "Modell/Firmware des Border Routers"
+              : "Border Router model/firmware"}
+          </li>
           <li>
             {de
               ? "Problembeschreibung und bereits durchgeführte Schritte"

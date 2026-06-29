@@ -78,7 +78,11 @@ export default function ProgramsSidebar() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </button>
         </div>
@@ -101,7 +105,10 @@ export default function ProgramsSidebar() {
           className={`py-2 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto ${isOpen ? "block max-h-[60vh] overflow-y-auto" : "hidden"} lg:block`}
         >
           {groups.map((group, gi) => (
-            <div key={group.heading} className={gi > 0 ? "mt-2 pt-2 border-t border-white/10" : ""}>
+            <div
+              key={group.heading}
+              className={gi > 0 ? "mt-2 pt-2 border-t border-white/10" : ""}
+            >
               <p className="px-5 pt-2 pb-1 text-[10px] font-bold uppercase tracking-widest text-green-300/80">
                 {group.heading}
               </p>

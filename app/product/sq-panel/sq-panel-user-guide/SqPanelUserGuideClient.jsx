@@ -141,7 +141,9 @@ export default function SqPanelUserGuideClient() {
                     className="w-32 h-32 object-contain"
                   />
                   <span className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-                    {en ? "Scan to install on iPhone" : "Scannen zum Installieren auf dem iPhone"}
+                    {en
+                      ? "Scan to install on iPhone"
+                      : "Scannen zum Installieren auf dem iPhone"}
                   </span>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 flex flex-col items-center text-center">
@@ -163,7 +165,9 @@ export default function SqPanelUserGuideClient() {
                     className="w-32 h-32 object-contain"
                   />
                   <span className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-                    {en ? "Scan to install on Android" : "Scannen zum Installieren auf Android"}
+                    {en
+                      ? "Scan to install on Android"
+                      : "Scannen zum Installieren auf Android"}
                   </span>
                 </div>
               </div>
@@ -217,11 +221,12 @@ export default function SqPanelUserGuideClient() {
               </div>
 
               {/* Buy CTA */}
-              <div className="rounded-2xl p-8 text-center mb-8" style={{ backgroundColor: "#174f2e" }}>
+              <div
+                className="rounded-2xl p-8 text-center mb-8"
+                style={{ backgroundColor: "#174f2e" }}
+              >
                 <h3 className="text-xl font-bold text-white mb-4">
-                  {en
-                    ? "Ready to get started?"
-                    : "Bereit loszulegen?"}
+                  {en ? "Ready to get started?" : "Bereit loszulegen?"}
                 </h3>
                 <a
                   href="https://www.chipglobe.shop/en/p/carenuity-sq-system-customizable-bundle-with-air-quality-display-and-accessories"
@@ -229,7 +234,9 @@ export default function SqPanelUserGuideClient() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white text-[#174f2e] font-bold text-sm transition-all duration-300 hover:scale-105"
                 >
-                  {en ? "Buy your first SQ-Panel now" : "Kaufen Sie jetzt Ihr erstes SQ-Panel"}
+                  {en
+                    ? "Buy your first SQ-Panel now"
+                    : "Kaufen Sie jetzt Ihr erstes SQ-Panel"}
                 </a>
               </div>
 

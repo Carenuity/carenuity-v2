@@ -84,11 +84,17 @@ export default function SmartDigitalMeterOverview() {
 
         <div className="container relative">
           <nav className="flex items-center gap-2 pt-6 pb-4 text-sm">
-            <Link href="/" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {en ? "Home" : "Start"}
             </Link>
             <span className="text-green-300/40">/</span>
-            <Link href="/products" className="text-green-300/70 hover:text-green-300 transition-colors">
+            <Link
+              href="/products"
+              className="text-green-300/70 hover:text-green-300 transition-colors"
+            >
               {en ? "Products" : "Produkte"}
             </Link>
             <span className="text-green-300/40">/</span>
@@ -127,14 +133,24 @@ export default function SmartDigitalMeterOverview() {
                 rel="noopener noreferrer"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
-                {en ? "Download overview (PDF)" : "Übersicht herunterladen (PDF)"}
+                {en
+                  ? "Download overview (PDF)"
+                  : "Übersicht herunterladen (PDF)"}
               </a>
             </div>
           </div>
         </div>
 
-        <svg className="block w-full" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-          <path className="fill-gray-50 dark:fill-gray-900" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" />
+        <svg
+          className="block w-full"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            className="fill-gray-50 dark:fill-gray-900"
+            d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"
+          />
         </svg>
       </section>
 
@@ -143,135 +159,188 @@ export default function SmartDigitalMeterOverview() {
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             <ProductSidebar />
             <div className="flex-1 min-w-0 space-y-16">
-          {/* Technology + Prototype */}
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-              <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
-                {en ? "How it works" : "So funktioniert es"}
-              </h2>
-              <p className="text-body-color dark:text-gray-300 leading-relaxed mb-5">
-                {en
-                  ? "The system measures real-time voltage and current, calculates power and integrates it over time to determine energy consumption in kilowatt-hours (kWh). It is based on Infineon's TLI4971, the most accurate coreless magnetic current sensor available."
-                  : "Das System misst Spannung und Strom in Echtzeit, berechnet die Leistung und integriert sie über die Zeit, um den Energieverbrauch in Kilowattstunden (kWh) zu bestimmen. Es basiert auf dem Infineon TLI4971, dem genauesten kernlosen magnetischen Stromsensor."}
-              </p>
-              <div className="inline-flex items-center gap-3 rounded-xl bg-primary/5 dark:bg-primary/20 px-5 py-3">
-                <span className="text-sm font-medium text-body-color dark:text-gray-300">
-                  {en ? "Power" : "Leistung"}
-                </span>
-                <span className="text-xl font-bold text-primary dark:text-green-400">P = V × I</span>
-                <span className="text-sm text-body-color dark:text-gray-400">→ kWh</span>
-              </div>
-            </div>
-
-            <div className="rounded-2xl p-8 text-white" style={{ background: "linear-gradient(135deg, #0a2318 0%, #174f2e 60%, #1e6b3e 100%)" }}>
-              <h2 className="text-2xl font-bold mb-3">
-                {en ? "Prototype status" : "Prototyp-Status"}
-              </h2>
-              <p className="text-white/80 leading-relaxed mb-6">
-                {en
-                  ? "A working DC Smart Meter prototype exists, including real-time measurement and processing. It is ready for productization — final industrialization and certification are pending."
-                  : "Ein funktionierender DC-Smart-Meter-Prototyp existiert, einschließlich Echtzeitmessung und -verarbeitung. Er ist bereit für die Produktisierung — finale Industrialisierung und Zertifizierung stehen noch aus."}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {(en
-                  ? ["Real-time measurement", "Processing validated", "Ready for productization"]
-                  : ["Echtzeitmessung", "Verarbeitung validiert", "Bereit für Produktisierung"]
-                ).map((tag) => (
-                  <span key={tag} className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-medium">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Key advantages */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-8 text-center">
-              {en ? "Key advantages" : "Wesentliche Vorteile"}
-            </h2>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {advantages.map((a) => (
-                <div
-                  key={a.title}
-                  className="rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg"
-                >
-                  <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 dark:text-green-400">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={a.icon} />
-                    </svg>
+              {/* Technology + Prototype */}
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
+                    {en ? "How it works" : "So funktioniert es"}
+                  </h2>
+                  <p className="text-body-color dark:text-gray-300 leading-relaxed mb-5">
+                    {en
+                      ? "The system measures real-time voltage and current, calculates power and integrates it over time to determine energy consumption in kilowatt-hours (kWh). It is based on Infineon's TLI4971, the most accurate coreless magnetic current sensor available."
+                      : "Das System misst Spannung und Strom in Echtzeit, berechnet die Leistung und integriert sie über die Zeit, um den Energieverbrauch in Kilowattstunden (kWh) zu bestimmen. Es basiert auf dem Infineon TLI4971, dem genauesten kernlosen magnetischen Stromsensor."}
+                  </p>
+                  <div className="inline-flex items-center gap-3 rounded-xl bg-primary/5 dark:bg-primary/20 px-5 py-3">
+                    <span className="text-sm font-medium text-body-color dark:text-gray-300">
+                      {en ? "Power" : "Leistung"}
+                    </span>
+                    <span className="text-xl font-bold text-primary dark:text-green-400">
+                      P = V × I
+                    </span>
+                    <span className="text-sm text-body-color dark:text-gray-400">
+                      → kWh
+                    </span>
                   </div>
-                  <h3 className="text-lg font-bold text-black dark:text-white mb-2">{a.title}</h3>
-                  <p className="text-sm leading-relaxed text-body-color dark:text-gray-400">{a.desc}</p>
                 </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Market relevance + Track record */}
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-              <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
-                {en ? "Market relevance" : "Marktrelevanz"}
-              </h2>
-              <p className="text-body-color dark:text-gray-300 leading-relaxed">
-                {en
-                  ? "Highly suitable for countries like Bangladesh, supporting large-scale smart metering, improved billing accuracy and grid transparency."
-                  : "Besonders geeignet für Länder wie Bangladesch — unterstützt großflächiges Smart Metering, höhere Abrechnungsgenauigkeit und Netztransparenz."}
-              </p>
-            </div>
-            <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-              <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
-                {en ? "Track record" : "Erfolgsbilanz"}
-              </h2>
-              <p className="text-body-color dark:text-gray-300 leading-relaxed">
-                {en
-                  ? "ChipGlobe has successfully brought hardware products to market, including the "
-                  : "ChipGlobe hat bereits erfolgreich Hardwareprodukte auf den Markt gebracht, darunter den "}
-                <Link href="/sq-system/sq-panel" className="font-semibold text-primary dark:text-green-400 hover:underline">
-                  {en ? "SQ-Panel air quality sensor" : "SQ-Panel-Luftqualitätssensor"}
+                <div
+                  className="rounded-2xl p-8 text-white"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #0a2318 0%, #174f2e 60%, #1e6b3e 100%)",
+                  }}
+                >
+                  <h2 className="text-2xl font-bold mb-3">
+                    {en ? "Prototype status" : "Prototyp-Status"}
+                  </h2>
+                  <p className="text-white/80 leading-relaxed mb-6">
+                    {en
+                      ? "A working DC Smart Meter prototype exists, including real-time measurement and processing. It is ready for productization — final industrialization and certification are pending."
+                      : "Ein funktionierender DC-Smart-Meter-Prototyp existiert, einschließlich Echtzeitmessung und -verarbeitung. Er ist bereit für die Produktisierung — finale Industrialisierung und Zertifizierung stehen noch aus."}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {(en
+                      ? [
+                          "Real-time measurement",
+                          "Processing validated",
+                          "Ready for productization",
+                        ]
+                      : [
+                          "Echtzeitmessung",
+                          "Verarbeitung validiert",
+                          "Bereit für Produktisierung",
+                        ]
+                    ).map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Key advantages */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-8 text-center">
+                  {en ? "Key advantages" : "Wesentliche Vorteile"}
+                </h2>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {advantages.map((a) => (
+                    <div
+                      key={a.title}
+                      className="rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg"
+                    >
+                      <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 dark:text-green-400">
+                        <svg
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d={a.icon}
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+                        {a.title}
+                      </h3>
+                      <p className="text-sm leading-relaxed text-body-color dark:text-gray-400">
+                        {a.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Market relevance + Track record */}
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
+                    {en ? "Market relevance" : "Marktrelevanz"}
+                  </h2>
+                  <p className="text-body-color dark:text-gray-300 leading-relaxed">
+                    {en
+                      ? "Highly suitable for countries like Bangladesh, supporting large-scale smart metering, improved billing accuracy and grid transparency."
+                      : "Besonders geeignet für Länder wie Bangladesch — unterstützt großflächiges Smart Metering, höhere Abrechnungsgenauigkeit und Netztransparenz."}
+                  </p>
+                </div>
+                <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-3">
+                    {en ? "Track record" : "Erfolgsbilanz"}
+                  </h2>
+                  <p className="text-body-color dark:text-gray-300 leading-relaxed">
+                    {en
+                      ? "ChipGlobe has successfully brought hardware products to market, including the "
+                      : "ChipGlobe hat bereits erfolgreich Hardwareprodukte auf den Markt gebracht, darunter den "}
+                    <Link
+                      href="/sq-system/sq-panel"
+                      className="font-semibold text-primary dark:text-green-400 hover:underline"
+                    >
+                      {en
+                        ? "SQ-Panel air quality sensor"
+                        : "SQ-Panel-Luftqualitätssensor"}
+                    </Link>
+                    {en
+                      ? ", demonstrating strong execution capabilities."
+                      : " — und damit starke Umsetzungskompetenz bewiesen."}
+                  </p>
+                </div>
+              </div>
+
+              {/* Next steps */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-8 text-center">
+                  {en ? "Next steps" : "Nächste Schritte"}
+                </h2>
+                <ol className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                  {steps.map((step, i) => (
+                    <li
+                      key={step}
+                      className="rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm border border-gray-100 dark:border-gray-700"
+                    >
+                      <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+                        {i + 1}
+                      </span>
+                      <p className="text-sm font-medium text-black dark:text-white">
+                        {step}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              {/* Contact CTA */}
+              <div
+                className="rounded-2xl p-10 text-center"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #0a2318 0%, #174f2e 60%, #1e6b3e 100%)",
+                }}
+              >
+                <h2 className="text-2xl font-bold text-white mb-3">
+                  {en
+                    ? "Interested in a pilot?"
+                    : "Interesse an einem Pilotprojekt?"}
+                </h2>
+                <p className="text-green-100/80 mb-7 max-w-2xl mx-auto">
+                  {en
+                    ? "Additional technical documentation and pilot discussions are available upon request."
+                    : "Weitere technische Dokumentation und Pilotgespräche sind auf Anfrage verfügbar."}
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-[#174f2e] transition-all duration-300 hover:scale-105"
+                >
+                  {en ? "Get in touch" : "Kontakt aufnehmen"}
                 </Link>
-                {en
-                  ? ", demonstrating strong execution capabilities."
-                  : " — und damit starke Umsetzungskompetenz bewiesen."}
-              </p>
-            </div>
-          </div>
-
-          {/* Next steps */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-8 text-center">
-              {en ? "Next steps" : "Nächste Schritte"}
-            </h2>
-            <ol className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {steps.map((step, i) => (
-                <li key={step} className="rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm border border-gray-100 dark:border-gray-700">
-                  <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
-                    {i + 1}
-                  </span>
-                  <p className="text-sm font-medium text-black dark:text-white">{step}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-
-          {/* Contact CTA */}
-          <div className="rounded-2xl p-10 text-center" style={{ background: "linear-gradient(135deg, #0a2318 0%, #174f2e 60%, #1e6b3e 100%)" }}>
-            <h2 className="text-2xl font-bold text-white mb-3">
-              {en ? "Interested in a pilot?" : "Interesse an einem Pilotprojekt?"}
-            </h2>
-            <p className="text-green-100/80 mb-7 max-w-2xl mx-auto">
-              {en
-                ? "Additional technical documentation and pilot discussions are available upon request."
-                : "Weitere technische Dokumentation und Pilotgespräche sind auf Anfrage verfügbar."}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-[#174f2e] transition-all duration-300 hover:scale-105"
-            >
-              {en ? "Get in touch" : "Kontakt aufnehmen"}
-            </Link>
-          </div>
+              </div>
             </div>
           </div>
         </div>

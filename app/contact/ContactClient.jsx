@@ -15,22 +15,42 @@ const MAP_QUERY =
 
 const PhoneIcon = (props) => (
   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+    />
   </svg>
 );
 const MailIcon = (props) => (
   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    />
   </svg>
 );
 const PinIcon = (props) => (
   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"
+    />
   </svg>
 );
 const ClockIcon = (props) => (
   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
   </svg>
 );
 
@@ -40,7 +60,9 @@ function ContactCard({ icon, title, desc, action }) {
       <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 dark:text-green-400 transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
         {icon}
       </div>
-      <h3 className="text-lg font-bold text-black dark:text-white mb-2">{title}</h3>
+      <h3 className="text-lg font-bold text-black dark:text-white mb-2">
+        {title}
+      </h3>
       <p className="text-sm leading-relaxed text-body-color dark:text-gray-400 mb-4">
         {desc}
       </p>
@@ -108,8 +130,16 @@ export default function ContactClient() {
           </div>
         </div>
 
-        <svg className="block w-full" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-          <path className="fill-gray-50 dark:fill-gray-900" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" />
+        <svg
+          className="block w-full"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            className="fill-gray-50 dark:fill-gray-900"
+            d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"
+          />
         </svg>
       </section>
 
@@ -170,57 +200,99 @@ export default function ContactClient() {
                 <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-2">
                   {c.title}
                 </h2>
-                <p className="text-body-color dark:text-gray-400 mb-8">{c.subtitle}</p>
+                <p className="text-body-color dark:text-gray-400 mb-8">
+                  {c.subtitle}
+                </p>
                 <form id="contactUs" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.yourName}
                       </label>
-                      <input type="text" name="name" placeholder={c.namePlaceholder} className={inputClass} />
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder={c.namePlaceholder}
+                        className={inputClass}
+                      />
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.yourEmail}
                       </label>
-                      <input type="email" name="email" placeholder={c.emailPlaceholder} className={inputClass} />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder={c.emailPlaceholder}
+                        className={inputClass}
+                      />
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.company}
                       </label>
-                      <input type="text" name="company" placeholder={c.companyPh} className={inputClass} />
+                      <input
+                        type="text"
+                        name="company"
+                        placeholder={c.companyPh}
+                        className={inputClass}
+                      />
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.phoneLabel}
                       </label>
-                      <input type="tel" name="mobile" placeholder={c.phonePh} className={inputClass} />
+                      <input
+                        type="tel"
+                        name="mobile"
+                        placeholder={c.phonePh}
+                        className={inputClass}
+                      />
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.street}
                       </label>
-                      <input type="text" name="street" placeholder={c.streetPh} className={inputClass} />
+                      <input
+                        type="text"
+                        name="street"
+                        placeholder={c.streetPh}
+                        className={inputClass}
+                      />
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                         {c.zip}
                       </label>
-                      <input type="text" name="zip" placeholder={c.zipPh} className={inputClass} />
+                      <input
+                        type="text"
+                        name="zip"
+                        placeholder={c.zipPh}
+                        className={inputClass}
+                      />
                     </div>
                   </div>
                   <div className="mt-6">
                     <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                       {c.subject}
                     </label>
-                    <input type="text" name="subject" placeholder={c.subjectPh} className={inputClass} />
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder={c.subjectPh}
+                      className={inputClass}
+                    />
                   </div>
                   <div className="mt-6">
                     <label className="mb-2 block text-sm font-medium text-dark dark:text-white">
                       {c.yourMessage}
                     </label>
-                    <textarea name="message" rows={6} placeholder={c.messagePlaceholder} className={`${inputClass} resize-none`} />
+                    <textarea
+                      name="message"
+                      rows={6}
+                      placeholder={c.messagePlaceholder}
+                      className={`${inputClass} resize-none`}
+                    />
                   </div>
                   <button
                     type="submit"
@@ -229,13 +301,38 @@ export default function ContactClient() {
                   >
                     {status === "loading" ? c.sendingBtn : c.submitBtn}
                     {status === "loading" ? (
-                      <svg className="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+                      <svg
+                        className="h-4 w-4 animate-spin"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                        />
                       </svg>
                     ) : (
-                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <svg
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
                       </svg>
                     )}
                   </button>
@@ -276,8 +373,12 @@ export default function ContactClient() {
                     <ClockIcon className="h-5 w-5" />
                   </span>
                   <div>
-                    <h3 className="text-sm font-bold text-black dark:text-white">{c.hoursTitle}</h3>
-                    <p className="text-sm text-body-color dark:text-gray-400">{c.hours}</p>
+                    <h3 className="text-sm font-bold text-black dark:text-white">
+                      {c.hoursTitle}
+                    </h3>
+                    <p className="text-sm text-body-color dark:text-gray-400">
+                      {c.hours}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -289,7 +390,9 @@ export default function ContactClient() {
                     "linear-gradient(135deg, #0a2318 0%, #174f2e 60%, #1e6b3e 100%)",
                 }}
               >
-                <h3 className="text-sm font-bold uppercase tracking-wide mb-4">{c.socialTitle}</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wide mb-4">
+                  {c.socialTitle}
+                </h3>
                 <div className="flex flex-wrap gap-3">
                   {SOCIALS.map((s) => (
                     <a

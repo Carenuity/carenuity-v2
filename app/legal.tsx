@@ -1,8 +1,8 @@
-import dynamic from 'next/dynamic';
-import Head from 'next/head';
-import PageSpinner from '../components/PageSpinner';
+import dynamic from "next/dynamic";
+import Head from "next/head";
+import PageSpinner from "../components/PageSpinner";
 
-const Legal = dynamic(() => import('../components/dynamic/Legal'), {
+const Legal = dynamic(() => import("../components/dynamic/Legal"), {
   ssr: false,
   loading: () => <PageSpinner />,
 });

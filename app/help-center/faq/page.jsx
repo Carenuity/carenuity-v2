@@ -14,14 +14,20 @@ const product = [
     },
   },
   {
-    q: { en: "Which sensors are included?", de: "Welche Sensoren sind enthalten?" },
+    q: {
+      en: "Which sensors are included?",
+      de: "Welche Sensoren sind enthalten?",
+    },
     a: {
       en: "The SQ-Panel integrates multiple sensors for temperature, humidity, air pressure, CO2 levels, volatile organic compounds (VOCs), and air quality index (AQI). These combined measurements help you maintain a healthier and more comfortable indoor environment.",
       de: "Das SQ-Panel integriert mehrere Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, CO2-Werte, flüchtige organische Verbindungen (VOCs) und Luftqualitätsindex (AQI). Diese kombinierten Messungen helfen Ihnen, ein gesünderes und komfortableres Innenraumklima zu erhalten.",
     },
   },
   {
-    q: { en: "What mounting options are available?", de: "Welche Montageoptionen gibt es?" },
+    q: {
+      en: "What mounting options are available?",
+      de: "Welche Montageoptionen gibt es?",
+    },
     a: {
       en: "The SQ-Panel offers flexible installation. It can be wall-mounted for a clean, integrated look, or placed on a stand for easy relocation. Both options ensure accessibility and visibility in various environments.",
       de: "Das SQ-Panel bietet eine flexible Installation. Es kann für ein sauberes, integriertes Erscheinungsbild an der Wand montiert oder auf einem Ständer platziert werden, um eine einfache Standortänderung zu ermöglichen. Beide Optionen gewährleisten Zugänglichkeit und Sichtbarkeit in verschiedenen Umgebungen.",
@@ -51,7 +57,10 @@ const product = [
 
 const setup = [
   {
-    q: { en: "How do I set up the SQ-Panel via Matter?", de: "Wie richte ich das SQ-Panel per Matter ein?" },
+    q: {
+      en: "How do I set up the SQ-Panel via Matter?",
+      de: "Wie richte ich das SQ-Panel per Matter ein?",
+    },
     a: {
       en: "Setup is simple: open the Carenuity app and scan the QR code displayed on the panel. The device will automatically connect to your preferred Matter-compatible ecosystem (such as Alexa, Google Home, or Apple Home), allowing quick and seamless integration.",
       de: "Die Einrichtung ist einfach: Öffnen Sie die Carenuity-App und scannen Sie den auf dem Panel angezeigten QR-Code. Das Gerät verbindet sich automatisch mit Ihrem bevorzugten Matter-kompatiblen Ökosystem (z. B. Alexa, Google Home oder Apple Home) und ermöglicht eine schnelle und nahtlose Integration.",
@@ -68,14 +77,20 @@ const setup = [
     },
   },
   {
-    q: { en: "How do I manage user profiles?", de: "Wie verwalte ich Benutzerprofile?" },
+    q: {
+      en: "How do I manage user profiles?",
+      de: "Wie verwalte ich Benutzerprofile?",
+    },
     a: {
       en: "User profiles can be managed via the Carenuity app or within your Matter ecosystem. This lets you set personalized preferences, adjust notification thresholds for specific sensors, and define alerts tailored to different family members or workplace requirements.",
       de: "Benutzerprofile können über die Carenuity-App oder innerhalb Ihres Matter-Ökosystems verwaltet werden. So können Sie persönliche Einstellungen festlegen, Benachrichtigungsschwellen für bestimmte Sensoren anpassen und Warnungen für unterschiedliche Familienmitglieder oder Arbeitsumgebungen definieren.",
     },
   },
   {
-    q: { en: "How can I adjust sensor thresholds?", de: "Wie kann ich Sensor-Schwellenwerte anpassen?" },
+    q: {
+      en: "How can I adjust sensor thresholds?",
+      de: "Wie kann ich Sensor-Schwellenwerte anpassen?",
+    },
     a: {
       en: "Thresholds for temperature, CO<sub>2</sub>, VOCs, and other metrics can be customized through the Carenuity app or any Matter-compatible platform. Once set, you will receive alerts when values exceed your defined safety or comfort levels.",
       de: "Schwellenwerte für Temperatur, CO<sub>2</sub>, VOCs und andere Messgrößen können über die Carenuity-App oder jede Matter-kompatible Plattform angepasst werden. Sobald festgelegt, erhalten Sie Warnungen, wenn Werte Ihre definierten Sicherheits- oder Komfortgrenzen überschreiten.",
@@ -105,7 +120,10 @@ const integration = [
     },
   },
   {
-    q: { en: "Can I monitor air quality remotely?", de: "Kann ich die Luftqualität aus der Ferne überwachen?" },
+    q: {
+      en: "Can I monitor air quality remotely?",
+      de: "Kann ich die Luftqualität aus der Ferne überwachen?",
+    },
     a: {
       en: "Absolutely. With the Carenuity app, you can access real-time and historical air quality data from anywhere. Whether at home, in the office, or while traveling, you stay informed about your indoor environment.",
       de: "Absolut. Mit der Carenuity-App können Sie jederzeit auf Echtzeit- und historische Luftqualitätsdaten zugreifen. Ob zu Hause, im Büro oder unterwegs – Sie bleiben über Ihre Innenraumumgebung informiert.",
@@ -117,7 +135,10 @@ export default function FaqPage() {
   const { lang } = useLanguage();
   const de = lang === "de";
   const map = (arr) =>
-    arr.map((x) => ({ question: de ? x.q.de : x.q.en, answer: de ? x.a.de : x.a.en }));
+    arr.map((x) => ({
+      question: de ? x.q.de : x.q.en,
+      answer: de ? x.a.de : x.a.en,
+    }));
 
   return (
     <HelpCenterShell
@@ -140,7 +161,9 @@ export default function FaqPage() {
         <FaqAccordion items={map(setup)} />
 
         <h2 className="text-lg font-bold text-primary dark:text-green-400 mb-4 mt-8 uppercase tracking-wide">
-          {de ? "Integration, Kompatibilität & Sicherheit" : "Integration, Compatibility & Security"}
+          {de
+            ? "Integration, Kompatibilität & Sicherheit"
+            : "Integration, Compatibility & Security"}
         </h2>
         <FaqAccordion items={map(integration)} />
       </HcCard>

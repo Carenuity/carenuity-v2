@@ -106,10 +106,14 @@ export default function HelpCenterPage() {
           <span className="text-2xl">📚</span>
           <div>
             <h3 className="text-base font-bold text-black dark:text-white group-hover:text-primary dark:group-hover:text-green-400 transition-colors">
-              {de ? "Dokumentation des SQ-Systems" : "Documentation of the SQ-System"}
+              {de
+                ? "Dokumentation des SQ-Systems"
+                : "Documentation of the SQ-System"}
             </h3>
             <p className="text-sm text-body-color dark:text-green">
-              {de ? "Vollständige technische Unterlagen" : "Full technical reference"}
+              {de
+                ? "Vollständige technische Unterlagen"
+                : "Full technical reference"}
             </p>
           </div>
         </Link>

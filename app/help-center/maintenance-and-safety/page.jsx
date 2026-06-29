@@ -26,14 +26,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Verwenden Sie ein{" "}
-                <strong className="text-black dark:text-white">weiches, trockenes Tuch</strong>, um
-                die Oberfläche des SQ-Panels zu reinigen.
+                <strong className="text-black dark:text-white">
+                  weiches, trockenes Tuch
+                </strong>
+                , um die Oberfläche des SQ-Panels zu reinigen.
               </>
             ) : (
               <>
                 Use a{" "}
-                <strong className="text-black dark:text-white">soft, dry cloth</strong> to wipe the
-                surface of the SQ-Panel.
+                <strong className="text-black dark:text-white">
+                  soft, dry cloth
+                </strong>{" "}
+                to wipe the surface of the SQ-Panel.
               </>
             )}
           </li>
@@ -60,14 +64,16 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Öffnen Sie das Gerät{" "}
-                <strong className="text-black dark:text-white">nicht</strong>; interne Komponenten
-                sind empfindlich.
+                <strong className="text-black dark:text-white">nicht</strong>;
+                interne Komponenten sind empfindlich.
               </>
             ) : (
               <>
                 Do{" "}
-                <strong className="text-black dark:text-white">not open the device</strong>; internal
-                components are sensitive.
+                <strong className="text-black dark:text-white">
+                  not open the device
+                </strong>
+                ; internal components are sensitive.
               </>
             )}
           </li>
@@ -75,14 +81,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Empfohlene Reinigungsfrequenz:{" "}
-                <strong className="text-black dark:text-white">einmal im Monat</strong> oder wenn
-                sich Staub ansammelt.
+                <strong className="text-black dark:text-white">
+                  einmal im Monat
+                </strong>{" "}
+                oder wenn sich Staub ansammelt.
               </>
             ) : (
               <>
                 Recommended cleaning frequency:{" "}
-                <strong className="text-black dark:text-white">once a month</strong> or when dust
-                accumulates.
+                <strong className="text-black dark:text-white">
+                  once a month
+                </strong>{" "}
+                or when dust accumulates.
               </>
             )}
           </li>
@@ -94,16 +104,26 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Verwenden Sie nur den mitgelieferten{" "}
-                <strong className="text-black dark:text-white">USB-C-Netzadapter</strong>.
+                <strong className="text-black dark:text-white">
+                  USB-C-Netzadapter
+                </strong>
+                .
               </>
             ) : (
               <>
                 Use only the{" "}
-                <strong className="text-black dark:text-white">included USB-C power adapter</strong>.
+                <strong className="text-black dark:text-white">
+                  included USB-C power adapter
+                </strong>
+                .
               </>
             )}
           </li>
-          <li>{de ? "Spannung: 5V DC, mindestens 1,5 A." : "Voltage: 5V DC, 1.5 A minimum."}</li>
+          <li>
+            {de
+              ? "Spannung: 5V DC, mindestens 1,5 A."
+              : "Voltage: 5V DC, 1.5 A minimum."}
+          </li>
           <li>
             {de
               ? "Vermeiden Sie den Anschluss an instabile oder Drittanbieter-Ladegeräte mit unbekannten Spezifikationen."
@@ -113,14 +133,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Trennen Sie das Gerät während{" "}
-                <strong className="text-black dark:text-white">Gewittern</strong> oder bei instabiler
-                Stromversorgung.
+                <strong className="text-black dark:text-white">
+                  Gewittern
+                </strong>{" "}
+                oder bei instabiler Stromversorgung.
               </>
             ) : (
               <>
                 Disconnect the device during{" "}
-                <strong className="text-black dark:text-white">lightning storms</strong> or if the
-                power source is unstable.
+                <strong className="text-black dark:text-white">
+                  lightning storms
+                </strong>{" "}
+                or if the power source is unstable.
               </>
             )}
           </li>
@@ -132,12 +156,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Montieren Sie das SQ-Panel auf einer{" "}
-                <strong className="text-black dark:text-white">stabilen Wand- oder Tischfläche</strong>.
+                <strong className="text-black dark:text-white">
+                  stabilen Wand- oder Tischfläche
+                </strong>
+                .
               </>
             ) : (
               <>
                 Mount the SQ-Panel on a{" "}
-                <strong className="text-black dark:text-white">stable wall or table surface</strong>.
+                <strong className="text-black dark:text-white">
+                  stable wall or table surface
+                </strong>
+                .
               </>
             )}
           </li>
@@ -182,13 +212,19 @@ export default function MaintenanceSafetyPage() {
           <li>
             {de ? (
               <>
-                Für die Wandmontage verwenden Sie ausschließlich die mitgelieferten{" "}
-                <strong className="text-black dark:text-white">Schrauben und Dübel</strong>.
+                Für die Wandmontage verwenden Sie ausschließlich die
+                mitgelieferten{" "}
+                <strong className="text-black dark:text-white">
+                  Schrauben und Dübel
+                </strong>
+                .
               </>
             ) : (
               <>
                 For wall mounting, use the{" "}
-                <strong className="text-black dark:text-white">supplied screws and anchors</strong>{" "}
+                <strong className="text-black dark:text-white">
+                  supplied screws and anchors
+                </strong>{" "}
                 only.
               </>
             )}
@@ -205,14 +241,20 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Montieren Sie das Gerät in einer Höhe von ca.{" "}
-                <strong className="text-black dark:text-white">1,2–1,5 m</strong> über dem Boden für
-                genaue Temperatur-, Luftfeuchtigkeits- und CO₂-Messungen.
+                <strong className="text-black dark:text-white">
+                  1,2–1,5 m
+                </strong>{" "}
+                über dem Boden für genaue Temperatur-, Luftfeuchtigkeits- und
+                CO₂-Messungen.
               </>
             ) : (
               <>
                 Mount approximately{" "}
-                <strong className="text-black dark:text-white">1.2–1.5 m</strong> above floor level
-                for accurate temperature, humidity, and CO₂ measurements.
+                <strong className="text-black dark:text-white">
+                  1.2–1.5 m
+                </strong>{" "}
+                above floor level for accurate temperature, humidity, and CO₂
+                measurements.
               </>
             )}
           </li>
@@ -220,14 +262,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Lassen Sie mindestens{" "}
-                <strong className="text-black dark:text-white">10 cm Freiraum</strong> um das Gerät
-                herum.
+                <strong className="text-black dark:text-white">
+                  10 cm Freiraum
+                </strong>{" "}
+                um das Gerät herum.
               </>
             ) : (
               <>
                 Leave at least{" "}
-                <strong className="text-black dark:text-white">10 cm clearance</strong> around the
-                device.
+                <strong className="text-black dark:text-white">
+                  10 cm clearance
+                </strong>{" "}
+                around the device.
               </>
             )}
           </li>
@@ -248,7 +294,11 @@ export default function MaintenanceSafetyPage() {
           </li>
         </HcUL>
 
-        <HcH2>{de ? "5. Allgemeine Sicherheitsrichtlinien" : "5. General Safety Guidelines"}</HcH2>
+        <HcH2>
+          {de
+            ? "5. Allgemeine Sicherheitsrichtlinien"
+            : "5. General Safety Guidelines"}
+        </HcH2>
         <HcUL>
           <li>
             {de ? (
@@ -273,12 +323,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Halten Sie das Gerät{" "}
-                <strong className="text-black dark:text-white">von brennbaren Materialien fern</strong>.
+                <strong className="text-black dark:text-white">
+                  von brennbaren Materialien fern
+                </strong>
+                .
               </>
             ) : (
               <>
                 Keep the device{" "}
-                <strong className="text-black dark:text-white">away from flammable materials</strong>.
+                <strong className="text-black dark:text-white">
+                  away from flammable materials
+                </strong>
+                .
               </>
             )}
           </li>
@@ -286,14 +342,18 @@ export default function MaintenanceSafetyPage() {
             {de ? (
               <>
                 Befolgen Sie stets die{" "}
-                <strong className="text-black dark:text-white">App-Anweisungen und Firmware-Updates</strong>, um
-                einen sicheren Betrieb zu gewährleisten.
+                <strong className="text-black dark:text-white">
+                  App-Anweisungen und Firmware-Updates
+                </strong>
+                , um einen sicheren Betrieb zu gewährleisten.
               </>
             ) : (
               <>
                 Always follow the{" "}
-                <strong className="text-black dark:text-white">app prompts and firmware updates</strong> to
-                maintain safe operation.
+                <strong className="text-black dark:text-white">
+                  app prompts and firmware updates
+                </strong>{" "}
+                to maintain safe operation.
               </>
             )}
           </li>

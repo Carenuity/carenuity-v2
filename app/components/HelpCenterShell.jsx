@@ -182,9 +182,7 @@ function FaqItem({ question, answer }) {
         <span className="text-sm md:text-base font-semibold text-black dark:text-white">
           {question}
         </span>
-        <span
-          className="shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-green-bg dark:bg-gray-800 text-primary dark:text-green-400"
-        >
+        <span className="shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-green-bg dark:bg-gray-800 text-primary dark:text-green-400">
           <svg
             className={`w-4 h-4 transition-transform duration-200 ${open ? "rotate-45" : ""}`}
             fill="none"
@@ -192,7 +190,11 @@ function FaqItem({ question, answer }) {
             stroke="currentColor"
             strokeWidth={2}
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M5 12h14" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 5v14M5 12h14"
+            />
           </svg>
         </span>
       </button>

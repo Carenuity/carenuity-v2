@@ -28,7 +28,9 @@ export default function MobileAppPage() {
         <HcOL>
           <li>
             <strong className="text-black dark:text-white">
-              {de ? "App herunterladen & installieren" : "Download & Install the App"}
+              {de
+                ? "App herunterladen & installieren"
+                : "Download & Install the App"}
             </strong>
             <HcUL nested>
               <li>
@@ -74,7 +76,9 @@ export default function MobileAppPage() {
           </li>
         </HcOL>
 
-        <HcH2>{de ? "2. Berechtigungen & Rollen" : "2. Permissions & Roles"}</HcH2>
+        <HcH2>
+          {de ? "2. Berechtigungen & Rollen" : "2. Permissions & Roles"}
+        </HcH2>
         <HcUL>
           <li>
             <strong className="text-black dark:text-white">
@@ -119,7 +123,9 @@ export default function MobileAppPage() {
           </li>
         </HcUL>
 
-        <HcH2>{de ? "3. Mehrbenutzerunterstützung" : "3. Multi-User Support"}</HcH2>
+        <HcH2>
+          {de ? "3. Mehrbenutzerunterstützung" : "3. Multi-User Support"}
+        </HcH2>
         <HcUL>
           <li>
             {de
@@ -144,13 +150,18 @@ export default function MobileAppPage() {
             {de ? (
               <>
                 Alle Sensor- und Kontodaten werden sicher auf{" "}
-                <strong className="text-black dark:text-white">europäischen Servern</strong>{" "}
+                <strong className="text-black dark:text-white">
+                  europäischen Servern
+                </strong>{" "}
                 gespeichert.
               </>
             ) : (
               <>
                 All sensor and account data are stored securely on{" "}
-                <strong className="text-black dark:text-white">European servers</strong>.
+                <strong className="text-black dark:text-white">
+                  European servers
+                </strong>
+                .
               </>
             )}
           </li>

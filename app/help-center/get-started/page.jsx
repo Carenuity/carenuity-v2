@@ -62,11 +62,17 @@ export default function GetStartedPage() {
 
         <HcH2>{de ? "Lieferumfang" : "Package Contents"}</HcH2>
         <HcP>
-          {de ? "Ihre SQ-Panel-Lieferung enthält:" : "Your SQ-Panel delivery includes:"}
+          {de
+            ? "Ihre SQ-Panel-Lieferung enthält:"
+            : "Your SQ-Panel delivery includes:"}
         </HcP>
         <HcUL>
           <li>{de ? "1 × SQ-Panel Gerät" : "1 × SQ-Panel device"}</li>
-          <li>{de ? "1 × USB-C Netzteil + Kabel" : "1 × USB-C power supply + cable"}</li>
+          <li>
+            {de
+              ? "1 × USB-C Netzteil + Kabel"
+              : "1 × USB-C power supply + cable"}
+          </li>
           <li>
             {de
               ? "1 × Wandhalterungsplatte + Schrauben + Dübel"
@@ -122,7 +128,9 @@ export default function GetStartedPage() {
             ? "Einrichtung mit Border Router + Carenuity App"
             : "Setup with Border Router + Carenuity App"}
         </HcH2>
-        <HcH3>{de ? "Schritt 1: App installieren" : "Step 1: Install the App"}</HcH3>
+        <HcH3>
+          {de ? "Schritt 1: App installieren" : "Step 1: Install the App"}
+        </HcH3>
         <HcUL>
           <li>
             <HcLink href="https://apps.apple.com/ie/app/carenuity/id6472718918">
@@ -154,7 +162,9 @@ export default function GetStartedPage() {
           </li>
         </HcUL>
         <HcH3>
-          {de ? "Schritt 3: Border Router hinzufügen" : "Step 3: Add Border Router"}
+          {de
+            ? "Schritt 3: Border Router hinzufügen"
+            : "Step 3: Add Border Router"}
         </HcH3>
         <HcUL>
           <li>
@@ -164,11 +174,15 @@ export default function GetStartedPage() {
           </li>
         </HcUL>
         <HcH3>
-          {de ? "Schritt 4: Gerät per QR-Code hinzufügen" : "Step 4: Add Device via QR-Code"}
+          {de
+            ? "Schritt 4: Gerät per QR-Code hinzufügen"
+            : "Step 4: Add Device via QR-Code"}
         </HcH3>
         <HcUL>
           <li>
-            {de ? "Carenuity App öffnen → Gerät hinzufügen." : "Open Carenuity App → Add Device."}
+            {de
+              ? "Carenuity App öffnen → Gerät hinzufügen."
+              : "Open Carenuity App → Add Device."}
           </li>
           <li>
             {de
@@ -202,7 +216,9 @@ export default function GetStartedPage() {
         </HcUL>
 
         <HcH2>
-          {de ? "Erste Überprüfungen nach der Einrichtung" : "First Checks After Setup"}
+          {de
+            ? "Erste Überprüfungen nach der Einrichtung"
+            : "First Checks After Setup"}
         </HcH2>
         <HcOL>
           <li>

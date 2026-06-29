@@ -2871,7 +2871,8 @@ export const translations = {
       submitBtn: "Nachricht senden",
       sendingBtn: "Wird gesendet...",
       successMsg: "Nachricht erfolgreich gesendet! Wir melden uns in Kürze.",
-      errorMsg: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
+      errorMsg:
+        "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
       firstName: "Vorname",
       firstNamePh: "Ihren Vornamen eingeben",
       lastName: "Nachname",
