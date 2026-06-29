@@ -72,25 +72,165 @@ export default function SqPanelUserGuideClient() {
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             <ProductSidebar />
             <div className="flex-1 min-w-0">
-              <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-6">
-                SQ-Panel User Guide
+              {/* Panel setup */}
+              <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-2">
+                {en ? "Panel Setup" : "Panel-Einrichtung"}
               </h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {en
+                  ? "Unbox, mount and power on your SQ-Panel by following the steps below."
+                  : "Packen Sie Ihr SQ-Panel aus, montieren Sie es und schalten Sie es ein, indem Sie den folgenden Schritten folgen."}
+              </p>
 
-              <div className="space-y-6 mb-8">
+              <div className="space-y-6 mb-12">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
                   <img
                     src="/images/products/sq-panel/sq-panel-guide/guide3.png"
-                    alt="SQ-Panel User Guide Part 1"
+                    alt="SQ-Panel setup guide part 1"
                     className="w-full object-contain"
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
                   <img
                     src="/images/products/sq-panel/sq-panel-guide/guide4.png"
-                    alt="SQ-Panel User Guide Part 2"
+                    alt="SQ-Panel setup guide part 2"
                     className="w-full object-contain"
                   />
                 </div>
+              </div>
+
+              {/* Mobile app walkthrough */}
+              <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-2">
+                {en ? "Carenuity Mobile App" : "Carenuity Mobile App"}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {en
+                  ? "Pair your SQ-Panel with the Carenuity app to monitor temperature, humidity, air quality and presence from anywhere."
+                  : "Verbinden Sie Ihr SQ-Panel mit der Carenuity App, um Temperatur, Luftfeuchtigkeit, Luftqualität und Anwesenheit von überall zu überwachen."}
+              </p>
+
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                <img
+                  src="/images/user-guide/intro.png"
+                  alt="Carenuity mobile app introduction"
+                  className="w-full object-contain"
+                />
+              </div>
+
+              {/* Download */}
+              <h3 className="text-xl font-semibold text-[#0d2137] dark:text-white mb-4">
+                {en ? "1. Download the app" : "1. App herunterladen"}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 flex flex-col items-center text-center">
+                  <a
+                    href="https://apps.apple.com/ie/app/carenuity/id6472718918"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-4"
+                  >
+                    <img
+                      src="/images/user-guide/app-store.png"
+                      alt="Download on the App Store"
+                      className="h-12 w-auto object-contain"
+                    />
+                  </a>
+                  <img
+                    src="/images/user-guide/apple.jpeg"
+                    alt="App Store QR code"
+                    className="w-32 h-32 object-contain"
+                  />
+                  <span className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                    {en ? "Scan to install on iPhone" : "Scannen zum Installieren auf dem iPhone"}
+                  </span>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 flex flex-col items-center text-center">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.carenuity.home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-4"
+                  >
+                    <img
+                      src="/images/user-guide/google.png"
+                      alt="Get it on Google Play"
+                      className="h-12 w-auto object-contain"
+                    />
+                  </a>
+                  <img
+                    src="/images/user-guide/android.jpeg"
+                    alt="Google Play QR code"
+                    className="w-32 h-32 object-contain"
+                  />
+                  <span className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                    {en ? "Scan to install on Android" : "Scannen zum Installieren auf Android"}
+                  </span>
+                </div>
+              </div>
+
+              {/* App overview */}
+              <h3 className="text-xl font-semibold text-[#0d2137] dark:text-white mb-4">
+                {en ? "2. What the app does" : "2. Was die App leistet"}
+              </h3>
+              <div className="space-y-6 mb-12">
+                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  <img
+                    src="/images/user-guide/goal.png"
+                    alt="Carenuity SQ-Panel app goals and monitoring overview"
+                    className="w-full object-contain"
+                  />
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  <img
+                    src="/images/user-guide/guide.png"
+                    alt="Carenuity app design language and onboarding overview"
+                    className="w-full object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* App usage */}
+              <h3 className="text-xl font-semibold text-[#0d2137] dark:text-white mb-4">
+                {en
+                  ? "3. Sign in, connect your panel & read your rooms"
+                  : "3. Anmelden, Panel verbinden & Räume ablesen"}
+              </h3>
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-12">
+                <img
+                  src="/images/user-guide/ux.png"
+                  alt="Carenuity app user experience: login, home, connect SQ-Panel via QR code and view room values"
+                  className="w-full object-contain"
+                />
+              </div>
+
+              <h3 className="text-xl font-semibold text-[#0d2137] dark:text-white mb-4">
+                {en
+                  ? "4. Notifications, alerts & password reset"
+                  : "4. Benachrichtigungen, Warnungen & Passwort zurücksetzen"}
+              </h3>
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                <img
+                  src="/images/user-guide/ux2.png"
+                  alt="Carenuity app notifications, alerts and password reset flow"
+                  className="w-full object-contain"
+                />
+              </div>
+
+              {/* Buy CTA */}
+              <div className="rounded-2xl p-8 text-center mb-8" style={{ backgroundColor: "#174f2e" }}>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {en
+                    ? "Ready to get started?"
+                    : "Bereit loszulegen?"}
+                </h3>
+                <a
+                  href="https://www.chipglobe.shop/en/p/carenuity-sq-system-customizable-bundle-with-air-quality-display-and-accessories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white text-[#174f2e] font-bold text-sm transition-all duration-300 hover:scale-105"
+                >
+                  {en ? "Buy your first SQ-Panel now" : "Kaufen Sie jetzt Ihr erstes SQ-Panel"}
+                </a>
               </div>
 
               <div className="flex flex-wrap gap-3">

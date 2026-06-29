@@ -270,8 +270,8 @@ export default function DingDongBarClient() {
               <h2 className="text-2xl font-bold text-[#0d2137] dark:text-white mb-6">
                 {c.comparisonTitle}
               </h2>
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-12">
-                <table className="w-full text-sm">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-x-auto mb-12">
+                <table className="w-full min-w-[480px] text-sm">
                   <thead>
                     <tr className="bg-primary/10 dark:bg-primary/20">
                       {c.comparisonHeaders.map((h) => (

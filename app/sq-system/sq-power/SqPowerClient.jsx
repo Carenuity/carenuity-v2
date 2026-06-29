@@ -571,7 +571,9 @@ export default function SqPowerClient() {
                     : "The Carenuity SQ-Power module is designed for the safe and permanently installed power supply of the Carenuity SQ-Panel when..."}
                 </p>
                 <a
-                  href="#"
+                  href="https://www.chipglobe.shop/en/p/carenuity-sq-system-customizable-bundle-with-air-quality-display-and-accessories"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block w-fit rounded-xl px-10 py-3 text-sm font-bold text-white transition hover:opacity-90"
                   style={{ backgroundColor: "#174f2e" }}
                 >

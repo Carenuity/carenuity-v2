@@ -219,8 +219,7 @@ export default function AutonomousCarClient() {
                           href={projectHrefs[i]}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="mt-3 inline-flex items-center gap-1 text-xs font-semibold transition-colors hover:opacity-75"
-                          style={{ color: "#174f2e" }}
+                          className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#174f2e] dark:text-green-400 transition-colors hover:opacity-75"
                         >
                           {c.learnMore}
                           <svg

@@ -87,7 +87,7 @@ const col1 = {
     },
     {
       label: "Feature Evaluation",
-      href: null,
+      href: "/evaluate-at-home",
       icon: (
         <svg
           width="20"
@@ -112,7 +112,7 @@ const col2 = {
   items: [
     {
       label: "Smartphone SQ-App",
-      href: null,
+      href: "/carenuity-app-guide",
       icon: (
         <svg
           width="20"
@@ -126,6 +126,26 @@ const col2 = {
         >
           <rect x="5" y="2" width="14" height="20" rx="2" />
           <path d="M12 18h.01" />
+        </svg>
+      ),
+    },
+    {
+      label: "Smart Digital Meter",
+      href: "/product/smart-digital-meter",
+      icon: (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 12l4-2.5" />
+          <path d="M12 7v1M7 12h1M16 12h1M12 16v1" />
         </svg>
       ),
     },
@@ -346,9 +366,9 @@ function DropdownCol({ col, onClose }) {
 
 const resourcesItems = [
   { labelKey: "helpCenter", href: "/help-center" },
-  { labelKey: "programs", href: "/programs" },
+  { labelKey: "programs", href: "/programs/kenya" },
   { labelKey: "blogs", href: "/blog" },
-  { labelKey: "team", href: "/team" },
+  { labelKey: "team", href: "/about" },
   { labelKey: "contact", href: "/contact" },
 ];
 
@@ -497,10 +517,10 @@ export default function Navbar() {
                     "/blog",
                     "/about",
                     "/contact",
-                    "/team",
                     "/help-center",
-                    "/programs",
-                  ].includes(pathname)
+                  ].includes(pathname) ||
+                  pathname.startsWith("/programs") ||
+                  pathname.startsWith("/guides")
                     ? "text-primary"
                     : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
                 }`}
@@ -527,20 +547,27 @@ export default function Navbar() {
                   onMouseEnter={() => setResourcesOpen(true)}
                   onMouseLeave={() => setResourcesOpen(false)}
                 >
-                  {resourcesItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setResourcesOpen(false)}
-                      className={`flex items-center gap-3 px-5 py-2.5 text-sm font-semibold transition-colors ${
-                        pathname === item.href
-                          ? "text-primary dark:text-green-400"
-                          : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
-                      }`}
-                    >
-                      {t.nav[item.labelKey] ?? item.labelKey}
-                    </Link>
-                  ))}
+                  {resourcesItems.map((item) => {
+                    const active =
+                      item.href === "/programs/kenya"
+                        ? pathname.startsWith("/programs") ||
+                          pathname.startsWith("/guides")
+                        : pathname === item.href;
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setResourcesOpen(false)}
+                        className={`flex items-center gap-3 px-5 py-2.5 text-sm font-semibold transition-colors ${
+                          active
+                            ? "text-primary dark:text-green-400"
+                            : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-green-400"
+                        }`}
+                      >
+                        {t.nav[item.labelKey] ?? item.labelKey}
+                      </Link>
+                    );
+                  })}
                 </div>
               )}
             </div>

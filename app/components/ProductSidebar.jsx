@@ -22,6 +22,7 @@ const products = [
   { label: "Magnetic Traffic Counting", slug: "magnetic-traffic-counting" },
   { label: "PlantBar", slug: "plantbar" },
   { label: "Sensor Array", slug: "sensor-array" },
+  { label: "Smart Digital Meter", slug: "smart-digital-meter" },
 ];
 
 const sqPanelPages = [

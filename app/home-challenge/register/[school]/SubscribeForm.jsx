@@ -127,8 +127,7 @@ export default function SubscribeForm({ schoolName }) {
       <div className="pt-4 border-t border-gray-100 dark:border-gray-800 text-center">
         <a
           href={`/home-challenge/register/student-survey/?school=${encodeURIComponent(schoolName)}`}
-          className="text-sm font-semibold underline underline-offset-4 transition-colors"
-          style={{ color: "#174f2e" }}
+          className="text-sm font-semibold text-primary dark:text-green-400 underline underline-offset-4 transition-colors"
         >
           Fill in Carenuity student survey &amp; questionnaire →
         </a>

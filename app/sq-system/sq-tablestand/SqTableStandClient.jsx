@@ -294,7 +294,9 @@ export default function SqTableStandClient() {
                     : "The Carenuity SQ-Tablestand transforms the SQ-Panel into a flexible, mobile air quality monitoring solution - ideal for dynamic environments like care rooms, workspaces..."}
                 </p>
                 <a
-                  href="#"
+                  href="https://www.chipglobe.shop/en/p/carenuity-sq-system-customizable-bundle-with-air-quality-display-and-accessories"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block w-fit rounded-xl px-10 py-3 text-sm font-bold text-white transition hover:opacity-90"
                   style={{ backgroundColor: "#174f2e" }}
                 >

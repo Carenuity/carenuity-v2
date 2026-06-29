@@ -451,12 +451,52 @@ export const translations = {
     contact: {
       pageName: "Contact",
       pageDesc: "Get in touch with us. We'd love to hear from you.",
-      title: "Need Help? Open a Ticket",
-      subtitle: "Our support team will get back to you ASAP via email.",
+      heroKicker: "We're here to help",
+      heroTitle: "Get in touch",
+      heroSubtitle:
+        "Whether you have a question, need support, or want to explore how we can work together — reach out and we'll respond as soon as possible.",
+      title: "Send us a message",
+      subtitle:
+        "Fill in the form and our team will get back to you within one business day.",
       namePlaceholder: "Enter your name",
       emailPlaceholder: "Enter your email",
-      messagePlaceholder: "Enter your message",
-      submitBtn: "Submit Ticket",
+      messagePlaceholder: "How can we help you?",
+      submitBtn: "Send Message",
+      sendingBtn: "Sending...",
+      successMsg: "Message sent successfully! We'll be in touch soon.",
+      errorMsg: "Something went wrong. Please try again or email us directly.",
+      firstName: "First Name",
+      firstNamePh: "Enter your first name",
+      lastName: "Last Name",
+      lastNamePh: "Enter your last name",
+      phoneLabel: "Phone",
+      phonePh: "Enter your phone number",
+      company: "Company",
+      companyPh: "Enter your company name",
+      subject: "Subject",
+      subjectPh: "What is this about?",
+      country: "Country",
+      countryPh: "Enter your country",
+      street: "Street",
+      streetPh: "Street, house number",
+      zip: "ZIP / City",
+      zipPh: "Zip code, City",
+      phoneTitle: "Call us",
+      phoneDesc:
+        "Reach out to our team directly by phone during our business hours.",
+      phone: "(+49) 89-1222469-40",
+      emailTitle: "Email us",
+      emailDesc:
+        "Email our team — we're happy to assist you with any inquiries or support needs.",
+      email: "info@carenuity.com",
+      addressTitle: "Visit us",
+      addressDesc: "You are welcome to stop by during business hours.",
+      addressLine1: "Professor-Messerschmitt-Strasse 1a, 3rd floor",
+      addressLine2: "85579 Neubiberg, Germany",
+      hoursTitle: "Office hours",
+      hours: "Mon – Fri · 9:00 – 17:00",
+      socialTitle: "Follow us",
+      mapTitle: "Find us here",
       newsletterTitle: "Don't miss a thing!",
       newsletterDesc:
         "Enter your email to get the latest news, feature updates and offers from Carenuity.",
@@ -2300,6 +2340,147 @@ export const translations = {
         assortmentBoxCrumb: "Assortment Box",
       },
     },
+    programsGuides: {
+      shared: {
+        news: "News:",
+        step: "Step",
+        applications: "Applications",
+        completeGuide: "Complete guide",
+        furtherReadingPre: "For further reading",
+        furtherReadingLink: "see this conclusive guide",
+        enjoyApps: "Enjoy more free Apps on Solution Builder",
+      },
+      sidebar: {
+        kicker: "Programs",
+        title: "AI Programs & Guides",
+        universityGroup: "University Program for AI",
+        guidesGroup: "Guides",
+        openweather: "OpenWeather API Key",
+        qweather: "Q-Weather API Key",
+        spotify: "Spotify API Key",
+        youtube: "YouTube API Key",
+        adafruit: "Adafruit IO API Key",
+        thingspeak: "ThingSpeak API Key",
+      },
+      landing: {
+        pageName: "Programs",
+        pageDesc:
+          "University Programs for AI and step-by-step guides for the API keys used by our solutions.",
+        uniTitle: "University Program for AI",
+        uniDesc:
+          "We cooperate with selected universities and hire AI-Experts and Interns across our subsidiaries.",
+        guidesTitle: "Guides",
+        guidesDesc:
+          "Step-by-step instructions for obtaining the API keys used by our solutions.",
+        kenyaDesc:
+          "We are hiring AI-Experts and Interns from selected universities at our Kenya subsidiary.",
+        greeceDesc:
+          "ChipGlobe / Carenuity joined the HETiA Alliance, formerly the Semiconductor Alliance of Greece.",
+        germanyDesc:
+          "Cooperations with selected German universities on AI-assisted edge devices.",
+      },
+      kenya: {
+        pageName: "University Program for AI — Kenya",
+        pageDesc:
+          "We are hiring AI-Experts and Interns from selected universities at our Kenya subsidiary.",
+        region: "Kenya",
+        heading:
+          "We are hiring AI-Experts and Interns from selected universities at our Kenya subsidiary.",
+        ksuNews:
+          "News: The Kisii University recently specialized in their courses on the Raspberry Pi Pico W, with Wifi on board, from Infineon Technologies AG.",
+        tukNews:
+          "News: December 2023, an Intern from Nairobi will finish his remotely mentored internship on AI-assisted Edge Devices, with focus on Object Detection using Edge Impulse.",
+        tukItalic:
+          "TUK News November 2023, Cyntia participated at IEEE TUK SB INNOVATION WEEK & INDUSTRY SYMPOSIUM",
+        tumNews:
+          "News: Students from the University of Mombasa TUM and students from the Technical University of Munich (TUM) plan to cooperate on AI-assisted edge-devices.",
+      },
+      greece: {
+        pageName: "University Program for AI — Greece",
+        pageDesc:
+          "ChipGlobe / Carenuity recently joined the HETiA Alliance, formerly known as Semiconductor Alliance of Greece.",
+        region: "Greece",
+        heading:
+          "ChipGlobe / Carenuity recently joined the HETiA Alliance, formerly known as Semiconductor Alliance of Greece.",
+        uopTitle: "Cooperation with RENESAS and UOP",
+        uopNews:
+          "News: Carenuity evaluates cooperations with the University of the Peloponnese and RENESAS, headquartered in Patras.",
+        pastEventsTitle: "Past Events",
+        pastEventsNews:
+          "News: 19th-20th of October 2023, Carenuity participated on the HETiA Emerging Tech Conference on Edge Intelligence at the Aristotle University in Thessaloniki and met interested students for Internships, starting in March 2024.",
+        oauthTitle: "Open AUTH Home Challenge (OAUTH)",
+      },
+      germany: {
+        pageName: "University Program for AI — Germany",
+        pageDesc:
+          "Carenuity cooperates with selected German universities on AI-assisted edge devices.",
+        region: "Germany",
+      },
+      openweather: {
+        pageName: "Get OpenWeather API Key",
+        pageDesc: "How to get the OpenWeatherMap API Key.",
+        heading: "How to get the OpenWeatherMap API Key",
+        thanksPre: "Thanks to",
+        thanksPost:
+          "& visit their pages for more projects with their wonderful Kits.",
+      },
+      qweather: {
+        pageName: "Get Q-Weather API Key",
+        pageDesc: "How to get the Q-Weather API Key.",
+        heading: "How to get the Q-Weather API Key",
+        intro:
+          "Q-Weather provides weather forecasts through its WeatherAPI. Follow the steps below to register an account and obtain your private API key.",
+        registerTitle: "Register for a Weather account",
+        registerPre: "Register at",
+        registerPost:
+          ". Before registering, switch back to your own WiFi or mobile data — while connected to the weather clock hotspot you will not have internet access, so it is recommended to register from a computer.",
+      },
+      spotify: {
+        pageName: "Get Spotify API Key",
+        pageDesc: "How to get the Spotify API Key.",
+        heading: "How to get the Spotify API Key",
+        p1: "With this product you can remotely control your currently active Spotify player (smartphone, web player, dedicated device, etc) with a C3-Mini. After the initial authentication and authorization with the Spotify API the product will display the artwork from the currently playing song and will additionally display the title and the artist's name.",
+        p2: "Since the Squared Triple Adapter with 2.8 Inch Display comes with a touch feature you also can pause the song, continue to play and jump to the next and previous song. And if that is not enough you are welcome to ask us for a software code modification on our WebFlashing platform, e.g. for controlling the volume or other features offered by the Spotify API.",
+        p3: "In the below demo video you see the Squared Triple Adapter with 2.8 Inch Display on the left and for reference a Samsung Smartphone on the right. Note: The music is played by the smartphone, not the Squared Triple Adapter with 2.8 Inch Display, which acts as a remote for your phone.",
+        morePre: "More page content on",
+        moreLink: "How to get the Spotify API key",
+      },
+      youtube: {
+        pageName: "Get YouTube API Key",
+        pageDesc: "How to get the YouTube API Key.",
+        heading: "How to get the YouTube API Key",
+        introPre: "Navigate to",
+        introLink: "Google Cloud Console",
+        introPost: " to begin the journey.",
+      },
+      adafruit: {
+        pageName: "Get Adafruit IO API Key",
+        pageDesc: "How to get the Adafruit IO API Key.",
+        heading: "How to get the Adafruit IO API Key",
+        introPre: "Navigate to the",
+        introLink: "Adafruit IO Portal",
+        introPost:
+          " to begin the journey. You will have to either sign in or sign up to proceed.",
+      },
+      thingspeak: {
+        pageName: "Get ThingSpeak API Key",
+        pageDesc: "How to get the ThingSpeak API Key.",
+        heading: "How to get the ThingSpeak API Key",
+        intro:
+          "ThingSpeak provides API keys that let you read from or write to your channels. Here's how you get one:",
+        stepByStep: "Step by step",
+        li1: "Sign up / Log in at ThingSpeak.",
+        li2: "Once logged in, go to Channels (top menu).",
+        li3: "Click New Channel (if you don't have one).",
+        li3a: "Give your channel a name and description.",
+        li3b: "Create fields (up to 8 per channel) — these are your data fields.",
+        li4: "After creating a channel:",
+        li4a: "Go to your Channel Settings page.",
+        li4b: "Look under API Keys.",
+        li4b1: "You'll see Write API Key (for sending data).",
+        li4b2: "You'll see Read API Key (for reading data).",
+      },
+    },
   },
   de: {
     nav: {
@@ -2677,12 +2858,52 @@ export const translations = {
       pageName: "Kontakt",
       pageDesc:
         "Nehmen Sie Kontakt mit uns auf. Wir freuen uns auf Ihre Nachricht.",
-      title: "Hilfe benötigt? Ticket erstellen",
-      subtitle: "Unser Support-Team meldet sich schnellstmöglich per E-Mail.",
+      heroKicker: "Wir sind für Sie da",
+      heroTitle: "Kontaktieren Sie uns",
+      heroSubtitle:
+        "Ob Sie eine Frage haben, Unterstützung benötigen oder erfahren möchten, wie wir zusammenarbeiten können — melden Sie sich und wir antworten so schnell wie möglich.",
+      title: "Senden Sie uns eine Nachricht",
+      subtitle:
+        "Füllen Sie das Formular aus und unser Team meldet sich innerhalb eines Werktages bei Ihnen.",
       namePlaceholder: "Ihren Namen eingeben",
       emailPlaceholder: "E-Mail eingeben",
-      messagePlaceholder: "Ihre Nachricht eingeben",
-      submitBtn: "Ticket senden",
+      messagePlaceholder: "Wie können wir Ihnen helfen?",
+      submitBtn: "Nachricht senden",
+      sendingBtn: "Wird gesendet...",
+      successMsg: "Nachricht erfolgreich gesendet! Wir melden uns in Kürze.",
+      errorMsg: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
+      firstName: "Vorname",
+      firstNamePh: "Ihren Vornamen eingeben",
+      lastName: "Nachname",
+      lastNamePh: "Ihren Nachnamen eingeben",
+      phoneLabel: "Telefon",
+      phonePh: "Ihre Telefonnummer eingeben",
+      company: "Unternehmen",
+      companyPh: "Ihr Unternehmen eingeben",
+      subject: "Betreff",
+      subjectPh: "Worum geht es?",
+      country: "Land",
+      countryPh: "Ihr Land eingeben",
+      street: "Straße",
+      streetPh: "Straße, Hausnummer",
+      zip: "PLZ / Stadt",
+      zipPh: "Postleitzahl, Stadt",
+      phoneTitle: "Rufen Sie uns an",
+      phoneDesc:
+        "Erreichen Sie unser Team während unserer Geschäftszeiten direkt telefonisch.",
+      phone: "(+49) 89-1222469-40",
+      emailTitle: "Schreiben Sie uns",
+      emailDesc:
+        "Schreiben Sie unserem Team — wir helfen Ihnen gerne bei Fragen oder Support.",
+      email: "info@carenuity.com",
+      addressTitle: "Besuchen Sie uns",
+      addressDesc: "Sie sind während der Geschäftszeiten herzlich willkommen.",
+      addressLine1: "Professor-Messerschmitt-Strasse 1a, 3. Stock",
+      addressLine2: "85579 Neubiberg, Deutschland",
+      hoursTitle: "Öffnungszeiten",
+      hours: "Mo – Fr · 9:00 – 17:00 Uhr",
+      socialTitle: "Folgen Sie uns",
+      mapTitle: "So finden Sie uns",
       newsletterTitle: "Nichts verpassen!",
       newsletterDesc:
         "Geben Sie Ihre E-Mail ein, um die neuesten Nachrichten und Angebote von Carenuity zu erhalten.",
@@ -4556,6 +4777,147 @@ export const translations = {
         pressMaterial: "Pressematerial",
         kisiiOnepager: "Kisii OnePager",
         assortmentBoxCrumb: "Assortment Box",
+      },
+    },
+    programsGuides: {
+      shared: {
+        news: "Neuigkeiten:",
+        step: "Schritt",
+        applications: "Anwendungen",
+        completeGuide: "Vollständige Anleitung",
+        furtherReadingPre: "Zum Weiterlesen",
+        furtherReadingLink: "siehe diese ausführliche Anleitung",
+        enjoyApps: "Genießen Sie weitere kostenlose Apps im Solution Builder",
+      },
+      sidebar: {
+        kicker: "Programme",
+        title: "KI-Programme & Anleitungen",
+        universityGroup: "Universitätsprogramm für KI",
+        guidesGroup: "Anleitungen",
+        openweather: "OpenWeather API-Schlüssel",
+        qweather: "Q-Weather API-Schlüssel",
+        spotify: "Spotify API-Schlüssel",
+        youtube: "YouTube API-Schlüssel",
+        adafruit: "Adafruit IO API-Schlüssel",
+        thingspeak: "ThingSpeak API-Schlüssel",
+      },
+      landing: {
+        pageName: "Programme",
+        pageDesc:
+          "Universitätsprogramme für KI und Schritt-für-Schritt-Anleitungen für die API-Schlüssel, die unsere Lösungen verwenden.",
+        uniTitle: "Universitätsprogramm für KI",
+        uniDesc:
+          "Wir kooperieren mit ausgewählten Universitäten und stellen KI-Experten und Praktikanten in unseren Niederlassungen ein.",
+        guidesTitle: "Anleitungen",
+        guidesDesc:
+          "Schritt-für-Schritt-Anleitungen zum Erhalt der API-Schlüssel, die unsere Lösungen verwenden.",
+        kenyaDesc:
+          "Wir stellen KI-Experten und Praktikanten von ausgewählten Universitäten in unserer Niederlassung in Kenya ein.",
+        greeceDesc:
+          "ChipGlobe / Carenuity ist der HETiA-Allianz beigetreten, ehemals Semiconductor Alliance of Greece.",
+        germanyDesc:
+          "Kooperationen mit ausgewählten deutschen Universitäten zu KI-gestützten Edge-Geräten.",
+      },
+      kenya: {
+        pageName: "Universitätsprogramm für KI — Kenya",
+        pageDesc:
+          "Wir stellen KI-Experten und Praktikanten von ausgewählten Universitäten in unserer Niederlassung in Kenya ein.",
+        region: "Kenya",
+        heading:
+          "Wir stellen KI-Experten und Praktikanten von ausgewählten Universitäten in unserer Niederlassung in Kenya ein.",
+        ksuNews:
+          "Neuigkeiten: Die Kisii University hat ihre Kurse kürzlich auf den Raspberry Pi Pico W mit integriertem WLAN von Infineon Technologies AG spezialisiert.",
+        tukNews:
+          "Neuigkeiten: Im Dezember 2023 schließt ein Praktikant aus Nairobi sein remote betreutes Praktikum zu KI-gestützten Edge-Geräten mit Schwerpunkt Objekterkennung mit Edge Impulse ab.",
+        tukItalic:
+          "TUK-News November 2023: Cyntia nahm an der IEEE TUK SB INNOVATION WEEK & INDUSTRY SYMPOSIUM teil",
+        tumNews:
+          "Neuigkeiten: Studierende der University of Mombasa TUM und Studierende der Technischen Universität München (TUM) planen eine Zusammenarbeit an KI-gestützten Edge-Geräten.",
+      },
+      greece: {
+        pageName: "Universitätsprogramm für KI — Greece",
+        pageDesc:
+          "ChipGlobe / Carenuity ist kürzlich der HETiA-Allianz beigetreten, ehemals bekannt als Semiconductor Alliance of Greece.",
+        region: "Greece",
+        heading:
+          "ChipGlobe / Carenuity ist kürzlich der HETiA-Allianz beigetreten, ehemals bekannt als Semiconductor Alliance of Greece.",
+        uopTitle: "Zusammenarbeit mit RENESAS und UOP",
+        uopNews:
+          "Neuigkeiten: Carenuity prüft Kooperationen mit der Universität des Peloponnes und RENESAS mit Sitz in Patras.",
+        pastEventsTitle: "Vergangene Veranstaltungen",
+        pastEventsNews:
+          "Neuigkeiten: Am 19.–20. Oktober 2023 nahm Carenuity an der HETiA Emerging Tech Conference zu Edge Intelligence an der Aristoteles-Universität in Thessaloniki teil und traf interessierte Studierende für Praktika ab März 2024.",
+        oauthTitle: "Open AUTH Home Challenge (OAUTH)",
+      },
+      germany: {
+        pageName: "Universitätsprogramm für KI — Germany",
+        pageDesc:
+          "Carenuity kooperiert mit ausgewählten deutschen Universitäten zu KI-gestützten Edge-Geräten.",
+        region: "Germany",
+      },
+      openweather: {
+        pageName: "OpenWeather API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den OpenWeatherMap API-Schlüssel.",
+        heading: "So erhalten Sie den OpenWeatherMap API-Schlüssel",
+        thanksPre: "Dank an",
+        thanksPost:
+          "& besuchen Sie deren Seiten für weitere Projekte mit ihren großartigen Kits.",
+      },
+      qweather: {
+        pageName: "Q-Weather API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den Q-Weather API-Schlüssel.",
+        heading: "So erhalten Sie den Q-Weather API-Schlüssel",
+        intro:
+          "Q-Weather bietet Wettervorhersagen über seine WeatherAPI. Folgen Sie den Schritten unten, um ein Konto zu registrieren und Ihren privaten API-Schlüssel zu erhalten.",
+        registerTitle: "Für ein Wetter-Konto registrieren",
+        registerPre: "Registrieren Sie sich unter",
+        registerPost:
+          ". Wechseln Sie vor der Registrierung zurück zu Ihrem eigenen WLAN oder mobilen Daten — solange Sie mit dem Hotspot der Wetteruhr verbunden sind, haben Sie keinen Internetzugang. Es wird daher empfohlen, die Registrierung an einem Computer durchzuführen.",
+      },
+      spotify: {
+        pageName: "Spotify API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den Spotify API-Schlüssel.",
+        heading: "So erhalten Sie den Spotify API-Schlüssel",
+        p1: "Mit diesem Produkt können Sie Ihren aktuell aktiven Spotify-Player (Smartphone, Web-Player, dediziertes Gerät usw.) mit einem C3-Mini fernsteuern. Nach der ersten Authentifizierung und Autorisierung mit der Spotify-API zeigt das Produkt das Cover des aktuell wiedergegebenen Songs sowie den Titel und den Namen des Künstlers an.",
+        p2: "Da der Squared Triple Adapter mit 2,8-Zoll-Display über eine Touch-Funktion verfügt, können Sie den Song auch pausieren, fortsetzen sowie zum nächsten und vorherigen Song springen. Und falls das nicht genügt, fragen Sie uns gerne nach einer Software-Code-Anpassung auf unserer WebFlashing-Plattform, z. B. zur Lautstärkeregelung oder für andere von der Spotify-API angebotene Funktionen.",
+        p3: "Im Demovideo unten sehen Sie links den Squared Triple Adapter mit 2,8-Zoll-Display und zum Vergleich rechts ein Samsung-Smartphone. Hinweis: Die Musik wird vom Smartphone abgespielt, nicht vom Squared Triple Adapter mit 2,8-Zoll-Display, der als Fernbedienung für Ihr Telefon dient.",
+        morePre: "Weitere Seiteninhalte unter",
+        moreLink: "So erhalten Sie den Spotify API-Schlüssel",
+      },
+      youtube: {
+        pageName: "YouTube API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den YouTube API-Schlüssel.",
+        heading: "So erhalten Sie den YouTube API-Schlüssel",
+        introPre: "Navigieren Sie zur",
+        introLink: "Google Cloud Console",
+        introPost: ", um zu beginnen.",
+      },
+      adafruit: {
+        pageName: "Adafruit IO API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den Adafruit IO API-Schlüssel.",
+        heading: "So erhalten Sie den Adafruit IO API-Schlüssel",
+        introPre: "Navigieren Sie zum",
+        introLink: "Adafruit IO Portal",
+        introPost:
+          ", um zu beginnen. Sie müssen sich entweder anmelden oder registrieren, um fortzufahren.",
+      },
+      thingspeak: {
+        pageName: "ThingSpeak API-Schlüssel erhalten",
+        pageDesc: "So erhalten Sie den ThingSpeak API-Schlüssel.",
+        heading: "So erhalten Sie den ThingSpeak API-Schlüssel",
+        intro:
+          "ThingSpeak stellt API-Schlüssel bereit, mit denen Sie aus Ihren Kanälen lesen oder in sie schreiben können. So erhalten Sie einen:",
+        stepByStep: "Schritt für Schritt",
+        li1: "Registrieren Sie sich / melden Sie sich bei ThingSpeak an.",
+        li2: "Gehen Sie nach der Anmeldung zu Channels (oberes Menü).",
+        li3: "Klicken Sie auf New Channel (falls Sie noch keinen haben).",
+        li3a: "Geben Sie Ihrem Kanal einen Namen und eine Beschreibung.",
+        li3b: "Erstellen Sie Felder (bis zu 8 pro Kanal) — das sind Ihre Datenfelder.",
+        li4: "Nach dem Erstellen eines Kanals:",
+        li4a: "Gehen Sie zur Seite Channel Settings.",
+        li4b: "Schauen Sie unter API Keys.",
+        li4b1: "Sie sehen den Write API Key (zum Senden von Daten).",
+        li4b2: "Sie sehen den Read API Key (zum Lesen von Daten).",
       },
     },
   },
