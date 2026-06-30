@@ -5,7 +5,7 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const steps = Array.from({ length: 10 }, (_, i) => ({
   n: i + 1,
-  src: `/images/youtube_api/step${i + 1}.png`,
+  src: `/images/youtube-api/step${i + 1}.png`,
 }));
 
 export default function YouTubeApiKeyPage() {

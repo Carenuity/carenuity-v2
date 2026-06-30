@@ -3,7 +3,7 @@ import Link from "next/link";
 import ProductSidebar from "../../components/ProductSidebar";
 import { useLanguage } from "../../context/LanguageContext";
 
-const PDF = "/docs/Smart_Digital_Meter_Overview.pdf";
+const PDF = "/docs/smart-digital-meter-overview.pdf";
 
 export default function SmartDigitalMeterOverview() {
   const { lang } = useLanguage();

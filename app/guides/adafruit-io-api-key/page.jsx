@@ -22,8 +22,8 @@ function SolutionWidget({ solutionId, title }) {
 }
 
 const steps = [
-  "/images/adafruit_api/step1.png",
-  "/images/adafruit_api/step2.png",
+  "/images/adafruit-api/step1.png",
+  "/images/adafruit-api/step2.png",
 ];
 
 export default function AdafruitIoApiKeyPage() {
