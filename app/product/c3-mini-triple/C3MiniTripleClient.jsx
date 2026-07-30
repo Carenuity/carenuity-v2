@@ -32,7 +32,7 @@ const deviceWidgets = [
 ];
 
 export default function C3MiniTripleClient() {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
   const c = t.c3MiniTriple;
 
   return (

@@ -4,6 +4,20 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
+function ActiveArrow() {
+  return (
+    <svg
+      className="w-4 h-4 text-green-300 shrink-0 ml-2"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  );
+}
+
 export default function ProgramsSidebar() {
   const pathname = usePathname();
   const { t } = useLanguage();
@@ -36,18 +50,6 @@ export default function ProgramsSidebar() {
   const activeLabel = groups
     .flatMap((g) => g.items)
     .find((i) => i.href === pathname)?.label;
-
-  const ActiveArrow = () => (
-    <svg
-      className="w-4 h-4 text-green-300 shrink-0 ml-2"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-    </svg>
-  );
 
   return (
     <aside className="w-full lg:w-64 shrink-0 self-start lg:sticky lg:top-24 flex flex-col gap-3">

@@ -3,7 +3,6 @@ import Link from "next/link";
 import HelpCenterShell, {
   HcCard,
   HcH2,
-  HcP,
   HcUL,
 } from "../../components/HelpCenterShell";
 import { useLanguage } from "../../context/LanguageContext";

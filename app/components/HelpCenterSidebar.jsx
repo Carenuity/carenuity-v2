@@ -45,17 +45,8 @@ const groups = [
   },
 ];
 
-export default function HelpCenterSidebar() {
-  const pathname = usePathname();
-  const { lang } = useLanguage();
-  const de = lang === "de";
-  const [isOpen, setIsOpen] = useState(false);
-
-  const activeLabel = groups
-    .flatMap((g) => g.items)
-    .find((i) => i.href === pathname)?.label;
-
-  const ActiveArrow = () => (
+function ActiveArrow() {
+  return (
     <svg
       className="w-4 h-4 text-green-300 shrink-0 ml-2"
       fill="none"
@@ -66,6 +57,17 @@ export default function HelpCenterSidebar() {
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
     </svg>
   );
+}
+
+export default function HelpCenterSidebar() {
+  const pathname = usePathname();
+  const { lang } = useLanguage();
+  const de = lang === "de";
+  const [isOpen, setIsOpen] = useState(false);
+
+  const activeLabel = groups
+    .flatMap((g) => g.items)
+    .find((i) => i.href === pathname)?.label;
 
   return (
     <aside className="w-full lg:w-64 shrink-0 self-start lg:sticky lg:top-24 flex flex-col gap-3">

@@ -8,11 +8,11 @@ import HelpCenterShell, {
 } from "../../components/HelpCenterShell";
 import { useLanguage } from "../../context/LanguageContext";
 
-export default function TroubleshootingPage() {
+function Unresolved({ children }) {
   const { lang } = useLanguage();
   const de = lang === "de";
 
-  const Unresolved = ({ children }) => (
+  return (
     <p className="text-body-color dark:text-green text-base leading-relaxed mb-4 border-l-4 border-yellow-400 bg-yellow-50 dark:bg-yellow-900/10 px-4 py-2 rounded-r">
       <strong className="text-black dark:text-white">
         {de ? "Wenn weiterhin ungelöst:" : "If unresolved:"}
@@ -20,6 +20,11 @@ export default function TroubleshootingPage() {
       {children}
     </p>
   );
+}
+
+export default function TroubleshootingPage() {
+  const { lang } = useLanguage();
+  const de = lang === "de";
 
   return (
     <HelpCenterShell
