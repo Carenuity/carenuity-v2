@@ -244,9 +244,10 @@ export default function SurveyForm({ school, schoolCategoryId }) {
             <>
               {" "}
               We&apos;ve also subscribed you to{" "}
-              <span className="font-semibold">{school}</span> — please check your
-              inbox (and your <span className="font-semibold">spam folder</span>)
-              to verify your subscription.
+              <span className="font-semibold">{school}</span> — please check
+              your inbox (and your{" "}
+              <span className="font-semibold">spam folder</span>) to verify your
+              subscription.
             </>
           ) : (
             <> We&apos;ll be in touch with relevant opportunities.</>

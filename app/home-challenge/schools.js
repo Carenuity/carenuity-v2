@@ -16,7 +16,11 @@ export const schools = [
   { slug: "hm", name: "Munich University of Applied Sciences (HM)" },
   { slug: "strathmore", name: "Strathmore University" },
   { slug: "tum", name: "Technical University of Munich (TUM)" },
-  { slug: "tum-mombasa", name: "Technical University of Mombasa", categoryId: 15 },
+  {
+    slug: "tum-mombasa",
+    name: "Technical University of Mombasa",
+    categoryId: 15,
+  },
   {
     slug: "etf",
     name: "University of Belgrade – Faculty of Electrical Engineering",

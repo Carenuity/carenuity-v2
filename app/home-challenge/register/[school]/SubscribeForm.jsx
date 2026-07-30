@@ -60,8 +60,11 @@ export default function SubscribeForm({ schoolName, homeChallengeCategoryId }) {
     // Name the interests whose verification email could not be sent so the
     // failure is visible instead of the user silently receiving fewer emails.
     const labelOf = (id) =>
-      interests.find((item) => item.categoryId === id)?.label || `category ${id}`;
-    const failedLabels = result.failed.map((f) => labelOf(f.categoryId)).join(", ");
+      interests.find((item) => item.categoryId === id)?.label ||
+      `category ${id}`;
+    const failedLabels = result.failed
+      .map((f) => labelOf(f.categoryId))
+      .join(", ");
     const reason = result.failed[0]?.message;
 
     if (result.sent.length) {
