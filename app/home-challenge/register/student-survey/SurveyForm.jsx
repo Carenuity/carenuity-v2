@@ -1,5 +1,18 @@
 "use client";
 import { useState } from "react";
+import { submitStudentSurvey } from "./submit-survey";
+import { subscribeToNewsletters } from "../../subscribe-newsletter";
+
+// The API expects yearOfStudy as a number; map the dropdown labels to values.
+const YEAR_TO_NUMBER = {
+  "1st Year": 1,
+  "2nd Year": 2,
+  "3rd Year": 3,
+  "4th Year": 4,
+  "5th Year": 5,
+  Masters: 6,
+  PhD: 7,
+};
 
 const iotInterests = [
   "Smart Homes & Buildings",
@@ -139,7 +152,7 @@ function SectionLabel({ number, children }) {
   );
 }
 
-export default function SurveyForm({ school }) {
+export default function SurveyForm({ school, schoolCategoryId }) {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -153,13 +166,52 @@ export default function SurveyForm({ school }) {
     hackathon: "",
     feedback: "",
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const set = (key, val) => setForm((prev) => ({ ...prev, [key]: val }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+
+    setSubmitting(true);
+    setError("");
+
+    const payload = {
+      firstName: form.firstName.trim(),
+      lastName: form.lastName.trim(),
+      email: form.email.trim(),
+      school: school || "",
+      yearOfStudy: YEAR_TO_NUMBER[form.yearOfStudy] ?? 0,
+      fieldOfStudy: form.fieldOfStudy.trim(),
+      openOfficeDay: form.newsletter === "Yes",
+      whyOpenOffice: [],
+      IoTInterests: form.iotInterests,
+      whatToLearnMoreInIoT: "",
+      careerInterests: form.careerInterests,
+      IoTTools: form.tools,
+      interestInFutureIoTChallenge: form.hackathon === "Yes",
+      comment: form.feedback.trim(),
+    };
+
+    try {
+      await submitStudentSurvey(payload);
+
+      // Also subscribe the student to their school's newsletter so they get a
+      // verification email confirming the subscription. Best-effort: the survey
+      // is already saved, so a mail hiccup here shouldn't turn into an error.
+      if (schoolCategoryId) {
+        await subscribeToNewsletters(form.email.trim(), [schoolCategoryId]);
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -187,8 +239,18 @@ export default function SurveyForm({ school }) {
           Thank you, {form.firstName}!
         </p>
         <p className="text-body-color dark:text-gray-300 text-base max-w-sm">
-          Your survey response has been submitted successfully. We&apos;ll be in
-          touch with relevant opportunities.
+          Your survey response has been submitted successfully.
+          {schoolCategoryId ? (
+            <>
+              {" "}
+              We&apos;ve also subscribed you to{" "}
+              <span className="font-semibold">{school}</span> — please check your
+              inbox (and your <span className="font-semibold">spam folder</span>)
+              to verify your subscription.
+            </>
+          ) : (
+            <> We&apos;ll be in touch with relevant opportunities.</>
+          )}
         </p>
       </div>
     );
@@ -209,6 +271,8 @@ export default function SurveyForm({ school }) {
             </label>
             <input
               type="text"
+              name="firstName"
+              autoComplete="given-name"
               required
               placeholder="Enter your first name"
               value={form.firstName}
@@ -223,6 +287,8 @@ export default function SurveyForm({ school }) {
             </label>
             <input
               type="text"
+              name="lastName"
+              autoComplete="family-name"
               required
               placeholder="Enter your last name"
               value={form.lastName}
@@ -236,6 +302,8 @@ export default function SurveyForm({ school }) {
             </label>
             <input
               type="email"
+              name="email"
+              autoComplete="email"
               required
               placeholder="your@email.com"
               value={form.email}
@@ -248,6 +316,7 @@ export default function SurveyForm({ school }) {
               Year of Study <span className="text-red-500">*</span>
             </label>
             <select
+              name="yearOfStudy"
               required
               value={form.yearOfStudy}
               onChange={(e) => set("yearOfStudy", e.target.value)}
@@ -277,6 +346,8 @@ export default function SurveyForm({ school }) {
             </label>
             <input
               type="text"
+              name="fieldOfStudy"
+              autoComplete="on"
               required
               placeholder="e.g. Electrical Engineering, Computer Science…"
               value={form.fieldOfStudy}
@@ -376,6 +447,8 @@ export default function SurveyForm({ school }) {
           Any comments or suggestions for us?
         </p>
         <textarea
+          name="feedback"
+          autoComplete="on"
           rows={4}
           placeholder="Share your thoughts…"
           value={form.feedback}
@@ -384,12 +457,19 @@ export default function SurveyForm({ school }) {
         />
       </div>
 
+      {error && (
+        <p className="text-sm font-medium text-red-600 dark:text-red-400 text-center">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="w-full py-3.5 rounded-full font-bold text-sm text-white shadow-lg hover:scale-[1.02] transition-all duration-300"
+        disabled={submitting}
+        className="w-full py-3.5 rounded-full font-bold text-sm text-white shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
         style={{ backgroundColor: "#174f2e" }}
       >
-        Submit Survey
+        {submitting ? "Submitting…" : "Submit Survey"}
       </button>
     </form>
   );

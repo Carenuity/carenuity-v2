@@ -80,7 +80,10 @@ export default async function SchoolRegisterPage({ params }) {
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 lg:col-span-6 lg:col-start-4">
               <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-two p-8">
-                <SubscribeForm schoolName={school.name} />
+                <SubscribeForm
+                  schoolName={school.name}
+                  homeChallengeCategoryId={school.categoryId ?? null}
+                />
               </div>
             </div>
           </div>

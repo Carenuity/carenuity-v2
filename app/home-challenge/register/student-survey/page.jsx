@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SurveyForm from "./SurveyForm";
+import { getSchoolByName } from "../../schools";
 
 export const metadata = {
   title: "Student Survey & Questionnaire — Carenuity Home Challenge",
@@ -9,6 +10,14 @@ export const metadata = {
 
 export default async function StudentSurveyPage({ searchParams }) {
   const { school } = await searchParams;
+
+  // Resolve the school's newsletter category so the survey can also subscribe
+  // the student to their school (and send them the confirmation email). Null
+  // when the school has no dedicated newsletter — we don't subscribe them to an
+  // unrelated one.
+  const schoolCategoryId = school
+    ? (getSchoolByName(school)?.categoryId ?? null)
+    : null;
 
   return (
     <main>
@@ -75,7 +84,10 @@ export default async function StudentSurveyPage({ searchParams }) {
         <div className="container">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3">
-              <SurveyForm school={school ?? ""} />
+              <SurveyForm
+                school={school ?? ""}
+                schoolCategoryId={schoolCategoryId}
+              />
             </div>
           </div>
         </div>

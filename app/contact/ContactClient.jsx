@@ -212,6 +212,7 @@ export default function ContactClient() {
                       <input
                         type="text"
                         name="name"
+                        autoComplete="name"
                         placeholder={c.namePlaceholder}
                         className={inputClass}
                       />
@@ -223,6 +224,7 @@ export default function ContactClient() {
                       <input
                         type="email"
                         name="email"
+                        autoComplete="email"
                         placeholder={c.emailPlaceholder}
                         className={inputClass}
                       />
@@ -234,6 +236,7 @@ export default function ContactClient() {
                       <input
                         type="text"
                         name="company"
+                        autoComplete="organization"
                         placeholder={c.companyPh}
                         className={inputClass}
                       />
@@ -245,6 +248,7 @@ export default function ContactClient() {
                       <input
                         type="tel"
                         name="mobile"
+                        autoComplete="tel"
                         placeholder={c.phonePh}
                         className={inputClass}
                       />
@@ -256,6 +260,7 @@ export default function ContactClient() {
                       <input
                         type="text"
                         name="street"
+                        autoComplete="street-address"
                         placeholder={c.streetPh}
                         className={inputClass}
                       />
@@ -267,6 +272,7 @@ export default function ContactClient() {
                       <input
                         type="text"
                         name="zip"
+                        autoComplete="postal-code"
                         placeholder={c.zipPh}
                         className={inputClass}
                       />
@@ -279,6 +285,7 @@ export default function ContactClient() {
                     <input
                       type="text"
                       name="subject"
+                      autoComplete="on"
                       placeholder={c.subjectPh}
                       className={inputClass}
                     />
@@ -289,6 +296,7 @@ export default function ContactClient() {
                     </label>
                     <textarea
                       name="message"
+                      autoComplete="on"
                       rows={6}
                       placeholder={c.messagePlaceholder}
                       className={`${inputClass} resize-none`}
