@@ -1,4 +1,4 @@
-import SmartDigitalMeterOverview from "./Smart_Digital_Meter_Overview";
+import SmartDigitalMeterOverview from "./SmartDigitalMeterOverview";
 
 export const metadata = {
   title: "Smart Digital Meter | Carenuity Products",
