@@ -204,6 +204,7 @@ export default function ThwsPressPage() {
               </h2>
               <div className="space-y-6 mb-8">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/press-materials-for-thws/press1.png"
                     alt="Press 1"
@@ -211,6 +212,7 @@ export default function ThwsPressPage() {
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/press-materials-for-thws/press2.png"
                     alt="Press 2"
@@ -223,6 +225,7 @@ export default function ThwsPressPage() {
                 {p.sectionScan}
               </h2>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden p-4 mb-10 max-w-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/home-challenge/universities/press-materials-for-thws/code.png"
                   alt="Scan code"
@@ -275,6 +278,7 @@ export default function ThwsPressPage() {
                 {p.whatsappBody}
               </p>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden p-4 mb-8 max-w-md mx-auto">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/home-challenge/universities/press-materials-for-thws/whatsapp.jpeg"
                   alt="WhatsApp group"

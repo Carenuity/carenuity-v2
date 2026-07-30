@@ -209,6 +209,7 @@ export default function JungDesignerFrameClient() {
                   ? "Information for frame 1-gang, alpine white LSD 981 WW"
                   : "Informationen für Rahmen 1fach, alpinweiß LSD 981 WW"}
               </h2>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={
                   en
@@ -224,6 +225,7 @@ export default function JungDesignerFrameClient() {
                   ? "Information for frame 2-gang, alpine white LSD 982 WW"
                   : "Informationen für Rahmen 2fach, alpinweiß LSD 982 WW"}
               </h2>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={
                   en
@@ -276,6 +278,7 @@ export default function JungDesignerFrameClient() {
                     key={item.href}
                     className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.src}
                       alt="JUNG Frame"

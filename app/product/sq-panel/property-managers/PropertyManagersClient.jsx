@@ -134,6 +134,7 @@ export default function PropertyManagersClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-10">
                 <div className="flex flex-col sm:flex-row">
                   <div className="relative sm:w-56 shrink-0 bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/property.png"
                       alt="Property Managers"

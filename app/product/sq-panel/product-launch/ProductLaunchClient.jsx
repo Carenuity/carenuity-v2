@@ -115,6 +115,7 @@ export default function ProductLaunchClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-6">
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-56 shrink-0 bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/product-launch/sq-panel.png"
                       alt="Table Stand"
@@ -149,6 +150,7 @@ export default function ProductLaunchClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-6">
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-56 shrink-0 bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/product-launch/slide2.png"
                       alt="Wall mountable"
@@ -181,6 +183,7 @@ export default function ProductLaunchClient() {
 
               {/* Config 3 */}
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/products/sq-panel/product-launch/slide1.png"
                   alt="Complete kit"
@@ -216,6 +219,7 @@ export default function ProductLaunchClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-40 shrink-0 bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/product-launch/jung.jpeg"
                       alt="JUNG frame"
@@ -250,6 +254,7 @@ export default function ProductLaunchClient() {
                         ? "1. Papercard standard box"
                         : "1. Standardkarton aus Papier"}
                     </h3>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/product-launch/standard.jpeg"
                       alt="Standard box"
@@ -263,6 +268,7 @@ export default function ProductLaunchClient() {
                     <h3 className="text-sm font-semibold text-[#0d2137] dark:text-white mb-2">
                       {en ? "2. Hexpand" : "2. Hexpand"}
                     </h3>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/product-launch/hexpand.jpeg"
                       alt="Hexpand box"

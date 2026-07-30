@@ -76,6 +76,7 @@ export default function AssortmentPressPage() {
               </h2>
               <div className="space-y-6 mb-8">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/c3-mini-kisii-boxes/press-1.jpeg"
                     alt="Press 1"
@@ -83,6 +84,7 @@ export default function AssortmentPressPage() {
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/c3-mini-kisii-boxes/press-2.jpeg"
                     alt="Press 2"

@@ -248,6 +248,7 @@ export default function C3MiniKisiiBoxesPage() {
                     </a>
                   </div>
                   <div className="rounded-xl bg-gray-50 dark:bg-gray-900 p-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/home-challenge/universities/c3-mini-kisii-boxes/image003.png"
                       alt="Solution Builder"
@@ -289,6 +290,7 @@ export default function C3MiniKisiiBoxesPage() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className="rounded-xl bg-gray-50 dark:bg-gray-900 p-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/home-challenge/universities/c3-mini-kisii-boxes/modular-c3-mini-ai-product-dev-box-1-top-side.png"
                       alt="Box 1 top"
@@ -296,6 +298,7 @@ export default function C3MiniKisiiBoxesPage() {
                     />
                   </div>
                   <div className="rounded-xl bg-gray-50 dark:bg-gray-900 p-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/home-challenge/universities/c3-mini-kisii-boxes/modular-c3-mini-ai-product-dev-box-1-bottom-side.png"
                       alt="Box 1 bottom"
@@ -312,6 +315,7 @@ export default function C3MiniKisiiBoxesPage() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className="rounded-xl bg-gray-50 dark:bg-gray-900 p-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/home-challenge/universities/c3-mini-kisii-boxes/modular-c3-mini-ai-product-dev-box-2-top-side.png"
                       alt="Box 2 top"
@@ -319,6 +323,7 @@ export default function C3MiniKisiiBoxesPage() {
                     />
                   </div>
                   <div className="rounded-xl bg-gray-50 dark:bg-gray-900 p-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/home-challenge/universities/c3-mini-kisii-boxes/modular-c3-mini-ai-product-dev-box-2-bottom-side.png"
                       alt="Box 2 bottom"

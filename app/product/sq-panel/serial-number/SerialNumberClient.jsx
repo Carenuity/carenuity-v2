@@ -122,6 +122,7 @@ export default function SerialNumberClient() {
               </p>
 
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/products/sq-panel/serial-number/serial-number.jpeg"
                   alt={

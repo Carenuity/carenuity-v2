@@ -83,6 +83,7 @@ export default function ThwsPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8 max-w-3xl mx-auto">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden p-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/press-materials-for-thws/register.jpeg"
                     alt="Register"
@@ -102,6 +103,7 @@ export default function ThwsPage() {
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden p-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/press-materials-for-thws/whatsapp2.jpeg"
                     alt="WhatsApp"

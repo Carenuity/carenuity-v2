@@ -102,6 +102,7 @@ export default function LaunchPageClient() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-10">
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-56 shrink-0 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/launch-page/sq-panel.png"
                       alt="SQ-Panel"
@@ -110,6 +111,7 @@ export default function LaunchPageClient() {
                     />
                   </div>
                   <div className="flex-1 p-6">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/products/sq-panel/launch-page/matter.png"
                       alt="Matter support"
@@ -233,6 +235,7 @@ export default function LaunchPageClient() {
                     key={f.en.title}
                     className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-5 text-center"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={f.icon}
                       alt={f.en.title}

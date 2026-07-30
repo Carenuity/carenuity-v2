@@ -67,6 +67,7 @@ export default function GirlsDayPage() {
             <UniversitySidebar />
             <div className="flex-1 min-w-0">
               <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/home-challenge/universities/girls-day/girls2.jpeg"
                   alt="Girls' Day 2026"
@@ -77,6 +78,7 @@ export default function GirlsDayPage() {
 
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/girls-day/girls-logo.jpeg"
                     alt="Girls' Day logo"
@@ -95,6 +97,7 @@ export default function GirlsDayPage() {
               </h2>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/girls-day/girls.jpeg"
                     alt="Girls participating in STEM activities"
@@ -165,6 +168,7 @@ export default function GirlsDayPage() {
               </h2>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/girls-day/bluetooth-speaker.jpeg"
                     alt="Bluetooth speaker built during Girls' Day"

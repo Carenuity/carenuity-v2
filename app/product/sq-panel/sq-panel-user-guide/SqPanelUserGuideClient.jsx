@@ -84,6 +84,7 @@ export default function SqPanelUserGuideClient() {
 
               <div className="space-y-6 mb-12">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/products/sq-panel/sq-panel-guide/guide3.png"
                     alt="SQ-Panel setup guide part 1"
@@ -91,6 +92,7 @@ export default function SqPanelUserGuideClient() {
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/products/sq-panel/sq-panel-guide/guide4.png"
                     alt="SQ-Panel setup guide part 2"
@@ -110,6 +112,7 @@ export default function SqPanelUserGuideClient() {
               </p>
 
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/user-guide/intro.png"
                   alt="Carenuity mobile app introduction"
@@ -129,12 +132,14 @@ export default function SqPanelUserGuideClient() {
                     rel="noopener noreferrer"
                     className="mb-4"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/user-guide/app-store.png"
                       alt="Download on the App Store"
                       className="h-12 w-auto object-contain"
                     />
                   </a>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/user-guide/apple.jpeg"
                     alt="App Store QR code"
@@ -153,12 +158,14 @@ export default function SqPanelUserGuideClient() {
                     rel="noopener noreferrer"
                     className="mb-4"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/user-guide/google.png"
                       alt="Get it on Google Play"
                       className="h-12 w-auto object-contain"
                     />
                   </a>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/user-guide/android.jpeg"
                     alt="Google Play QR code"
@@ -178,6 +185,7 @@ export default function SqPanelUserGuideClient() {
               </h3>
               <div className="space-y-6 mb-12">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/user-guide/goal.png"
                     alt="Carenuity SQ-Panel app goals and monitoring overview"
@@ -185,6 +193,7 @@ export default function SqPanelUserGuideClient() {
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/user-guide/guide.png"
                     alt="Carenuity app design language and onboarding overview"
@@ -200,6 +209,7 @@ export default function SqPanelUserGuideClient() {
                   : "3. Anmelden, Panel verbinden & Räume ablesen"}
               </h3>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-12">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/user-guide/ux.png"
                   alt="Carenuity app user experience: login, home, connect SQ-Panel via QR code and view room values"
@@ -213,6 +223,7 @@ export default function SqPanelUserGuideClient() {
                   : "4. Benachrichtigungen, Warnungen & Passwort zurücksetzen"}
               </h3>
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/user-guide/ux2.png"
                   alt="Carenuity app notifications, alerts and password reset flow"

@@ -76,6 +76,7 @@ export default function OauthPressPage() {
               </h2>
               <div className="space-y-6 mb-8">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/tum-press/tum1.png"
                     alt="Press 1"
@@ -83,6 +84,7 @@ export default function OauthPressPage() {
                   />
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/home-challenge/universities/tum-press/tum2.png"
                     alt="Press 2"
